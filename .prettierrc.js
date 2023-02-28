@@ -1,10 +1,10 @@
 module.exports = {
     semi: true,
-    trailingComma: 'all',
+    trailingComma: 'es5',
     singleQuote: true,
     printWidth: 90,
     tabWidth: 4,
-    endOfLine: 'auto',
+    endOfLine: 'auto'
 };
 
 // {
