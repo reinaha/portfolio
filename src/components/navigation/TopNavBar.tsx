@@ -1,5 +1,16 @@
-import { AppBar, Box, Button, Container, Toolbar, Typography } from '@mui/material';
+import {
+    AppBar,
+    Box,
+    Button,
+    Container,
+    Icon,
+    IconButton,
+    Toolbar,
+    Typography,
+} from '@mui/material';
 import { Link } from 'react-router-dom';
+
+import Logo from '../../../resources/Logo.png';
 
 const pages = [
     {
@@ -14,11 +25,6 @@ const pages = [
     },
     {
         key: 2,
-        text: 'About',
-        path: '/',
-    },
-    {
-        key: 3,
         text: 'Contact',
         path: '/',
     },
@@ -27,9 +33,15 @@ const pages = [
 export default function TopNavBar() {
     return (
         <AppBar position="sticky" elevation={0} color="secondary" enableColorOnDark>
-            <Container>
-                <Toolbar>
-                    <Typography sx={{ flexGrow: 1 }}>수민</Typography>
+            <Container disableGutters>
+                <Toolbar disableGutters>
+                    <Box sx={{ flexGrow: 1 }}>
+                        <IconButton sx={{ padding: '0px', height: '1.5em' }}>
+                            <Icon sx={{ height: '100%', width: '100%' }}>
+                                <img src={Logo} alt="logo" style={{ height: '100%' }} />
+                            </Icon>
+                        </IconButton>
+                    </Box>
                     <Box>
                         {pages.map((page) => (
                             <Button
@@ -38,6 +50,9 @@ export default function TopNavBar() {
                                 to={page.path}
                                 color="primary"
                                 disableElevation
+                                sx={{
+                                    marginLeft: '2em',
+                                }}
                             >
                                 {page.text}
                             </Button>

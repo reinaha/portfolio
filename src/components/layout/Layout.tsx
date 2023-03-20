@@ -7,7 +7,7 @@ export default function Layout() {
     return (
         <>
             <TopNavBar />
-            <Container sx={{ marginTop: '3em' }}>
+            <Container disableGutters sx={{ marginBottom: '3em' }}>
                 <Outlet />
             </Container>
         </>

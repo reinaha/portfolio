@@ -5,11 +5,11 @@ import { styled } from '@mui/system';
 export const FiCard = styled(Card)({
     position: 'relative',
     borderRadius: '20px',
-    minHeight: '643px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: '35px 150px 35px 35px',
+    padding: '35px 35px 35px 35px',
+    aspectRatio: '10/11',
 });
 
 export const FiCardActionArea = styled(CardActionArea)({
