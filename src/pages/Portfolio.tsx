@@ -1,9 +1,15 @@
-import { Container } from '@mui/material';
+import { Container, Grid } from '@mui/material';
+
+import PropertyMaxBg from '../../resources/PropertyMaxBg.png';
+import PropertyMaxBgWeb from '../../resources/PropertyMaxBgWeb.png';
+import {
+    ContactCard,
+    IntroCard,
+    LongCard,
+    PortfolioCard,
+    SmallCard,
+} from '../components/homeCards';
 
 export function Portfolio() {
-    return (
-        <Container disableGutters maxWidth="lg">
-            <h1>Portfolio</h1>
-        </Container>
-    );
+    return <h1>Portfolio</h1>;
 }

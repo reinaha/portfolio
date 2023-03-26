@@ -9,7 +9,7 @@ export const FiCard = styled(Card)({
     flexDirection: 'column',
     justifyContent: 'space-between',
     padding: '35px 35px 35px 35px',
-    aspectRatio: '10/11',
+    height: '643px',
 });
 
 export const FiCardActionArea = styled(CardActionArea)({
@@ -18,11 +18,16 @@ export const FiCardActionArea = styled(CardActionArea)({
 
 export const FiCardActions = styled(CardActions)({
     position: 'relative',
+    padding: '0px',
 });
 
 export const FiCardContent = styled(CardContent)({
     position: 'relative',
     backgroundColor: 'transparent',
+    padding: '0px',
+    '&:last-child': {
+        paddingBottom: 0,
+    },
 });
 
 export const FiCardMedia = styled(CardMedia)({

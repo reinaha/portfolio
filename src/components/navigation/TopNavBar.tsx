@@ -1,13 +1,4 @@
-import {
-    AppBar,
-    Box,
-    Button,
-    Container,
-    Icon,
-    IconButton,
-    Toolbar,
-    Typography,
-} from '@mui/material';
+import { AppBar, Box, Button, Container, Icon, IconButton, Toolbar } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../../resources/Logo.png';
@@ -26,14 +17,14 @@ const pages = [
     {
         key: 2,
         text: 'Contact',
-        path: '/',
+        path: '/contact',
     },
 ];
 
 export default function TopNavBar() {
     return (
         <AppBar position="sticky" elevation={0} color="secondary" enableColorOnDark>
-            <Container disableGutters>
+            <Container disableGutters sx={{ paddingLeft: '8px', paddingRight: '8px' }}>
                 <Toolbar disableGutters>
                     <Box sx={{ flexGrow: 1 }}>
                         <IconButton sx={{ padding: '0px', height: '1.5em' }}>

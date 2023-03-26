@@ -15,3 +15,10 @@ export const defaultTheme = createTheme({
     },
     spacing: 22,
 });
+
+export const lightTheme = createTheme({
+    palette: {
+        mode: 'light',
+    },
+    spacing: 22,
+});

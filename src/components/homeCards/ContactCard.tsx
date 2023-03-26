@@ -1,11 +1,11 @@
-import { Avatar, Button, Icon, IconButton, Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 
 import Gradient1 from '../../../resources/Gradient1.png';
 import { FiCard, FiCardActions, FiCardContent, FiCardMedia } from '../fullImageCard';
 
 export function ContactCard() {
     return (
-        <FiCard sx={{ aspectRatio: '5/2' }}>
+        <FiCard sx={{ maxHeight: '455px' }}>
             <FiCardMedia image={Gradient1} />
             <FiCardContent>
                 <Typography fontSize="30px" fontWeight="600">
