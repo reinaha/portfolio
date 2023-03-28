@@ -5,7 +5,7 @@ import { Error, Home, Portfolio } from '../pages';
 
 export default function Router() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio">
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
