@@ -3,9 +3,17 @@ import { Button, Typography } from '@mui/material';
 import Gradient1 from '../../../resources/Gradient1.png';
 import { FiCard, FiCardActions, FiCardContent, FiCardMedia } from '../fullImageCard';
 
-export function ContactCard() {
+type ContactCardProps = {
+    cardRef?:
+        | ((instance: HTMLDivElement | null) => void)
+        | React.RefObject<HTMLDivElement>
+        | null
+        | undefined;
+};
+
+export function ContactCard({ cardRef }: ContactCardProps) {
     return (
-        <FiCard sx={{ maxHeight: '455px' }}>
+        <FiCard ref={cardRef} sx={{ maxHeight: '455px' }}>
             <FiCardMedia image={Gradient1} />
             <FiCardContent>
                 <Typography fontSize="30px" fontWeight="600">

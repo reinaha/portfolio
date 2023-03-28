@@ -1,7 +1,10 @@
-import { Avatar, Icon, IconButton, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 import Gradient1 from '../../../resources/Gradient1.png';
+import BehanceIcon from '../../icons/BehanceIcon.svg';
+import GoogleIcon from '../../icons/GoogleIcon.svg';
 import LinkedInIcon from '../../icons/LinkedInIcon.svg';
+import { LogoButton } from '../buttons/LogoButton';
 import { FiCard, FiCardActions, FiCardContent, FiCardMedia } from '../fullImageCard';
 
 export function IntroCard() {
@@ -29,49 +32,9 @@ export function IntroCard() {
                 </Typography>
             </FiCardContent>
             <FiCardActions>
-                <IconButton sx={{ padding: '0px' }}>
-                    <Avatar
-                        sx={{
-                            bgcolor: '#FFFFFF',
-                            color: 'black',
-                            width: '60px',
-                            height: '60px',
-                        }}
-                    >
-                        <Icon sx={{ textAlign: 'center' }}>
-                            <img
-                                src={LinkedInIcon}
-                                className="App-logo"
-                                alt="logo"
-                                style={{ height: '100%' }}
-                            />
-                        </Icon>
-                    </Avatar>
-                </IconButton>
-                <IconButton sx={{ padding: '0px' }}>
-                    <Avatar
-                        sx={{
-                            bgcolor: '#FFFFFF',
-                            color: 'black',
-                            width: '60px',
-                            height: '60px',
-                        }}
-                    >
-                        S
-                    </Avatar>
-                </IconButton>
-                <IconButton sx={{ padding: '0px' }}>
-                    <Avatar
-                        sx={{
-                            bgcolor: '#FFFFFF',
-                            color: 'black',
-                            width: '60px',
-                            height: '60px',
-                        }}
-                    >
-                        G
-                    </Avatar>
-                </IconButton>
+                <LogoButton iconSrc={LinkedInIcon} />
+                <LogoButton iconSrc={BehanceIcon} />
+                <LogoButton iconSrc={GoogleIcon} />
             </FiCardActions>
         </FiCard>
     );

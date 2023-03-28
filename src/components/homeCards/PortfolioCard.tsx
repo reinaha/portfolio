@@ -1,18 +1,20 @@
-import NorthEastIcon from '@mui/icons-material/NorthEast';
-import { Box, IconButton, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
+import { DiagonalArrowButton } from '../buttons/DiagonalArrowButton';
 import { FiCard, FiCardContent, FiCardMedia } from '../fullImageCard';
 
 type PortfolioCardProps = {
     title: string;
     subTitle: string;
     backgroundImage: string;
+    buttonOnClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 export const PortfolioCard = ({
     title,
     subTitle,
     backgroundImage,
+    buttonOnClick,
 }: PortfolioCardProps) => {
     return (
         <FiCard>
@@ -27,16 +29,7 @@ export const PortfolioCard = ({
                             {subTitle}
                         </Typography>
                     </Box>
-                    <IconButton
-                        sx={{
-                            height: '2em',
-                            padding: '0.5em',
-                            color: 'white',
-                            backgroundColor: '#292D32',
-                        }}
-                    >
-                        <NorthEastIcon />
-                    </IconButton>
+                    <DiagonalArrowButton onClick={buttonOnClick} />
                 </Box>
             </FiCardContent>
         </FiCard>

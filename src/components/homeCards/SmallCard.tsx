@@ -1,11 +1,13 @@
-import NorthEastIcon from '@mui/icons-material/NorthEast';
-import { Box, Card, CardContent, IconButton, Typography } from '@mui/material';
+import { Box, Card, CardContent, Typography } from '@mui/material';
+
+import { DiagonalArrowButton } from '../buttons/DiagonalArrowButton';
 
 type SmallCardProps = {
     title: string;
+    buttonOnClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
-export const SmallCard = ({ title }: SmallCardProps) => {
+export const SmallCard = ({ title, buttonOnClick }: SmallCardProps) => {
     return (
         <Card
             elevation={0}
@@ -35,16 +37,7 @@ export const SmallCard = ({ title }: SmallCardProps) => {
                         flexGrow: 1,
                     }}
                 >
-                    <IconButton
-                        sx={{
-                            height: '2em',
-                            padding: '0.5em',
-                            color: 'white',
-                            backgroundColor: '#292D32',
-                        }}
-                    >
-                        <NorthEastIcon />
-                    </IconButton>
+                    <DiagonalArrowButton onClick={buttonOnClick} />
                 </Box>
                 <Box>
                     <Typography
