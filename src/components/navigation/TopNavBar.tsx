@@ -1,7 +1,17 @@
-import { AppBar, Box, Button, Container, Icon, IconButton, Toolbar } from '@mui/material';
+import {
+    AppBar,
+    Box,
+    Button,
+    Container,
+    Icon,
+    IconButton,
+    Toolbar,
+    useTheme,
+} from '@mui/material';
 import { Link } from 'react-router-dom';
 
-import Logo from '../../../resources/Logo.png';
+import LogoDark from '../../../resources/LogoDark.svg';
+import LogoLight from '../../../resources/LogoLight.svg';
 
 const pages = [
     {
@@ -22,6 +32,9 @@ const pages = [
 ];
 
 export default function TopNavBar() {
+    const isDarkTheme = useTheme().palette.mode === 'dark';
+    console.log(isDarkTheme);
+
     return (
         <AppBar position="sticky" elevation={0} color="secondary" enableColorOnDark>
             <Container disableGutters sx={{ paddingLeft: '8px', paddingRight: '8px' }}>
@@ -29,7 +42,11 @@ export default function TopNavBar() {
                     <Box sx={{ flexGrow: 1 }}>
                         <IconButton sx={{ padding: '0px', height: '1.5em' }}>
                             <Icon sx={{ height: '100%', width: '100%' }}>
-                                <img src={Logo} alt="logo" style={{ height: '100%' }} />
+                                <img
+                                    src={isDarkTheme ? LogoDark : LogoLight}
+                                    alt="logo"
+                                    style={{ height: '100%' }}
+                                />
                             </Icon>
                         </IconButton>
                     </Box>

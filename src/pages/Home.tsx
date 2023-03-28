@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import React, { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 import PropertyMaxBg from '../../resources/PropertyMaxBg.png';
 import PropertyMaxBgWeb from '../../resources/PropertyMaxBgWeb.png';
@@ -13,10 +13,6 @@ import {
 
 export function Home() {
     const contactRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        console.log(contactRef);
-    }, [contactRef]);
 
     return (
         <Grid container alignItems="stretch" spacing={1}>

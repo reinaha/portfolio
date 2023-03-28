@@ -14,11 +14,27 @@ export const defaultTheme = createTheme({
         },
     },
     spacing: 22,
+    typography: {
+        fontFamily: ['Inter', 'Roboto', 'sans-serif'].join(','),
+    },
 });
 
 export const lightTheme = createTheme({
     palette: {
         mode: 'light',
+        primary: {
+            main: '#000000',
+        },
+        secondary: {
+            main: '#FFFFFF',
+        },
     },
     spacing: 22,
+    typography: {
+        fontFamily: ['Inter', 'Roboto', 'sans-serif'].join(','),
+        h1: {
+            fontWeight: 700,
+            fontSize: '80px',
+        },
+    },
 });

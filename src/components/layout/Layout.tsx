@@ -1,11 +1,13 @@
-import { Container } from '@mui/material';
+import { Container, CssBaseline, ThemeProvider } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 
+import { LayoutProps } from '../../models';
 import TopNavBar from '../navigation/TopNavBar';
 
-export function Layout() {
+export const Layout = ({ theme }: LayoutProps) => {
     return (
-        <>
+        <ThemeProvider theme={theme}>
+            <CssBaseline enableColorScheme />
             <TopNavBar />
             <Container
                 disableGutters
@@ -17,6 +19,6 @@ export function Layout() {
             >
                 <Outlet />
             </Container>
-        </>
+        </ThemeProvider>
     );
-}
+};

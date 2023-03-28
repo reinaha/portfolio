@@ -1,15 +1,15 @@
-import { Container, Grid } from '@mui/material';
+import { Box, Paper, Stack, Typography } from '@mui/material';
 
-import PropertyMaxBg from '../../resources/PropertyMaxBg.png';
-import PropertyMaxBgWeb from '../../resources/PropertyMaxBgWeb.png';
-import {
-    ContactCard,
-    IntroCard,
-    LongCard,
-    PortfolioCard,
-    SmallCard,
-} from '../components/homeCards';
+import Cover from '../../resources/OsstemDentalEshop/Cover.jpg';
 
 export function Portfolio() {
-    return <h1>Portfolio</h1>;
+    return (
+        <Stack spacing={1}>
+            <img alt="Cover" src={Cover} />
+            <Box>
+                <Typography>Commercial</Typography>
+                <Typography variant="h1">Osstem dental e-shop</Typography>
+            </Box>
+        </Stack>
+    );
 }

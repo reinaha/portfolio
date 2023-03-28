@@ -1,16 +1,9 @@
-import { CssBaseline, ThemeProvider } from '@mui/material';
-import React from 'react';
+import '@fontsource/inter';
 
 import Router from './routes/router';
-import { defaultTheme } from './themes/default';
 
 function App() {
-    return (
-        <ThemeProvider theme={defaultTheme}>
-            <CssBaseline enableColorScheme />
-            <Router />
-        </ThemeProvider>
-    );
+    return <Router />;
 }
 
 export default App;
