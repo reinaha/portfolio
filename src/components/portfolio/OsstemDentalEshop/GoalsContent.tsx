@@ -1,60 +1,6 @@
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Box, Chip, Stack, Typography } from '@mui/material';
+import { Chip, Stack, Typography } from '@mui/material';
 
-type ArrowPointedTextProps = {
-    text: string | string[];
-};
-
-export const ArrowPointedText = ({ text }: ArrowPointedTextProps) => {
-    return (
-        <Box sx={{ display: 'flex' }}>
-            <ArrowForwardIcon
-                fontSize="small"
-                sx={{ marginTop: '0.25em', marginRight: 1.5 }}
-            />
-            {Array.isArray(text) ? (
-                <Stack spacing={1.4}>
-                    {text.map((t, index) => (
-                        <Typography key={index}>{t}</Typography>
-                    ))}
-                </Stack>
-            ) : (
-                <Typography>{text}</Typography>
-            )}
-        </Box>
-    );
-};
-
-type NumberListTextProps = {
-    number: number;
-    text: string | string[];
-};
-
-export const NumberListText = ({ number, text }: NumberListTextProps) => {
-    return (
-        <Box sx={{ display: 'flex' }}>
-            <Chip
-                label={number}
-                sx={{
-                    bgcolor: '#E8FAF0',
-                    color: '#008557',
-                    fontSize: '18px',
-                    fontWeight: 500,
-                    marginRight: 1,
-                }}
-            />
-            {Array.isArray(text) ? (
-                <Stack spacing={1.4}>
-                    {text.map((t, index) => (
-                        <Typography key={index}>{t}</Typography>
-                    ))}
-                </Stack>
-            ) : (
-                <Typography>{text}</Typography>
-            )}
-        </Box>
-    );
-};
+import { ArrowPointedText, NumberListText } from '../../listText';
 
 export const GoalsContent = () => {
     return (
@@ -92,6 +38,8 @@ export const GoalsContent = () => {
                 number={1}
                 text="Encourage customers to utilise the chat feature on the app for inquiries
                     instead of contacting the company via phone."
+                numberColor="#008557"
+                backgroundColor="#E8FAF0"
             />
             <ArrowPointedText
                 text="Encouraging customers to contact the company through chat on the 
@@ -103,6 +51,8 @@ export const GoalsContent = () => {
                 number={2}
                 text="Provide customers with clear visibility of the product delivery process
                     and order details through our shopping app."
+                numberColor="#008557"
+                backgroundColor="#E8FAF0"
             />
             <ArrowPointedText
                 text={[

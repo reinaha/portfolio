@@ -1,58 +1,34 @@
-import { Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Box, Typography } from '@mui/material';
 
 import Cover2 from '../../../resources/OsstemDentalEshop/Cover2.jpg';
-import { ColourIcons } from '../../components/icons/ColourIcons';
-import { PortfolioLayout, PortfolioSection } from '../../components/portfolio';
 import {
+    MajorSectionTitle,
+    PortfolioLayout,
+    PortfolioSection,
+} from '../../components/portfolio';
+import {
+    ChallengesContent,
+    ColourAndTypographyContent,
+    ComponentsAndElementsContent,
+    DesignProcessContent,
     GoalsContent,
+    GridContent,
+    InformationArchitectureContent,
     IntroductionContent,
+    MidFidelityWireframesContent,
 } from '../../components/portfolio/OsstemDentalEshop';
-import DNSIcon from '../../icons/DNSIcon.svg';
-import FaceIcon from '../../icons/FaceIcon.svg';
-import FigmaIcon from '../../icons/FigmaIcon.svg';
-import IllustratorIcon from '../../icons/IllustratorIcon.svg';
-import PhotoshopIcon from '../../icons/PhotoshopIcon.svg';
-import TimerIcon from '../../icons/TimerIcon.svg';
-import ToolsIcon from '../../icons/ToolsIcon.svg';
+import { OsstemDentalEShopCardInfo } from '../../data';
 
-const portfolioDetailCardInfos = [
-    {
-        title: 'Target Audience',
-        content: (
-            <Typography variant="body2">
-                Dentists in their late twenties to early forties
-            </Typography>
-        ),
-        icon: FaceIcon,
-    },
-    {
-        title: 'Duration',
-        content: (
-            <>
-                <Typography variant="body2">3 Months</Typography>
-                <Typography variant="body2">(Feb 2022 - May 2022)</Typography>
-            </>
-        ),
-        icon: TimerIcon,
-    },
-    {
-        title: 'Tools Used',
-        content: (
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 0.3 }}>
-                <ColourIcons icon={FigmaIcon} />
-                <ColourIcons icon={IllustratorIcon} />
-                <ColourIcons icon={PhotoshopIcon} />
-            </Box>
-        ),
-        icon: ToolsIcon,
-    },
-    {
-        title: 'My Role',
-        content: <Typography variant="body2">Lead UI & UX Design</Typography>,
-        icon: DNSIcon,
-    },
-];
+const OsstemApplicationSubtitle = () => {
+    return (
+        <Typography variant="subtitle1" sx={{ marginTop: '20px' }}>
+            <Box fontWeight="bold" display="inline">
+                Osstem dental e-shop
+            </Box>{' '}
+            Application
+        </Typography>
+    );
+};
 
 export const OsstemDentalEShop = () => {
     return (
@@ -66,10 +42,33 @@ export const OsstemDentalEShop = () => {
                 startDate: new Date(2022, 2),
                 endDate: new Date(2022, 5),
             }}
-            portfolioDetailCardInfos={portfolioDetailCardInfos}
+            portfolioDetailCardInfos={OsstemDentalEShopCardInfo}
         >
             <PortfolioSection title="Introduction" content={<IntroductionContent />} />
             <PortfolioSection title="Goals" content={<GoalsContent />} />
+            <PortfolioSection title="Challenges" content={<ChallengesContent />} />
+            <PortfolioSection title="Design Process" content={<DesignProcessContent />} />
+            <PortfolioSection
+                title="Information Architecture"
+                content={<InformationArchitectureContent />}
+            />{' '}
+            <PortfolioSection
+                title="Mid-Fidelity Wireframes"
+                content={<MidFidelityWireframesContent />}
+            />
+            <MajorSectionTitle
+                title="Style guide"
+                subTitle={<OsstemApplicationSubtitle />}
+            />
+            <PortfolioSection
+                title="Colour & Typography"
+                content={<ColourAndTypographyContent />}
+            />
+            <PortfolioSection title="Grid System" content={<GridContent />} />
+            <PortfolioSection
+                title="Components & Elements"
+                content={<ComponentsAndElementsContent />}
+            />
         </PortfolioLayout>
     );
 };
