@@ -38,6 +38,12 @@ export const lightTheme = createTheme({
             fontSize: '60px',
             wordBreak: 'break-word',
         },
+        h2: {
+            fontWeight: 700,
+            fontStyle: 'normal',
+            fontSize: '40px',
+            wordBreak: 'break-word',
+        },
         h5: {
             fontWeight: 600,
             fontStyle: 'normal',

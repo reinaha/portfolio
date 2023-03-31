@@ -3,7 +3,11 @@ import { Box } from '@mui/system';
 
 import Cover2 from '../../../resources/OsstemDentalEshop/Cover2.jpg';
 import { ColourIcons } from '../../components/icons/ColourIcons';
-import { PortfolioLayout } from '../../components/portfolio/PortfolioLayout';
+import { PortfolioLayout, PortfolioSection } from '../../components/portfolio';
+import {
+    GoalsContent,
+    IntroductionContent,
+} from '../../components/portfolio/OsstemDentalEshop';
 import DNSIcon from '../../icons/DNSIcon.svg';
 import FaceIcon from '../../icons/FaceIcon.svg';
 import FigmaIcon from '../../icons/FigmaIcon.svg';
@@ -64,8 +68,8 @@ export const OsstemDentalEShop = () => {
             }}
             portfolioDetailCardInfos={portfolioDetailCardInfos}
         >
-            <h1>Hello</h1>
-            <p>hey</p>
+            <PortfolioSection title="Introduction" content={<IntroductionContent />} />
+            <PortfolioSection title="Goals" content={<GoalsContent />} />
         </PortfolioLayout>
     );
 };

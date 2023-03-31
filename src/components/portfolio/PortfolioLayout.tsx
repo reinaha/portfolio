@@ -83,6 +83,7 @@ export const PortfolioLayout = ({
                 spacing={0.5}
                 paddingRight={1}
                 paddingTop={1}
+                paddingBottom={2}
             >
                 {portfolioDetailCardInfos.map(
                     (pd: PortfolioDetailCardInfo, index: number) => (
