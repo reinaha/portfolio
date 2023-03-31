@@ -13,6 +13,8 @@ export const PortfolioLayout = ({ theme }: LayoutProps) => {
                 disableGutters
                 sx={{
                     paddingBottom: '3em',
+                    paddingLeft: '1em',
+                    paddingRight: '1em',
                 }}
             >
                 <Outlet />

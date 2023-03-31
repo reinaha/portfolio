@@ -1,13 +1,4 @@
-import {
-    Box,
-    Card,
-    CardContent,
-    Divider,
-    Grid,
-    Paper,
-    Stack,
-    Typography,
-} from '@mui/material';
+import { Box, Divider, Grid, Stack, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 
 import CalendarIcon from '../../icons/CalendarIcon.svg';
@@ -28,6 +19,7 @@ type PortfolioLayoutProps = {
     title: string;
     subTitle?: string;
     portfolioMetaData: PortfolioMetaData;
+    portfolioDetailCardInfos: PortfolioDetailCardInfo[];
     children: React.ReactChildren | React.ReactNode;
 };
 
@@ -37,44 +29,27 @@ const portfolioDateFormat = (date: Date): string => {
 
 type PortfolioDetailCardInfo = {
     title: string;
-    description: string;
+    content?: React.ReactNode;
     icon: string;
 };
-
-const portfolioDetailCardInfos = [
-    {
-        title: 'Target Audience',
-        description: 'Dentists in their late twenties to early forties',
-        icon: CommercialTypeIcon,
-    },
-    {
-        title: 'Target Audience',
-        description: 'Dentists in their late twenties to early forties',
-        icon: CommercialTypeIcon,
-    },
-    {
-        title: 'Target Audience',
-        description: 'Dentists in their late twenties to early forties',
-        icon: CommercialTypeIcon,
-    },
-    {
-        title: 'Target Audience',
-        description: 'Dentists in their late twenties to early forties',
-        icon: CommercialTypeIcon,
-    },
-];
 
 export const PortfolioLayout = ({
     coverImg,
     title,
     subTitle,
     portfolioMetaData: { projectType, applicationType, startDate, endDate },
+    portfolioDetailCardInfos = [],
     children,
 }: PortfolioLayoutProps) => {
     return (
         <Stack spacing={1}>
-            <img alt="Cover" src={coverImg} />
-            <Box>
+            <Box
+                component="img"
+                alt="Cover"
+                src={coverImg}
+                sx={{ marginLeft: '-1em', marginRight: '-1em' }}
+            />
+            <Box paddingBottom={1}>
                 <Box
                     sx={{
                         display: 'flex',
@@ -100,13 +75,28 @@ export const PortfolioLayout = ({
                 ) : null}
             </Box>
             <Divider variant="middle" />
-            <Grid container spacing={0.5}>
+            <Grid
+                container
+                alignItems="stretch"
+                justifyContent="center"
+                direction="row"
+                spacing={0.5}
+                paddingRight={1}
+                paddingTop={1}
+            >
                 {portfolioDetailCardInfos.map(
                     (pd: PortfolioDetailCardInfo, index: number) => (
-                        <Grid key={index} item xs={6} md={3} lg={3}>
+                        <Grid
+                            key={index}
+                            item
+                            xs={12}
+                            sm={6}
+                            md={12 / portfolioDetailCardInfos.length}
+                            lg={12 / portfolioDetailCardInfos.length}
+                        >
                             <PortfolioDetailCard
                                 title={pd.title}
-                                description={pd.description}
+                                content={pd.content}
                                 icon={pd.icon}
                             />
                         </Grid>

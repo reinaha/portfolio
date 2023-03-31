@@ -36,16 +36,31 @@ export const lightTheme = createTheme({
             fontWeight: 700,
             fontStyle: 'normal',
             fontSize: '60px',
+            wordBreak: 'break-word',
+        },
+        h5: {
+            fontWeight: 600,
+            fontStyle: 'normal',
+            fontSize: '24px',
+            wordBreak: 'break-word',
         },
         subtitle1: {
             fontWeight: 400,
             fontStyle: 'normal',
             fontSize: '24px',
+            wordBreak: 'break-word',
         },
         body1: {
             fontWeight: 400,
             fontStyle: 'normal',
             fontSize: '18px',
+            wordBreak: 'break-word',
+        },
+        body2: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            fontSize: '20px',
+            wordBreak: 'break-word',
         },
     },
 });

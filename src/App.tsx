@@ -1,4 +1,5 @@
 import '@fontsource/inter';
+import '@fontsource/inter/700.css';
 
 import Router from './routes/router';
 
