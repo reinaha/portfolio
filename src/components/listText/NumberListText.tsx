@@ -2,16 +2,20 @@ import { Box, Chip, Stack, Typography } from '@mui/material';
 
 type NumberListTextProps = {
     number: number;
+    textTitle?: string;
     text: string | string[];
     numberColor: string;
     backgroundColor: string;
+    listSpacing?: number;
 };
 
 export const NumberListText = ({
     number,
+    textTitle,
     text,
     numberColor,
     backgroundColor,
+    listSpacing = 1.4,
 }: NumberListTextProps) => {
     return (
         <Box sx={{ display: 'flex' }}>
@@ -26,13 +30,21 @@ export const NumberListText = ({
                 }}
             />
             {Array.isArray(text) ? (
-                <Stack spacing={1.4}>
+                <Stack spacing={listSpacing}>
+                    {textTitle ? (
+                        <Typography fontWeight="bold">{textTitle}</Typography>
+                    ) : null}
                     {text.map((t, index) => (
                         <Typography key={index}>{t}</Typography>
                     ))}
                 </Stack>
             ) : (
-                <Typography>{text}</Typography>
+                <Stack spacing={listSpacing}>
+                    {textTitle ? (
+                        <Typography fontWeight="bold">{textTitle}</Typography>
+                    ) : null}
+                    <Typography>{text}</Typography>
+                </Stack>
             )}
         </Box>
     );

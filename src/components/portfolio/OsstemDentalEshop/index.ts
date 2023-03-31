@@ -5,3 +5,4 @@ export * from './InformationArchitectureContent';
 export * from './Introduction';
 export * from './MidFidelityWireframesContent';
 export * from './StyleGuide';
+export * from './Takeaways';

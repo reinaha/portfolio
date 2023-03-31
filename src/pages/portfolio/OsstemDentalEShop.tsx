@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 
 import Cover2 from '../../../resources/OsstemDentalEshop/Cover2.jpg';
+import UISectionCover from '../../../resources/OsstemDentalEshop/UISectionCover.jpg';
 import {
     MajorSectionTitle,
     PortfolioLayout,
@@ -15,7 +16,9 @@ import {
     GridContent,
     InformationArchitectureContent,
     IntroductionContent,
+    LearnedContent,
     MidFidelityWireframesContent,
+    RetrospectiveContent,
 } from '../../components/portfolio/OsstemDentalEshop';
 import { OsstemDentalEShopCardInfo } from '../../data';
 
@@ -56,8 +59,9 @@ export const OsstemDentalEShop = () => {
                 title="Mid-Fidelity Wireframes"
                 content={<MidFidelityWireframesContent />}
             />
+            {/* Style Guide Section! */}
             <MajorSectionTitle
-                title="Style guide"
+                title="Style Guide"
                 subTitle={<OsstemApplicationSubtitle />}
             />
             <PortfolioSection
@@ -69,6 +73,19 @@ export const OsstemDentalEShop = () => {
                 title="Components & Elements"
                 content={<ComponentsAndElementsContent />}
             />
+            {/* User Interface Section! */}
+            <MajorSectionTitle
+                title="User Interface"
+                subTitle={<OsstemApplicationSubtitle />}
+            />
+            <Box component="img" alt="Cover" src={UISectionCover} />
+            {/* Takeaways Section! */}
+            <MajorSectionTitle
+                title="Takeaways"
+                subTitle={<OsstemApplicationSubtitle />}
+            />
+            <PortfolioSection title="What I Learned" content={<LearnedContent />} />
+            <PortfolioSection title="Retrospective" content={<RetrospectiveContent />} />
         </PortfolioLayout>
     );
 };
