@@ -34,7 +34,18 @@ export const lightTheme = createTheme({
         fontFamily: ['Inter', 'Roboto', 'sans-serif'].join(','),
         h1: {
             fontWeight: 700,
-            fontSize: '80px',
+            fontStyle: 'normal',
+            fontSize: '60px',
+        },
+        subtitle1: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            fontSize: '24px',
+        },
+        body1: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            fontSize: '18px',
         },
     },
 });

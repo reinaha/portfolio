@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material';
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import PropertyMaxBg from '../../resources/PropertyMaxBg.png';
 import PropertyMaxBgWeb from '../../resources/PropertyMaxBgWeb.png';
@@ -13,6 +14,7 @@ import {
 
 export function Home() {
     const contactRef = useRef<HTMLDivElement>(null);
+    const navigate = useNavigate();
 
     return (
         <Grid container alignItems="stretch" spacing={1}>
@@ -47,6 +49,7 @@ export function Home() {
                     title="PropertiMax Application"
                     subTitle="Lead UX and UI design"
                     backgroundImage={PropertyMaxBg}
+                    buttonOnClick={() => navigate('/portfolio/osstem-dental-e-shop')}
                 />
             </Grid>
             <Grid item xs={12} sm={12} md={6} lg={6}>
