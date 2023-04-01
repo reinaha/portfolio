@@ -79,6 +79,16 @@ export const OsstemDentalEShop = () => {
                 subTitle={<OsstemApplicationSubtitle />}
             />
             <Box component="img" alt="Cover" src={UISectionCover} />
+            <PortfolioSection title="Entrance" content={null} />
+            <PortfolioSection title="Sign up journey" content={null} />
+            <PortfolioSection
+                title="Integrating existing customer accounts with the app account"
+                content={null}
+            />
+            <PortfolioSection
+                title="Positioning sign-up progress bar at the top of the app"
+                content={null}
+            />
             {/* Takeaways Section! */}
             <MajorSectionTitle
                 title="Takeaways"
