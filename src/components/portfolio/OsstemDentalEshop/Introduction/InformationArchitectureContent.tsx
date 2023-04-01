@@ -1,6 +1,5 @@
 import { Box, Stack } from '@mui/material';
-
-import Chart2 from '../../../../resources/OsstemDentalEshop/Chart2.jpg';
+import Chart2 from '@resources/OsstemDentalEshop/Chart2.jpg';
 
 export const InformationArchitectureContent = () => {
     return (

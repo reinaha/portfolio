@@ -50,12 +50,11 @@ export const PortfolioLayout = ({
                 sx={{ marginLeft: '-1em', marginRight: '-1em' }}
             />
             <Box paddingBottom={1}>
-                <Box
+                <Stack
+                    direction={{ md: 'row', sm: 'column' }}
                     sx={{
-                        display: 'flex',
                         marginTop: 0.5,
                         marginBottom: 1,
-                        alignItems: 'flex-start',
                     }}
                 >
                     <PortfolioMetaInfo icon={CommercialTypeIcon} label={projectType} />
@@ -66,7 +65,7 @@ export const PortfolioLayout = ({
                             endDate
                         )}`}
                     />
-                </Box>
+                </Stack>
                 <Typography variant="h1">{title}</Typography>
                 {subTitle ? (
                     <Typography variant="subtitle1" sx={{ marginTop: '20px' }}>

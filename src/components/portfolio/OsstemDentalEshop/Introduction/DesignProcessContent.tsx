@@ -1,6 +1,5 @@
 import { Box, Stack, Typography } from '@mui/material';
-
-import Chart1 from '../../../../resources/OsstemDentalEshop/Chart1.jpg';
+import Chart1 from '@resources/OsstemDentalEshop/Chart1.jpg';
 
 export const DesignProcessContent = () => {
     return (

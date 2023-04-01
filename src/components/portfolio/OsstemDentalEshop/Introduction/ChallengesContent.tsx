@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 
-import { NumberListText } from '../../listText';
+import { NumberListText } from '../../../listText';
 
 export const ChallengesContent = () => {
     return (

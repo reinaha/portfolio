@@ -1,6 +1,6 @@
 import { Chip, Stack, Typography } from '@mui/material';
 
-import { ArrowPointedText, NumberListText } from '../../listText';
+import { ArrowPointedText, NumberListText } from '../../../listText';
 
 export const GoalsContent = () => {
     return (

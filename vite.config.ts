@@ -9,6 +9,12 @@ export default defineConfig(({ command, mode }) => {
             build: {
                 outDir: './build',
             },
+            resolve: {
+                alias: [
+                    { find: '@resources', replacement: './resources/' },
+                    { find: '@components', replacement: './src/components/' },
+                ],
+            },
         };
     }
 
@@ -17,6 +23,12 @@ export default defineConfig(({ command, mode }) => {
         base: '/portfolio/',
         build: {
             outDir: './build',
+        },
+        resolve: {
+            alias: [
+                { find: '@resources', replacement: './resources/' },
+                { find: '@components', replacement: './src/components/' },
+            ],
         },
     };
 });

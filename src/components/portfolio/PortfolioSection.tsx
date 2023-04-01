@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { ReactNode } from 'react';
 
-type PortfolioSectionProps = {
+export type PortfolioSectionProps = {
     title?: string;
     content?: ReactNode;
 };

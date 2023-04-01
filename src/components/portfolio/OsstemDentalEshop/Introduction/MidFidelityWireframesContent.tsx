@@ -1,6 +1,5 @@
 import { Box, Stack } from '@mui/material';
-
-import Wireframe from '../../../../resources/OsstemDentalEshop/Wireframe.jpg';
+import Wireframe from '@resources/OsstemDentalEshop/Wireframe.jpg';
 
 export const MidFidelityWireframesContent = () => {
     return (

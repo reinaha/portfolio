@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 
-type MajorSectionTitleProps = {
+export type MajorSectionTitleProps = {
     title: string;
     subTitle: React.ReactNode;
 };
