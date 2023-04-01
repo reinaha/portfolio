@@ -41,7 +41,19 @@ export const lightTheme = createTheme({
         h2: {
             fontWeight: 700,
             fontStyle: 'normal',
-            fontSize: '40px',
+            fontSize: '38px',
+            wordBreak: 'break-word',
+        },
+        h3: {
+            fontWeight: 700,
+            fontStyle: 'normal',
+            fontSize: '32px',
+            wordBreak: 'break-word',
+        },
+        h4: {
+            fontWeight: 600,
+            fontStyle: 'normal',
+            fontSize: '28px',
             wordBreak: 'break-word',
         },
         h5: {

@@ -1,6 +1,6 @@
 import Cover2 from '@resources/OsstemDentalEshop/Cover2.jpg';
 
-import { PortfolioLayout, PortfolioSection } from '../../components/portfolio';
+import { PortfolioLayout } from '../../components/portfolio';
 import {
     StyleGuideMajorSection,
     TakeawaysMajorSection,
