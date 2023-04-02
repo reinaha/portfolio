@@ -1,4 +1,7 @@
-import { Container, Stack, Typography } from '@mui/material';
+import { Container, Fade, Stack, Typography } from '@mui/material';
+import { useRef } from 'react';
+
+import { useIsInViewport } from '@/hooks/Viewport';
 
 export type MajorSectionTitleProps = {
     title: string;
@@ -6,14 +9,20 @@ export type MajorSectionTitleProps = {
 };
 
 export const MajorSectionTitle = ({ title, subTitle }: MajorSectionTitleProps) => {
+    const componentRef = useRef(null);
+
+    const isInViewPort = useIsInViewport(componentRef);
+
     return (
         <Stack paddingTop={5} paddingBottom={5} sx={{ backgroundColor: '#FAFAFA' }}>
-            <Container>
-                {subTitle}
-                <Typography variant="h1" paddingBottom={1.5}>
-                    {title}
-                </Typography>
-            </Container>
+            <Fade in={isInViewPort} timeout={2000}>
+                <Container>
+                    {subTitle}
+                    <Typography variant="h1" paddingBottom={1.5} ref={componentRef}>
+                        {title}
+                    </Typography>
+                </Container>
+            </Fade>
         </Stack>
     );
 };

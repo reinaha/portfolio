@@ -1,6 +1,8 @@
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Fade, Typography } from '@mui/material';
 import { Variant } from '@mui/material/styles/createTypography';
-import { ReactNode } from 'react';
+import { ReactNode, useRef } from 'react';
+
+import { useIsInViewport } from '@/hooks/Viewport';
 
 export type PortfolioSectionProps = {
     title?: string;
@@ -13,14 +15,22 @@ export const PortfolioSection = ({
     content,
     headerVariant = 'h3',
 }: PortfolioSectionProps) => {
+    const componentRef = useRef(null);
+
+    const isInViewPort = useIsInViewport(componentRef);
+
     return (
         <Box paddingBottom={3}>
             <Container>
-                <Typography variant={headerVariant} paddingBottom={1.5}>
-                    {title}
-                </Typography>
+                <Fade in={isInViewPort} timeout={2000}>
+                    <Typography variant={headerVariant} paddingBottom={1.5}>
+                        {title}
+                    </Typography>
+                </Fade>
             </Container>
-            {content}
+            <Fade in={isInViewPort} timeout={3000}>
+                <Box ref={componentRef}>{content}</Box>
+            </Fade>
         </Box>
     );
 };

@@ -1,5 +1,7 @@
-import { Box, Chip, Container, Typography } from '@mui/material';
-import { ReactNode } from 'react';
+import { Box, Chip, Container, Fade, Typography } from '@mui/material';
+import { ReactNode, useRef } from 'react';
+
+import { useIsInViewport } from '@/hooks/Viewport';
 
 export type PortfolioNumberedSectionProps = {
     title?: string;
@@ -16,30 +18,37 @@ export const PortfolioNumberedSection = ({
     numberColor,
     backgroundColor,
 }: PortfolioNumberedSectionProps) => {
+    const componentRef = useRef(null);
+
+    const isInViewPort = useIsInViewport(componentRef);
+
     return (
         <Box paddingBottom={2}>
             <Container>
-                <Box paddingBottom={1.5} sx={{ display: 'flex' }}>
-                    <Chip
-                        label={number}
-                        sx={{
-                            bgcolor: `${backgroundColor}`,
-                            color: `${numberColor}`,
-                            fontSize: '26px',
-                            fontWeight: 500,
-                            marginRight: 0.8,
-                            height: '2em',
-                            width: '2em',
-                            borderRadius: '50%',
-                        }}
-                    />
-                    <Typography variant="h2" paddingTop={0.3} paddingBottom={1.5}>
-                        {title}
-                    </Typography>
-                </Box>
+                <Fade in={isInViewPort} timeout={2000}>
+                    <Box paddingBottom={1.5} sx={{ display: 'flex' }}>
+                        <Chip
+                            label={number}
+                            sx={{
+                                bgcolor: `${backgroundColor}`,
+                                color: `${numberColor}`,
+                                fontSize: '26px',
+                                fontWeight: 500,
+                                marginRight: 0.8,
+                                height: '2em',
+                                width: '2em',
+                                borderRadius: '50%',
+                            }}
+                        />
+                        <Typography variant="h2" paddingTop={0.3} paddingBottom={1.5}>
+                            {title}
+                        </Typography>
+                    </Box>
+                </Fade>
             </Container>
-
-            {content}
+            <Fade in={isInViewPort} timeout={2500}>
+                <Box ref={componentRef}>{content}</Box>
+            </Fade>
         </Box>
     );
 };
