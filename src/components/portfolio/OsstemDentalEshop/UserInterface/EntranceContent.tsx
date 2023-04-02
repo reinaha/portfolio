@@ -6,12 +6,13 @@ import SignupJourney from '@resources/OsstemDentalEshop/SignupJourney.jpg';
 
 import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
 
+import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const EntranceContent = () => {
     return (
         <Stack spacing={1.4}>
-            <Box component="img" alt="Cover" src={EntranceMain} marginBottom={1.5} />
+            <PortfolioFullWidthImage image={EntranceMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Sign up journey"
                 content={<SignUpJourneyContent />}

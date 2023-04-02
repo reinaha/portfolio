@@ -1,6 +1,6 @@
-import { Box } from '@mui/material';
 import UISectionCover from '@resources/OsstemDentalEshop/UISectionCover.jpg';
 
+import { PortfolioFullWidthImage } from '../PortfolioFullWidthImage';
 import { PortfolioMajorSection } from '../PortfolioMajorSection';
 import { OsstemApplicationSubtitle } from './OsstemApplicationSubtitle';
 import {
@@ -8,8 +8,8 @@ import {
     EntranceContent,
     HomeContent,
     MessageContent,
-} from './UserIntrerface';
-import { ProductContent } from './UserIntrerface/ProductContent';
+} from './UserInterface';
+import { ProductContent } from './UserInterface/ProductContent';
 
 export const UserInterfaceMajorSection = () => {
     return (
@@ -26,10 +26,8 @@ export const UserInterfaceMajorSection = () => {
                 { title: 'Message', content: <MessageContent /> },
             ]}
             midComponents={
-                <Box
-                    component="img"
-                    alt="Cover"
-                    src={UISectionCover}
+                <PortfolioFullWidthImage
+                    image={UISectionCover}
                     paddingBottom={2}
                     sx={{ marginTop: '-0.1em !important' }}
                 />

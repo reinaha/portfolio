@@ -1,11 +1,6 @@
-import { Box, Stack } from '@mui/material';
-
 import Components from '../../../../../resources/OsstemDentalEshop/Components.jpg';
+import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
 
 export const ComponentsAndElementsContent = () => {
-    return (
-        <Stack spacing={1.4}>
-            <Box component="img" alt="Cover" src={Components} />
-        </Stack>
-    );
+    return <PortfolioFullWidthImage image={Components} />;
 };

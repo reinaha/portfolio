@@ -7,12 +7,13 @@ import ProductSubcategory from '@resources/OsstemDentalEshop/ProductSubcategory.
 
 import { JourneyContainer, PortfolioContainer } from '@/components';
 
+import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const ProductContent = () => {
     return (
         <Stack spacing={1.4}>
-            <Box component="img" alt="Cover" src={ProductMain} marginBottom={1.5} />
+            <PortfolioFullWidthImage image={ProductMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Product journey"
                 content={<ProductJourneyContent />}

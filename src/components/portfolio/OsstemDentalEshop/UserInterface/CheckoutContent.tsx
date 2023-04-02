@@ -6,12 +6,13 @@ import CheckoutReduceError from '@resources/OsstemDentalEshop/CheckoutReduceErro
 
 import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
 
+import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const CheckoutContent = () => {
     return (
         <Stack spacing={1.4}>
-            <Box component="img" alt="Cover" src={CheckoutMain} marginBottom={1.5} />
+            <PortfolioFullWidthImage image={CheckoutMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Checkout journey"
                 content={<CheckoutJourneyContent />}

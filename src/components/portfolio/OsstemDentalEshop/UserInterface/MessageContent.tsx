@@ -5,12 +5,13 @@ import MessageSupport from '@resources/OsstemDentalEshop/MessageSupport.jpg';
 
 import { JourneyContainer, PortfolioContainer } from '@/components';
 
+import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const MessageContent = () => {
     return (
         <Stack spacing={1.4}>
-            <Box component="img" alt="Cover" src={MessageMain} marginBottom={1.5} />
+            <PortfolioFullWidthImage image={MessageMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Message journey"
                 content={<MessageJourneyContent />}

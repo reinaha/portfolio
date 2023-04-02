@@ -8,12 +8,13 @@ import HomeSubcategories from '@resources/OsstemDentalEshop/HomeSubcategories.jp
 
 import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
 
+import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const HomeContent = () => {
     return (
         <Stack spacing={1.4}>
-            <Box component="img" alt="Cover" src={HomeMain} marginBottom={1.5} />
+            <PortfolioFullWidthImage image={HomeMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Home journey"
                 content={<HomeJourneyContent />}
