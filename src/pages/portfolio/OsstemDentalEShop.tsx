@@ -22,8 +22,8 @@ export const OsstemDentalEShop = () => {
                     startDate: new Date(2022, 2),
                     endDate: new Date(2022, 5),
                 },
+                portfolioDetailCardInfos: OsstemDentalEShopCardInfo,
             }}
-            portfolioDetailCardInfos={OsstemDentalEShopCardInfo}
         >
             <IntroductionMajorSection />
             <StyleGuideMajorSection />
