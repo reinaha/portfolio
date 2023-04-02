@@ -10,10 +10,10 @@ export const ArrowPointedText = ({ text }: ArrowPointedTextProps) => {
         <Box sx={{ display: 'flex' }}>
             <ArrowForwardIcon
                 fontSize="small"
-                sx={{ marginTop: '0.25em', marginRight: 1.5 }}
+                sx={{ marginTop: '0.25em', marginRight: 1.1 }}
             />
             {Array.isArray(text) ? (
-                <Stack spacing={1.4}>
+                <Stack spacing={0.5}>
                     {text.map((t, index) => (
                         <Typography key={index}>{t}</Typography>
                     ))}

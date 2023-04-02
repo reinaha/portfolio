@@ -5,6 +5,8 @@ import ProductMain from '@resources/OsstemDentalEshop/ProductMain.jpg';
 import ProductOptionTab from '@resources/OsstemDentalEshop/ProductOptionTab.jpg';
 import ProductSubcategory from '@resources/OsstemDentalEshop/ProductSubcategory.jpg';
 
+import { JourneyContainer, PortfolioContainer } from '@/components';
+
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const ProductContent = () => {
@@ -37,7 +39,7 @@ export const ProductContent = () => {
 
 const ProductJourneyContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <JourneyContainer image={ProductJourney}>
             <Typography>
                 To make it easy for users to find products among a large number of
                 options, we made a significant effort to keep the overall design as simple
@@ -45,14 +47,13 @@ const ProductJourneyContent = () => {
                 bold, orange color for the category section to make it stand out and
                 easier for users to navigate.
             </Typography>
-            <Box component="img" alt="Cover" src={ProductJourney} />
-        </Stack>
+        </JourneyContainer>
     );
 };
 
 const ProductSubcategoryContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 As our product selection grew, it became difficult for users to easily
                 find the products they were looking for. To address this issue, we
@@ -68,13 +69,13 @@ const ProductSubcategoryContent = () => {
                 to navigate directly to it.
             </Typography>
             <Box component="img" alt="Cover" src={ProductSubcategory} />
-        </Stack>
+        </PortfolioContainer>
     );
 };
 
 const ProductOptionContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 The biggest challenge in designing this app was figuring out how to
                 showcase a large number of products in a simple and intuitive way. With
@@ -92,13 +93,13 @@ const ProductOptionContent = () => {
                 button that takes users to the category page when clicked.
             </Typography>
             <Box component="img" alt="Cover" src={ProductOptionTab} />
-        </Stack>
+        </PortfolioContainer>
     );
 };
 
 const ProductDescriptionButtonContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 Due to customer feedback that they wanted to see all product categories at
                 once, despite having a large number of products, we added subcategories
@@ -106,6 +107,6 @@ const ProductDescriptionButtonContent = () => {
                 subcategories when clicked.
             </Typography>
             <Box component="img" alt="Cover" src={ProductDescriptionButton} />
-        </Stack>
+        </PortfolioContainer>
     );
 };

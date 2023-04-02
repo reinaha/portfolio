@@ -4,6 +4,8 @@ import CheckoutJourney from '@resources/OsstemDentalEshop/CheckoutJourney.jpg';
 import CheckoutMain from '@resources/OsstemDentalEshop/CheckoutMain.jpg';
 import CheckoutReduceError from '@resources/OsstemDentalEshop/CheckoutReduceError.jpg';
 
+import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
+
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const CheckoutContent = () => {
@@ -31,7 +33,7 @@ export const CheckoutContent = () => {
 
 const CheckoutJourneyContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <JourneyContainer image={CheckoutJourney}>
             <Typography>
                 To encourage more purchases from users, it was important to make the
                 checkout process as easy as possible. We added quantity and
@@ -45,14 +47,13 @@ const CheckoutJourneyContent = () => {
                 require users to check their order details again before finalizing the
                 purchase.
             </Typography>
-            <Box component="img" alt="Cover" src={CheckoutJourney} />
-        </Stack>
+        </JourneyContainer>
     );
 };
 
 const CheckoutFatigueContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 To ensure that users do not feel overwhelmed during the checkout process,
                 which consists of three stages - &lsquo;My cart&rsquo;, &lsquo;Payment &
@@ -66,13 +67,13 @@ const CheckoutFatigueContent = () => {
                 them navigate the checkout process smoothly.
             </Typography>
             <Box component="img" alt="Cover" src={CheckoutFatigue} />
-        </Stack>
+        </PortfolioContainer>
     );
 };
 
 const CheckoutReduceErrorContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 One of the biggest concerns we had during product ordering was that many
                 customers often select the wrong quantity of products. Sometimes they use
@@ -85,6 +86,6 @@ const CheckoutReduceErrorContent = () => {
                 double-check their input and avoid mistakes.
             </Typography>
             <Box component="img" alt="Cover" src={CheckoutReduceError} />
-        </Stack>
+        </PortfolioContainer>
     );
 };

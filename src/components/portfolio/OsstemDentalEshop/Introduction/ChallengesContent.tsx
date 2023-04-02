@@ -1,10 +1,10 @@
-import { Stack } from '@mui/material';
+import { PortfolioContainer } from '@/components';
 
 import { NumberListText } from '../../../listText';
 
 export const ChallengesContent = () => {
     return (
-        <Stack spacing={1.4} alignItems="flex-start">
+        <PortfolioContainer>
             <NumberListText
                 number={1}
                 text="Due to the large quantity of products, categorization was the most important aspect of this app. 
@@ -28,6 +28,6 @@ export const ChallengesContent = () => {
                 numberColor="#B26205"
                 backgroundColor="#FFF9E6"
             />
-        </Stack>
+        </PortfolioContainer>
     );
 };

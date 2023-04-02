@@ -1,4 +1,4 @@
-import { Container, CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Outlet } from 'react-router-dom';
 
 import { LayoutProps } from '../../models';
@@ -9,16 +9,7 @@ export const PortfolioLayout = ({ theme }: LayoutProps) => {
         <ThemeProvider theme={theme}>
             <CssBaseline enableColorScheme />
             <TopNavBar />
-            <Container
-                disableGutters
-                sx={{
-                    paddingBottom: '3em',
-                    paddingLeft: '1em',
-                    paddingRight: '1em',
-                }}
-            >
-                <Outlet />
-            </Container>
+            <Outlet />
         </ThemeProvider>
     );
 };

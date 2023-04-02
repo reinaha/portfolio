@@ -13,13 +13,15 @@ export const OsstemDentalEShop = () => {
     return (
         <PortfolioLayout
             coverImg={Cover2}
-            title="Osstem dental e-shop"
-            subTitle="Find the best deal on dental tools at your fingertips."
-            portfolioMetaData={{
-                projectType: 'Commercial',
-                applicationType: 'Application',
-                startDate: new Date(2022, 2),
-                endDate: new Date(2022, 5),
+            headerProps={{
+                title: 'Osstem dental e-shop',
+                subTitle: 'Find the best deal on dental tools at your fingertips.',
+                portfolioMetaData: {
+                    projectType: 'Commercial',
+                    applicationType: 'Application',
+                    startDate: new Date(2022, 2),
+                    endDate: new Date(2022, 5),
+                },
             }}
             portfolioDetailCardInfos={OsstemDentalEShopCardInfo}
         >

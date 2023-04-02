@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import { Variant } from '@mui/material/styles/createTypography';
 import { ReactNode } from 'react';
 
@@ -14,10 +14,12 @@ export const PortfolioSection = ({
     headerVariant = 'h3',
 }: PortfolioSectionProps) => {
     return (
-        <Box paddingBottom={2}>
-            <Typography variant={headerVariant} paddingBottom={1.5}>
-                {title}
-            </Typography>
+        <Box paddingBottom={3}>
+            <Container>
+                <Typography variant={headerVariant} paddingBottom={1.5}>
+                    {title}
+                </Typography>
+            </Container>
             {content}
         </Box>
     );

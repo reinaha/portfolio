@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Container, Stack, Typography } from '@mui/material';
 
 export type MajorSectionTitleProps = {
     title: string;
@@ -7,11 +7,13 @@ export type MajorSectionTitleProps = {
 
 export const MajorSectionTitle = ({ title, subTitle }: MajorSectionTitleProps) => {
     return (
-        <>
-            {subTitle}
-            <Typography variant="h1" paddingBottom={1.5}>
-                {title}
-            </Typography>
-        </>
+        <Stack paddingTop={5} paddingBottom={5} sx={{ backgroundColor: '#FAFAFA' }}>
+            <Container>
+                {subTitle}
+                <Typography variant="h1" paddingBottom={1.5}>
+                    {title}
+                </Typography>
+            </Container>
+        </Stack>
     );
 };

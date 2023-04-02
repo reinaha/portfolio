@@ -1,11 +1,13 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+
+import { PortfolioContainer } from '@/components';
 
 import Retrospective1 from '../../../../../resources/OsstemDentalEshop/Retrospective1.jpg';
 import Retrospective2 from '../../../../../resources/OsstemDentalEshop/Retrospective2.jpg';
 
 export const RetrospectiveContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography variant="h5">
                 Sign-up progress bar with poor intuitiveness
             </Typography>
@@ -35,6 +37,6 @@ export const RetrospectiveContent = () => {
                 src={Retrospective2}
                 sx={{ paddingTop: '1em', paddingBottom: '1em' }}
             />
-        </Stack>
+        </PortfolioContainer>
     );
 };

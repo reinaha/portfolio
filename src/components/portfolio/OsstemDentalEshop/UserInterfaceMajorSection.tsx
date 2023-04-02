@@ -26,7 +26,13 @@ export const UserInterfaceMajorSection = () => {
                 { title: 'Message', content: <MessageContent /> },
             ]}
             midComponents={
-                <Box component="img" alt="Cover" src={UISectionCover} paddingBottom={2} />
+                <Box
+                    component="img"
+                    alt="Cover"
+                    src={UISectionCover}
+                    paddingBottom={2}
+                    sx={{ marginTop: '-0.1em !important' }}
+                />
             }
             numbered
             numberOptions={{ numberColor: '#FB4200', backgroundColor: '#FB42000d' }}

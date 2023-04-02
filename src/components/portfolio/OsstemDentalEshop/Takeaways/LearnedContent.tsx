@@ -1,10 +1,9 @@
-import { Stack } from '@mui/material';
-
 import { NumberListText } from '../../../listText';
+import { PortfolioContainer } from '../../PortfolioContainer';
 
 export const LearnedContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <NumberListText
                 number={1}
                 textTitle="The importance of understanding target needs and behavior patterns"
@@ -53,6 +52,6 @@ export const LearnedContent = () => {
                 backgroundColor="#FFF9E6"
                 listSpacing={1.4}
             />
-        </Stack>
+        </PortfolioContainer>
     );
 };

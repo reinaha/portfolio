@@ -1,10 +1,12 @@
-import { Chip, Stack, Typography } from '@mui/material';
+import { Chip, Typography } from '@mui/material';
+
+import { PortfolioContainer } from '@/components';
 
 import { ArrowPointedText, NumberListText } from '../../../listText';
 
 export const GoalsContent = () => {
     return (
-        <Stack spacing={1.4} alignItems="flex-start">
+        <PortfolioContainer alignItems="flex-start">
             <Chip
                 label="Main Goal"
                 sx={{
@@ -24,6 +26,7 @@ export const GoalsContent = () => {
                 text="By achieving this, the company aimed to establish a stable and reliable source
                     of income that would not be affected by environmental changes."
             />
+            <br />
             <Chip
                 label="Sub Goal"
                 sx={{
@@ -65,6 +68,6 @@ export const GoalsContent = () => {
                     confirming orders before making payments to reduce the frequency of incorrect orders.',
                 ]}
             />
-        </Stack>
+        </PortfolioContainer>
     );
 };

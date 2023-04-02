@@ -1,8 +1,10 @@
-import { Stack, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
+
+import { PortfolioContainer } from '@/components';
 
 export const IntroductionContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 Osstem New Zealand aimed to develop an e-commerce application for the
                 purpose of retailing dental products, including dental implants, tools,
@@ -23,6 +25,6 @@ export const IntroductionContent = () => {
                 representatives, as well as revenue volatility being highly influenced by
                 environmental changes such as the COVID-19 pandemic.
             </Typography>
-        </Stack>
+        </PortfolioContainer>
     );
 };

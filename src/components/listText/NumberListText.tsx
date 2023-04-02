@@ -26,7 +26,7 @@ export const NumberListText = ({
                     color: `${numberColor}`,
                     fontSize: '18px',
                     fontWeight: 500,
-                    marginRight: 0.955,
+                    marginRight: 0.6,
                 }}
             />
             {Array.isArray(text) ? (

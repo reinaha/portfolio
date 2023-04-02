@@ -6,6 +6,8 @@ import HomeJourney from '@resources/OsstemDentalEshop/HomeJourney.jpg';
 import HomeMain from '@resources/OsstemDentalEshop/HomeMain.jpg';
 import HomeSubcategories from '@resources/OsstemDentalEshop/HomeSubcategories.jpg';
 
+import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
+
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const HomeContent = () => {
@@ -43,7 +45,7 @@ export const HomeContent = () => {
 
 const HomeJourneyContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <JourneyContainer image={HomeJourney}>
             <Typography>
                 When designing the home page, the most important consideration was to make
                 it easy for customers to search for products and quickly find categories.
@@ -52,14 +54,13 @@ const HomeJourneyContent = () => {
                 as many discounted items as possible, so we added a list of sale-related
                 items at the bottom.
             </Typography>
-            <Box component="img" alt="Cover" src={HomeJourney} />
-        </Stack>
+        </JourneyContainer>
     );
 };
 
 const ClinicChangeContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 To accommodate the fact that our target customers, dental professionals,
                 often manage multiple clinics rather than just one, we have placed the
@@ -72,13 +73,13 @@ const ClinicChangeContent = () => {
                 or delete clinics through &ldquo;edit detail&rdquo; option.
             </Typography>
             <Box component="img" alt="Cover" src={HomeClinicChange} />
-        </Stack>
+        </PortfolioContainer>
     );
 };
 
 const CategoryMenuContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 The biggest challenge in designing this app was figuring out how to
                 showcase a large number of products in a simple and intuitive way. With
@@ -96,13 +97,13 @@ const CategoryMenuContent = () => {
                 button that takes users to the category page when clicked.
             </Typography>
             <Box component="img" alt="Cover" src={HomeCategoryMenu} />
-        </Stack>
+        </PortfolioContainer>
     );
 };
 
 const SubcategoriesContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 Due to customer feedback that they wanted to see all product categories at
                 once, despite having a large number of products, we added subcategories
@@ -110,13 +111,13 @@ const SubcategoriesContent = () => {
                 subcategories when clicked.
             </Typography>
             <Box component="img" alt="Cover" src={HomeSubcategories} />
-        </Stack>
+        </PortfolioContainer>
     );
 };
 
 const ReducingPhoneEnquiriesContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 To address one of the most frequently asked questions by existing
                 customers, we placed information about the product delivery period in the
@@ -128,6 +129,6 @@ const ReducingPhoneEnquiriesContent = () => {
                 but also the delivery period of the products they ordered through our app.
             </Typography>
             <Box component="img" alt="Cover" src={HomeDeliveryStatus} />
-        </Stack>
+        </PortfolioContainer>
     );
 };

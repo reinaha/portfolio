@@ -35,19 +35,20 @@ export const lightTheme = createTheme({
         h1: {
             fontWeight: 700,
             fontStyle: 'normal',
-            fontSize: '60px',
+            fontSize: '50px',
+            letterSpacing: '-1.5px',
             wordBreak: 'break-word',
         },
         h2: {
             fontWeight: 700,
             fontStyle: 'normal',
-            fontSize: '38px',
+            fontSize: '40px',
             wordBreak: 'break-word',
         },
         h3: {
             fontWeight: 700,
             fontStyle: 'normal',
-            fontSize: '32px',
+            fontSize: '30px',
             wordBreak: 'break-word',
         },
         h4: {
@@ -59,13 +60,13 @@ export const lightTheme = createTheme({
         h5: {
             fontWeight: 600,
             fontStyle: 'normal',
-            fontSize: '24px',
+            fontSize: '22px',
             wordBreak: 'break-word',
         },
         subtitle1: {
             fontWeight: 400,
             fontStyle: 'normal',
-            fontSize: '24px',
+            fontSize: '22px',
             wordBreak: 'break-word',
         },
         body1: {
@@ -77,7 +78,7 @@ export const lightTheme = createTheme({
         body2: {
             fontWeight: 400,
             fontStyle: 'normal',
-            fontSize: '20px',
+            fontSize: '18px',
             wordBreak: 'break-word',
         },
     },

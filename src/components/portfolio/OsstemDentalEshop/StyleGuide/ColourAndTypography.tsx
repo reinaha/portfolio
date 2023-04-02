@@ -1,10 +1,11 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+import StyleGuide from '@resources/OsstemDentalEshop/StyleGuide.jpg';
 
-import StyleGuide from '../../../../../resources/OsstemDentalEshop/StyleGuide.jpg';
+import { PortfolioContainer } from '@/components';
 
 export const ColourAndTypographyContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 The main color of the app is the company&apos;s representative color,
                 orange, and the light orange was chosen as the sub-color.
@@ -22,6 +23,6 @@ export const ColourAndTypographyContent = () => {
                 to its crispness, neatness and professionalism.
             </Typography>
             <Box component="img" alt="Cover" src={StyleGuide} />
-        </Stack>
+        </PortfolioContainer>
     );
 };

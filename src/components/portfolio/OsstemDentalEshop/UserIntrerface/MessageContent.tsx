@@ -3,6 +3,8 @@ import MessageJourney from '@resources/OsstemDentalEshop/MessageJourney.jpg';
 import MessageMain from '@resources/OsstemDentalEshop/MessageMain.jpg';
 import MessageSupport from '@resources/OsstemDentalEshop/MessageSupport.jpg';
 
+import { JourneyContainer, PortfolioContainer } from '@/components';
+
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const MessageContent = () => {
@@ -25,7 +27,7 @@ export const MessageContent = () => {
 
 const MessageJourneyContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <JourneyContainer image={MessageJourney}>
             <Typography>
                 To encourage customers to inquire through the app rather than phone calls,
                 we adopted a conversational design that makes users feel like they are
@@ -35,14 +37,13 @@ const MessageJourneyContent = () => {
                 In order to prevent redundant questions, we placed the message history
                 list at the beginning of the message page.
             </Typography>
-            <Box component="img" alt="Cover" src={MessageJourney} />
-        </Stack>
+        </JourneyContainer>
     );
 };
 
 const MessageSupportContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <PortfolioContainer>
             <Typography>
                 To respond to user inquiries more quickly from the company&apos;s
                 perspective, it was important to categorize similar questions. To achieve
@@ -50,6 +51,6 @@ const MessageSupportContent = () => {
                 inquiry when creating a new message.
             </Typography>
             <Box component="img" alt="Cover" src={MessageSupport} />
-        </Stack>
+        </PortfolioContainer>
     );
 };
