@@ -10,7 +10,7 @@ import { PortfolioSection } from '../../PortfolioSection';
 
 export const MessageContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <Stack spacing={4}>
             <PortfolioFullWidthImage image={MessageMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Message journey"

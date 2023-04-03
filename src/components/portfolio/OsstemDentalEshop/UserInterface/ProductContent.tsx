@@ -12,7 +12,7 @@ import { PortfolioSection } from '../../PortfolioSection';
 
 export const ProductContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <Stack spacing={4}>
             <PortfolioFullWidthImage image={ProductMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Product journey"

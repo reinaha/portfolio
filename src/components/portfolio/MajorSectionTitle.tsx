@@ -14,11 +14,20 @@ export const MajorSectionTitle = ({ title, subTitle }: MajorSectionTitleProps) =
     const isInViewPort = useIsInViewport(componentRef);
 
     return (
-        <Stack paddingTop={5} paddingBottom={5} sx={{ backgroundColor: '#FAFAFA' }}>
+        <Stack
+            paddingTop={'100px'}
+            paddingBottom={'100px'}
+            sx={{ backgroundColor: 'rgb(233,233,233)' }}
+        >
             <Fade in={isInViewPort} timeout={2000}>
                 <Container>
                     {subTitle}
-                    <Typography variant="h1" paddingBottom={1.5} ref={componentRef}>
+                    <Typography
+                        variant="h1"
+                        paddingBottom={1.5}
+                        color="black"
+                        ref={componentRef}
+                    >
                         {title}
                     </Typography>
                 </Container>

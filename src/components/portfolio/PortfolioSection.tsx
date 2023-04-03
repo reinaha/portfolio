@@ -1,36 +1,60 @@
-import { Box, Container, Fade, Typography } from '@mui/material';
+import {
+    Box,
+    BoxProps,
+    Container,
+    Fade,
+    Slide,
+    Typography,
+    useScrollTrigger,
+} from '@mui/material';
 import { Variant } from '@mui/material/styles/createTypography';
-import { ReactNode, useRef } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 
 import { useIsInViewport } from '@/hooks/Viewport';
 
-export type PortfolioSectionProps = {
+export interface PortfolioSectionProps extends BoxProps {
     title?: string;
     content?: ReactNode;
     headerVariant?: Variant;
-};
+}
 
 export const PortfolioSection = ({
     title,
     content,
     headerVariant = 'h3',
+    ...props
 }: PortfolioSectionProps) => {
-    const componentRef = useRef(null);
+    const [visible, setVisible] = useState<boolean>(false);
+    const containerRef = useRef(null);
 
-    const isInViewPort = useIsInViewport(componentRef);
+    const isInViewPort = useIsInViewport(containerRef);
+
+    const scrollTrigger = useScrollTrigger({
+        disableHysteresis: true,
+        threshold: 800,
+    });
+
+    useEffect(() => {
+        if (!visible && isInViewPort) {
+            setVisible(true);
+        }
+    }, [visible, isInViewPort]);
 
     return (
-        <Box paddingBottom={3}>
-            <Container>
-                <Fade in={isInViewPort} timeout={2000}>
+        <Box ref={containerRef} {...props}>
+            <Slide
+                container={containerRef.current}
+                direction="up"
+                in={visible}
+                easing="cubic-bezier(0, 1, .8, 1)"
+            >
+                <Container>
                     <Typography variant={headerVariant} paddingBottom={1.5}>
                         {title}
                     </Typography>
-                </Fade>
-            </Container>
-            <Fade in={isInViewPort} timeout={3000}>
-                <Box ref={componentRef}>{content}</Box>
-            </Fade>
+                    {content}
+                </Container>
+            </Slide>
         </Box>
     );
 };

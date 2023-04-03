@@ -4,6 +4,7 @@ import HomeClinicChange from '@resources/OsstemDentalEshop/HomeClinicChange.jpg'
 import HomeDeliveryStatus from '@resources/OsstemDentalEshop/HomeDeliveryStatus.jpg';
 import HomeJourney from '@resources/OsstemDentalEshop/HomeJourney.jpg';
 import HomeMain from '@resources/OsstemDentalEshop/HomeMain.jpg';
+import HomeMain2 from '@resources/OsstemDentalEshop/HomeMain2.jpg';
 import HomeSubcategories from '@resources/OsstemDentalEshop/HomeSubcategories.jpg';
 
 import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
@@ -13,8 +14,8 @@ import { PortfolioSection } from '../../PortfolioSection';
 
 export const HomeContent = () => {
     return (
-        <Stack spacing={1.4}>
-            <PortfolioFullWidthImage image={HomeMain} marginBottom={1.5} />
+        <Stack spacing={4}>
+            <PortfolioFullWidthImage image={HomeMain2} marginBottom={3} />
             <PortfolioSection
                 title="Home journey"
                 content={<HomeJourneyContent />}

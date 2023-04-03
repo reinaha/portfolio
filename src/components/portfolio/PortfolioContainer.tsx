@@ -12,7 +12,7 @@ export const PortfolioContainer = ({
 }: PortfolioContainerProps) => {
     return (
         <Container>
-            <Stack spacing={spacing || 1} {...props}>
+            <Stack spacing={spacing || 1.3} {...props}>
                 {children}
             </Stack>
         </Container>

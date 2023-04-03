@@ -11,7 +11,7 @@ import { PortfolioSection } from '../../PortfolioSection';
 
 export const CheckoutContent = () => {
     return (
-        <Stack spacing={1.4}>
+        <Stack spacing={4}>
             <PortfolioFullWidthImage image={CheckoutMain} marginBottom={1.5} />
             <PortfolioSection
                 title="Checkout journey"

@@ -1,4 +1,4 @@
-import { Box, Chip, Container, Fade, Typography } from '@mui/material';
+import { Box, Chip, Container, Fade, Slide, Typography } from '@mui/material';
 import { ReactNode, useRef } from 'react';
 
 import { useIsInViewport } from '@/hooks/Viewport';
@@ -23,10 +23,10 @@ export const PortfolioNumberedSection = ({
     const isInViewPort = useIsInViewport(componentRef);
 
     return (
-        <Box paddingBottom={2}>
+        <Box>
             <Container>
-                <Fade in={isInViewPort} timeout={2000}>
-                    <Box paddingBottom={1.5} sx={{ display: 'flex' }}>
+                <Slide direction="up" in={isInViewPort} timeout={2000}>
+                    <Box paddingBottom={2} sx={{ display: 'flex' }}>
                         <Chip
                             label={number}
                             sx={{
@@ -44,7 +44,7 @@ export const PortfolioNumberedSection = ({
                             {title}
                         </Typography>
                     </Box>
-                </Fade>
+                </Slide>
             </Container>
             <Fade in={isInViewPort} timeout={2500}>
                 <Box ref={componentRef}>{content}</Box>

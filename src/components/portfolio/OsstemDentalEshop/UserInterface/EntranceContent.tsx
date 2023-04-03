@@ -1,5 +1,8 @@
 import { Box, Stack, Typography } from '@mui/material';
+import EntranceJourney from '@resources/OsstemDentalEshop/EntranceJourney.png';
 import EntranceMain from '@resources/OsstemDentalEshop/EntranceMain.jpg';
+import EntranceMain2 from '@resources/OsstemDentalEshop/EntranceMain2.jpg';
+import EntranceMain3 from '@resources/OsstemDentalEshop/EntranceMain3.png';
 import Integration from '@resources/OsstemDentalEshop/Integration.jpg';
 import ProgressBarPositioning from '@resources/OsstemDentalEshop/ProgressBarPositioning.jpg';
 import SignupJourney from '@resources/OsstemDentalEshop/SignupJourney.jpg';
@@ -11,8 +14,8 @@ import { PortfolioSection } from '../../PortfolioSection';
 
 export const EntranceContent = () => {
     return (
-        <Stack spacing={1.4}>
-            <PortfolioFullWidthImage image={EntranceMain} marginBottom={1.5} />
+        <Stack spacing={4}>
+            <PortfolioFullWidthImage image={EntranceMain3} marginBottom={3} />
             <PortfolioSection
                 title="Sign up journey"
                 content={<SignUpJourneyContent />}
@@ -34,12 +37,18 @@ export const EntranceContent = () => {
 
 const SignUpJourneyContent = () => {
     return (
-        <JourneyContainer image={SignupJourney}>
+        <PortfolioContainer>
             <Typography>
                 Each screen delivers one task so that users can only focus on one task at
                 once without any distractions.
             </Typography>
-        </JourneyContainer>
+            <Box
+                component="img"
+                alt="Cover"
+                src={EntranceJourney}
+                sx={{ borderRadius: '8px' }}
+            />
+        </PortfolioContainer>
     );
 };
 

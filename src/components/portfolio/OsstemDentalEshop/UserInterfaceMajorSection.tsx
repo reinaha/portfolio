@@ -1,4 +1,5 @@
 import UISectionCover from '@resources/OsstemDentalEshop/UISectionCover.jpg';
+import UISectionCover2 from '@resources/OsstemDentalEshop/UISectionCover2.png';
 
 import { PortfolioFullWidthImage } from '../PortfolioFullWidthImage';
 import { PortfolioMajorSection } from '../PortfolioMajorSection';
@@ -15,7 +16,7 @@ export const UserInterfaceMajorSection = () => {
     return (
         <PortfolioMajorSection
             sectionTitle={{
-                title: 'UserInterface',
+                title: 'User Interface',
                 subTitle: <OsstemApplicationSubtitle />,
             }}
             portfolioSections={[
@@ -27,9 +28,9 @@ export const UserInterfaceMajorSection = () => {
             ]}
             midComponents={
                 <PortfolioFullWidthImage
-                    image={UISectionCover}
+                    image={UISectionCover2}
                     paddingBottom={2}
-                    sx={{ marginTop: '-0.1em !important' }}
+                    sx={{ marginTop: '-0.1em !important', paddingBottom: 5 }}
                 />
             }
             numbered

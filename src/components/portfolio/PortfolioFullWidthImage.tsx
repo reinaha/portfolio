@@ -15,7 +15,7 @@ export const PortfolioFullWidthImage = ({
 
     const isInViewPort = useIsInViewport(componentRef);
     return (
-        <Fade in={isInViewPort} timeout={3000}>
+        <Fade in={isInViewPort} timeout={2000}>
             <Box
                 width="100%"
                 component="img"
