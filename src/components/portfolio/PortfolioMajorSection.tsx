@@ -1,6 +1,7 @@
 import { Stack } from '@mui/material';
 import { ReactChildren, ReactNode } from 'react';
 
+import { PortfolioFullWidthImage } from '..';
 import { MajorSectionTitle, MajorSectionTitleProps } from './MajorSectionTitle';
 import { PortfolioNumberedSection } from './PortfolioNumberedSection';
 import { PortfolioSection, PortfolioSectionProps } from './PortfolioSection';
@@ -9,6 +10,7 @@ type PortfolioMajorSectionProps = {
     sectionTitle?: MajorSectionTitleProps;
     portfolioSections: PortfolioSectionProps[];
     midComponents?: ReactNode;
+    coverImage?: string;
     numbered?: boolean;
     numberOptions?: {
         numberColor?: string;
@@ -21,20 +23,19 @@ export const PortfolioMajorSection = ({
     sectionTitle,
     portfolioSections,
     midComponents,
+    coverImage,
     numbered = false,
     numberOptions,
     children,
 }: PortfolioMajorSectionProps) => {
     return (
-        <Stack spacing={4}>
-            {sectionTitle ? (
-                <MajorSectionTitle
-                    title={sectionTitle.title}
-                    subTitle={sectionTitle.subTitle}
-                />
-            ) : null}
+        <Stack spacing={25}>
+            {sectionTitle ? <MajorSectionTitle title={sectionTitle.title} /> : null}
+
+            {coverImage ? <PortfolioFullWidthImage image={coverImage} /> : null}
 
             {midComponents ? midComponents : null}
+
             {numbered
                 ? portfolioSections.map((ps, index) => (
                       <PortfolioNumberedSection
@@ -51,7 +52,6 @@ export const PortfolioMajorSection = ({
                           key={index}
                           title={ps.title}
                           content={ps.content}
-                          sx={index === 0 ? { paddingTop: 2 } : {}}
                       />
                   ))}
             {children}

@@ -1,7 +1,7 @@
-import { Container, Stack, StackProps } from '@mui/material';
+import { Stack, StackProps } from '@mui/material';
 import { ReactNode } from 'react';
 
-interface PortfolioContainerProps extends StackProps {
+export interface PortfolioContainerProps extends StackProps {
     children?: ReactNode;
 }
 
@@ -11,10 +11,8 @@ export const PortfolioContainer = ({
     ...props
 }: PortfolioContainerProps) => {
     return (
-        <Container>
-            <Stack spacing={spacing || 1.3} {...props}>
-                {children}
-            </Stack>
-        </Container>
+        <Stack spacing={spacing || 6} {...props}>
+            {children}
+        </Stack>
     );
 };

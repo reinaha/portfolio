@@ -1,12 +1,12 @@
-import { Container } from '@mui/material';
+import Components from '@resources/OsstemDentalEshop/StyleGuide/Components.png';
 
-import Components from '../../../../../resources/OsstemDentalEshop/Components.jpg';
-import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
+import { PortfolioImage } from '../../portfolioBricks';
+import { PortfolioContainer } from '../../PortfolioContainer';
 
 export const ComponentsAndElementsContent = () => {
     return (
-        <Container>
-            <PortfolioFullWidthImage image={Components} sx={{ borderRadius: '8px' }} />
-        </Container>
+        <PortfolioContainer>
+            <PortfolioImage imageSrc={Components} />
+        </PortfolioContainer>
     );
 };

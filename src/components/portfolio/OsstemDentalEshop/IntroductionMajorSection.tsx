@@ -3,9 +3,9 @@ import {
     ChallengesContent,
     DesignProcessContent,
     GoalsContent,
-    InformationArchitectureContent,
     IntroductionContent,
-    MidFidelityWireframesContent,
+    SitemapContent,
+    WireframesContent,
 } from './Introduction';
 
 export const IntroductionMajorSection = () => {
@@ -13,16 +13,17 @@ export const IntroductionMajorSection = () => {
         <PortfolioMajorSection
             portfolioSections={[
                 { title: 'Introduction', content: <IntroductionContent /> },
+                { title: 'Target', content: <IntroductionContent /> },
                 { title: 'Goals', content: <GoalsContent /> },
                 { title: 'Challenges', content: <ChallengesContent /> },
                 { title: 'Design Process', content: <DesignProcessContent /> },
                 {
-                    title: 'Information Architecture',
-                    content: <InformationArchitectureContent />,
+                    title: 'Sitemap',
+                    content: <SitemapContent />,
                 },
                 {
-                    title: 'Mid-Fidelity Wireframes',
-                    content: <MidFidelityWireframesContent />,
+                    title: 'Wireframes',
+                    content: <WireframesContent />,
                 },
             ]}
         />

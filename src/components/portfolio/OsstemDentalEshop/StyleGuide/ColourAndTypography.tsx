@@ -1,7 +1,7 @@
-import { Box, Typography } from '@mui/material';
-import StyleGuide from '@resources/OsstemDentalEshop/StyleGuide.jpg';
+import { Typography } from '@mui/material';
+import ColourTypography from '@resources/OsstemDentalEshop/StyleGuide/ColourTypography.png';
 
-import { PortfolioContainer } from '@/components';
+import { PortfolioContainer, PortfolioImageExtraMargin } from '@/components';
 
 export const ColourAndTypographyContent = () => {
     return (
@@ -22,7 +22,7 @@ export const ColourAndTypographyContent = () => {
                 font, a clean and professional sans-serif font, with consideration given
                 to its crispness, neatness and professionalism.
             </Typography>
-            <Box component="img" alt="Cover" src={StyleGuide} />
+            <PortfolioImageExtraMargin imageSrc={ColourTypography} />
         </PortfolioContainer>
     );
 };

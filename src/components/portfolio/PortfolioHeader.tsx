@@ -1,9 +1,10 @@
-import { Box, Container, Divider, Stack, Typography } from '@mui/material';
+import { Container, Divider, Stack, Typography } from '@mui/material';
 import dayjs from 'dayjs';
 
 import CalendarIcon from '../../icons/CalendarIcon.svg';
 import CommercialTypeIcon from '../../icons/CommercialTypeIcon.svg';
 import MobileProjectIcon from '../../icons/MobileProjectIcon.svg';
+import { PortfolioFullWidthImage } from '..';
 import { PortfolioDetailCardInfo, PortfolioDetailCards } from './PortfolioDetailCards';
 import { PortfolioMetaInfo } from './ProjectMetaInfo';
 
@@ -23,6 +24,7 @@ export type PortfolioHeaderProps = {
     subTitle?: string;
     portfolioMetaData: PortfolioMetaData;
     portfolioDetailCardInfos: PortfolioDetailCardInfo[];
+    coverImg?: string;
 };
 
 export const PortfolioHeader = ({
@@ -30,9 +32,10 @@ export const PortfolioHeader = ({
     subTitle,
     portfolioMetaData: { projectType, applicationType, startDate, endDate },
     portfolioDetailCardInfos,
+    coverImg,
 }: PortfolioHeaderProps) => {
     return (
-        <Box>
+        <Stack>
             <Container sx={{ marginTop: 1, paddingBottom: 1 }}>
                 <Stack spacing={1}>
                     <Stack direction={{ md: 'row', sm: 'column' }}>
@@ -65,6 +68,7 @@ export const PortfolioHeader = ({
                     ) : null}
                 </Stack>
             </Container>
-        </Box>
+            {coverImg ? <PortfolioFullWidthImage image={coverImg} /> : null}
+        </Stack>
     );
 };

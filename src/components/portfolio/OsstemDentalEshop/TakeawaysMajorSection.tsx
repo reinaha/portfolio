@@ -7,7 +7,6 @@ export const TakeawaysMajorSection = () => {
         <PortfolioMajorSection
             sectionTitle={{
                 title: 'Takeaways',
-                subTitle: <OsstemApplicationSubtitle />,
             }}
             portfolioSections={[
                 { title: 'What I Learned', content: <LearnedContent /> },

@@ -9,7 +9,7 @@ import SignupJourney from '@resources/OsstemDentalEshop/SignupJourney.jpg';
 
 import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
 
-import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
+import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const EntranceContent = () => {

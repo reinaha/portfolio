@@ -1,21 +1,17 @@
+import Cover from '@resources/OsstemDentalEshop/StyleGuide/Cover.png';
+
 import { PortfolioMajorSection } from '../PortfolioMajorSection';
-import { OsstemApplicationSubtitle } from './OsstemApplicationSubtitle';
-import {
-    ColourAndTypographyContent,
-    ComponentsAndElementsContent,
-    GridContent,
-} from './StyleGuide';
+import { ColourAndTypographyContent, ComponentsAndElementsContent } from './StyleGuide';
 
 export const StyleGuideMajorSection = () => {
     return (
         <PortfolioMajorSection
             sectionTitle={{
                 title: 'Style Guide',
-                subTitle: <OsstemApplicationSubtitle />,
             }}
+            coverImage={Cover}
             portfolioSections={[
                 { title: 'Colour & Typography', content: <ColourAndTypographyContent /> },
-                { title: 'Grid System', content: <GridContent /> },
                 {
                     title: 'Components & Elements',
                     content: <ComponentsAndElementsContent />,

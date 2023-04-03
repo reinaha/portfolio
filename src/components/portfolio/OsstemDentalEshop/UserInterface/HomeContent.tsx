@@ -9,7 +9,7 @@ import HomeSubcategories from '@resources/OsstemDentalEshop/HomeSubcategories.jp
 
 import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
 
-import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
+import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const HomeContent = () => {

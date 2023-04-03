@@ -1,7 +1,7 @@
-import { Box, Typography } from '@mui/material';
-import Chart1 from '@resources/OsstemDentalEshop/Chart1.jpg';
+import { Typography } from '@mui/material';
+import DesignProcess from '@resources/OsstemDentalEshop/Intro/DesignProcess.png';
 
-import { PortfolioContainer } from '@/components';
+import { PortfolioContainer, PortfolioImageExtraMargin } from '@/components';
 
 export const DesignProcessContent = () => {
     return (
@@ -10,7 +10,7 @@ export const DesignProcessContent = () => {
                 This project spanned over a period of three months from Feb 2022 - May
                 2022
             </Typography>
-            <Box paddingTop={0.5} component="img" alt="Cover" src={Chart1} />
+            <PortfolioImageExtraMargin imageSrc={DesignProcess} />
         </PortfolioContainer>
     );
 };

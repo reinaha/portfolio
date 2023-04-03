@@ -7,7 +7,7 @@ import ProductSubcategory from '@resources/OsstemDentalEshop/ProductSubcategory.
 
 import { JourneyContainer, PortfolioContainer } from '@/components';
 
-import { PortfolioFullWidthImage } from '../../PortfolioFullWidthImage';
+import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
 import { PortfolioSection } from '../../PortfolioSection';
 
 export const ProductContent = () => {
