@@ -14,6 +14,11 @@ export interface PortfolioSectionProps extends StackProps {
     reverseTitleIcon?: boolean;
     titlePadding?: number;
     coverImg?: string;
+    sectionRef?:
+        | ((instance: HTMLDivElement | null) => void)
+        | React.RefObject<HTMLDivElement>
+        | null
+        | undefined;
 }
 
 export const PortfolioSection = ({
@@ -23,19 +28,9 @@ export const PortfolioSection = ({
     reverseTitleIcon = false,
     titlePadding,
     coverImg,
+    sectionRef,
     ...props
 }: PortfolioSectionProps) => {
-    const [visible, setVisible] = useState<boolean>(false);
-    const containerRef = useRef(null);
-
-    const isInViewPort = useIsInViewport(containerRef);
-
-    useEffect(() => {
-        if (!visible && isInViewPort) {
-            setVisible(true);
-        }
-    }, [visible, isInViewPort]);
-
     const containerPadding = 5;
 
     const stackDirection: ResponsiveStyleValue<
@@ -59,13 +54,7 @@ export const PortfolioSection = ({
         : 'flex-start';
 
     return (
-        <Stack ref={containerRef} spacing={25} {...props}>
-            {/* <Slide
-                container={containerRef.current}
-                direction="up"
-                in={visible}
-                easing="cubic-bezier(0, 1, .8, 1)"
-            > */}
+        <Stack spacing={25} {...props}>
             {coverImg ? <PortfolioImageContainer imageSrc={coverImg} /> : null}
             <Box>
                 <Container
@@ -87,7 +76,9 @@ export const PortfolioSection = ({
                                     maxWidth="15%"
                                     sx={{ objectFit: 'none' }}
                                 />
-                                <Typography variant={headerVariant}>{title}</Typography>
+                                <Typography variant={headerVariant} ref={sectionRef}>
+                                    {title}
+                                </Typography>
                             </Stack>
                         </Grid>
                         <Grid item lg={10} md={10} sm={12} xs={12}>
@@ -96,7 +87,6 @@ export const PortfolioSection = ({
                     </Grid>
                 </Container>
             </Box>
-            {/* </Slide> */}
         </Stack>
     );
 };
