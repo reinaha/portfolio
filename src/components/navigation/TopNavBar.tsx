@@ -1,3 +1,4 @@
+import MenuIcon from '@mui/icons-material/Menu';
 import {
     AppBar,
     Box,
@@ -5,13 +6,17 @@ import {
     Container,
     Icon,
     IconButton,
+    Menu,
+    MenuItem,
     Stack,
     Toolbar,
     Typography,
+    useMediaQuery,
     useTheme,
 } from '@mui/material';
 import LogoDark from '@resources/Logos/LogoDark.svg';
 import LogoLight from '@resources/Logos/LogoLight.svg';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const pages = [
@@ -51,7 +56,20 @@ const pages = [
 ];
 
 export default function TopNavBar() {
+    const theme = useTheme();
+
     const isDarkTheme = useTheme().palette.mode === 'dark';
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+    const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const lessThanSmall = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <AppBar
@@ -74,35 +92,65 @@ export default function TopNavBar() {
                             </Icon>
                         </IconButton>
                     </Box>
-                    <Stack direction="row" spacing={4}>
-                        {pages.map((page) => {
-                            const buttonColor = isDarkTheme
-                                ? page.bgColor?.dark
-                                : page.bgColor?.light;
+                    {lessThanSmall ? (
+                        <>
+                            <IconButton
+                                size="large"
+                                edge="start"
+                                color="inherit"
+                                aria-label="menu"
+                                sx={{ mr: 2 }}
+                                onClick={handleMenu}
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Menu
+                                anchorEl={anchorEl}
+                                open={Boolean(anchorEl)}
+                                onClose={handleClose}
+                            >
+                                {pages.map((page) => {
+                                    const buttonColor = isDarkTheme
+                                        ? page.bgColor?.dark
+                                        : page.bgColor?.light;
 
-                            return (
-                                <Button
-                                    key={page.key}
-                                    component={Link}
-                                    to={page.path}
-                                    color="primary"
-                                    disableElevation
-                                    sx={{
-                                        bgcolor: buttonColor,
-                                        borderRadius: 25,
-                                        paddingLeft: 4.5,
-                                        paddingRight: 4.5,
-                                        paddingTop: 2,
-                                        paddingBottom: 2,
-                                    }}
-                                >
-                                    <Typography variant="button" textTransform="none">
-                                        {page.text}
-                                    </Typography>
-                                </Button>
-                            );
-                        })}
-                    </Stack>
+                                    return (
+                                        <MenuItem key={page.key}>{page.text}</MenuItem>
+                                    );
+                                })}
+                            </Menu>
+                        </>
+                    ) : (
+                        <Stack direction="row" spacing={4}>
+                            {pages.map((page) => {
+                                const buttonColor = isDarkTheme
+                                    ? page.bgColor?.dark
+                                    : page.bgColor?.light;
+
+                                return (
+                                    <Button
+                                        key={page.key}
+                                        component={Link}
+                                        to={page.path}
+                                        color="primary"
+                                        disableElevation
+                                        sx={{
+                                            bgcolor: buttonColor,
+                                            borderRadius: 25,
+                                            paddingLeft: 4.5,
+                                            paddingRight: 4.5,
+                                            paddingTop: 2,
+                                            paddingBottom: 2,
+                                        }}
+                                    >
+                                        <Typography variant="button" textTransform="none">
+                                            {page.text}
+                                        </Typography>
+                                    </Button>
+                                );
+                            })}
+                        </Stack>
+                    )}
                 </Toolbar>
             </Container>
         </AppBar>
