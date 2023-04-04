@@ -1,10 +1,12 @@
-import { Box, Typography } from '@mui/material';
-import ProductDescriptionButton from '@resources/OsstemDentalEshop/ProductDescriptionButton.jpg';
-import ProductJourney from '@resources/OsstemDentalEshop/ProductJourney.jpg';
-import ProductOptionTab from '@resources/OsstemDentalEshop/ProductOptionTab.jpg';
-import ProductSubcategory from '@resources/OsstemDentalEshop/ProductSubcategory.jpg';
+import { Typography } from '@mui/material';
 
 import { PortfolioContainer, PortfolioImage, PortfolioSubSection } from '@/components';
+import {
+    ProductDescriptionButton,
+    ProductJourney,
+    ProductOptionTab,
+    ProductSubcategory,
+} from '@/images';
 
 const ProductJourneyContent = () => {
     return (
@@ -38,7 +40,7 @@ const ProductSubcategoryContent = () => {
                 anticipate the number of products within each subcategory without having
                 to navigate directly to it.
             </Typography>
-            <Box component="img" alt="Cover" src={ProductSubcategory} />
+            <PortfolioImage imageSrc={ProductSubcategory} />
         </PortfolioContainer>
     );
 };
@@ -62,7 +64,7 @@ const ProductOptionContent = () => {
                 designed the app&apos;s bottom menu bar to include a category (menu)
                 button that takes users to the category page when clicked.
             </Typography>
-            <Box component="img" alt="Cover" src={ProductOptionTab} />
+            <PortfolioImage imageSrc={ProductOptionTab} />
         </PortfolioContainer>
     );
 };
@@ -76,7 +78,7 @@ const ProductDescriptionButtonContent = () => {
                 under parent categories and designed a drop-down button to display
                 subcategories when clicked.
             </Typography>
-            <Box component="img" alt="Cover" src={ProductDescriptionButton} />
+            <PortfolioImage imageSrc={ProductDescriptionButton} />
         </PortfolioContainer>
     );
 };

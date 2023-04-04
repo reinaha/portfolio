@@ -1,8 +1,7 @@
 import { Typography } from '@mui/material';
-import MessageJourney from '@resources/OsstemDentalEshop/MessageJourney.jpg';
-import MessageSupport from '@resources/OsstemDentalEshop/MessageSupport.jpg';
 
 import { PortfolioContainer, PortfolioImage, PortfolioSubSection } from '@/components';
+import { MessageJourney, MessageSupport } from '@/images';
 
 const MessageJourneyContent = () => {
     return (

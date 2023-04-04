@@ -1,6 +1,7 @@
 import { createTheme } from '@mui/material';
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 import React from 'react';
+
 declare module '@mui/material/Typography' {
     interface TypographyPropsVariantOverrides {
         body3: true;

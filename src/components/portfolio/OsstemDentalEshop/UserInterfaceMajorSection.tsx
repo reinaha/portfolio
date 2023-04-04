@@ -1,10 +1,11 @@
-import CheckoutCover from '@resources/OsstemDentalEshop/UserInterface/CheckoutCover.svg';
-import EntranceCover from '@resources/OsstemDentalEshop/UserInterface/EntranceCover.svg';
-import HomeCover from '@resources/OsstemDentalEshop/UserInterface/HomeCover.svg';
-import MessageCover from '@resources/OsstemDentalEshop/UserInterface/MessageCover.svg';
-import ProductCover from '@resources/OsstemDentalEshop/UserInterface/ProductCover.svg';
-
 import { PortfolioMajorSection } from '@/components';
+import {
+    CheckoutCover,
+    EntranceCover,
+    HomeCover,
+    MessageCover,
+    ProductCover,
+} from '@/images';
 
 import {
     CheckoutContent,

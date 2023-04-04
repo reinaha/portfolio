@@ -1,25 +1,11 @@
-import { Box, Typography } from '@mui/material';
-import EntranceJourney from '@resources/OsstemDentalEshop/EntranceJourney.png';
-import Integration from '@resources/OsstemDentalEshop/Integration.jpg';
-import ProgressBarPositioning from '@resources/OsstemDentalEshop/ProgressBarPositioning.jpg';
+import { Typography } from '@mui/material';
 
-import { PortfolioChevronSection, PortfolioContainer } from '@/components/portfolio';
-
-export const EntranceContent = () => {
-    return (
-        <PortfolioContainer spacing={20}>
-            <PortfolioChevronSection title="Sign up journey">
-                <SignUpJourneyContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="Integrating existing customer accounts with the app account">
-                <IntegrationContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="Positioning sign-up progress bar at the top of the app">
-                <PositioningContent />
-            </PortfolioChevronSection>
-        </PortfolioContainer>
-    );
-};
+import {
+    PortfolioContainer,
+    PortfolioImage,
+    PortfolioSubSection,
+} from '@/components/portfolio';
+import { EntranceIntegration, EntranceJourney, EntranceProgressBar } from '@/images';
 
 const SignUpJourneyContent = () => {
     return (
@@ -28,12 +14,7 @@ const SignUpJourneyContent = () => {
                 Each screen delivers one task so that users can only focus on one task at
                 once without any distractions.
             </Typography>
-            <Box
-                component="img"
-                alt="Cover"
-                src={EntranceJourney}
-                sx={{ borderRadius: '8px' }}
-            />
+            <PortfolioImage imageSrc={EntranceJourney} />
         </PortfolioContainer>
     );
 };
@@ -53,7 +34,7 @@ const IntegrationContent = () => {
                 their Osstem account code, and added a question mark button for those who
                 may need additional clarification.
             </Typography>
-            <Box component="img" alt="Cover" src={Integration} />
+            <PortfolioImage imageSrc={EntranceIntegration} />
         </PortfolioContainer>
     );
 };
@@ -67,7 +48,26 @@ const PositioningContent = () => {
                 the top of the app to show users in real-time where they are in the
                 registration process until completion.
             </Typography>
-            <Box component="img" alt="Cover" src={ProgressBarPositioning} />
+            <PortfolioImage imageSrc={EntranceProgressBar} />
         </PortfolioContainer>
     );
 };
+
+export const EntranceContentData = [
+    {
+        title: 'Sign up journey',
+        content: <SignUpJourneyContent />,
+    },
+    {
+        title: 'Integrating existing customer accounts with the app account',
+        content: <IntegrationContent />,
+    },
+    {
+        title: 'Positioning sign-up progress bar at the top of the app',
+        content: <PositioningContent />,
+    },
+];
+
+export const EntranceContent = () => (
+    <PortfolioSubSection subsections={EntranceContentData} />
+);

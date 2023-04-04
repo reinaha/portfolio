@@ -1,37 +1,17 @@
-import { Box, Typography } from '@mui/material';
-import HomeCategoryMenu from '@resources/OsstemDentalEshop/HomeCategoryMenu.jpg';
-import HomeClinicChange from '@resources/OsstemDentalEshop/HomeClinicChange.jpg';
-import HomeDeliveryStatus from '@resources/OsstemDentalEshop/HomeDeliveryStatus.jpg';
-import HomeJourney from '@resources/OsstemDentalEshop/HomeJourney.jpg';
-import HomeSubcategories from '@resources/OsstemDentalEshop/HomeSubcategories.jpg';
+import { Typography } from '@mui/material';
 
 import {
-    PortfolioChevronSection,
     PortfolioContainer,
     PortfolioImage,
+    PortfolioSubSection,
 } from '@/components/portfolio';
-
-export const HomeContent = () => {
-    return (
-        <PortfolioContainer spacing={20}>
-            <PortfolioChevronSection title="Home journey">
-                <HomeJourneyContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="Target-oriented clinic change tab">
-                <ClinicChangeContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="Category menu for finding products at a glance">
-                <CategoryMenuContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="Easy-to-find subcategories">
-                <SubcategoriesContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="Reducing phone inquiries through product delivery status">
-                <ReducingPhoneEnquiriesContent />
-            </PortfolioChevronSection>
-        </PortfolioContainer>
-    );
-};
+import {
+    HomeCategoryMenu,
+    HomeClinicChange,
+    HomeDeliveryStatus,
+    HomeJourney,
+    HomeSubcategories,
+} from '@/images';
 
 const HomeJourneyContent = () => {
     return (
@@ -63,7 +43,7 @@ const ClinicChangeContent = () => {
                 drop-down button on the top tab. In addition, they can also change, add,
                 or delete clinics through &ldquo;edit detail&rdquo; option.
             </Typography>
-            <Box component="img" alt="Cover" src={HomeClinicChange} />
+            <PortfolioImage imageSrc={HomeClinicChange} />
         </PortfolioContainer>
     );
 };
@@ -87,7 +67,7 @@ const CategoryMenuContent = () => {
                 designed the app&apos;s bottom menu bar to include a category (menu)
                 button that takes users to the category page when clicked.
             </Typography>
-            <Box component="img" alt="Cover" src={HomeCategoryMenu} />
+            <PortfolioImage imageSrc={HomeCategoryMenu} />
         </PortfolioContainer>
     );
 };
@@ -101,7 +81,7 @@ const SubcategoriesContent = () => {
                 under parent categories and designed a drop-down button to display
                 subcategories when clicked.
             </Typography>
-            <Box component="img" alt="Cover" src={HomeSubcategories} />
+            <PortfolioImage imageSrc={HomeSubcategories} />
         </PortfolioContainer>
     );
 };
@@ -119,7 +99,32 @@ const ReducingPhoneEnquiriesContent = () => {
                 Customers who have placed orders can check not only their purchase history
                 but also the delivery period of the products they ordered through our app.
             </Typography>
-            <Box component="img" alt="Cover" src={HomeDeliveryStatus} />
+            <PortfolioImage imageSrc={HomeDeliveryStatus} />
         </PortfolioContainer>
     );
 };
+
+export const HomeContentData = [
+    {
+        title: 'Home journey',
+        content: <HomeJourneyContent />,
+    },
+    {
+        title: 'Target-oriented clinic change tab',
+        content: <ClinicChangeContent />,
+    },
+    {
+        title: 'Category menu for finding products at a glance',
+        content: <CategoryMenuContent />,
+    },
+    {
+        title: 'Easy-to-find subcategories',
+        content: <SubcategoriesContent />,
+    },
+    {
+        title: 'Reducing phone inquiries through product delivery status',
+        content: <ReducingPhoneEnquiriesContent />,
+    },
+];
+
+export const HomeContent = () => <PortfolioSubSection subsections={HomeContentData} />;

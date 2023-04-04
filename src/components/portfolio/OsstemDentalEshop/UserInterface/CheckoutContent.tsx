@@ -1,29 +1,11 @@
-import { Box, Stack, Typography } from '@mui/material';
-import CheckoutFatigue from '@resources/OsstemDentalEshop/CheckoutFatigue.jpg';
-import CheckoutJourney from '@resources/OsstemDentalEshop/CheckoutJourney.jpg';
-import CheckoutReduceError from '@resources/OsstemDentalEshop/CheckoutReduceError.jpg';
+import { Typography } from '@mui/material';
 
 import {
-    PortfolioChevronSection,
     PortfolioContainer,
     PortfolioImage,
+    PortfolioSubSection,
 } from '@/components/portfolio';
-
-export const CheckoutContent = () => {
-    return (
-        <PortfolioContainer spacing={20}>
-            <PortfolioChevronSection title="Checkout journey">
-                <CheckoutJourneyContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="Adding a progress bar to reduce user fatigue during checkout">
-                <CheckoutFatigueContent />
-            </PortfolioChevronSection>
-            <PortfolioChevronSection title="UI design to reduce user errors in product order quantities">
-                <CheckoutReduceErrorContent />
-            </PortfolioChevronSection>
-        </PortfolioContainer>
-    );
-};
+import { CheckoutFatigue, CheckoutJourney, CheckoutReduceError } from '@/images';
 
 const CheckoutJourneyContent = () => {
     return (
@@ -61,7 +43,7 @@ const CheckoutFatigueContent = () => {
                 already completed the stage. This was designed to reassure users and help
                 them navigate the checkout process smoothly.
             </Typography>
-            <Box component="img" alt="Cover" src={CheckoutFatigue} />
+            <PortfolioImage imageSrc={CheckoutFatigue} />
         </PortfolioContainer>
     );
 };
@@ -80,7 +62,26 @@ const CheckoutReduceErrorContent = () => {
                 when a user orders a quantity greater than 1, allowing them to
                 double-check their input and avoid mistakes.
             </Typography>
-            <Box component="img" alt="Cover" src={CheckoutReduceError} />
+            <PortfolioImage imageSrc={CheckoutReduceError} />
         </PortfolioContainer>
     );
 };
+
+export const CheckoutContentData = [
+    {
+        title: 'Checkout journey',
+        content: <CheckoutJourneyContent />,
+    },
+    {
+        title: 'Adding a progress bar to reduce user fatigue during checkout',
+        content: <CheckoutFatigueContent />,
+    },
+    {
+        title: 'UI design to reduce user errors in product order quantities',
+        content: <CheckoutReduceErrorContent />,
+    },
+];
+
+export const CheckoutContent = () => (
+    <PortfolioSubSection subsections={CheckoutContentData} />
+);

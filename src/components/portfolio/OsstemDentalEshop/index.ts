@@ -5,4 +5,5 @@ export * from './StyleGuide';
 export * from './StyleGuideMajorSection';
 export * from './Takeaways';
 export * from './TakeawaysMajorSection';
+export * from './UserInterface';
 export * from './UserInterfaceMajorSection';
