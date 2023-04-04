@@ -1,4 +1,17 @@
 import { createTheme } from '@mui/material';
+import { TypographyOptions } from '@mui/material/styles/createTypography';
+import React from 'react';
+declare module '@mui/material/Typography' {
+    interface TypographyPropsVariantOverrides {
+        body3: true;
+        numberIcon: true;
+    }
+}
+
+interface ExtendedTypographyOptions extends TypographyOptions {
+    body3: React.CSSProperties;
+    numberIcon: React.CSSProperties;
+}
 
 export const defaultTheme = createTheme({
     palette: {
@@ -33,10 +46,11 @@ export const lightTheme = createTheme({
     typography: {
         fontFamily: ['Raleway', 'Inter', 'Roboto', 'sans-serif'].join(','),
         h1: {
-            fontWeight: 700,
+            fontWeight: 500,
             fontStyle: 'normal',
-            fontSize: '50px',
-            letterSpacing: '-1.5px',
+            fontSize: '70px',
+            lineHeight: '150%',
+            letterSpacing: '-0.02em',
             wordBreak: 'break-word',
         },
         h2: {
@@ -66,9 +80,18 @@ export const lightTheme = createTheme({
             color: '#131214',
         },
         h5: {
-            fontWeight: 600,
+            fontWeight: 700,
             fontStyle: 'normal',
-            fontSize: '22px',
+            fontSize: '15px',
+            lineHeight: '150%',
+            wordBreak: 'break-word',
+            color: '#131214',
+        },
+        h6: {
+            fontWeight: 700,
+            fontStyle: 'normal',
+            lineHeight: '16.8px',
+            fontSize: '15px',
             wordBreak: 'break-word',
         },
         subtitle1: {
@@ -80,15 +103,32 @@ export const lightTheme = createTheme({
         body1: {
             fontWeight: 500,
             fontStyle: 'normal',
-            lineHeight: '24px',
-            fontSize: '16px',
+            lineHeight: '150%',
+            fontSize: '15px',
             wordBreak: 'break-word',
         },
         body2: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            lineHeight: '200%',
+            fontSize: '14px',
+            wordBreak: 'break-word',
+            color: '#818181',
+        },
+        body3: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            lineHeight: '150%',
+            fontSize: '14px',
+            wordBreak: 'break-word',
+            color: '#818181',
+        },
+        numberIcon: {
             fontWeight: 500,
             fontStyle: 'normal',
+            lineHeight: '100%',
             fontSize: '14px',
             wordBreak: 'break-word',
         },
-    },
+    } as ExtendedTypographyOptions,
 });

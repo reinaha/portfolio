@@ -1,42 +1,41 @@
-import { Box, Typography } from '@mui/material';
+import RetrospectiveCategoryMenu from '@resources/OsstemDentalEshop/Takeaway/RetrospectiveCategoryMenu.png';
+import RetrospectiveProgressBar from '@resources/OsstemDentalEshop/Takeaway/RetrospectiveProgressBar.png';
 
-import { PortfolioContainer } from '@/components';
+import {
+    IconListItem,
+    PortfolioChevronSection,
+    PortfolioContainer,
+    PortfolioImage,
+} from '@/components';
 
-import Retrospective1 from '../../../../../resources/OsstemDentalEshop/Retrospective1.jpg';
-import Retrospective2 from '../../../../../resources/OsstemDentalEshop/Retrospective2.jpg';
+const iconColor = { primary: '#1C1B1F', secondary: '#1C1B1F' };
 
 export const RetrospectiveContent = () => {
     return (
-        <PortfolioContainer>
-            <Typography variant="h5">
-                Sign-up progress bar with poor intuitiveness
-            </Typography>
-            <Typography>
-                I regret not designing a progress bar with three dots instead of a line,
-                since the sign-up process consisted of only three steps. This would have
-                made it more intuitive for users to understand the progress of the sign-up
-                process.
-            </Typography>
-            <Box
-                component="img"
-                alt="Cover"
-                src={Retrospective1}
-                sx={{ paddingTop: '1em', paddingBottom: '1em' }}
-            />
-            <Typography variant="h5">
-                The Category menu design can be confusing with the filter
-            </Typography>
-            <Typography>
-                A user provided feedback that they were confused whether the Category page
-                was a menu page or a filter page. It would have been better to clearly
-                distinguish between menu and filter and design accordingly.
-            </Typography>
-            <Box
-                component="img"
-                alt="Cover"
-                src={Retrospective2}
-                sx={{ paddingTop: '1em', paddingBottom: '1em' }}
-            />
+        <PortfolioContainer spacing={20}>
+            <PortfolioChevronSection
+                title="Sign-up progress bar with poor intuitiveness"
+                color={iconColor}
+            >
+                <IconListItem iconType="noIcon" iconColor={iconColor}>
+                    I regret not designing a progress bar with three dots instead of a
+                    line, since the sign-up process consisted of only three steps. This
+                    would have made it more intuitive for users to understand the progress
+                    of the sign-up process.
+                </IconListItem>
+                <PortfolioImage imageSrc={RetrospectiveProgressBar} />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection
+                title="The Category menu design can be confusing with the filter"
+                color={iconColor}
+            >
+                <IconListItem iconType="noIcon" iconColor={iconColor}>
+                    A user provided feedback that they were confused whether the Category
+                    page was a menu page or a filter page. It would have been better to
+                    clearly distinguish between menu and filter and design accordingly.
+                </IconListItem>
+                <PortfolioImage imageSrc={RetrospectiveCategoryMenu} />
+            </PortfolioChevronSection>
         </PortfolioContainer>
     );
 };

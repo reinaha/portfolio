@@ -33,7 +33,6 @@ const pages = [
 
 export default function TopNavBar() {
     const isDarkTheme = useTheme().palette.mode === 'dark';
-    console.log(isDarkTheme);
 
     return (
         <AppBar position="sticky" elevation={0} color="secondary" enableColorOnDark>

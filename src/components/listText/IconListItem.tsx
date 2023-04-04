@@ -1,6 +1,6 @@
 import { ListItem, ListItemIcon, ListItemProps, ListItemText } from '@mui/material';
 
-import { ArrowIcon, NumberIcon } from '@/icons';
+import { ArrowIcon, ChevronRightIcon, NumberIcon } from '@/icons';
 
 interface IconListItemProps extends ListItemProps {
     iconType?: ListIconType;
@@ -12,7 +12,7 @@ interface IconListItemProps extends ListItemProps {
     text?: string;
 }
 
-type ListIconType = 'arrow' | 'number' | 'noIcon' | undefined;
+type ListIconType = 'arrow' | 'chevron' | 'number' | 'noIcon' | undefined;
 
 export const IconListItem = ({
     iconType,
@@ -27,6 +27,14 @@ export const IconListItem = ({
                 return (
                     <ListItemIcon sx={{ paddingLeft: 2.5, minWidth: '46px' }}>
                         <ArrowIcon color={iconColor.primary || '#FFFFFF'} />
+                    </ListItemIcon>
+                );
+            case 'chevron':
+                return (
+                    <ListItemIcon
+                        sx={{ marginTop: 0.75, paddingLeft: 2, minWidth: '46px' }}
+                    >
+                        <ChevronRightIcon color={iconColor.primary || '#FFFFFF'} />
                     </ListItemIcon>
                 );
             case 'number':

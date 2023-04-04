@@ -1,53 +1,41 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import HomeCategoryMenu from '@resources/OsstemDentalEshop/HomeCategoryMenu.jpg';
 import HomeClinicChange from '@resources/OsstemDentalEshop/HomeClinicChange.jpg';
 import HomeDeliveryStatus from '@resources/OsstemDentalEshop/HomeDeliveryStatus.jpg';
 import HomeJourney from '@resources/OsstemDentalEshop/HomeJourney.jpg';
-import HomeMain from '@resources/OsstemDentalEshop/HomeMain.jpg';
-import HomeMain2 from '@resources/OsstemDentalEshop/HomeMain2.jpg';
 import HomeSubcategories from '@resources/OsstemDentalEshop/HomeSubcategories.jpg';
 
-import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
-
-import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
-import { PortfolioSection } from '../../PortfolioSection';
+import {
+    PortfolioChevronSection,
+    PortfolioContainer,
+    PortfolioImage,
+} from '@/components/portfolio';
 
 export const HomeContent = () => {
     return (
-        <Stack spacing={4}>
-            <PortfolioFullWidthImage image={HomeMain2} marginBottom={3} />
-            <PortfolioSection
-                title="Home journey"
-                content={<HomeJourneyContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Target-oriented clinic change tab"
-                content={<ClinicChangeContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Category menu for finding products at a glance"
-                content={<CategoryMenuContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Easy-to-find subcategories"
-                content={<SubcategoriesContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Reducing phone inquiries through product delivery status"
-                content={<ReducingPhoneEnquiriesContent />}
-                headerVariant="h4"
-            />
-        </Stack>
+        <PortfolioContainer spacing={20}>
+            <PortfolioChevronSection title="Home journey">
+                <HomeJourneyContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="Target-oriented clinic change tab">
+                <ClinicChangeContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="Category menu for finding products at a glance">
+                <CategoryMenuContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="Easy-to-find subcategories">
+                <SubcategoriesContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="Reducing phone inquiries through product delivery status">
+                <ReducingPhoneEnquiriesContent />
+            </PortfolioChevronSection>
+        </PortfolioContainer>
     );
 };
 
 const HomeJourneyContent = () => {
     return (
-        <JourneyContainer image={HomeJourney}>
+        <PortfolioContainer>
             <Typography>
                 When designing the home page, the most important consideration was to make
                 it easy for customers to search for products and quickly find categories.
@@ -56,7 +44,8 @@ const HomeJourneyContent = () => {
                 as many discounted items as possible, so we added a list of sale-related
                 items at the bottom.
             </Typography>
-        </JourneyContainer>
+            <PortfolioImage imageSrc={HomeJourney} />
+        </PortfolioContainer>
     );
 };
 

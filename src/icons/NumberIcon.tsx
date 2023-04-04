@@ -21,7 +21,7 @@ export const NumberIcon = ({
                 maxHeight: '31px',
             }}
         >
-            <Typography variant="body2" fontWeight={600}>
+            <Typography variant="numberIcon" fontWeight={600}>
                 {number}
             </Typography>
         </Avatar>

@@ -1,9 +1,7 @@
-import UISectionCover from '@resources/OsstemDentalEshop/UISectionCover.jpg';
-import UISectionCover2 from '@resources/OsstemDentalEshop/UISectionCover2.png';
+import EntranceCover from '@resources/OsstemDentalEshop/UserInterface/EntranceCover.svg';
+import HomeCover from '@resources/OsstemDentalEshop/UserInterface/HomeCover.svg';
 
-import { PortfolioFullWidthImage } from '../portfolioBricks/PortfolioFullWidthImage';
 import { PortfolioMajorSection } from '../PortfolioMajorSection';
-import { OsstemApplicationSubtitle } from './OsstemApplicationSubtitle';
 import {
     CheckoutContent,
     EntranceContent,
@@ -19,15 +17,16 @@ export const UserInterfaceMajorSection = () => {
                 title: 'User Interface',
             }}
             portfolioSections={[
-                { title: 'Entrance', content: <EntranceContent /> },
-                { title: 'Home', content: <HomeContent /> },
+                {
+                    title: 'Entrance',
+                    content: <EntranceContent />,
+                    coverImg: EntranceCover,
+                },
+                { title: 'Home', content: <HomeContent />, coverImg: HomeCover },
                 { title: 'Product', content: <ProductContent /> },
                 { title: 'Checkout', content: <CheckoutContent /> },
                 { title: 'Message', content: <MessageContent /> },
             ]}
-            coverImage={UISectionCover2}
-            numbered
-            numberOptions={{ numberColor: '#FB4200', backgroundColor: '#FB42000d' }}
         />
     );
 };

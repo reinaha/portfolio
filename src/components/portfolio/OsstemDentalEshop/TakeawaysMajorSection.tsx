@@ -1,5 +1,4 @@
 import { PortfolioMajorSection } from '../PortfolioMajorSection';
-import { OsstemApplicationSubtitle } from './OsstemApplicationSubtitle';
 import { LearnedContent, RetrospectiveContent } from './Takeaways';
 
 export const TakeawaysMajorSection = () => {

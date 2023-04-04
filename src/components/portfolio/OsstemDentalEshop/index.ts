@@ -1,3 +1,4 @@
+export * from './HeaderContent';
 export * from './Introduction';
 export * from './IntroductionMajorSection';
 export * from './StyleGuide';

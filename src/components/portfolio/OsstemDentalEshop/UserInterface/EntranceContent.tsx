@@ -1,37 +1,23 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import EntranceJourney from '@resources/OsstemDentalEshop/EntranceJourney.png';
-import EntranceMain from '@resources/OsstemDentalEshop/EntranceMain.jpg';
-import EntranceMain2 from '@resources/OsstemDentalEshop/EntranceMain2.jpg';
-import EntranceMain3 from '@resources/OsstemDentalEshop/EntranceMain3.png';
 import Integration from '@resources/OsstemDentalEshop/Integration.jpg';
 import ProgressBarPositioning from '@resources/OsstemDentalEshop/ProgressBarPositioning.jpg';
-import SignupJourney from '@resources/OsstemDentalEshop/SignupJourney.jpg';
 
-import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
-
-import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
-import { PortfolioSection } from '../../PortfolioSection';
+import { PortfolioChevronSection, PortfolioContainer } from '@/components/portfolio';
 
 export const EntranceContent = () => {
     return (
-        <Stack spacing={4}>
-            <PortfolioFullWidthImage image={EntranceMain3} marginBottom={3} />
-            <PortfolioSection
-                title="Sign up journey"
-                content={<SignUpJourneyContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Integrating existing customer accounts with the app account"
-                content={<IntegrationContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Positioning sign-up progress bar at the top of the app"
-                content={<PositioningContent />}
-                headerVariant="h4"
-            />
-        </Stack>
+        <PortfolioContainer spacing={20}>
+            <PortfolioChevronSection title="Sign up journey">
+                <SignUpJourneyContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="Integrating existing customer accounts with the app account">
+                <IntegrationContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="Positioning sign-up progress bar at the top of the app">
+                <PositioningContent />
+            </PortfolioChevronSection>
+        </PortfolioContainer>
     );
 };
 

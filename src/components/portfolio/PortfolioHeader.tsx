@@ -1,73 +1,28 @@
-import { Container, Divider, Stack, Typography } from '@mui/material';
-import dayjs from 'dayjs';
+import { Stack, StackProps } from '@mui/material';
+import { ReactNode } from 'react';
 
-import CalendarIcon from '../../icons/CalendarIcon.svg';
-import CommercialTypeIcon from '../../icons/CommercialTypeIcon.svg';
-import MobileProjectIcon from '../../icons/MobileProjectIcon.svg';
-import { PortfolioFullWidthImage } from '..';
-import { PortfolioDetailCardInfo, PortfolioDetailCards } from './PortfolioDetailCards';
-import { PortfolioMetaInfo } from './ProjectMetaInfo';
+import { PortfolioFullWidthImage, PortfolioSection } from '..';
 
-type PortfolioMetaData = {
-    projectType: string;
-    applicationType: string;
-    startDate: Date;
-    endDate: Date;
-};
-
-const portfolioDateFormat = (date: Date): string => {
-    return dayjs(date).format('MMM YYYY');
-};
-
-export type PortfolioHeaderProps = {
+export interface PortfolioHeaderProps extends StackProps {
     title: string;
-    subTitle?: string;
-    portfolioMetaData: PortfolioMetaData;
-    portfolioDetailCardInfos: PortfolioDetailCardInfo[];
+    headerContent?: ReactNode;
     coverImg?: string;
-};
+}
 
 export const PortfolioHeader = ({
     title,
-    subTitle,
-    portfolioMetaData: { projectType, applicationType, startDate, endDate },
-    portfolioDetailCardInfos,
+    headerContent,
     coverImg,
+    ...props
 }: PortfolioHeaderProps) => {
     return (
-        <Stack>
-            <Container sx={{ marginTop: 1, paddingBottom: 1 }}>
-                <Stack spacing={1}>
-                    <Stack direction={{ md: 'row', sm: 'column' }}>
-                        <PortfolioMetaInfo
-                            icon={CommercialTypeIcon}
-                            label={projectType}
-                        />
-                        <PortfolioMetaInfo
-                            icon={MobileProjectIcon}
-                            label={applicationType}
-                        />
-                        <PortfolioMetaInfo
-                            icon={CalendarIcon}
-                            label={`${portfolioDateFormat(
-                                startDate
-                            )} - ${portfolioDateFormat(endDate)}`}
-                        />
-                    </Stack>
-                    <Typography variant="h1">{title}</Typography>
-                    {subTitle ? (
-                        <Typography variant="subtitle1">{subTitle}</Typography>
-                    ) : null}
-                    <br />
-                    <Divider variant="middle" />
-                    <br />
-                    {portfolioDetailCardInfos ? (
-                        <PortfolioDetailCards
-                            portfolioDetailCardInfos={portfolioDetailCardInfos}
-                        />
-                    ) : null}
-                </Stack>
-            </Container>
+        <Stack spacing={13} paddingBottom={11} {...props}>
+            <PortfolioSection
+                title={title}
+                reverseTitleIcon={true}
+                titlePadding={7.5}
+                content={headerContent}
+            />
             {coverImg ? <PortfolioFullWidthImage image={coverImg} /> : null}
         </Stack>
     );

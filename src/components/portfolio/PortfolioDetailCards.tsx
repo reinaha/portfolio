@@ -1,11 +1,10 @@
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 
 import { PortfolioDetailCard } from '../homeCards/PortfolioDetailCard';
 
 export type PortfolioDetailCardInfo = {
     title: string;
     content?: React.ReactNode;
-    icon: string;
 };
 
 type PortfolioDetailCardsProps = {
@@ -16,32 +15,16 @@ export const PortfolioDetailCards = ({
     portfolioDetailCardInfos = [],
 }: PortfolioDetailCardsProps) => {
     return (
-        <Grid
-            container
-            alignItems="stretch"
-            justifyContent="center"
-            direction="row"
-            spacing={0.5}
-            paddingRight={1}
-        >
-            {portfolioDetailCardInfos.map(
-                (pd: PortfolioDetailCardInfo, index: number) => (
-                    <Grid
-                        key={index}
-                        item
-                        xs={12}
-                        sm={6}
-                        md={12 / portfolioDetailCardInfos.length}
-                        lg={12 / portfolioDetailCardInfos.length}
-                    >
-                        <PortfolioDetailCard
-                            title={pd.title}
-                            content={pd.content}
-                            icon={pd.icon}
-                        />
-                    </Grid>
-                )
-            )}
-        </Grid>
+        <Box paddingTop={2} paddingBottom={2} minHeight="134px">
+            <Grid container alignItems="stretch" width="100%" spacing={5}>
+                {portfolioDetailCardInfos.map(
+                    (pd: PortfolioDetailCardInfo, index: number) => (
+                        <Grid key={index} item container xs={6} sm={6} md={3} lg={3}>
+                            <PortfolioDetailCard title={pd.title} content={pd.content} />
+                        </Grid>
+                    )
+                )}
+            </Grid>
+        </Box>
     );
 };

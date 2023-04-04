@@ -1,4 +1,4 @@
-import { Box, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 
 import { PortfolioHeader, PortfolioHeaderProps } from './PortfolioHeader';
 
@@ -9,7 +9,7 @@ type PortfolioLayoutProps = {
 
 export const PortfolioLayout = ({ headerProps, children }: PortfolioLayoutProps) => {
     return (
-        <Stack spacing={25}>
+        <Stack spacing={25} paddingBottom={25}>
             <PortfolioHeader {...headerProps} />
             {children}
         </Stack>
