@@ -1,6 +1,7 @@
 import Cover from '@resources/OsstemDentalEshop/StyleGuide/Cover.png';
 
-import { PortfolioMajorSection } from '../PortfolioMajorSection';
+import { PortfolioMajorSection } from '@/components';
+
 import { ColourAndTypographyContent, ComponentsAndElementsContent } from './StyleGuide';
 
 export const StyleGuideMajorSection = () => {

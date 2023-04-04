@@ -4,14 +4,15 @@ import HomeCover from '@resources/OsstemDentalEshop/UserInterface/HomeCover.svg'
 import MessageCover from '@resources/OsstemDentalEshop/UserInterface/MessageCover.svg';
 import ProductCover from '@resources/OsstemDentalEshop/UserInterface/ProductCover.svg';
 
-import { PortfolioMajorSection } from '../PortfolioMajorSection';
+import { PortfolioMajorSection } from '@/components';
+
 import {
     CheckoutContent,
     EntranceContent,
     HomeContent,
     MessageContent,
+    ProductContent,
 } from './UserInterface';
-import { ProductContent } from './UserInterface/ProductContent';
 
 export const UserInterfaceMajorSection = () => {
     return (

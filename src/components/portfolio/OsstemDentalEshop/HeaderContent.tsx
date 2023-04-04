@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import { PortfolioContainer } from '@/components';
 import { OsstemDentalEShopCardInfo } from '@/data';
 
-import { PortfolioDetailCards } from '../PortfolioDetailCards';
+import { PortfolioDetailCards } from '../portfolioBricks/PortfolioDetailCards';
 
 export const HeaderContent = () => {
     return (

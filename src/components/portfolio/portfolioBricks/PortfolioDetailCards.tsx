@@ -1,6 +1,6 @@
 import { Box, Grid } from '@mui/material';
 
-import { PortfolioDetailCard } from '../homeCards/PortfolioDetailCard';
+import { PortfolioDetailCard } from '@/components';
 
 export type PortfolioDetailCardInfo = {
     title: string;

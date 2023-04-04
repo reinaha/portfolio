@@ -1,8 +1,6 @@
 import { Typography } from '@mui/material';
 
-import { IconListItem } from '../listText';
-import { PortfolioContainer } from './PortfolioContainer';
-import { PortfolioSubSection } from './PortfolioSubSection';
+import { IconListItem, PortfolioContainer, PortfolioSubSection } from '@/components';
 
 interface PortfolioChevronSectionProps extends PortfolioSubSection {
     title: string;

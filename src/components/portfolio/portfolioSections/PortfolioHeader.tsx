@@ -1,7 +1,7 @@
 import { Stack, StackProps } from '@mui/material';
 import { ReactNode } from 'react';
 
-import { PortfolioFullWidthImage, PortfolioSection } from '..';
+import { PortfolioFullWidthImage, PortfolioSection } from '@/components';
 
 export interface PortfolioHeaderProps extends StackProps {
     title: string;

@@ -1,7 +1,10 @@
 import { ReactNode } from 'react';
 
-import { PortfolioChevronSection } from './PortfolioChevronSection';
-import { PortfolioContainer, PortfolioContainerProps } from './PortfolioContainer';
+import {
+    PortfolioChevronSection,
+    PortfolioContainer,
+    PortfolioContainerProps,
+} from '@/components';
 
 type SubsectionType = 'chevron';
 

@@ -1,6 +1,6 @@
 import { Stack } from '@mui/material';
 
-import { PortfolioHeader, PortfolioHeaderProps } from './PortfolioHeader';
+import { PortfolioHeader, PortfolioHeaderProps } from '@/components';
 
 type PortfolioLayoutProps = {
     headerProps: PortfolioHeaderProps;

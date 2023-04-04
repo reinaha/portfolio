@@ -1,9 +1,13 @@
 import { Stack } from '@mui/material';
 import { ReactChildren, ReactNode } from 'react';
 
-import { PortfolioFullWidthImage } from '..';
-import { MajorSectionTitle, MajorSectionTitleProps } from './MajorSectionTitle';
-import { PortfolioSection, PortfolioSectionProps } from './PortfolioSection';
+import {
+    MajorSectionTitle,
+    MajorSectionTitleProps,
+    PortfolioFullWidthImage,
+    PortfolioSection,
+    PortfolioSectionProps,
+} from '@/components';
 
 type PortfolioMajorSectionProps = {
     sectionTitle?: MajorSectionTitleProps;

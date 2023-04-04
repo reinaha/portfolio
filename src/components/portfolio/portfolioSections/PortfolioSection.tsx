@@ -3,10 +3,9 @@ import { Variant } from '@mui/material/styles/createTypography';
 import { ResponsiveStyleValue } from '@mui/system';
 import { ReactNode, useEffect, useRef, useState } from 'react';
 
+import { PortfolioImageContainer } from '@/components';
 import { useIsInViewport } from '@/hooks/Viewport';
 import HeaderMarkerIcon from '@/icons/HeaderMarkerIcon.svg';
-
-import { PortfolioImageContainer } from './portfolioBricks';
 
 export interface PortfolioSectionProps extends StackProps {
     title?: string;

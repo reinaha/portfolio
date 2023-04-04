@@ -1,4 +1,5 @@
-import { PortfolioMajorSection } from '../PortfolioMajorSection';
+import { PortfolioMajorSection } from '@/components';
+
 import {
     ChallengesContent,
     DesignProcessContent,
