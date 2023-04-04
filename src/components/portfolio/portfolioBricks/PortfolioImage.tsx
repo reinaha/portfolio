@@ -1,7 +1,5 @@
 import { Box, BoxProps, Container } from '@mui/material';
 
-import { PortfolioContainer } from '@/components';
-
 interface PortfolioImageProps extends BoxProps {
     imageSrc: string;
 }

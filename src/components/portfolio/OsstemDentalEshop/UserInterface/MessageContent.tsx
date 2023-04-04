@@ -1,34 +1,12 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import MessageJourney from '@resources/OsstemDentalEshop/MessageJourney.jpg';
-import MessageMain from '@resources/OsstemDentalEshop/MessageMain.jpg';
 import MessageSupport from '@resources/OsstemDentalEshop/MessageSupport.jpg';
 
-import { JourneyContainer, PortfolioContainer } from '@/components';
-
-import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
-import { PortfolioSection } from '../../PortfolioSection';
-
-export const MessageContent = () => {
-    return (
-        <Stack spacing={4}>
-            <PortfolioFullWidthImage image={MessageMain} marginBottom={1.5} />
-            <PortfolioSection
-                title="Message journey"
-                content={<MessageJourneyContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Categorizing inquiries to improve company's response time to customers"
-                content={<MessageSupportContent />}
-                headerVariant="h4"
-            />
-        </Stack>
-    );
-};
+import { PortfolioContainer, PortfolioImage, PortfolioSubSection } from '@/components';
 
 const MessageJourneyContent = () => {
     return (
-        <JourneyContainer image={MessageJourney}>
+        <PortfolioContainer>
             <Typography>
                 To encourage customers to inquire through the app rather than phone calls,
                 we adopted a conversational design that makes users feel like they are
@@ -38,7 +16,8 @@ const MessageJourneyContent = () => {
                 In order to prevent redundant questions, we placed the message history
                 list at the beginning of the message page.
             </Typography>
-        </JourneyContainer>
+            <PortfolioImage imageSrc={MessageJourney} />
+        </PortfolioContainer>
     );
 };
 
@@ -51,7 +30,22 @@ const MessageSupportContent = () => {
                 this, we designed a dropdown menu for selecting the category of the
                 inquiry when creating a new message.
             </Typography>
-            <Box component="img" alt="Cover" src={MessageSupport} />
+            <PortfolioImage imageSrc={MessageSupport} />
         </PortfolioContainer>
     );
 };
+
+export const MessageContentData = [
+    {
+        title: 'Message journey',
+        content: <MessageJourneyContent />,
+    },
+    {
+        title: "Categorizing inquiries to improve company's response time to customers",
+        content: <MessageSupportContent />,
+    },
+];
+
+export const MessageContent = () => (
+    <PortfolioSubSection subsections={MessageContentData} />
+);

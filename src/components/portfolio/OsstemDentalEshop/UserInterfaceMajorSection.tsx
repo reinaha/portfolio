@@ -1,5 +1,8 @@
+import CheckoutCover from '@resources/OsstemDentalEshop/UserInterface/CheckoutCover.svg';
 import EntranceCover from '@resources/OsstemDentalEshop/UserInterface/EntranceCover.svg';
 import HomeCover from '@resources/OsstemDentalEshop/UserInterface/HomeCover.svg';
+import MessageCover from '@resources/OsstemDentalEshop/UserInterface/MessageCover.svg';
+import ProductCover from '@resources/OsstemDentalEshop/UserInterface/ProductCover.svg';
 
 import { PortfolioMajorSection } from '../PortfolioMajorSection';
 import {
@@ -23,9 +26,13 @@ export const UserInterfaceMajorSection = () => {
                     coverImg: EntranceCover,
                 },
                 { title: 'Home', content: <HomeContent />, coverImg: HomeCover },
-                { title: 'Product', content: <ProductContent /> },
-                { title: 'Checkout', content: <CheckoutContent /> },
-                { title: 'Message', content: <MessageContent /> },
+                { title: 'Product', content: <ProductContent />, coverImg: ProductCover },
+                {
+                    title: 'Checkout',
+                    content: <CheckoutContent />,
+                    coverImg: CheckoutCover,
+                },
+                { title: 'Message', content: <MessageContent />, coverImg: MessageCover },
             ]}
         />
     );

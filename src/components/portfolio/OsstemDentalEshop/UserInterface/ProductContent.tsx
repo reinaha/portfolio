@@ -1,46 +1,14 @@
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import ProductDescriptionButton from '@resources/OsstemDentalEshop/ProductDescriptionButton.jpg';
 import ProductJourney from '@resources/OsstemDentalEshop/ProductJourney.jpg';
-import ProductMain from '@resources/OsstemDentalEshop/ProductMain.jpg';
 import ProductOptionTab from '@resources/OsstemDentalEshop/ProductOptionTab.jpg';
 import ProductSubcategory from '@resources/OsstemDentalEshop/ProductSubcategory.jpg';
 
-import { JourneyContainer, PortfolioContainer } from '@/components';
-
-import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
-import { PortfolioSection } from '../../PortfolioSection';
-
-export const ProductContent = () => {
-    return (
-        <Stack spacing={4}>
-            <PortfolioFullWidthImage image={ProductMain} marginBottom={1.5} />
-            <PortfolioSection
-                title="Product journey"
-                content={<ProductJourneyContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Categorizing products through subcategory tabs"
-                content={<ProductSubcategoryContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Product option tabs that reduce the number of product listings"
-                content={<ProductOptionContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Concise product description button for extensive content"
-                content={<ProductDescriptionButtonContent />}
-                headerVariant="h4"
-            />
-        </Stack>
-    );
-};
+import { PortfolioContainer, PortfolioImage, PortfolioSubSection } from '@/components';
 
 const ProductJourneyContent = () => {
     return (
-        <JourneyContainer image={ProductJourney}>
+        <PortfolioContainer>
             <Typography>
                 To make it easy for users to find products among a large number of
                 options, we made a significant effort to keep the overall design as simple
@@ -48,7 +16,8 @@ const ProductJourneyContent = () => {
                 bold, orange color for the category section to make it stand out and
                 easier for users to navigate.
             </Typography>
-        </JourneyContainer>
+            <PortfolioImage imageSrc={ProductJourney} />
+        </PortfolioContainer>
     );
 };
 
@@ -111,3 +80,26 @@ const ProductDescriptionButtonContent = () => {
         </PortfolioContainer>
     );
 };
+
+export const ProductContentData = [
+    {
+        title: 'Product journey',
+        content: <ProductJourneyContent />,
+    },
+    {
+        title: 'Categorizing products through subcategory tabs',
+        content: <ProductSubcategoryContent />,
+    },
+    {
+        title: 'Product option tabs that reduce the number of product listings',
+        content: <ProductOptionContent />,
+    },
+    {
+        title: 'Concise product description button for extensive content',
+        content: <ProductDescriptionButtonContent />,
+    },
+];
+
+export const ProductContent = () => (
+    <PortfolioSubSection subsections={ProductContentData} />
+);

@@ -1,40 +1,33 @@
 import { Box, Stack, Typography } from '@mui/material';
 import CheckoutFatigue from '@resources/OsstemDentalEshop/CheckoutFatigue.jpg';
 import CheckoutJourney from '@resources/OsstemDentalEshop/CheckoutJourney.jpg';
-import CheckoutMain from '@resources/OsstemDentalEshop/CheckoutMain.jpg';
 import CheckoutReduceError from '@resources/OsstemDentalEshop/CheckoutReduceError.jpg';
 
-import { JourneyContainer, PortfolioContainer } from '@/components/portfolio';
-
-import { PortfolioFullWidthImage } from '../../portfolioBricks/PortfolioFullWidthImage';
-import { PortfolioSection } from '../../PortfolioSection';
+import {
+    PortfolioChevronSection,
+    PortfolioContainer,
+    PortfolioImage,
+} from '@/components/portfolio';
 
 export const CheckoutContent = () => {
     return (
-        <Stack spacing={4}>
-            <PortfolioFullWidthImage image={CheckoutMain} marginBottom={1.5} />
-            <PortfolioSection
-                title="Checkout journey"
-                content={<CheckoutJourneyContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="Adding a progress bar to reduce user fatigue during checkout"
-                content={<CheckoutFatigueContent />}
-                headerVariant="h4"
-            />
-            <PortfolioSection
-                title="UI design to reduce user errors in product order quantities"
-                content={<CheckoutReduceErrorContent />}
-                headerVariant="h4"
-            />
-        </Stack>
+        <PortfolioContainer spacing={20}>
+            <PortfolioChevronSection title="Checkout journey">
+                <CheckoutJourneyContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="Adding a progress bar to reduce user fatigue during checkout">
+                <CheckoutFatigueContent />
+            </PortfolioChevronSection>
+            <PortfolioChevronSection title="UI design to reduce user errors in product order quantities">
+                <CheckoutReduceErrorContent />
+            </PortfolioChevronSection>
+        </PortfolioContainer>
     );
 };
 
 const CheckoutJourneyContent = () => {
     return (
-        <JourneyContainer image={CheckoutJourney}>
+        <PortfolioContainer>
             <Typography>
                 To encourage more purchases from users, it was important to make the
                 checkout process as easy as possible. We added quantity and
@@ -48,7 +41,8 @@ const CheckoutJourneyContent = () => {
                 require users to check their order details again before finalizing the
                 purchase.
             </Typography>
-        </JourneyContainer>
+            <PortfolioImage imageSrc={CheckoutJourney} />
+        </PortfolioContainer>
     );
 };
 
