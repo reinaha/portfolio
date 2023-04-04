@@ -21,15 +21,46 @@ export const defaultTheme = createTheme({
             main: '#FFFFFF',
         },
         secondary: {
-            main: '#292D32',
+            main: '#131214',
         },
         background: {
-            default: '#292D32',
+            default: '#131214',
         },
     },
-    spacing: 22,
+    spacing: 4,
     typography: {
-        fontFamily: ['Inter', 'Roboto', 'sans-serif'].join(','),
+        fontFamily: ['Raleway', 'Inter', 'Roboto', 'sans-serif'].join(','),
+        h1: {
+            fontWeight: 500,
+            fontStyle: 'normal',
+            fontSize: '40px',
+            lineHeight: '150%',
+            letterSpacing: '-0.02em',
+            wordBreak: 'break-word',
+            color: '#FFFFFF',
+        },
+        subtitle1: {
+            fontWeight: 500,
+            fontStyle: 'normal',
+            fontSize: '14px',
+            lineHeight: '150%',
+            wordBreak: 'break-word',
+            color: '#535353',
+        },
+        subtitle2: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            fontSize: '18px',
+            lineHeight: '200%',
+            wordBreak: 'break-word',
+            color: '#848484',
+        },
+        button: {
+            fontWeight: 500,
+            fontSize: '14px',
+            lineHeight: '36px',
+            letterSpacing: '-0.01em',
+        },
     },
 });
 
@@ -130,6 +161,12 @@ export const lightTheme = createTheme({
             lineHeight: '100%',
             fontSize: '14px',
             wordBreak: 'break-word',
+        },
+        button: {
+            fontWeight: 500,
+            fontSize: '14px',
+            lineHeight: '36px',
+            letterSpacing: '-0.01em',
         },
     } as ExtendedTypographyOptions,
 });
