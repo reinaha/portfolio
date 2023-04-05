@@ -15,7 +15,7 @@ interface IconListItemProps extends ListItemProps {
 type ListIconType = 'arrow' | 'chevron' | 'number' | 'noIcon' | undefined;
 
 export const IconListItem = ({
-    iconType,
+    iconType = 'noIcon',
     number = 0,
     iconColor = { primary: '#FFFFFF', secondary: '#000000' },
     children,

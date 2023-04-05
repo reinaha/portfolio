@@ -1,20 +1,19 @@
-import { Typography } from '@mui/material';
-
+import { IconListItem } from '@/components';
 import { PortfolioContainer, PortfolioImage, PortfolioSubSection } from '@/components';
 import { MessageJourney, MessageSupport } from '@/images';
 
 const MessageJourneyContent = () => {
     return (
         <PortfolioContainer>
-            <Typography>
+            <IconListItem>
                 To encourage customers to inquire through the app rather than phone calls,
                 we adopted a conversational design that makes users feel like they are
                 chatting in real-time.
-            </Typography>
-            <Typography>
+            </IconListItem>
+            <IconListItem>
                 In order to prevent redundant questions, we placed the message history
                 list at the beginning of the message page.
-            </Typography>
+            </IconListItem>
             <PortfolioImage imageSrc={MessageJourney} />
         </PortfolioContainer>
     );
@@ -23,12 +22,12 @@ const MessageJourneyContent = () => {
 const MessageSupportContent = () => {
     return (
         <PortfolioContainer>
-            <Typography>
+            <IconListItem>
                 To respond to user inquiries more quickly from the company&apos;s
                 perspective, it was important to categorize similar questions. To achieve
                 this, we designed a dropdown menu for selecting the category of the
                 inquiry when creating a new message.
-            </Typography>
+            </IconListItem>
             <PortfolioImage imageSrc={MessageSupport} />
         </PortfolioContainer>
     );

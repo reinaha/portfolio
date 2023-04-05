@@ -1,6 +1,7 @@
 export * from './buttons';
 export * from './fullImageCard';
 export * from './homeCards';
+export * from './homeCover';
 export * from './icons';
 export * from './layout';
 export * from './listText';

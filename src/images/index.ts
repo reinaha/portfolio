@@ -21,6 +21,8 @@ import ProductJourney from '@resources/OsstemDentalEshop/UserInterface/ProductJo
 import ProductOptionTab from '@resources/OsstemDentalEshop/UserInterface/ProductOptionTab.png';
 import ProductSubcategory from '@resources/OsstemDentalEshop/UserInterface/ProductSubcategory.png';
 
+export * from './HomeImages';
+
 export { CheckoutCover, EntranceCover, HomeCover, MessageCover, ProductCover };
 
 export { CheckoutFatigue, CheckoutJourney, CheckoutReduceError };

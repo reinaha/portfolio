@@ -6,17 +6,15 @@ type DiagonalArrowButtonProps = {
 };
 
 export const DiagonalArrowButton = ({ onClick }: DiagonalArrowButtonProps) => {
+    const size = 70;
     return (
         <IconButton
+            className="GoToPortfolio"
             sx={{
-                height: '2em',
-                padding: '0.5em',
+                height: size,
+                width: size,
                 color: 'white',
                 backgroundColor: '#292D32',
-                '&:hover': {
-                    backgroundColor: '#FFFFFF',
-                    color: 'black',
-                },
             }}
             onClick={onClick}
         >

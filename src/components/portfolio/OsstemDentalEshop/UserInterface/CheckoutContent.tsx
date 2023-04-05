@@ -1,5 +1,4 @@
-import { Typography } from '@mui/material';
-
+import { IconListItem } from '@/components';
 import {
     PortfolioContainer,
     PortfolioImage,
@@ -10,19 +9,19 @@ import { CheckoutFatigue, CheckoutJourney, CheckoutReduceError } from '@/images'
 const CheckoutJourneyContent = () => {
     return (
         <PortfolioContainer>
-            <Typography>
+            <IconListItem>
                 To encourage more purchases from users, it was important to make the
                 checkout process as easy as possible. We added quantity and
                 &ldquo;Edit&rdquo; buttons to the checkout session, allowing users to
                 modify the quantity or options of items. To enable users to confirm or
                 modify the delivery clinic, we added a drop-down menu for changing the
                 clinic location on the &ldquo;Payment & Info&rdquo; page.
-            </Typography>
-            <Typography>
+            </IconListItem>
+            <IconListItem>
                 To reduce order errors, we designed the last &ldquo;Review&rdquo; page to
                 require users to check their order details again before finalizing the
                 purchase.
-            </Typography>
+            </IconListItem>
             <PortfolioImage imageSrc={CheckoutJourney} />
         </PortfolioContainer>
     );
@@ -31,18 +30,18 @@ const CheckoutJourneyContent = () => {
 const CheckoutFatigueContent = () => {
     return (
         <PortfolioContainer>
-            <Typography>
+            <IconListItem>
                 To ensure that users do not feel overwhelmed during the checkout process,
                 which consists of three stages - &lsquo;My cart&rsquo;, &lsquo;Payment &
                 Info&rsquo;, and &lsquo;Review&rsquo; - a checkout progress bar was added
                 to the top bar, allowing users to check the checkout status in real time.
-            </Typography>
-            <Typography>
+            </IconListItem>
+            <IconListItem>
                 In addition, an orange tick icon was added to the previous stage tab every
                 time the checkout stage was passed, indicating to users that they have
                 already completed the stage. This was designed to reassure users and help
                 them navigate the checkout process smoothly.
-            </Typography>
+            </IconListItem>
             <PortfolioImage imageSrc={CheckoutFatigue} />
         </PortfolioContainer>
     );
@@ -51,17 +50,17 @@ const CheckoutFatigueContent = () => {
 const CheckoutReduceErrorContent = () => {
     return (
         <PortfolioContainer>
-            <Typography>
+            <IconListItem>
                 One of the biggest concerns we had during product ordering was that many
                 customers often select the wrong quantity of products. Sometimes they use
                 this as an excuse to complain to the company about the incorrect quantity.
-            </Typography>
-            <Typography>
+            </IconListItem>
+            <IconListItem>
                 To prevent this from happening, we designed a feature that changes the
                 color of the quantity button to black and adds a slight shaking animation
                 when a user orders a quantity greater than 1, allowing them to
                 double-check their input and avoid mistakes.
-            </Typography>
+            </IconListItem>
             <PortfolioImage imageSrc={CheckoutReduceError} />
         </PortfolioContainer>
     );

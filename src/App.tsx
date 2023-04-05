@@ -6,6 +6,7 @@ import '@fontsource/raleway/400.css';
 import '@fontsource/raleway/500.css';
 import '@fontsource/raleway/600.css';
 import '@fontsource/raleway/700.css';
+import './App.css';
 
 import Router from './routes/router';
 

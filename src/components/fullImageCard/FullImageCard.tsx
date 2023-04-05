@@ -9,7 +9,12 @@ export const FiCard = styled(Card)({
     flexDirection: 'column',
     justifyContent: 'space-between',
     padding: '35px 35px 35px 35px',
-    height: '643px',
+    height: '586px',
+    '&:hover': {
+        cursor: 'pointer',
+        '& .MuiCardMedia-root': { transform: 'scale3d(1.2, 1.2, 1)' },
+        '& .GoToPortfolio': { backgroundColor: '#FFFFFF', color: 'black' },
+    },
 });
 
 export const FiCardActionArea = styled(CardActionArea)({
@@ -36,6 +41,7 @@ export const FiCardMedia = styled(CardMedia)({
     right: 0,
     height: '100%',
     width: '100%',
+    transition: 'transform 0.6s ease-in-out',
 });
 
 // --- Exports --- //

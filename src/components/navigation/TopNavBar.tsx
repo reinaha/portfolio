@@ -17,7 +17,7 @@ import {
 import LogoDark from '@resources/Logos/LogoDark.svg';
 import LogoLight from '@resources/Logos/LogoLight.svg';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const pages = [
     {
@@ -57,6 +57,7 @@ const pages = [
 
 export default function TopNavBar() {
     const theme = useTheme();
+    const navigate = useNavigate();
 
     const isDarkTheme = useTheme().palette.mode === 'dark';
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -82,7 +83,10 @@ export default function TopNavBar() {
             <Container disableGutters sx={{ paddingLeft: 2, paddingRight: 2 }}>
                 <Toolbar disableGutters>
                     <Box sx={{ flexGrow: 1 }}>
-                        <IconButton sx={{ padding: '0px', height: '1.5em' }}>
+                        <IconButton
+                            onClick={() => navigate('/')}
+                            sx={{ padding: '0px', height: '1.5em' }}
+                        >
                             <Icon sx={{ height: '100%', width: '100%' }}>
                                 <img
                                     src={isDarkTheme ? LogoDark : LogoLight}

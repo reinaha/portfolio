@@ -39,6 +39,15 @@ export const defaultTheme = createTheme({
             wordBreak: 'break-word',
             color: '#FFFFFF',
         },
+        h4: {
+            fontWeight: 600,
+            fontStyle: 'normal',
+            fontSize: '22px',
+            lineHeight: '30px',
+            letterSpacing: '-0.01em',
+            wordBreak: 'break-word',
+            color: '#1A1E25',
+        },
         subtitle1: {
             fontWeight: 500,
             fontStyle: 'normal',
