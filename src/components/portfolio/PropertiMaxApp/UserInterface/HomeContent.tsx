@@ -5,44 +5,49 @@ import {
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
-    HomeCategoryMenu,
-    HomeClinicChange,
-    HomeDeliveryStatus,
-    HomeJourney,
-    HomeSubcategories,
-} from '@/images';
+    PropertiMaxAppHomeImg1,
+    PropertiMaxAppHomeImg2,
+    PropertiMaxAppHomeImg3,
+} from '@/images/PropertiMaxApp';
 
 const HomeJourneyContent = () => {
     return (
         <PortfolioContainer>
             <IconListItem>
-                When designing the home page, the most important consideration was to make
-                it easy for customers to search for products and quickly find categories.
-                Therefore, we placed the search bar at the top and the important
-                categories in the middle of the home page. In addition, we aimed to show
-                as many discounted items as possible, so we added a list of sale-related
-                items at the bottom.
+                When designing the home page, the most important aspect that we focused on
+                was making it easier and more intuitive for users to find properties.
             </IconListItem>
-            <PortfolioImage imageSrc={HomeJourney} />
+            <IconListItem>
+                To achieve this, we placed the search bar, search filters, and categories
+                in easy-to-find locations. Initially, we proposed an idea to only include
+                the search bar on the home page to emphasize its functionality. However,
+                we realized that new users of real estate search apps might find it
+                confusing to know what to search for and how to do it. Additionally, the
+                client wanted to showcase a variety of properties on the home page itself.
+            </IconListItem>
+            <IconListItem>
+                Therefore, we decided to maintain the familiar format of websites with
+                search functions to make it easy for users to navigate, even if they were
+                using a real estate search app for the first time.
+            </IconListItem>
+            <PortfolioImage imageSrc={PropertiMaxAppHomeImg1} />
         </PortfolioContainer>
     );
 };
 
-const ClinicChangeContent = () => {
+const SearchBarContent = () => {
     return (
         <PortfolioContainer>
             <IconListItem>
-                To accommodate the fact that our target customers, dental professionals,
-                often manage multiple clinics rather than just one, we have placed the
-                &ldquo;Change Clinic&rdquo; tab at the top of our app so that they can
-                easily switch the purchasing location of our products.
+                We designed the search bar, search filters, and categories to be
+                prominently displayed at the top of the app&apos;s homepage, making it
+                easier for users to find and conduct property searches.
             </IconListItem>
             <IconListItem>
-                Users can easily change their preferred delivery clinic by clicking the
-                drop-down button on the top tab. In addition, they can also change, add,
-                or delete clinics through &ldquo;edit detail&rdquo; option.
+                By positioning these elements at the top of the screen, we aimed to
+                encourage users to search for properties more easily and intuitively.
             </IconListItem>
-            <PortfolioImage imageSrc={HomeClinicChange} />
+            <PortfolioImage imageSrc={PropertiMaxAppHomeImg2} />
         </PortfolioContainer>
     );
 };
@@ -51,54 +56,18 @@ const CategoryMenuContent = () => {
     return (
         <PortfolioContainer>
             <IconListItem>
-                The biggest challenge in designing this app was figuring out how to
-                showcase a large number of products in a simple and intuitive way. With
-                over 2,000 products to display, it was crucial to reorganize the
-                categories and present them in a streamlined manner.
+                The client requested that we display a total of seven real estate
+                categories on the homepage: house, apartment, townhouse, unit, lifestyle,
+                land, and all. Additionally, they wanted to display a diverse range of
+                properties on the homepage.
             </IconListItem>
             <IconListItem>
-                In addition to displaying categories as tab buttons on the homepage, we
-                added a &ldquo;See all&rdquo; button that takes users to a separate menu
-                page where they can view all categories at once.
+                We found it challenging to simply list all the categories in a single row,
+                so we designed the category tab to be swiped right to find the desired
+                category. The category tab order was arranged according to the most
+                preferred property types by our target audience.
             </IconListItem>
-            <IconListItem>
-                To ensure that users can access the category menu from any page, we
-                designed the app&apos;s bottom menu bar to include a category (menu)
-                button that takes users to the category page when clicked.
-            </IconListItem>
-            <PortfolioImage imageSrc={HomeCategoryMenu} />
-        </PortfolioContainer>
-    );
-};
-
-const SubcategoriesContent = () => {
-    return (
-        <PortfolioContainer>
-            <IconListItem>
-                Due to customer feedback that they wanted to see all product categories at
-                once, despite having a large number of products, we added subcategories
-                under parent categories and designed a drop-down button to display
-                subcategories when clicked.
-            </IconListItem>
-            <PortfolioImage imageSrc={HomeSubcategories} />
-        </PortfolioContainer>
-    );
-};
-
-const ReducingPhoneEnquiriesContent = () => {
-    return (
-        <PortfolioContainer>
-            <IconListItem>
-                To address one of the most frequently asked questions by existing
-                customers, we placed information about the product delivery period in the
-                center of our homepage. By doing so, we aimed to reduce the number of
-                customer phone inquiries.
-            </IconListItem>
-            <IconListItem>
-                Customers who have placed orders can check not only their purchase history
-                but also the delivery period of the products they ordered through our app.
-            </IconListItem>
-            <PortfolioImage imageSrc={HomeDeliveryStatus} />
+            <PortfolioImage imageSrc={PropertiMaxAppHomeImg3} />
         </PortfolioContainer>
     );
 };
@@ -109,20 +78,12 @@ export const HomeContentData = [
         content: <HomeJourneyContent />,
     },
     {
-        title: 'Target-oriented clinic change tab',
-        content: <ClinicChangeContent />,
+        title: 'Positioning the search bar to encourage user searches',
+        content: <SearchBarContent />,
     },
     {
-        title: 'Category menu for finding products at a glance',
+        title: 'Simplifying the display of various category lists',
         content: <CategoryMenuContent />,
-    },
-    {
-        title: 'Easy-to-find subcategories',
-        content: <SubcategoriesContent />,
-    },
-    {
-        title: 'Reducing phone inquiries through product delivery status',
-        content: <ReducingPhoneEnquiriesContent />,
     },
 ];
 

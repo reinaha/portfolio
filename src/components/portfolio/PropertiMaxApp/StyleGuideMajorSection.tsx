@@ -1,6 +1,5 @@
-import Cover from '@resources/OsstemDentalEshop/StyleGuide/Cover.png';
-
 import { PortfolioMajorSection } from '@/components';
+import { PropertiMaxAppStyleguidecover } from '@/images/PropertiMaxApp';
 
 import { ColourAndTypographyContent, ComponentsAndElementsContent } from './StyleGuide';
 
@@ -19,7 +18,7 @@ export const StyleGuideMajorSection = () => {
                 title: 'Style Guide',
                 subTitles: styleGuideSections.map((s) => s.title),
             }}
-            coverImage={Cover}
+            coverImage={PropertiMaxAppStyleguidecover}
             portfolioSections={styleGuideSections}
         />
     );

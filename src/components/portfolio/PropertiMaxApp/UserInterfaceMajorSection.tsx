@@ -1,34 +1,57 @@
 import { PortfolioMajorSection } from '@/components';
 import {
-    CheckoutCover,
-    EntranceCover,
-    HomeCover,
-    MessageCover,
-    ProductCover,
-} from '@/images';
+    PropertiMaxAppEntrancecover,
+    PropertiMaxAppHomecover,
+    PropertiMaxAppListcover,
+    PropertiMaxAppMapcover,
+    PropertiMaxAppMysavedcover,
+    PropertiMaxAppNavbarcover,
+    PropertiMaxAppPropertydetailcover,
+    PropertiMaxAppSearchagentcover,
+} from '@/images/PropertiMaxApp';
 
 import {
-    CheckoutContent,
     EntranceContent,
+    FilterContent,
     HomeContent,
-    MessageContent,
-    ProductContent,
+    ListContent,
+    MapContent,
+    NavigationContent,
+    PropertyDetailContent,
+    SavedListContent,
+    SearchContent,
 } from './UserInterface';
 
 const userInterfaceSections = [
     {
         title: 'Entrance',
         content: <EntranceContent />,
-        coverImg: EntranceCover,
+        coverImg: PropertiMaxAppEntrancecover,
     },
-    { title: 'Home', content: <HomeContent />, coverImg: HomeCover },
-    { title: 'Product', content: <ProductContent />, coverImg: ProductCover },
+    { title: 'Home', content: <HomeContent />, coverImg: PropertiMaxAppHomecover },
+    { title: 'Filter', content: <FilterContent />, coverImg: PropertiMaxAppHomecover },
+    { title: 'Map Search', content: <MapContent />, coverImg: PropertiMaxAppMapcover },
+    { title: 'List Search', content: <ListContent />, coverImg: PropertiMaxAppListcover },
     {
-        title: 'Checkout',
-        content: <CheckoutContent />,
-        coverImg: CheckoutCover,
+        title: 'Property Detail',
+        content: <PropertyDetailContent />,
+        coverImg: PropertiMaxAppPropertydetailcover,
     },
-    { title: 'Message', content: <MessageContent />, coverImg: MessageCover },
+    {
+        title: 'Search Agents',
+        content: <SearchContent />,
+        coverImg: PropertiMaxAppSearchagentcover,
+    },
+    {
+        title: 'My Saved List',
+        content: <SavedListContent />,
+        coverImg: PropertiMaxAppMysavedcover,
+    },
+    {
+        title: 'Navigation Bar',
+        content: <NavigationContent />,
+        coverImg: PropertiMaxAppNavbarcover,
+    },
 ];
 
 export const UserInterfaceMajorSection = () => {

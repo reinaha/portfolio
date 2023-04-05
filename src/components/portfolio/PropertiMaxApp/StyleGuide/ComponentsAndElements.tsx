@@ -1,12 +1,10 @@
-import Components from '@resources/OsstemDentalEshop/StyleGuide/Components.png';
-
-import { PortfolioImage } from '../../portfolioBricks';
-import { PortfolioContainer } from '../../portfolioBricks/PortfolioContainer';
+import { PortfolioContainer, PortfolioImage } from '@/components';
+import { PropertiMaxAppComponent } from '@/images/PropertiMaxApp';
 
 export const ComponentsAndElementsContent = () => {
     return (
         <PortfolioContainer>
-            <PortfolioImage imageSrc={Components} />
+            <PortfolioImage imageSrc={PropertiMaxAppComponent} />
         </PortfolioContainer>
     );
 };

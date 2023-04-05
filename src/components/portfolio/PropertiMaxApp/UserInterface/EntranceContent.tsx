@@ -4,66 +4,80 @@ import {
     PortfolioImage,
     PortfolioSubSection,
 } from '@/components/portfolio';
-import { EntranceIntegration, EntranceJourney, EntranceProgressBar } from '@/images';
+import {
+    PropertiMaxAppEntranceImg1,
+    PropertiMaxAppEntranceImg2,
+    PropertiMaxAppEntranceImg3,
+} from '@/images/PropertiMaxApp';
 
-const SignUpJourneyContent = () => {
+const EntranceJourneyContent = () => {
     return (
         <PortfolioContainer>
             <IconListItem>
-                Each screen delivers one task so that users can only focus on one task at
-                once without any distractions.
+                I thought the Entrance page would be the best page to showcase the
+                PropertiMax brand identity. Designed primarily with PropertiMax&apos;s
+                main color, green, I placed property images throughout the page,
+                highlighting them as a key product to help users naturally feel what type
+                of company PropertiMax is and what brand it represents. In addition, I
+                used various images and icons to design the entrance page in a way that
+                wouldn&apos;t bore users.
             </IconListItem>
-            <PortfolioImage imageSrc={EntranceJourney} />
+            <PortfolioImage imageSrc={PropertiMaxAppEntranceImg1} />
         </PortfolioContainer>
     );
 };
 
-const IntegrationContent = () => {
+const IntroPageContent = () => {
     return (
         <PortfolioContainer>
             <IconListItem>
-                One of the most important things to consider on the registration page is
-                that the target of the Osstem e-shop app is not only new customers, but
-                also existing Osstem New Zealand account holders. Therefore, it was
-                crucial for existing customers to link their previous Osstem account to
-                the new app account during registration.
+                As it was a new app released at the time and there were not many real
+                estate search platform apps available, I designed an intro page with a
+                brief explanation of the app&apos;s features before entering the login
+                page.
             </IconListItem>
             <IconListItem>
-                To facilitate this process, we created a separate field for users to enter
-                their Osstem account code, and added a question mark button for those who
-                may need additional clarification.
+                For users who want to quickly skip the intro page, I created a
+                &ldquo;skip&rdquo; button at the top of the page, which allows them to
+                bypass the intro and go directly to the login page.
             </IconListItem>
-            <PortfolioImage imageSrc={EntranceIntegration} />
+            <PortfolioImage imageSrc={PropertiMaxAppEntranceImg2} />
         </PortfolioContainer>
     );
 };
 
-const PositioningContent = () => {
+const ProgressBarContent = () => {
     return (
         <PortfolioContainer>
             <IconListItem>
-                To ensure readability and app size, we designed the registration form in
-                three steps. To prevent confusion for users, we placed a progress bar at
-                the top of the app to show users in real-time where they are in the
-                registration process until completion.
+                To prevent users from getting bored during the three-step sign-up process,
+                a progress bar was placed on the app&apos;s top bar to reduce user
+                fatigue.
             </IconListItem>
-            <PortfolioImage imageSrc={EntranceProgressBar} />
+            <IconListItem>
+                Additionally, since the location settings and user profile pages, except
+                for the first sign-up page, were parts that users could modify after
+                joining the app, a skip button was placed at the top when these two pages
+                appeared so that users could easily skip them if they did not want to fill
+                them out.
+            </IconListItem>
+            <PortfolioImage imageSrc={PropertiMaxAppEntranceImg3} />
         </PortfolioContainer>
     );
 };
 
 export const EntranceContentData = [
     {
-        title: 'Sign up journey',
-        content: <SignUpJourneyContent />,
+        title: 'Entrance journey',
+        content: <EntranceJourneyContent />,
     },
     {
-        title: 'Integrating existing customer accounts with the app account',
-        content: <IntegrationContent />,
+        title: 'Intro page to increase user understanding of the app',
+        content: <IntroPageContent />,
     },
     {
-        title: 'Positioning sign-up progress bar at the top of the app',
-        content: <PositioningContent />,
+        title: 'A progress bar to reduce user fatigue in app usage',
+        content: <ProgressBarContent />,
     },
 ];
 
