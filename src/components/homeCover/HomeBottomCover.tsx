@@ -40,6 +40,7 @@ export const HomeBottomCover = () => {
             paddingBottom={30}
             rowGap={5}
             alignItems="center"
+            className="ContactMe"
         >
             <Box flexGrow={1}>
                 <Typography variant="h1">Let&apos;s Talk</Typography>

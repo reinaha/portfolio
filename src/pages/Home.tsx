@@ -1,5 +1,6 @@
 import { Box, Grid, Stack } from '@mui/material';
-import { NavigateFunction, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { NavigateFunction, useLocation, useNavigate } from 'react-router-dom';
 
 import { HomeBottomCover, HomeTopCover } from '@/components';
 import { AnimatedMouseScrollIcon } from '@/icons';
@@ -71,6 +72,19 @@ const portfolioCardData = [
 
 export function Home() {
     const navigate = useNavigate();
+
+    const { state } = useLocation();
+
+    useEffect(() => {
+        if (state) {
+            const targetClass = state.targetClass;
+            console.log(targetClass);
+            const el = document.getElementsByClassName(targetClass);
+            if (el && el.length > 0) {
+                el[0].scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [state]);
 
     return (
         <Stack paddingTop={30} spacing={40} alignItems="center">

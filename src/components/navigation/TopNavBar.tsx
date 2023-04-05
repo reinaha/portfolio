@@ -33,7 +33,7 @@ const pages = [
     {
         key: 2,
         text: 'Hire Me',
-        path: '/contact',
+        path: '/',
     },
     {
         key: 3,
@@ -114,10 +114,6 @@ export default function TopNavBar() {
                                 onClose={handleClose}
                             >
                                 {pages.map((page) => {
-                                    const buttonColor = isDarkTheme
-                                        ? page.bgColor?.dark
-                                        : page.bgColor?.light;
-
                                     return (
                                         <MenuItem key={page.key}>{page.text}</MenuItem>
                                     );

@@ -1,4 +1,4 @@
-import { Box, Chip, Stack, Typography } from '@mui/material';
+import { Chip, Stack, Typography } from '@mui/material';
 
 import { DiagonalArrowButton } from '../buttons/DiagonalArrowButton';
 import { FiCard, FiCardContent, FiCardMedia } from '../fullImageCard';
@@ -19,7 +19,7 @@ export const PortfolioCard = ({
     buttonOnClick,
 }: PortfolioCardProps) => {
     return (
-        <FiCard onMouseEnter={() => console.log('Yea')} onClick={buttonOnClick}>
+        <FiCard onClick={buttonOnClick}>
             <FiCardMedia image={backgroundImage} />
             <FiCardContent>
                 <Stack direction="row">
