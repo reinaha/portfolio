@@ -1,16 +1,15 @@
 import { Typography } from '@mui/material';
-import DesignProcess from '@resources/OsstemDentalEshop/Intro/DesignProcess.png';
 
 import { PortfolioContainer, PortfolioImageExtraMargin } from '@/components';
+import { PropertiMaxAppProcess } from '@/images/PropertiMaxApp';
 
 export const DesignProcessContent = () => {
     return (
         <PortfolioContainer>
             <Typography>
-                This project spanned over a period of three months from Feb 2022 - May
-                2022
+                This project spanned over a period of 6 months from Aug 2019 - Jan 2020
             </Typography>
-            <PortfolioImageExtraMargin imageSrc={DesignProcess} />
+            <PortfolioImageExtraMargin imageSrc={PropertiMaxAppProcess} />
         </PortfolioContainer>
     );
 };

@@ -6,22 +6,18 @@ export const IntroductionContent = () => {
     return (
         <PortfolioContainer>
             <Typography>
-                Osstem New Zealand aimed to develop an e-commerce application for the
-                purpose of retailing dental products, including dental implants, tools,
-                and equipment
+                At the time, there weren&apos;t many real estate listing applications in
+                the New Zealand market. The main competitor in the real estate website
+                space was TradeMe Property, which was a subsidiary of the popular trading
+                website TradeMe. Apart from that, the only other options were individual
+                real estate agent-operated websites, which were not perfect apps but
+                rather web apps, making them no different from a blue ocean perspective.
             </Typography>
             <Typography>
-                Prior to our decision to develop an e-commerce shop, the company relied
-                exclusively on salespeople who would visit dental clinics to meet with
-                dentists and sell our products. While this selling strategy was
-                well-suited to the New Zealand market&apos;s preference for face-to-face
-                interactions and conservatism, it also resulted in unstable income for our
-                company.
-            </Typography>
-            <Typography>
-                This was due to our revenue being dependent on the capabilities of sales
-                representatives, as well as revenue volatility being highly influenced by
-                environmental changes such as the COVID-19 pandemic.
+                Therefore, our goal was to create an application that would perfectly
+                address the shortcomings and inconveniences of TradeMe, our only
+                competitor, and to further study the Australian real estate website and
+                application market for improvement ideas and inspiration.
             </Typography>
         </PortfolioContainer>
     );

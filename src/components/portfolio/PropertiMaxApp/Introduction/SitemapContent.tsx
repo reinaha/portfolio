@@ -1,11 +1,10 @@
-import Sitemap from '@resources/OsstemDentalEshop/Intro/Sitemap.png';
-
 import { PortfolioContainer, PortfolioImage } from '@/components';
+import { PropertiMaxAppSitemap } from '@/images/PropertiMaxApp';
 
 export const SitemapContent = () => {
     return (
         <PortfolioContainer>
-            <PortfolioImage imageSrc={Sitemap} />
+            <PortfolioImage imageSrc={PropertiMaxAppSitemap} />
         </PortfolioContainer>
     );
 };

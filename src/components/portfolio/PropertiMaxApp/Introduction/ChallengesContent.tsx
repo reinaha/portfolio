@@ -7,20 +7,26 @@ export const ChallengesContent = () => {
     return (
         <PortfolioContainer>
             <IconListItem iconType="number" number={1} iconColor={iconColor}>
-                Due to the large quantity of products, categorization was the most
-                important aspect of this app. The categories were reorganized based on the
-                opinions of our target audience, dentists, to suit their purposes.
+                One challenge was to condense a vast amount of information within real
+                estate listings into a limited mobile screen size. We replaced parts that
+                could be replaced with icons and designed each page with elements divided
+                by priority and arranged in order of importance, since some pages
+                unavoidably had to be longer.
             </IconListItem>
             <IconListItem iconType="number" number={2} iconColor={iconColor}>
-                Based on the feedback from our target users, it was overwhelmingly
-                suggested to have a menu page where all categories can be viewed at once
-                without additional actions required.
+                Since real estate listings include various options, users could get
+                confused about which page they are currently on when searching for a
+                property with specific options. To avoid this, we placed breadcrumbs at
+                the top of all search pages to help users navigate and avoid getting lost.
             </IconListItem>
             <IconListItem iconType="number" number={3} iconColor={iconColor}>
-                Due to the characteristics of the target audience, especially for pay
-                doctors who often handle clinics in two or three locations, a feature was
-                needed to allow multiple delivery locations to be selected on a single
-                account.
+                Since it is a format where someone uploads new items in real-time rather
+                than selling limited items, there was a concern that the overall design of
+                the app might not look consistent if not careful. We tried to maintain
+                consistency in design by using consistent design elements wherever
+                possible. For user-uploaded real estate listing photos, prices, and other
+                information, we designed them with minimum and maximum size and text to
+                ensure that they don&apos;t deviate from the overall design framework.
             </IconListItem>
         </PortfolioContainer>
     );

@@ -1,5 +1,4 @@
 import { Divider } from '@mui/material';
-import HeaderCover from '@resources/OsstemDentalEshop/HeaderCover.png';
 
 import { PortfolioLayout } from '@/components';
 import {
@@ -9,14 +8,15 @@ import {
     TakeawaysMajorSection,
     UserInterfaceMajorSection,
 } from '@/components/portfolio/PropertiMaxApp';
+import { PropertiMaxAppCover } from '@/images/PropertiMaxApp';
 
-export const OsstemDentalEShop = () => {
+export const PropertiMaxApp = () => {
     return (
         <PortfolioLayout
             headerProps={{
                 title: 'UX/UI Design',
                 headerContent: <HeaderContent />,
-                coverImg: HeaderCover,
+                coverImg: PropertiMaxAppCover,
                 paddingTop: 30,
             }}
         >

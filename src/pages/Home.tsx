@@ -21,9 +21,9 @@ const portfolioCardData = [
         subtitle: 'Real Estate Trading Application',
         tags: ['UI/UX Design', 'Mobile App'],
         backgroundImg: RealEstateTradingApp,
-        navigationPath: '/portfolio/osstem-dental-e-shop',
+        navigationPath: '/portfolio/propertimax-app',
         onClick: (navigate: NavigateFunction) => () =>
-            navigate('/portfolio/osstem-dental-e-shop'),
+            navigate('/portfolio/propertimax-app'),
     },
     {
         title: 'Osstem Mobile App',
