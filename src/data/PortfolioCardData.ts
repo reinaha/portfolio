@@ -32,24 +32,21 @@ export const PortfolioCardData: IPortfolioCard[] = [
         subtitle: 'Real Estate Trading Website',
         tags: ['UI/UX Design', 'Web App'],
         backgroundImg: RealEstateTradingWeb,
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/portfolio/osstem-dental-e-shop'),
+        onClick: (navigate: NavigateFunction) => () => navigate('/portfolio/'),
     },
     {
         title: 'PropertiMax',
         subtitle: 'Real Estate Agent Dashboard',
         tags: ['UI/UX Design', 'Web App'],
         backgroundImg: RealEstateTradingDashboard,
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/portfolio/osstem-dental-e-shop'),
+        onClick: (navigate: NavigateFunction) => () => navigate('/portfolio/'),
     },
     {
         title: 'Osstem Web App',
         subtitle: 'Dental Supply E-Commerce Website',
         tags: ['UI/UX Design', 'Web App'],
         backgroundImg: DentalECommerceWeb,
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/portfolio/osstem-dental-e-shop'),
+        onClick: (navigate: NavigateFunction) => () => navigate('/portfolio/'),
     },
     {
         title: 'Graphic Design Works',
