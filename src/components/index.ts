@@ -6,3 +6,4 @@ export * from './layout';
 export * from './listText';
 export * from './navigation';
 export * from './portfolio';
+export * from './portfolioCardSection';

@@ -1,6 +1,5 @@
-import Cover from '@resources/OsstemDentalEshop/StyleGuide/Cover.png';
-
 import { PortfolioMajorSection } from '@/components';
+import { StyleGuideCover } from '@/images/OsstemDentalEShop';
 
 import { ColourAndTypographyContent, ComponentsAndElementsContent } from './StyleGuide';
 
@@ -19,7 +18,7 @@ export const StyleGuideMajorSection = () => {
                 title: 'Style Guide',
                 subTitles: styleGuideSections.map((s) => s.title),
             }}
-            coverImage={Cover}
+            coverImage={StyleGuideCover}
             portfolioSections={styleGuideSections}
         />
     );

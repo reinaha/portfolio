@@ -1,4 +1,4 @@
-import Components from '@resources/OsstemDentalEshop/StyleGuide/Components.png';
+import { Components } from '@/images/OsstemDentalEShop';
 
 import { PortfolioImage } from '../../portfolioBricks';
 import { PortfolioSectionContainer } from '../../portfolioBricks/PortfolioSectionContainer';

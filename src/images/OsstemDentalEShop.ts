@@ -1,3 +1,12 @@
+import HeaderCover from '@resources/OsstemDentalEshop/HeaderCover.png';
+import DesignProcess from '@resources/OsstemDentalEshop/Intro/DesignProcess.png';
+import Sitemap from '@resources/OsstemDentalEshop/Intro/Sitemap.png';
+import Wireframes from '@resources/OsstemDentalEshop/Intro/Wireframes.png';
+import ColourTypography from '@resources/OsstemDentalEshop/StyleGuide/ColourTypography.png';
+import Components from '@resources/OsstemDentalEshop/StyleGuide/Components.png';
+import StyleGuideCover from '@resources/OsstemDentalEshop/StyleGuide/Cover.png';
+import RetrospectiveCategoryMenu from '@resources/OsstemDentalEshop/Takeaway/RetrospectiveCategoryMenu.png';
+import RetrospectiveProgressBar from '@resources/OsstemDentalEshop/Takeaway/RetrospectiveProgressBar.png';
 import CheckoutCover from '@resources/OsstemDentalEshop/UserInterface/CheckoutCover.svg';
 import CheckoutFatigue from '@resources/OsstemDentalEshop/UserInterface/CheckoutFatigue.png';
 import CheckoutJourney from '@resources/OsstemDentalEshop/UserInterface/CheckoutJourney.png';
@@ -21,11 +30,22 @@ import ProductJourney from '@resources/OsstemDentalEshop/UserInterface/ProductJo
 import ProductOptionTab from '@resources/OsstemDentalEshop/UserInterface/ProductOptionTab.png';
 import ProductSubcategory from '@resources/OsstemDentalEshop/UserInterface/ProductSubcategory.png';
 
-export { CheckoutCover, EntranceCover, HomeCover, MessageCover, ProductCover };
+export { HeaderCover };
+
+export {
+    CheckoutCover,
+    EntranceCover,
+    HomeCover,
+    MessageCover,
+    ProductCover,
+    StyleGuideCover,
+};
 
 export { CheckoutFatigue, CheckoutJourney, CheckoutReduceError };
 
 export { EntranceIntegration, EntranceJourney, EntranceProgressBar };
+
+export { ColourTypography, Components };
 
 export {
     HomeCategoryMenu,
@@ -38,3 +58,7 @@ export {
 export { MessageJourney, MessageSupport };
 
 export { ProductDescriptionButton, ProductJourney, ProductOptionTab, ProductSubcategory };
+
+export { DesignProcess, Sitemap, Wireframes };
+
+export { RetrospectiveCategoryMenu, RetrospectiveProgressBar };

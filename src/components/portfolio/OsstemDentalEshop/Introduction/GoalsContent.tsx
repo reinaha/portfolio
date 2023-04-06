@@ -1,7 +1,10 @@
 import { Chip, Typography } from '@mui/material';
 
-import { PortfolioSectionContainer, PortfolioSectionContainerProps } from '@/components';
-import { IconListItem } from '@/components/listText/IconListItem';
+import {
+    IconListItem,
+    PortfolioSectionContainer,
+    PortfolioSectionContainerProps,
+} from '@/components';
 
 export const GoalsContent = () => {
     const goalColor = { primary: '#0A69FA', secondary: '#F2F7FF' };

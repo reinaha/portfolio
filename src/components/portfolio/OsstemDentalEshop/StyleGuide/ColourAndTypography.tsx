@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
-import ColourTypography from '@resources/OsstemDentalEshop/StyleGuide/ColourTypography.png';
 
 import { PortfolioImageExtraMargin, PortfolioSectionContainer } from '@/components';
+import { ColourTypography } from '@/images/OsstemDentalEShop';
 
 export const ColourAndTypographyContent = () => {
     return (

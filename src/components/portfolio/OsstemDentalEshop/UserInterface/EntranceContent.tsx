@@ -1,11 +1,9 @@
-import { Box } from '@mui/material';
-
-import { IconListItem } from '@/components';
 import {
+    IconListItem,
     PortfolioImage,
     PortfolioSectionContainer,
     PortfolioSubSection,
-} from '@/components/portfolio';
+} from '@/components';
 import { EntranceIntegration, EntranceJourney, EntranceProgressBar } from '@/images';
 
 const SignUpJourneyContent = () => {

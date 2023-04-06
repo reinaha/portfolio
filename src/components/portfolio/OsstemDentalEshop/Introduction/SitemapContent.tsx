@@ -1,6 +1,5 @@
-import Sitemap from '@resources/OsstemDentalEshop/Intro/Sitemap.png';
-
 import { PortfolioImage, PortfolioSectionContainer } from '@/components';
+import { Sitemap } from '@/images/OsstemDentalEShop';
 
 export const SitemapContent = () => {
     return (

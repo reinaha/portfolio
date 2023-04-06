@@ -1,6 +1,5 @@
-import Wireframes from '@resources/OsstemDentalEshop/Intro/Wireframes.png';
-
 import { PortfolioImage, PortfolioSectionContainer } from '@/components';
+import { Wireframes } from '@/images/OsstemDentalEShop';
 
 export const WireframesContent = () => {
     return (

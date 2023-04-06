@@ -1,9 +1,9 @@
-import { IconListItem } from '@/components';
 import {
+    IconListItem,
     PortfolioImage,
     PortfolioSectionContainer,
     PortfolioSubSection,
-} from '@/components/portfolio';
+} from '@/components';
 import { CheckoutFatigue, CheckoutJourney, CheckoutReduceError } from '@/images';
 
 const CheckoutJourneyContent = () => {

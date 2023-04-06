@@ -1,0 +1,36 @@
+import { Box, Grid } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+
+import { IPortfolioCard } from '@/models';
+
+import { PortfolioCard } from '../card';
+
+interface PortfolioCardSectionProps {
+    portfolioCardData: IPortfolioCard[];
+}
+
+export const PortfolioCardSection = ({
+    portfolioCardData,
+}: PortfolioCardSectionProps) => {
+    const navigate = useNavigate();
+
+    return (
+        <Box>
+            <Grid container alignItems="stretch" columnSpacing={5.5} rowSpacing={11}>
+                {portfolioCardData.map((p, index) => {
+                    return (
+                        <Grid item key={index} xs={12} sm={12} md={6} lg={6}>
+                            <PortfolioCard
+                                title={p.title}
+                                subtitle={p.subtitle}
+                                tags={p.tags}
+                                backgroundImage={p.backgroundImg}
+                                buttonOnClick={p.onClick(navigate)}
+                            />
+                        </Grid>
+                    );
+                })}
+            </Grid>
+        </Box>
+    );
+};

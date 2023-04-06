@@ -1,12 +1,10 @@
-import RetrospectiveCategoryMenu from '@resources/OsstemDentalEshop/Takeaway/RetrospectiveCategoryMenu.png';
-import RetrospectiveProgressBar from '@resources/OsstemDentalEshop/Takeaway/RetrospectiveProgressBar.png';
-
 import {
     IconListItem,
     PortfolioChevronSection,
     PortfolioImage,
     PortfolioSectionContainer,
 } from '@/components';
+import { RetrospectiveCategoryMenu, RetrospectiveProgressBar } from '@/images';
 
 const iconColor = { primary: '#1C1B1F', secondary: '#1C1B1F' };
 

@@ -1,5 +1,4 @@
 import { Divider } from '@mui/material';
-import HeaderCover from '@resources/OsstemDentalEshop/HeaderCover.png';
 
 import { PortfolioContainer } from '@/components';
 import {
@@ -9,6 +8,7 @@ import {
     TakeawaysMajorSection,
     UserInterfaceMajorSection,
 } from '@/components/portfolio/OsstemDentalEshop';
+import { HeaderCover } from '@/images/OsstemDentalEShop';
 
 export const OsstemDentalEShop = () => {
     return (

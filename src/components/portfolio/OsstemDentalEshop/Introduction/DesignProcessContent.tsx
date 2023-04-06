@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
-import DesignProcess from '@resources/OsstemDentalEshop/Intro/DesignProcess.png';
 
 import { PortfolioImageExtraMargin, PortfolioSectionContainer } from '@/components';
+import { DesignProcess } from '@/images/OsstemDentalEShop';
 
 export const DesignProcessContent = () => {
     return (
