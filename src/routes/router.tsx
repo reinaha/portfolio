@@ -8,6 +8,7 @@ import {
     PropertiMaxApp,
     UnderConstruction,
 } from '@/pages';
+import { PropertiMaxWeb } from '@/pages/portfolio/PropertiMaxWeb';
 
 export default function Router() {
     return (
@@ -20,6 +21,7 @@ export default function Router() {
                             element={<OsstemDentalEShop />}
                         />
                         <Route path="propertimax-app" element={<PropertiMaxApp />} />
+                        <Route path="propertimax-web" element={<PropertiMaxWeb />} />
                         <Route index element={<UnderConstruction />} />
                     </Route>
                     <Route index element={<Home />} />

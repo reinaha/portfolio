@@ -23,7 +23,7 @@ import PropertiMaxWebListsearchImg2 from '@resources/PropertiMaxWeb/22-ListSearc
 import PropertiMaxWebMapsearchcover from '@resources/PropertiMaxWeb/23-MapSearchCover_4x.png';
 import PropertiMaxWebMapsearchImg1 from '@resources/PropertiMaxWeb/24-MapSearch-img1_3x.png';
 import PropertiMaxWebMapsearchImg2 from '@resources/PropertiMaxWeb/25-MapSearch-img2_3x.png';
-import PropertiMaxWebPropertydatailcover from '@resources/PropertiMaxWeb/26-PropertyDatailCover_4x.png';
+import PropertiMaxWebPropertydetailcover from '@resources/PropertiMaxWeb/26-PropertyDatailCover_4x.png';
 import PropertiMaxWebPropertydetailImg1 from '@resources/PropertiMaxWeb/27-PropertyDetail-img1_3x.png';
 import PropertiMaxWebPropertydetailImg2 from '@resources/PropertiMaxWeb/28-PropertyDetail-img2_3x.png';
 import PropertiMaxWebPropertydetailImg3 from '@resources/PropertiMaxWeb/29-PropertyDetail-img3_3x.png';
@@ -53,7 +53,7 @@ export {
     PropertiMaxWebMapsearchImg2,
     PropertiMaxWebNavbarcover,
     PropertiMaxWebProcess,
-    PropertiMaxWebPropertydatailcover,
+    PropertiMaxWebPropertydetailcover,
     PropertiMaxWebPropertydetailImg1,
     PropertiMaxWebPropertydetailImg2,
     PropertiMaxWebPropertydetailImg3,

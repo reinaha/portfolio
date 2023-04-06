@@ -28,11 +28,12 @@ export const PortfolioCardData: IPortfolioCard[] = [
             navigate('/portfolio/osstem-dental-e-shop'),
     },
     {
-        title: 'PropertiMax',
+        title: 'PropertiMax Web App',
         subtitle: 'Real Estate Trading Website',
         tags: ['UI/UX Design', 'Web App'],
         backgroundImg: RealEstateTradingWeb,
-        onClick: (navigate: NavigateFunction) => () => navigate('/portfolio/'),
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/portfolio/propertimax-web'),
     },
     {
         title: 'PropertiMax',
