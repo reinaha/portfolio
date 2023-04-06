@@ -64,6 +64,7 @@ export const NavBarIcons = ({ isDarkTheme }: NavBarComponent) => {
                                 key={icon.key}
                                 component={Link}
                                 to={icon.path || '.'}
+                                state={icon.section}
                                 color="primary"
                                 disableElevation
                                 sx={{

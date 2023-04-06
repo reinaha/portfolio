@@ -4,7 +4,8 @@ import { NavBarIcons } from './NavBarIcons';
 import { NavBarLogo } from './NavBarLogo';
 
 export default function TopNavBar() {
-    const isDarkTheme = useTheme().palette.mode === 'dark';
+    const theme = useTheme();
+    const isDarkTheme = theme.palette.mode === 'dark';
 
     return (
         <AppBar

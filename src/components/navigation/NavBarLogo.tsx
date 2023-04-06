@@ -9,7 +9,7 @@ export const NavBarLogo = ({ isDarkTheme = true }: NavBarComponent) => {
 
     return (
         <IconButton
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/', { state: undefined })}
             sx={{ padding: '0px', height: '1.5em' }}
         >
             <Icon sx={{ height: '100%', width: '100%' }}>

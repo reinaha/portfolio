@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Typography } from '@mui/material';
+import { Box, Button, Stack, StackProps, Typography } from '@mui/material';
 
 interface ButtomButton {
     key: number;
@@ -32,15 +32,17 @@ const bottomButtons: ButtomButton[] = [
     },
 ];
 
-export const HomeBottomCover = () => {
+export const HomeBottomCover = ({ ...props }: StackProps) => {
     return (
         <Stack
+            id="ContactMe"
             direction={{ lg: 'row', md: 'row', sm: 'column', xs: 'column' }}
             width="100%"
             paddingBottom={30}
             rowGap={5}
             alignItems="center"
             className="ContactMe"
+            {...props}
         >
             <Box flexGrow={1}>
                 <Typography variant="h1">Let&apos;s Talk</Typography>

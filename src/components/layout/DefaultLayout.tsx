@@ -1,29 +1,31 @@
 import { Container, CssBaseline, ThemeProvider } from '@mui/material';
-import { useLayoutEffect } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useMatch } from 'react-router-dom';
 
-import { LayoutProps } from '../../models';
+import { defaultTheme, lightTheme } from '@/themes/default';
+
 import TopNavBar from '../navigation/TopNavBar';
 
-export const DefaultLayout = ({ theme }: LayoutProps) => {
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+export const DefaultLayout = () => {
+    const isPortfolioRoute = useMatch('/portfolio/*');
 
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={isPortfolioRoute ? lightTheme : defaultTheme}>
             <CssBaseline enableColorScheme />
             <TopNavBar />
-            <Container
-                disableGutters
-                sx={{
-                    paddingBottom: '3em',
-                    paddingLeft: '18px',
-                    paddingRight: '18px',
-                }}
-            >
+            {!isPortfolioRoute ? (
+                <Container
+                    disableGutters
+                    sx={{
+                        paddingBottom: '3em',
+                        paddingLeft: '18px',
+                        paddingRight: '18px',
+                    }}
+                >
+                    <Outlet />
+                </Container>
+            ) : (
                 <Outlet />
-            </Container>
+            )}
         </ThemeProvider>
     );
 };

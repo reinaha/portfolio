@@ -2,6 +2,7 @@ interface NavBarButton {
     key: number;
     text: string;
     path?: string;
+    section?: string;
     bgColor?: {
         dark: string;
         light: string;
@@ -18,11 +19,13 @@ export const NavBarButtons: NavBarButton[] = [
         key: 1,
         text: 'Work',
         path: '/',
+        section: 'mouse',
     },
     {
         key: 2,
         text: 'Hire Me',
         path: '/',
+        section: 'ContactMe',
     },
     {
         key: 3,
