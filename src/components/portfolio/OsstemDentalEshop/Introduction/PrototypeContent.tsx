@@ -1,5 +1,3 @@
-import { Box } from '@mui/material';
-
 import { PortfolioPrototype, PortfolioSectionContainer } from '@/components';
 
 export const PrototypeContent = () => {
