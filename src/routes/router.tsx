@@ -1,15 +1,30 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { Layout } from '../components/layout/Layout';
-import { Error, Home, Portfolio } from '../pages';
+import { DefaultLayout } from '@/components';
+import {
+    Error,
+    Home,
+    OsstemDentalEShop,
+    PropertiMaxApp,
+    UnderConstruction,
+} from '@/pages';
+import { PropertiMaxWeb } from '@/pages/portfolio/PropertiMaxWeb';
 
 export default function Router() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio">
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/" element={<DefaultLayout />}>
+                    <Route path="/portfolio">
+                        <Route
+                            path="osstem-dental-e-shop"
+                            element={<OsstemDentalEShop />}
+                        />
+                        <Route path="propertimax-app" element={<PropertiMaxApp />} />
+                        <Route path="propertimax-web" element={<PropertiMaxWeb />} />
+                        <Route index element={<UnderConstruction />} />
+                    </Route>
                     <Route index element={<Home />} />
-                    <Route path="portfolio" element={<Portfolio />} />
                     <Route path="*" element={<Error />} />
                 </Route>
             </Routes>

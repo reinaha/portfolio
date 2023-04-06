@@ -1,54 +1,26 @@
-import { AppBar, Box, Button, Container, Icon, IconButton, Toolbar } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { AppBar, Box, Container, Toolbar, useTheme } from '@mui/material';
 
-import Logo from '../../../resources/Logo.png';
-
-const pages = [
-    {
-        key: 0,
-        text: 'Home',
-        path: '/',
-    },
-    {
-        key: 1,
-        text: 'Work',
-        path: '/portfolio',
-    },
-    {
-        key: 2,
-        text: 'Contact',
-        path: '/contact',
-    },
-];
+import { NavBarIcons } from './NavBarIcons';
+import { NavBarLogo } from './NavBarLogo';
 
 export default function TopNavBar() {
+    const theme = useTheme();
+    const isDarkTheme = theme.palette.mode === 'dark';
+
     return (
-        <AppBar position="sticky" elevation={0} color="secondary" enableColorOnDark>
-            <Container disableGutters sx={{ paddingLeft: '8px', paddingRight: '8px' }}>
+        <AppBar
+            position="sticky"
+            elevation={0}
+            color="secondary"
+            enableColorOnDark
+            sx={{ marginTop: 9.5 }}
+        >
+            <Container disableGutters sx={{ paddingLeft: 2, paddingRight: 2 }}>
                 <Toolbar disableGutters>
                     <Box sx={{ flexGrow: 1 }}>
-                        <IconButton sx={{ padding: '0px', height: '1.5em' }}>
-                            <Icon sx={{ height: '100%', width: '100%' }}>
-                                <img src={Logo} alt="logo" style={{ height: '100%' }} />
-                            </Icon>
-                        </IconButton>
+                        <NavBarLogo isDarkTheme={isDarkTheme} />
                     </Box>
-                    <Box>
-                        {pages.map((page) => (
-                            <Button
-                                key={page.key}
-                                component={Link}
-                                to={page.path}
-                                color="primary"
-                                disableElevation
-                                sx={{
-                                    marginLeft: '2em',
-                                }}
-                            >
-                                {page.text}
-                            </Button>
-                        ))}
-                    </Box>
+                    <NavBarIcons isDarkTheme={isDarkTheme} />
                 </Toolbar>
             </Container>
         </AppBar>
