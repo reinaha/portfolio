@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -14,7 +14,7 @@ import {
 
 const HomeJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 When designing the home page, the most important consideration was to make
                 it easy for customers to search for products and quickly find categories.
@@ -24,13 +24,13 @@ const HomeJourneyContent = () => {
                 items at the bottom.
             </IconListItem>
             <PortfolioImage imageSrc={HomeJourney} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const ClinicChangeContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To accommodate the fact that our target customers, dental professionals,
                 often manage multiple clinics rather than just one, we have placed the
@@ -43,13 +43,13 @@ const ClinicChangeContent = () => {
                 or delete clinics through &ldquo;edit detail&rdquo; option.
             </IconListItem>
             <PortfolioImage imageSrc={HomeClinicChange} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const CategoryMenuContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 The biggest challenge in designing this app was figuring out how to
                 showcase a large number of products in a simple and intuitive way. With
@@ -67,13 +67,13 @@ const CategoryMenuContent = () => {
                 button that takes users to the category page when clicked.
             </IconListItem>
             <PortfolioImage imageSrc={HomeCategoryMenu} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const SubcategoriesContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Due to customer feedback that they wanted to see all product categories at
                 once, despite having a large number of products, we added subcategories
@@ -81,13 +81,13 @@ const SubcategoriesContent = () => {
                 subcategories when clicked.
             </IconListItem>
             <PortfolioImage imageSrc={HomeSubcategories} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const ReducingPhoneEnquiriesContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To address one of the most frequently asked questions by existing
                 customers, we placed information about the product delivery period in the
@@ -99,7 +99,7 @@ const ReducingPhoneEnquiriesContent = () => {
                 but also the delivery period of the products they ordered through our app.
             </IconListItem>
             <PortfolioImage imageSrc={HomeDeliveryStatus} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

@@ -2,7 +2,7 @@ import { Box, Grid, Stack } from '@mui/material';
 import { useEffect } from 'react';
 import { NavigateFunction, useLocation, useNavigate } from 'react-router-dom';
 
-import { HomeBottomCover, HomeTopCover } from '@/components';
+import { HomeBottomCover, HomeTopCover, PortfolioCard } from '@/components';
 import { AnimatedMouseScrollIcon } from '@/icons';
 import {
     DentalECommerceApp,
@@ -12,8 +12,6 @@ import {
     RealEstateTradingDashboard,
     RealEstateTradingWeb,
 } from '@/images';
-
-import { PortfolioCard } from '../components/homeCards';
 
 const portfolioCardData = [
     {

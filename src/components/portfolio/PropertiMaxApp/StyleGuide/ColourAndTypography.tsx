@@ -1,11 +1,11 @@
 import { Typography } from '@mui/material';
 
-import { PortfolioContainer, PortfolioImageExtraMargin } from '@/components';
+import { PortfolioImageExtraMargin, PortfolioSectionContainer } from '@/components';
 import { PropertiMaxAppColor } from '@/images/PropertiMaxApp';
 
 export const ColourAndTypographyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <Typography>
                 The company has chosen a gradient color that mixes a light blue shade with
                 its primary green color, in order to maintain its brand identity while
@@ -28,6 +28,6 @@ export const ColourAndTypographyContent = () => {
                 the final font.
             </Typography>
             <PortfolioImageExtraMargin imageSrc={PropertiMaxAppColor} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

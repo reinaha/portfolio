@@ -1,14 +1,14 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import { PropertiMaxAppMapImg1, PropertiMaxAppMapImg2 } from '@/images/PropertiMaxApp';
 
 const MapJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Through target analysis, we found that location is the most important
                 factor for the target audience when it comes to real estate options.
@@ -22,13 +22,13 @@ const MapJourneyContent = () => {
                 after location.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppMapImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const MapHidingContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To help users focus more on the properties they are interested in, we
                 designed the map so that when a user clicks on a property, instead of
@@ -40,7 +40,7 @@ const MapHidingContent = () => {
                 it easy for users to find the list at any time.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppMapImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

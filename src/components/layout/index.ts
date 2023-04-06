@@ -1,1 +1,2 @@
-export * from './Layout';
+export * from './DefaultLayout';
+export * from './PortfolioLayout';

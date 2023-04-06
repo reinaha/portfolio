@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -12,7 +12,7 @@ import {
 
 const FilterJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 The most challenging aspect of designing this app was the search filter
                 page. Due to the nature of the real estate industry, each item comes with
@@ -22,13 +22,13 @@ const FilterJourneyContent = () => {
                 easy and not boring.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppFilterImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const FilterResearchContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Before designing the filter page, it was important to analyze our target
                 audience and determine how they prioritize real estate properties in their
@@ -57,13 +57,13 @@ const FilterResearchContent = () => {
                 → Other Options&quot; below it.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppFilterImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const FilterIntuitiveContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 In terms of design, we aimed to prevent users from feeling bored while
                 using the filter by incorporating various types of components to add an
@@ -76,7 +76,7 @@ const FilterIntuitiveContent = () => {
                 numbers they want.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppFilterImg3} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

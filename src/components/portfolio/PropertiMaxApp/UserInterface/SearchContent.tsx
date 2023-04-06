@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -12,7 +12,7 @@ import {
 
 const SearchJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 In reality, it&apos;s not common for property buyers to find a property
                 first and then look for an agent. We&apos;ve put a lot of thought into how
@@ -26,13 +26,13 @@ const SearchJourneyContent = () => {
                 showcases an agent&apos;s background.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppSearchagentImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const SearchSimplifyingContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 When designing the Agent Profile page, the most challenging part was
                 creating an introduction section that is necessary for users to understand
@@ -45,13 +45,13 @@ const SearchSimplifyingContent = () => {
                 choose to view the full version of the introduction.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppSearchagentImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const SearchHighlightingContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Similar to the Property detail page, we also fixed the most important
                 contact section of the Agent detail page to the bottom of the app, so that
@@ -59,7 +59,7 @@ const SearchHighlightingContent = () => {
                 amount of content.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppSearchagentImg3} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

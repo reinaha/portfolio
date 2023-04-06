@@ -1,13 +1,13 @@
 import { Typography } from '@mui/material';
 
-import { PortfolioContainer } from '@/components';
+import { PortfolioSectionContainer } from '@/components';
 import { OsstemDentalEShopCardInfo } from '@/data';
 
 import { PortfolioDetailCards } from '../portfolioBricks/PortfolioDetailCards';
 
 export const HeaderContent = () => {
     return (
-        <PortfolioContainer spacing={5}>
+        <PortfolioSectionContainer spacing={5}>
             <Typography variant="h1">Osstem Dental E-Shop</Typography>
             <Typography variant="body2">
                 Prior to our decision to develop an e-commerce shop, the company relied
@@ -18,6 +18,6 @@ export const HeaderContent = () => {
                 company.
             </Typography>
             <PortfolioDetailCards portfolioDetailCardInfos={OsstemDentalEShopCardInfo} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

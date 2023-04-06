@@ -1,11 +1,11 @@
 import { Typography } from '@mui/material';
 import ColourTypography from '@resources/OsstemDentalEshop/StyleGuide/ColourTypography.png';
 
-import { PortfolioContainer, PortfolioImageExtraMargin } from '@/components';
+import { PortfolioImageExtraMargin, PortfolioSectionContainer } from '@/components';
 
 export const ColourAndTypographyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <Typography>
                 The main color of the app is the company&apos;s representative color,
                 orange, and the light orange was chosen as the sub-color.
@@ -23,6 +23,6 @@ export const ColourAndTypographyContent = () => {
                 to its crispness, neatness and professionalism.
             </Typography>
             <PortfolioImageExtraMargin imageSrc={ColourTypography} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

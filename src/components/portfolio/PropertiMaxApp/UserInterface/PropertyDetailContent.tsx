@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -12,7 +12,7 @@ import {
 
 const PropertyDetailJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 On the Property Detail page, I considered what options users would be most
                 interested in checking. In addition to basic information such as the
@@ -27,13 +27,13 @@ const PropertyDetailJourneyContent = () => {
                 amenities.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppPropertydetailImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const PropertyDetailViewingContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 In the Open Home Schedule section, we have placed a &ldquo;Viewing
                 Request&rdquo; button to facilitate smoother schedule management for both
@@ -46,13 +46,13 @@ const PropertyDetailViewingContent = () => {
                 hassle of dealing with numerous messages.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppPropertydetailImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const PropertyDetailHighlightingContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 The most important aspect of the Property Detail page is to make it easy
                 for buyers to contact the agent managing the property if they are
@@ -65,7 +65,7 @@ const PropertyDetailHighlightingContent = () => {
                 contact the agent immediately if they develop an interest.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppPropertydetailImg3} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

@@ -4,15 +4,15 @@ import RetrospectiveProgressBar from '@resources/OsstemDentalEshop/Takeaway/Retr
 import {
     IconListItem,
     PortfolioChevronSection,
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
 } from '@/components';
 
 const iconColor = { primary: '#1C1B1F', secondary: '#1C1B1F' };
 
 export const RetrospectiveContent = () => {
     return (
-        <PortfolioContainer spacing={20}>
+        <PortfolioSectionContainer spacing={20}>
             <PortfolioChevronSection
                 title="Sign-up progress bar with poor intuitiveness"
                 color={iconColor}
@@ -36,6 +36,6 @@ export const RetrospectiveContent = () => {
                 </IconListItem>
                 <PortfolioImage imageSrc={RetrospectiveCategoryMenu} />
             </PortfolioChevronSection>
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

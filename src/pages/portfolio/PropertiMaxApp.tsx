@@ -1,6 +1,6 @@
 import { Divider } from '@mui/material';
 
-import { PortfolioLayout } from '@/components';
+import { PortfolioContainer } from '@/components';
 import {
     HeaderContent,
     IntroductionMajorSection,
@@ -12,7 +12,7 @@ import { PropertiMaxAppCover } from '@/images/PropertiMaxApp';
 
 export const PropertiMaxApp = () => {
     return (
-        <PortfolioLayout
+        <PortfolioContainer
             headerProps={{
                 title: 'UX/UI Design',
                 headerContent: <HeaderContent />,
@@ -27,6 +27,6 @@ export const PropertiMaxApp = () => {
             <UserInterfaceMajorSection />
             <Divider />
             <TakeawaysMajorSection />
-        </PortfolioLayout>
+        </PortfolioContainer>
     );
 };

@@ -1,6 +1,10 @@
 import { Typography } from '@mui/material';
 
-import { IconListItem, PortfolioContainer, PortfolioSubSection } from '@/components';
+import {
+    IconListItem,
+    PortfolioSectionContainer,
+    PortfolioSubSection,
+} from '@/components';
 
 interface PortfolioChevronSectionProps extends PortfolioSubSection {
     title: string;
@@ -17,11 +21,11 @@ export const PortfolioChevronSection = ({
     children,
 }: PortfolioChevronSectionProps) => {
     return (
-        <PortfolioContainer spacing={7.5}>
+        <PortfolioSectionContainer spacing={7.5}>
             <IconListItem iconType="chevron" iconColor={iconColor}>
                 <Typography variant="h5">{title}</Typography>
             </IconListItem>
             {children}
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

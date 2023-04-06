@@ -1,14 +1,14 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import { CheckoutFatigue, CheckoutJourney, CheckoutReduceError } from '@/images';
 
 const CheckoutJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To encourage more purchases from users, it was important to make the
                 checkout process as easy as possible. We added quantity and
@@ -23,13 +23,13 @@ const CheckoutJourneyContent = () => {
                 purchase.
             </IconListItem>
             <PortfolioImage imageSrc={CheckoutJourney} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const CheckoutFatigueContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To ensure that users do not feel overwhelmed during the checkout process,
                 which consists of three stages - &lsquo;My cart&rsquo;, &lsquo;Payment &
@@ -43,13 +43,13 @@ const CheckoutFatigueContent = () => {
                 them navigate the checkout process smoothly.
             </IconListItem>
             <PortfolioImage imageSrc={CheckoutFatigue} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const CheckoutReduceErrorContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 One of the biggest concerns we had during product ordering was that many
                 customers often select the wrong quantity of products. Sometimes they use
@@ -62,7 +62,7 @@ const CheckoutReduceErrorContent = () => {
                 double-check their input and avoid mistakes.
             </IconListItem>
             <PortfolioImage imageSrc={CheckoutReduceError} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

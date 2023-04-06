@@ -1,3 +1,3 @@
 export * from './portfolioBricks';
-export * from './PortfolioLayout';
+export * from './PortfolioContainer';
 export * from './portfolioSections';

@@ -1,26 +1,28 @@
+import { Box } from '@mui/material';
+
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import { EntranceIntegration, EntranceJourney, EntranceProgressBar } from '@/images';
 
 const SignUpJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Each screen delivers one task so that users can only focus on one task at
                 once without any distractions.
             </IconListItem>
             <PortfolioImage imageSrc={EntranceJourney} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const IntegrationContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 One of the most important things to consider on the registration page is
                 that the target of the Osstem e-shop app is not only new customers, but
@@ -34,13 +36,13 @@ const IntegrationContent = () => {
                 may need additional clarification.
             </IconListItem>
             <PortfolioImage imageSrc={EntranceIntegration} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const PositioningContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To ensure readability and app size, we designed the registration form in
                 three steps. To prevent confusion for users, we placed a progress bar at
@@ -48,7 +50,7 @@ const PositioningContent = () => {
                 registration process until completion.
             </IconListItem>
             <PortfolioImage imageSrc={EntranceProgressBar} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

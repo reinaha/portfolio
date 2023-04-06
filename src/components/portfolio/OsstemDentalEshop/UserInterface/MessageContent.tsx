@@ -1,10 +1,14 @@
 import { IconListItem } from '@/components';
-import { PortfolioContainer, PortfolioImage, PortfolioSubSection } from '@/components';
+import {
+    PortfolioImage,
+    PortfolioSectionContainer,
+    PortfolioSubSection,
+} from '@/components';
 import { MessageJourney, MessageSupport } from '@/images';
 
 const MessageJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To encourage customers to inquire through the app rather than phone calls,
                 we adopted a conversational design that makes users feel like they are
@@ -15,13 +19,13 @@ const MessageJourneyContent = () => {
                 list at the beginning of the message page.
             </IconListItem>
             <PortfolioImage imageSrc={MessageJourney} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const MessageSupportContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To respond to user inquiries more quickly from the company&apos;s
                 perspective, it was important to categorize similar questions. To achieve
@@ -29,7 +33,7 @@ const MessageSupportContent = () => {
                 inquiry when creating a new message.
             </IconListItem>
             <PortfolioImage imageSrc={MessageSupport} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -13,7 +13,7 @@ import {
 
 const ListJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 In designing the List Search feature, our main goal was to make it easy
                 and fast for users to find the real estate properties they are looking for
@@ -27,13 +27,13 @@ const ListJourneyContent = () => {
                 glance.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppListImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const ListNavigationContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Since the list search already had many options selected through search
                 filters, the concern was that users may be confused about which page they
@@ -47,12 +47,12 @@ const ListNavigationContent = () => {
                 improve the overall user experience.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppListImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 const ListTabContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 When considering the perspective of users interested in purchasing real
                 estate, it is important not only to check the information of real estate
@@ -67,13 +67,13 @@ const ListTabContent = () => {
                 to upcoming open homes and auctions.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppListImg3} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const ListThumbnailContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To help potential real estate buyers make quick decisions without wasting
                 unnecessary time, we placed tags on each real estate listing thumbnail
@@ -90,7 +90,7 @@ const ListThumbnailContent = () => {
                 audience, real estate agents, for advertising purposes.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppListImg4} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

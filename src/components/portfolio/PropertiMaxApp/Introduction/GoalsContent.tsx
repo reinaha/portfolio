@@ -1,6 +1,6 @@
 import { Chip, Typography } from '@mui/material';
 
-import { PortfolioContainer, PortfolioContainerProps } from '@/components';
+import { PortfolioSectionContainer, PortfolioSectionContainerProps } from '@/components';
 import { IconListItem } from '@/components/listText/IconListItem';
 
 export const GoalsContent = () => {
@@ -8,7 +8,7 @@ export const GoalsContent = () => {
     const subGoalColor = { primary: '#008557', secondary: '#E8FAF0' };
 
     return (
-        <PortfolioContainer spacing={12.5}>
+        <PortfolioSectionContainer spacing={12.5}>
             <GoalSection title="Main Goal" color={goalColor}>
                 <Typography>
                     In the early days, the key factor that users were looking for in a new
@@ -51,11 +51,11 @@ export const GoalsContent = () => {
                     and text for crucial and potentially confusing elements.
                 </IconListItem>
             </GoalSection>
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
-interface GoalSectionProps extends PortfolioContainerProps {
+interface GoalSectionProps extends PortfolioSectionContainerProps {
     title: string;
     color: {
         primary: string;
@@ -69,7 +69,7 @@ const GoalSection = ({
     children,
 }: GoalSectionProps) => {
     return (
-        <PortfolioContainer spacing={7.5}>
+        <PortfolioSectionContainer spacing={7.5}>
             <Chip
                 label={title}
                 sx={{
@@ -83,6 +83,6 @@ const GoalSection = ({
                 }}
             />
             {children}
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

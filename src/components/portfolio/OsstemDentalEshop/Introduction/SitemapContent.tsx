@@ -1,11 +1,11 @@
 import Sitemap from '@resources/OsstemDentalEshop/Intro/Sitemap.png';
 
-import { PortfolioContainer, PortfolioImage } from '@/components';
+import { PortfolioImage, PortfolioSectionContainer } from '@/components';
 
 export const SitemapContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <PortfolioImage imageSrc={Sitemap} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

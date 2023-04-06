@@ -1,7 +1,7 @@
 import { Divider } from '@mui/material';
 import HeaderCover from '@resources/OsstemDentalEshop/HeaderCover.png';
 
-import { PortfolioLayout } from '@/components';
+import { PortfolioContainer } from '@/components';
 import {
     HeaderContent,
     IntroductionMajorSection,
@@ -12,7 +12,7 @@ import {
 
 export const OsstemDentalEShop = () => {
     return (
-        <PortfolioLayout
+        <PortfolioContainer
             headerProps={{
                 title: 'UX/UI Design',
                 headerContent: <HeaderContent />,
@@ -27,6 +27,6 @@ export const OsstemDentalEShop = () => {
             <UserInterfaceMajorSection />
             <Divider />
             <TakeawaysMajorSection />
-        </PortfolioLayout>
+        </PortfolioContainer>
     );
 };

@@ -1,11 +1,11 @@
-import { PortfolioContainer } from '@/components';
+import { PortfolioSectionContainer } from '@/components';
 import { IconListItem } from '@/components/listText/IconListItem';
 
 export const ChallengesContent = () => {
     const iconColor = { primary: '#FF7A00', secondary: '#FFF9E6' };
 
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem iconType="number" number={1} iconColor={iconColor}>
                 One challenge was to condense a vast amount of information within real
                 estate listings into a limited mobile screen size. We replaced parts that
@@ -28,6 +28,6 @@ export const ChallengesContent = () => {
                 information, we designed them with minimum and maximum size and text to
                 ensure that they don&apos;t deviate from the overall design framework.
             </IconListItem>
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

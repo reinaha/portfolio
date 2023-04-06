@@ -1,10 +1,10 @@
 import { Typography } from '@mui/material';
 
-import { PortfolioContainer } from '@/components';
+import { PortfolioSectionContainer } from '@/components';
 
 export const IntroductionContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <Typography>
                 At the time, there weren&apos;t many real estate listing applications in
                 the New Zealand market. The main competitor in the real estate website
@@ -19,6 +19,6 @@ export const IntroductionContent = () => {
                 competitor, and to further study the Australian real estate website and
                 application market for improvement ideas and inspiration.
             </Typography>
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

@@ -5,6 +5,7 @@ import {
     DesignProcessContent,
     GoalsContent,
     IntroductionContent,
+    PrototypeContent,
     SitemapContent,
     WireframesContent,
 } from './Introduction';
@@ -22,6 +23,10 @@ const introductionSections = [
     {
         title: 'Wireframes',
         content: <WireframesContent />,
+    },
+    {
+        title: 'Prototype',
+        content: <PrototypeContent />,
     },
 ];
 

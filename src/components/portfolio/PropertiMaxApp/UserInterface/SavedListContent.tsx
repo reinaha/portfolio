@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -12,7 +12,7 @@ import {
 
 const SavedListJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 The goal of creating a page where users can easily view their saved
                 property or agent lists led us to design the Saved Properties page. To
@@ -21,13 +21,13 @@ const SavedListJourneyContent = () => {
                 find the properties they want.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppMysavedImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const SavedListTabsContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Originally in the planned site map, saved properties and saved agents were
                 designed as separate pages. However, as the concept of &ldquo;saved
@@ -42,13 +42,13 @@ const SavedListTabsContent = () => {
                 saved agents.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppMysavedImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const SavedListReduceClicksContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 Since the most essential function for users in the saved agent list was to
                 contact the agent, we needed a design that allowed them to execute their
@@ -59,7 +59,7 @@ const SavedListReduceClicksContent = () => {
                 call buttons placed on the right.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppMysavedImg3} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

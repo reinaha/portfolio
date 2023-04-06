@@ -1,10 +1,10 @@
-import { PortfolioContainer, PortfolioImage } from '@/components';
+import { PortfolioImage, PortfolioSectionContainer } from '@/components';
 import { PropertiMaxAppWireframe } from '@/images/PropertiMaxApp';
 
 export const WireframesContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <PortfolioImage imageSrc={PropertiMaxAppWireframe} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

@@ -2,13 +2,13 @@ import { ReactNode } from 'react';
 
 import {
     PortfolioChevronSection,
-    PortfolioContainer,
-    PortfolioContainerProps,
+    PortfolioSectionContainer,
+    PortfolioSectionContainerProps,
 } from '@/components';
 
 type SubsectionType = 'chevron';
 
-export interface PortfolioSubSection extends PortfolioContainerProps {
+export interface PortfolioSubSection extends PortfolioSectionContainerProps {
     title: string;
 }
 
@@ -27,7 +27,7 @@ export const PortfolioSubSection = ({
     subsections,
 }: PortfolioSubSectionProps) => {
     return (
-        <PortfolioContainer spacing={20}>
+        <PortfolioSectionContainer spacing={20}>
             {subsections.map((ss, index) => (
                 <SubSectionComponent
                     key={index}
@@ -37,7 +37,7 @@ export const PortfolioSubSection = ({
                     {ss.content}
                 </SubSectionComponent>
             ))}
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

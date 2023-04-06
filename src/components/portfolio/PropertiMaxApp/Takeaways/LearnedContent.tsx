@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 
 import { IconListItem } from '../../../listText';
-import { PortfolioContainer } from '../../portfolioBricks/PortfolioContainer';
+import { PortfolioSectionContainer } from '../../portfolioBricks/PortfolioSectionContainer';
 
 export const LearnedContent = () => {
     const iconColor = {
@@ -9,7 +9,7 @@ export const LearnedContent = () => {
         secondary: '#FFF9E6',
     };
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem iconType="number" number={1} iconColor={iconColor}>
                 <Typography fontWeight={700}>
                     &lsquo;No matter how good the design is, it cannot be released to the
@@ -97,6 +97,6 @@ export const LearnedContent = () => {
                 industry and to gather tangible data by directly meeting with the target
                 audience rather than making hasty assumptions.
             </IconListItem>
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

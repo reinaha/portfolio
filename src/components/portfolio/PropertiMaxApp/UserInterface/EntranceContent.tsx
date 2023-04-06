@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -12,7 +12,7 @@ import {
 
 const EntranceJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 I thought the Entrance page would be the best page to showcase the
                 PropertiMax brand identity. Designed primarily with PropertiMax&apos;s
@@ -23,13 +23,13 @@ const EntranceJourneyContent = () => {
                 wouldn&apos;t bore users.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppEntranceImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const IntroPageContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 As it was a new app released at the time and there were not many real
                 estate search platform apps available, I designed an intro page with a
@@ -42,13 +42,13 @@ const IntroPageContent = () => {
                 bypass the intro and go directly to the login page.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppEntranceImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const ProgressBarContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 To prevent users from getting bored during the three-step sign-up process,
                 a progress bar was placed on the app&apos;s top bar to reduce user
@@ -62,7 +62,7 @@ const ProgressBarContent = () => {
                 them out.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppEntranceImg3} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

@@ -1,11 +1,11 @@
-import { PortfolioContainer } from '@/components';
+import { PortfolioSectionContainer } from '@/components';
 import { IconListItem } from '@/components/listText/IconListItem';
 
 export const ChallengesContent = () => {
     const iconColor = { primary: '#FF7A00', secondary: '#FFF9E6' };
 
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem iconType="number" number={1} iconColor={iconColor}>
                 Due to the large quantity of products, categorization was the most
                 important aspect of this app. The categories were reorganized based on the
@@ -22,6 +22,6 @@ export const ChallengesContent = () => {
                 needed to allow multiple delivery locations to be selected on a single
                 account.
             </IconListItem>
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };

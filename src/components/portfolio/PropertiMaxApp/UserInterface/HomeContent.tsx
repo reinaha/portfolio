@@ -1,7 +1,7 @@
 import { IconListItem } from '@/components';
 import {
-    PortfolioContainer,
     PortfolioImage,
+    PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
@@ -12,7 +12,7 @@ import {
 
 const HomeJourneyContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 When designing the home page, the most important aspect that we focused on
                 was making it easier and more intuitive for users to find properties.
@@ -31,13 +31,13 @@ const HomeJourneyContent = () => {
                 using a real estate search app for the first time.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppHomeImg1} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const SearchBarContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 We designed the search bar, search filters, and categories to be
                 prominently displayed at the top of the app&apos;s homepage, making it
@@ -48,13 +48,13 @@ const SearchBarContent = () => {
                 encourage users to search for properties more easily and intuitively.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppHomeImg2} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 
 const CategoryMenuContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <IconListItem>
                 The client requested that we display a total of seven real estate
                 categories on the homepage: house, apartment, townhouse, unit, lifestyle,
@@ -68,7 +68,7 @@ const CategoryMenuContent = () => {
                 preferred property types by our target audience.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppHomeImg3} />
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
 

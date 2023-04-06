@@ -1,10 +1,10 @@
 import { Typography } from '@mui/material';
 
-import { PortfolioContainer } from '@/components';
+import { PortfolioSectionContainer } from '@/components';
 
 export const IntroductionContent = () => {
     return (
-        <PortfolioContainer>
+        <PortfolioSectionContainer>
             <Typography>
                 Osstem New Zealand aimed to develop an e-commerce application for the
                 purpose of retailing dental products, including dental implants, tools,
@@ -23,6 +23,6 @@ export const IntroductionContent = () => {
                 representatives, as well as revenue volatility being highly influenced by
                 environmental changes such as the COVID-19 pandemic.
             </Typography>
-        </PortfolioContainer>
+        </PortfolioSectionContainer>
     );
 };
