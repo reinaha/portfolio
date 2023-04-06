@@ -1,10 +1,9 @@
 import { Box, Container, Grid, Stack, StackProps, Typography } from '@mui/material';
 import { Variant } from '@mui/material/styles/createTypography';
 import { ResponsiveStyleValue } from '@mui/system';
-import { ReactNode, useEffect, useRef, useState } from 'react';
+import { ReactNode } from 'react';
 
 import { PortfolioImageContainer } from '@/components';
-import { useIsInViewport } from '@/hooks/Viewport';
 import HeaderMarkerIcon from '@/icons/HeaderMarkerIcon.svg';
 
 export interface PortfolioSectionProps extends StackProps {
