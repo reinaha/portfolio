@@ -1,5 +1,5 @@
 import { Stack } from '@mui/material';
-import { useEffect, useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { HomeBottomCover, HomeTopCover, PortfolioCardSection } from '@/components';
@@ -8,10 +8,6 @@ import { AnimatedMouseScrollIcon } from '@/icons';
 
 export function Home() {
     const location = useLocation();
-
-    useLayoutEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
 
     useEffect(() => {
         if (location.state) {
