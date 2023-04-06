@@ -23,7 +23,7 @@ export const NavBarButtons: NavBarButton[] = [
     },
     {
         key: 2,
-        text: 'Hire Me',
+        text: 'Hire Me ✋',
         path: '/',
         section: 'ContactMe',
     },
