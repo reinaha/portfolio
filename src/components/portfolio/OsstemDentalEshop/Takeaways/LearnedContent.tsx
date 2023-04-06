@@ -1,7 +1,8 @@
 import { Typography } from '@mui/material';
 
+import { PortfolioSectionContainer } from '@/components';
+
 import { IconListItem } from '../../../listText';
-import { PortfolioSectionContainer } from '../../portfolioBricks/PortfolioSectionContainer';
 
 export const LearnedContent = () => {
     const iconColor = {

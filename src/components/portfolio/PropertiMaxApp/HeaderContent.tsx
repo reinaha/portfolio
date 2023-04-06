@@ -1,9 +1,8 @@
 import { Typography } from '@mui/material';
 
 import { PortfolioSectionContainer } from '@/components';
+import { PortfolioDetailCards } from '@/components';
 import { OsstemDentalEShopCardInfo } from '@/data';
-
-import { PortfolioDetailCards } from '../portfolioBricks/PortfolioDetailCards';
 
 export const HeaderContent = () => {
     return (
