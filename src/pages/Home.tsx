@@ -6,20 +6,45 @@ import { HomeBottomCover, HomeTopCover, PortfolioCardSection } from '@/component
 import { PortfolioCardData } from '@/data';
 import { AnimatedMouseScrollIcon } from '@/icons';
 
+const toTop = () => {
+    setTimeout(() =>
+        window.scroll({
+            top: 0,
+            behavior: 'smooth',
+        })
+    );
+};
+
+const toElement = (elemRef: HTMLElement) => {
+    const elemLocation = elemRef.getBoundingClientRect().top + window.scrollY;
+
+    setTimeout(
+        () =>
+            window.scroll({
+                top: elemLocation,
+                behavior: 'smooth',
+            }),
+        250
+    );
+};
+
 export function Home() {
-    const location = useLocation();
+    const { state } = useLocation();
 
     useEffect(() => {
-        if (location.state) {
-            document
-                .getElementById(location.state)
-                ?.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-        }
+        if (state) {
+            if (state.section) {
+                const elem = document.getElementById(state.section);
+                if (elem) toElement(elem);
+            } else {
+                toTop();
+            }
 
-        window.history.replaceState({}, document.title);
-    }, [location.state]);
+            window.history.replaceState({}, document.title);
+        } else {
+            toTop();
+        }
+    }, [state]);
 
     return (
         <Stack paddingTop={30} spacing={40} alignItems="center">

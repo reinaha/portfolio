@@ -24,7 +24,7 @@ export default function Router() {
                         <Route path="propertimax-web" element={<PropertiMaxWeb />} />
                         <Route index element={<UnderConstruction />} />
                     </Route>
-                    <Route index element={<Home />} />
+                    <Route index element={<Home key={Math.random()} />} />
                     <Route path="*" element={<Error />} />
                 </Route>
             </Routes>
