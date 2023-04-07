@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 
 import { PortfolioSectionContainer } from '@/components';
 import { PortfolioDetailCards } from '@/components';
-import { PropertiMaxWebCardInfo } from '@/data';
+import { PropertiMaxDashboardCardInfo } from '@/data';
 
 export const HeaderContent = () => {
     return (
@@ -16,7 +16,9 @@ export const HeaderContent = () => {
                 interactions and conservatism, it also resulted in unstable income for our
                 company.
             </Typography>
-            <PortfolioDetailCards portfolioDetailCardInfos={PropertiMaxWebCardInfo} />
+            <PortfolioDetailCards
+                portfolioDetailCardInfos={PropertiMaxDashboardCardInfo}
+            />
         </PortfolioSectionContainer>
     );
 };

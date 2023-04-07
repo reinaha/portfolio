@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 
 import { PortfolioImageExtraMargin, PortfolioSectionContainer } from '@/components';
-import { PropertiMaxWebColor } from '@/images/PropertiMaxWeb';
+import { PropertiMaxDashboardColor } from '@/images/PropertiMaxDashboard';
 
 export const ColourAndTypographyContent = () => {
     return (
@@ -13,22 +13,24 @@ export const ColourAndTypographyContent = () => {
                 also been used as a secondary color.
             </Typography>
             <Typography>
-                On the text front, we aimed for a dark color scheme to ensure readability.
-                To complement our main color green, we added some green to the basic black
-                color to create a deep dark green as our main text color. For the
-                sub-color of text, we chose a color that is more than 50% desaturated from
-                the deep dark green color.
+                For text colors, black has been chosen as the main color for readability.
+                To ensure harmony with other colors, a small amount of blue has been added
+                to the basic black color. We used a light blue color, which is a mix of
+                gray and blue, as the sub-color. Since the dashboard has a large amount of
+                information, the main color, black, was mainly used for section headings.
+                For the rest of the content, we used the sub-color to create a design that
+                does not look too complex overall.
             </Typography>
             <Typography>
-                As a real estate transaction website, it was important to have
+                As a real estate transaction application, it was important to have
                 high-quality and trustworthy images. Therefore, a sans-serif font was
-                chosen from a variety of options. Since the website contains a lot of
+                chosen from a variety of options. Since the app contains a lot of
                 information, a font with excellent readability that can easily display a
                 large amount of text was needed. That&apos;s why the popular font
                 &lsquo;Roboto&rsquo;, which is often used for content text, was chosen as
                 the final font.
             </Typography>
-            <PortfolioImageExtraMargin imageSrc={PropertiMaxWebColor} />
+            <PortfolioImageExtraMargin imageSrc={PropertiMaxDashboardColor} />
         </PortfolioSectionContainer>
     );
 };

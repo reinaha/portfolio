@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 
 import { PortfolioImageExtraMargin, PortfolioSectionContainer } from '@/components';
-import { PropertiMaxWebProcess } from '@/images/PropertiMaxWeb';
+import { PropertiMaxDashboardProcess } from '@/images/PropertiMaxDashboard';
 
 export const DesignProcessContent = () => {
     return (
@@ -9,7 +9,7 @@ export const DesignProcessContent = () => {
             <Typography>
                 This project spanned over a period of 6 months from Aug 2019 - Jan 2020
             </Typography>
-            <PortfolioImageExtraMargin imageSrc={PropertiMaxWebProcess} />
+            <PortfolioImageExtraMargin imageSrc={PropertiMaxDashboardProcess} />
         </PortfolioSectionContainer>
     );
 };

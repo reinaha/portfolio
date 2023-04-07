@@ -1,5 +1,5 @@
 import { PortfolioMajorSection } from '@/components';
-import { PropertiMaxWebStyleguidecover } from '@/images/PropertiMaxWeb';
+import { PropertiMaxDashboardStyleguidecover } from '@/images/PropertiMaxDashboard';
 
 import { ColourAndTypographyContent, ComponentsAndElementsContent } from './StyleGuide';
 
@@ -18,7 +18,7 @@ export const StyleGuideMajorSection = () => {
                 title: 'Style Guide',
                 subTitles: styleGuideSections.map((s) => s.title),
             }}
-            coverImage={PropertiMaxWebStyleguidecover}
+            coverImage={PropertiMaxDashboardStyleguidecover}
             portfolioSections={styleGuideSections}
         />
     );

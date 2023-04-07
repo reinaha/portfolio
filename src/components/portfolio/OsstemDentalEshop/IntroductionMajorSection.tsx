@@ -13,7 +13,7 @@ import {
 const introductionSections = [
     { title: 'Introduction', content: <IntroductionContent /> },
     { title: 'Target', content: <IntroductionContent /> },
-    { title: 'Goals', content: <GoalsContent /> },
+    { title: 'Goal', content: <GoalsContent /> },
     { title: 'Challenges', content: <ChallengesContent /> },
     { title: 'Design Process', content: <DesignProcessContent /> },
     {

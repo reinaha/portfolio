@@ -1,12 +1,14 @@
 import { PortfolioMajorSection } from '@/components';
 import {
-    PropertiMaxWebHomecover,
-    PropertiMaxWebItemsearchcover,
-    PropertiMaxWebListsearchcover,
-    PropertiMaxWebMapsearchcover,
-    PropertiMaxWebNavbarcover,
-    PropertiMaxWebPropertydetailcover,
-} from '@/images/PropertiMaxWeb';
+    PropertiMaxDashboardAnalysiscover,
+    PropertiMaxDashboardCalendarcover,
+    PropertiMaxDashboardClientscover,
+    PropertiMaxDashboardHomecover,
+    PropertiMaxDashboardListingcover,
+    PropertiMaxDashboardMypropertycover,
+    PropertiMaxDashboardNavbarcover,
+    PropertiMaxDashboardPersonalinfocover,
+} from '@/images/PropertiMaxDashboard';
 
 import {
     HomeContent,
@@ -18,31 +20,41 @@ import {
 } from './UserInterface';
 
 const userInterfaceSections = [
-    { title: 'Home', content: <HomeContent />, coverImg: PropertiMaxWebHomecover },
+    { title: 'Home', content: <HomeContent />, coverImg: PropertiMaxDashboardHomecover },
     {
-        title: 'Item View',
+        title: 'My Properties',
         content: <ItemContent />,
-        coverImg: PropertiMaxWebItemsearchcover,
+        coverImg: PropertiMaxDashboardMypropertycover,
     },
     {
-        title: 'List View',
+        title: 'Listing',
         content: <ListContent />,
-        coverImg: PropertiMaxWebListsearchcover,
+        coverImg: PropertiMaxDashboardListingcover,
     },
     {
-        title: 'Map View',
+        title: 'Listing Analysis',
+        content: <ListContent />,
+        coverImg: PropertiMaxDashboardAnalysiscover,
+    },
+    {
+        title: 'Calendar',
         content: <MapContent />,
-        coverImg: PropertiMaxWebMapsearchcover,
+        coverImg: PropertiMaxDashboardCalendarcover,
     },
     {
-        title: 'Property Detail',
+        title: 'Clients',
         content: <PropertyDetailContent />,
-        coverImg: PropertiMaxWebPropertydetailcover,
+        coverImg: PropertiMaxDashboardClientscover,
+    },
+    {
+        title: 'Personal Information',
+        content: <NavigationContent />,
+        coverImg: PropertiMaxDashboardPersonalinfocover,
     },
     {
         title: 'Navigation Bar',
         content: <NavigationContent />,
-        coverImg: PropertiMaxWebNavbarcover,
+        coverImg: PropertiMaxDashboardNavbarcover,
     },
 ];
 

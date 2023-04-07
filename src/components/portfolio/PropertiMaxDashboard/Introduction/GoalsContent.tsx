@@ -11,48 +11,44 @@ export const GoalsContent = () => {
         <PortfolioSectionContainer spacing={12.5}>
             <GoalSection title="Main Goal" color={goalColor}>
                 <Typography>
-                    As PropertiMax was a latecomer to the real estate market, we knew that
-                    we needed a clear and compelling benefit for users to come to our
-                    website in order to attract a large user base early on.
+                    Our main goal in designing the dashboard was to provide a
+                    user-friendly platform for agents to easily upload, update, and manage
+                    their property listings without any inconvenience.
                 </Typography>
                 <Typography>
-                    Ultimately, what users wanted was the ability to see a large number of
-                    real estate listings on one website, so we needed to make sure that
-                    real estate agents who manage those listings would be interested in
-                    uploading their properties to our site.
-                </Typography>
-                <Typography>
-                    For this reason, our main goal at the outset was to create a website
-                    that would be attractive to real estate agents and make them want to
-                    upload their properties to our platform.
+                    By offering a convenient dashboard experience to agents, we aimed to
+                    establish PropertiMax as a &ldquo;easy-to-use platform for managing
+                    real estate listings&rdquo; in the minds of users in the long run.
                 </Typography>
                 <IconListItem iconType="arrow" iconColor={goalColor}>
-                    To achieve this, we made every effort to implement a real estate
-                    agent-friendly design. For example, we ensured that the home page
-                    displayed as many real estate listings as possible, and we made sure
-                    that each real estate listing included the real estate agent&aspo;s
-                    logo so that agents could indirectly advertise to users.
+                    To achieve this, we focused on designing a user-friendly interface
+                    that would allow agents to easily add and modify listings. We also
+                    added data analysis features to help agents effectively manage their
+                    listings. Ultimately, by providing a seamless experience for agents,
+                    we aimed to increase the number of property listings on the
+                    PropertiMax main website and attract more property buyers, which is
+                    our main target audience.
                 </IconListItem>
             </GoalSection>
             <GoalSection title="Sub Goal" color={subGoalColor}>
                 <Typography>
-                    The sub-goal is to make our website more convenient than our
-                    competitors for property buyers who are our main target.
+                    We hoped that the PropertiMax Dashboard would go beyond just being a
+                    website for listing real estate properties and instead become a tool
+                    that could assist agents in their personal tasks. The more time agents
+                    spent on the PropertiMax Dashboard, the stronger their connection to
+                    PropertiMax would become, and this could also encourage them to upload
+                    more real estate listings.
                 </Typography>
-                <IconListItem iconType="number" number={1} iconColor={subGoalColor}>
-                    The main competitor&apos;s UI was designed in a way that simply listed
-                    many items and listings, which made users feel easily fatigued while
-                    using the website. To address this issue, our PropertyMax real estate
-                    listings website aimed to create a user-friendly and simple design by
-                    hiding items under categories and minimizing clutter, making it easier
-                    and more convenient for users to view real estate listings.
-                </IconListItem>
-                <IconListItem iconType="number" number={2} iconColor={subGoalColor}>
-                    We aimed to keep the design as simple as possible by eliminating
-                    unnecessary elements, but since the target audience for the app is
-                    real estate buyers with significant purchasing power, who are
-                    typically older, we decided to include both icons and text for
-                    potentially confusing elements to ensure ease of use.
+                <Typography>
+                    Therefore, our goal was to design features that could help agents with
+                    their tasks and keep them engaged with the PropertiMax Dashboard for
+                    longer periods of time.
+                </Typography>
+                <IconListItem iconType="arrow" iconColor={subGoalColor}>
+                    To achieve this, we added features such as schedule alerts, schedule
+                    management, and client list management, which would make the dashboard
+                    not only a place for uploading real estate properties but also a space
+                    for managing personal tasks.
                 </IconListItem>
             </GoalSection>
         </PortfolioSectionContainer>

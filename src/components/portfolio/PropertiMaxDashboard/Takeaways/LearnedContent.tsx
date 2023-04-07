@@ -69,34 +69,28 @@ export const LearnedContent = () => {
             </IconListItem>
             <IconListItem iconType="number" number={3} iconColor={iconColor}>
                 <Typography fontWeight={700}>
-                    The reason why meeting the target audience and collecting tangible
-                    data is important is that we should not jump to conclusions based on
-                    assumptions.
+                    Lessons Learned from Designing Functional Websites like Dashboard:
+                    Importance of Emphasizing Actions and Data Visualization
                 </Typography>
             </IconListItem>
             <IconListItem iconType="noIcon">
-                Before starting this project, I had no interest in the real estate
-                industry and was close to being ignorant. As a result, when I was assigned
-                to the project, I had difficulty designing the application because of my
-                low understanding of what the target buyers and agents wanted through the
-                app and what parts they would find inconvenient when using competitor
-                websites in the same industry.
+                Through this project, I designed a dashboard for the first time and
+                learned that the functional aspect is the most important part of a
+                website. Unlike most websites used by the general public, these websites
+                need to focus on the user&apos;s tasks, so they need to be designed
+                accordingly.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                To overcome this, what I had to do was additional studying of the industry
-                and meeting with people who could be the target audience to interview and
-                understand their needs.
+                When designing a website where functionality is important, it is important
+                to emphasize the &ldquo;action&rdquo; the user wants to perform through
+                the design. To do this, sometimes the color of the remaining features is
+                made lighter or simplified by removing them from the design.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                Through meeting with the target audience, there were times when they
-                expressed discomfort in unexpected areas or when their opinions overturned
-                what I had guessed.
-            </IconListItem>
-            <IconListItem iconType="noIcon">
-                What I learned from these experiences is that when starting a project for
-                the first time, it is important to first have a deep understanding of the
-                industry and to gather tangible data by directly meeting with the target
-                audience rather than making hasty assumptions.
+                I also realized that visualized information such as data and graphs play
+                an important role. Therefore, understanding data visualization was
+                crucial, and I had to consider a design that was optimized for quick and
+                easy understanding of visualized information.
             </IconListItem>
         </PortfolioSectionContainer>
     );
