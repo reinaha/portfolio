@@ -1,7 +1,7 @@
-import { Stack } from '@mui/material';
+import { Box, Container, Stack } from '@mui/material';
 import { useLayoutEffect } from 'react';
 
-import { PortfolioHeader, PortfolioHeaderProps } from '@/components';
+import { HomeBottomCover, PortfolioHeader, PortfolioHeaderProps } from '@/components';
 
 type PortfolioContainerProps = {
     headerProps: PortfolioHeaderProps;
@@ -17,9 +17,14 @@ export const PortfolioContainer = ({
     }, []);
 
     return (
-        <Stack spacing={25} paddingBottom={25}>
+        <Stack spacing={25}>
             <PortfolioHeader {...headerProps} />
             {children}
+            <Box>
+                <Container>
+                    <HomeBottomCover />
+                </Container>
+            </Box>
         </Stack>
     );
 };
