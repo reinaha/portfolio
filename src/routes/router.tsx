@@ -6,22 +6,27 @@ import {
     Home,
     OsstemDentalEShop,
     PropertiMaxApp,
+    PropertiMaxDashboard,
+    PropertiMaxWeb,
     UnderConstruction,
 } from '@/pages';
-import { PropertiMaxWeb } from '@/pages/portfolio/PropertiMaxWeb';
 
 export default function Router() {
     return (
         <BrowserRouter basename="/portfolio">
             <Routes>
                 <Route path="/" element={<DefaultLayout />}>
-                    <Route path="/portfolio">
+                    <Route path="/work">
                         <Route
                             path="osstem-dental-e-shop"
                             element={<OsstemDentalEShop />}
                         />
                         <Route path="propertimax-app" element={<PropertiMaxApp />} />
                         <Route path="propertimax-web" element={<PropertiMaxWeb />} />
+                        <Route
+                            path="propertimax-dashboard"
+                            element={<PropertiMaxDashboard />}
+                        />
                         <Route index element={<UnderConstruction />} />
                     </Route>
                     <Route index element={<Home key={Math.random()} />} />

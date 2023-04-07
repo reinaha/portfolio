@@ -16,8 +16,7 @@ export const PortfolioCardData: IPortfolioCard[] = [
         subtitle: 'Real Estate Trading Application',
         tags: ['UI/UX Design', 'Mobile App'],
         backgroundImg: RealEstateTradingApp,
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/portfolio/propertimax-app'),
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-app'),
     },
     {
         title: 'Osstem Mobile App',
@@ -25,22 +24,22 @@ export const PortfolioCardData: IPortfolioCard[] = [
         tags: ['UI/UX Design', 'Mobile App'],
         backgroundImg: DentalECommerceApp,
         onClick: (navigate: NavigateFunction) => () =>
-            navigate('/portfolio/osstem-dental-e-shop'),
+            navigate('/work/osstem-dental-e-shop'),
     },
     {
         title: 'PropertiMax Web App',
         subtitle: 'Real Estate Trading Website',
         tags: ['UI/UX Design', 'Web App'],
         backgroundImg: RealEstateTradingWeb,
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/portfolio/propertimax-web'),
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-web'),
     },
     {
         title: 'PropertiMax',
         subtitle: 'Real Estate Agent Dashboard',
         tags: ['UI/UX Design', 'Web App'],
         backgroundImg: RealEstateTradingDashboard,
-        onClick: (navigate: NavigateFunction) => () => navigate('/portfolio/'),
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/work/propertimax-dashboard'),
     },
     {
         title: 'Osstem Web App',

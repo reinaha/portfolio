@@ -6,7 +6,7 @@ import { defaultTheme, lightTheme } from '@/themes/default';
 import TopNavBar from '../navigation/TopNavBar';
 
 export const DefaultLayout = () => {
-    const isPortfolioRoute = useMatch('/portfolio/*');
+    const isPortfolioRoute = useMatch('/work/*');
 
     return (
         <ThemeProvider theme={isPortfolioRoute ? lightTheme : defaultTheme}>

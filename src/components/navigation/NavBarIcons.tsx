@@ -10,13 +10,12 @@ import {
 } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { NavBarButtons } from '@/data/NavBarIcons';
 import { NavBarComponent } from '@/models';
 
-export const NavBarIcons = ({ isDarkTheme }: NavBarComponent) => {
-    const location = useLocation();
+export const NavBarIcons = ({ isDarkTheme, curPath }: NavBarComponent) => {
     const theme = useTheme();
     const lessThanSmall = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -65,7 +64,7 @@ export const NavBarIcons = ({ isDarkTheme }: NavBarComponent) => {
                                 key={icon.key}
                                 component={Link}
                                 to={icon.path || '.'}
-                                state={{ section: icon.section, from: location.pathname }}
+                                state={{ section: icon.section, from: curPath }}
                                 replace
                                 color="primary"
                                 disableElevation

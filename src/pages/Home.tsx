@@ -34,18 +34,22 @@ export function Home() {
     const { state } = useLocation();
 
     useEffect(() => {
+        console.log(state);
         if (state) {
             if (state.section) {
                 const elem = document.getElementById(state.section);
                 if (elem) toElement(elem);
+            } else if (state.from !== '/') {
+                const elem = document.getElementById('mouse');
+                if (elem) toElement(elem);
             } else {
                 toTop();
             }
-
-            window.history.replaceState({}, document.title);
         } else {
             toTop();
         }
+
+        window.history.replaceState({}, document.title);
     }, [state]);
 
     return (
