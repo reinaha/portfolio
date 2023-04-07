@@ -46,12 +46,12 @@ export const PortfolioCardData: IPortfolioCard[] = [
         subtitle: 'Dental Supply E-Commerce Website',
         tags: ['UI/UX Design', 'Web App'],
         backgroundImg: DentalECommerceWeb,
-        onClick: (navigate: NavigateFunction) => () => navigate('/portfolio/'),
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/'),
     },
     {
         title: 'Graphic Design Works',
         tags: ['Graphic Design', 'Application'],
         backgroundImg: GraphicDesignWork,
-        onClick: () => () => console.log('Design'),
+        onClick: () => () => console.log('Design Download'),
     },
 ];

@@ -34,7 +34,6 @@ export function Home() {
     const { state } = useLocation();
 
     useEffect(() => {
-        console.log(state);
         if (state) {
             if (state.section) {
                 const elem = document.getElementById(state.section);

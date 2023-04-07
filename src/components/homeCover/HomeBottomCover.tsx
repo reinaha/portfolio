@@ -18,7 +18,7 @@ const bottomButtons: ButtomButton[] = [
             dark: 'rgba(255, 255, 255, 0.1)',
             light: '#F1F1F1',
         },
-        onClick: () => console.log('hello'),
+        onClick: () => console.log('No Email Yet'),
     },
     {
         key: 1,
