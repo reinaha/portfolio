@@ -7,11 +7,13 @@ import { PortfolioCardData } from '@/data';
 import { AnimatedMouseScrollIcon } from '@/icons';
 
 const toTop = () => {
-    setTimeout(() =>
-        window.scroll({
-            top: 0,
-            behavior: 'smooth',
-        })
+    setTimeout(
+        () =>
+            window.scroll({
+                top: 0,
+                behavior: 'smooth',
+            }),
+        150
     );
 };
 
