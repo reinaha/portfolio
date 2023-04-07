@@ -5,83 +5,112 @@ import {
     PortfolioSubSection,
 } from '@/components/portfolio';
 import {
-    PropertiMaxWebHomeImg1,
-    PropertiMaxWebHomeImg2,
-    PropertiMaxWebHomeImg3,
-} from '@/images/PropertiMaxWeb';
+    PropertiMaxDashboardHomeImg1,
+    PropertiMaxDashboardHomeImg2,
+    PropertiMaxDashboardHomeImg3,
+    PropertiMaxDashboardHomeImg4,
+} from '@/images/PropertiMaxDashboard';
 
 const HomeJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                When designing our website, we paid particular attention to creating a
-                simple, intuitive design that sets us apart from the complex UI of our
-                main competitors. Our goal was to make the PropertiMax website much easier
-                to use than our competitors, especially for our main target audience of
-                property buyers.
+                As the main page that users first see when entering the dashboard, we
+                believed it was important to design a page that would meet both our main
+                goal and sub-goals. Our main goal was to create a convenient real estate
+                listing management system, while our sub-goal was to provide features that
+                would assist agents in their work.
             </IconListItem>
             <IconListItem>
-                To achieve this, we minimized the amount of text on our website as much as
-                possible and used photos and icons as alternatives. We also eliminated
-                unnecessary lists, such as recommended property listings, and emphasized
-                the search function and real estate category menu, which are the most
-                important parts of our website.
+                To achieve both goals, we divided the dashboard page into two main
+                sections. On the left, we placed information related to real estate
+                listing management (Listing Board and Views), while on the right, we
+                placed information related to scheduling and upcoming events to assist
+                agents in their work (Appointments and Upcoming Events).
             </IconListItem>
             <IconListItem>
-                By doing so, we aimed to reduce user fatigue and help users focus more on
-                their search on our website.
+                By doing this, we made it possible for users to quickly assess their
+                situation and move on to the next step without having to navigate to
+                different pages. This made it easier for users to understand and use the
+                dashboard.
             </IconListItem>
-            <PortfolioImage imageSrc={PropertiMaxWebHomeImg1} />
+            <PortfolioImage imageSrc={PropertiMaxDashboardHomeImg1} />
         </PortfolioSectionContainer>
     );
 };
 
-const SearchBarContent = () => {
+const GuidingContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Our goal was to design the website so that users could easily search for
-                the desired real estate listings. To achieve this, it was necessary to
-                conduct research on what priorities users had when selecting real estate
-                options.
+                The main reason for placing the information on the &ldquo;number of real
+                estate properties currently owned by the user&rdquo; and &ldquo;customer
+                ratings&rdquo; at the top of the dashboard main page is that it is the
+                most prominent location, and it can show the most comprehensive view of
+                the current situation of the main target, which is the agent.
+                Additionally, it can provide helpful first-step information to the agent
+                before moving on to the next action.
             </IconListItem>
             <IconListItem>
-                User research revealed that users prioritize location, price, and number
-                of bedrooms and bathrooms when searching for real estate listings. Based
-                on this information, we designed the search bar by placing the most
-                important element, &ldquo;location,&rdquo; in the middle, followed by
-                &ldquo;price,&rdquo; &ldquo;number of bedrooms,&rdquo; &ldquo;number of
-                bathrooms,&rdquo; and &ldquo;parking space.&rdquo;
+                Through this section, users can quickly assess their current situation and
+                be prompted to plan their next steps. For example, if an agent comes to
+                the dashboard and sees that the number of properties they currently own
+                has decreased from the previous month, they can plan their next steps,
+                such as adding new properties or adjusting the prices of existing
+                properties.
             </IconListItem>
             <IconListItem>
-                For other relatively less important additional options, we created a
-                &ldquo;Filter&rdquo; button that users can click to select.
+                Furthermore, by providing customer ratings information, the agent can
+                confirm how satisfactory their service has been so far and find areas to
+                improve to plan their next action accordingly.
             </IconListItem>
-            <PortfolioImage imageSrc={PropertiMaxWebHomeImg2} />
+            <PortfolioImage imageSrc={PropertiMaxDashboardHomeImg2} />
         </PortfolioSectionContainer>
     );
 };
 
-const CategoryMenuContent = () => {
+const ScheduleManagementContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                While users can set the property type through the dropdown menu in the
-                search bar, we wanted to make it even faster and more convenient for users
-                who want to view real estate listings. To address this, we categorized the
-                real estate options and placed them in a separate menu for easy access.
+                To assist with agent schedule management, we added Appointment and
+                Upcoming Event sections to the main dashboard page.
             </IconListItem>
             <IconListItem>
-                To make the category menu more user-friendly, we used relevant images for
-                each category. This helps users better understand the different types of
-                properties available on our website and navigate to the specific
-                categories they are interested in. For example, we used images of
-                townhouses for the &ldquo;Townhouse&rdquo; category, and images of
-                apartments for the &ldquo;Apartments&rdquo; category. This visual approach
-                not only makes it easier for users to find what they are looking for, but
-                it also adds an element of aesthetic appeal to the website.
+                The Appointment section displays a list of scheduled tasks for the day,
+                sorted by time. The Upcoming Event section shows the next closest event,
+                excluding the current day.
             </IconListItem>
-            <PortfolioImage imageSrc={PropertiMaxWebHomeImg3} />
+            <IconListItem>
+                By placing the Appointment and Upcoming Event sections on the main
+                dashboard page, agents can easily check their daily and upcoming schedules
+                without the need to search for them individually. This design encourages
+                agents to log in to the dashboard more frequently.
+            </IconListItem>
+            <PortfolioImage imageSrc={PropertiMaxDashboardHomeImg3} />
+        </PortfolioSectionContainer>
+    );
+};
+
+const ViewCountsContent = () => {
+    return (
+        <PortfolioSectionContainer>
+            <IconListItem>
+                We have added a Views section to the agent&apos;s dashboard to display the
+                number of views on their real estate listings. This section allows agents
+                to obtain approximate information on which properties are generating more
+                interest from buyers and which ones are not. Based on this data, agents
+                can plan their next actions, such as adjusting the listing price or
+                promoting the property differently.
+            </IconListItem>
+            <IconListItem>
+                By providing this information through the Views section, we encourage
+                agents to utilize their dashboard beyond just updating their property
+                listings. We aim to prompt agents to leverage this information to better
+                promote and sell their properties, ultimately driving more traffic to
+                their listings and increasing sales.
+            </IconListItem>
+            <PortfolioImage imageSrc={PropertiMaxDashboardHomeImg4} />
         </PortfolioSectionContainer>
     );
 };
@@ -92,12 +121,16 @@ export const HomeContentData = [
         content: <HomeJourneyContent />,
     },
     {
-        title: 'Designing the search bar based on user research',
-        content: <SearchBarContent />,
+        title: "Guiding Next Actions through Providing Agent's General Current Situation",
+        content: <GuidingContent />,
     },
     {
-        title: 'Intuitive image category menu that enhances user comprehension',
-        content: <CategoryMenuContent />,
+        title: 'Schedule Management Feature for Encouraging Agent Dashboard Access',
+        content: <ScheduleManagementContent />,
+    },
+    {
+        title: 'View counts information on real estate listings',
+        content: <ViewCountsContent />,
     },
 ];
 

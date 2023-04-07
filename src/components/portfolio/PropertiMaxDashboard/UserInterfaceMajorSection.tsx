@@ -11,44 +11,46 @@ import {
 } from '@/images/PropertiMaxDashboard';
 
 import {
+    AnalysisContent,
+    CalendarContent,
+    ClientsContent,
     HomeContent,
-    ItemContent,
-    ListContent,
-    MapContent,
+    ListingContent,
+    MyPropertyContent,
     NavigationContent,
-    PropertyDetailContent,
+    PersonalInfoContent,
 } from './UserInterface';
 
 const userInterfaceSections = [
     { title: 'Home', content: <HomeContent />, coverImg: PropertiMaxDashboardHomecover },
     {
         title: 'My Properties',
-        content: <ItemContent />,
+        content: <MyPropertyContent />,
         coverImg: PropertiMaxDashboardMypropertycover,
     },
     {
         title: 'Listing',
-        content: <ListContent />,
+        content: <ListingContent />,
         coverImg: PropertiMaxDashboardListingcover,
     },
     {
         title: 'Listing Analysis',
-        content: <ListContent />,
+        content: <AnalysisContent />,
         coverImg: PropertiMaxDashboardAnalysiscover,
     },
     {
         title: 'Calendar',
-        content: <MapContent />,
+        content: <CalendarContent />,
         coverImg: PropertiMaxDashboardCalendarcover,
     },
     {
         title: 'Clients',
-        content: <PropertyDetailContent />,
+        content: <ClientsContent />,
         coverImg: PropertiMaxDashboardClientscover,
     },
     {
         title: 'Personal Information',
-        content: <NavigationContent />,
+        content: <PersonalInfoContent />,
         coverImg: PropertiMaxDashboardPersonalinfocover,
     },
     {

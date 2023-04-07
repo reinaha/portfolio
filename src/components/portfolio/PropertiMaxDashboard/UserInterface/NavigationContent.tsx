@@ -5,21 +5,17 @@ const NavigationJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Due to the wide range of options available in real estate listings, we
-                believed that dividing them solely with search filters would not be
-                sufficient.
+                As the dashboard contains a large amount of complex information, I
+                believed that designing a simple and intuitive navigation was crucial to
+                creating an easy-to-use interface. However, simply listing the navigation
+                items could make the entire dashboard look cluttered, so I made an effort
+                to reduce their visual weight by using lighter colors for all navigation
+                items except for the currently activated page.
             </IconListItem>
             <IconListItem>
-                Therefore, we placed the most essential parent categories of real estate
-                options, including Residential, Rural, Commercial, Business, and Agent, in
-                the middle of the navigation bar.
-            </IconListItem>
-            <IconListItem>
-                The remaining basic functions such as &ldquo;List a Property,&rdquo;
-                &ldquo;Sign in,&rdquo; and &ldquo;Profile&rdquo; were designed and placed
-                on the right side of the navigation bar. &ldquo;List a Property&rdquo; is
-                connected to the PropertiMax Agent Dashboard, allowing users to move
-                directly to the Agent Dashboard by clicking on it.
+                Additionally, I added a feature to minimize the side menu in consideration
+                of user convenience. When the user minimizes the side menu, only icons are
+                displayed, which helps to create a simpler appearance for the dashboard.
             </IconListItem>
         </PortfolioSectionContainer>
     );
