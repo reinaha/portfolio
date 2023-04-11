@@ -10,6 +10,7 @@ export default defineConfig(({ command, mode }) => {
             build: {
                 outDir: './build',
             },
+            publicDir: 'public',
             resolve: {
                 alias: [
                     { find: '@resources', replacement: './resources/' },
@@ -25,6 +26,7 @@ export default defineConfig(({ command, mode }) => {
         build: {
             outDir: './build',
         },
+        publicDir: 'public',
         resolve: {
             alias: [
                 { find: '@resources', replacement: './resources/' },

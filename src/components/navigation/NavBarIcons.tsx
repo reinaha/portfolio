@@ -12,7 +12,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import { NavBarButtons } from '@/data/NavBarIcons';
+import { NavBarButtons, NavBarDownloads } from '@/data/NavBarIcons';
 import { NavBarComponent } from '@/models';
 
 export const NavBarIcons = ({ isDarkTheme, curPath }: NavBarComponent) => {
@@ -58,16 +58,52 @@ export const NavBarIcons = ({ isDarkTheme, curPath }: NavBarComponent) => {
                         const buttonColor = isDarkTheme
                             ? icon.bgColor?.dark
                             : icon.bgColor?.light;
-
                         return (
                             <Button
                                 key={icon.key}
                                 component={Link}
-                                to={icon.path || '.'}
+                                to={icon.path || ''}
                                 state={{ section: icon.section, from: curPath }}
                                 replace
                                 color="primary"
                                 disableElevation
+                                target={icon.target}
+                                download={icon.download}
+                                sx={{
+                                    bgcolor: buttonColor,
+                                    borderRadius: 25,
+                                    paddingLeft: 4.5,
+                                    paddingRight: 4.5,
+                                    paddingTop: 2,
+                                    paddingBottom: 2,
+                                    '&:hover': {
+                                        '& .MuiTypography-root': {
+                                            transform: 'scale(1.2)',
+                                        },
+                                    },
+                                }}
+                            >
+                                <Typography
+                                    variant="button"
+                                    textTransform="none"
+                                    sx={{ transition: 'transform 0.3s ease-in-out' }}
+                                >
+                                    {icon.text}
+                                </Typography>
+                            </Button>
+                        );
+                    })}
+                    {NavBarDownloads.map((icon) => {
+                        const buttonColor = isDarkTheme
+                            ? icon.bgColor?.dark
+                            : icon.bgColor?.light;
+
+                        return (
+                            <Button
+                                key={icon.key}
+                                color="primary"
+                                disableElevation
+                                onClick={icon.onClick}
                                 sx={{
                                     bgcolor: buttonColor,
                                     borderRadius: 25,
