@@ -1,12 +1,8 @@
 import { Stack, Typography } from '@mui/material';
-import { ReactNode } from 'react';
 
-type PortfolioDetailCardProps = {
-    title: string;
-    content: ReactNode;
-};
+import { HeaderCard } from '@/models';
 
-export const PortfolioDetailCard = ({ title, content }: PortfolioDetailCardProps) => {
+export const PortfolioDetailCard = ({ title, content }: HeaderCard) => {
     return (
         <Stack spacing={5}>
             <Typography variant="h6">{title}</Typography>

@@ -16,7 +16,7 @@ export const HeaderContent = () => {
                 interactions and conservatism, it also resulted in unstable income for our
                 company.
             </Typography>
-            <PortfolioDetailCards portfolioDetailCardInfos={OsstemDentalEShopCardInfo} />
+            <PortfolioDetailCards headerCards={OsstemDentalEShopCardInfo} />
         </PortfolioSectionContainer>
     );
 };

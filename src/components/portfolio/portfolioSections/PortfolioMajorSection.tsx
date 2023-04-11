@@ -9,7 +9,7 @@ import {
     PortfolioSectionProps,
 } from '@/components';
 
-type PortfolioMajorSectionProps = {
+export type PortfolioMajorSectionProps = {
     sectionTitle?: MajorSectionTitleProps;
     portfolioSections: PortfolioSectionProps[];
     coverImage?: string;

@@ -8,6 +8,7 @@ import {
     PropertiMaxApp,
     PropertiMaxDashboard,
     PropertiMaxWeb,
+    Test,
     UnderConstruction,
 } from '@/pages';
 
@@ -27,6 +28,7 @@ export default function Router() {
                             path="propertimax-dashboard"
                             element={<PropertiMaxDashboard />}
                         />
+                        <Route path="test" element={<Test />} />
                         <Route index element={<UnderConstruction />} />
                     </Route>
                     <Route index element={<Home key={Math.random()} />} />
