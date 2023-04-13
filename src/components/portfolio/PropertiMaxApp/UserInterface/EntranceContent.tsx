@@ -14,13 +14,13 @@ const EntranceJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                I thought the Entrance page would be the best page to showcase the
+                I felt that the Entrance page would be the best page to showcase the
                 PropertiMax brand identity. Designed primarily with PropertiMax&apos;s
-                main color, green, I placed property images throughout the page,
+                primary colour, green, property images were placed throughout the page,
                 highlighting them as a key product to help users naturally feel what type
-                of company PropertiMax is and what brand it represents. In addition, I
-                used various images and icons to design the entrance page in a way that
-                wouldn&apos;t bore users.
+                of a company PropertiMax is and the brand it represents. In addition,
+                various images and icons were used to design the entrance page in a way
+                that wouldn&apos;t bore users.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppEntranceImg1} />
         </PortfolioSectionContainer>
@@ -31,15 +31,15 @@ const IntroPageContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                As it was a new app released at the time and there were not many real
-                estate search platform apps available, I designed an intro page with a
+                The brand and the app was new at the time and there were not many real
+                estate search apps available, hence an intro page was designed with a
                 brief explanation of the app&apos;s features before entering the login
-                page.
+                page to inform the users.
             </IconListItem>
             <IconListItem>
-                For users who want to quickly skip the intro page, I created a
-                &ldquo;skip&rdquo; button at the top of the page, which allows them to
-                bypass the intro and go directly to the login page.
+                For users who want to quickly skip the intro page, a &ldquo;skip&rdquo;
+                button was placed at the top of the screen, which allows users to bypass
+                the intro pages and go directly to the login page.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppEntranceImg2} />
         </PortfolioSectionContainer>
@@ -50,16 +50,15 @@ const ProgressBarContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To prevent users from getting bored during the three-step sign-up process,
+                To prevent users from getting tired during the three-step sign-up process,
                 a progress bar was placed on the app&apos;s top bar to reduce user
                 fatigue.
             </IconListItem>
             <IconListItem>
-                Additionally, since the location settings and user profile pages, except
-                for the first sign-up page, were parts that users could modify after
-                joining the app, a skip button was placed at the top when these two pages
-                appeared so that users could easily skip them if they did not want to fill
-                them out.
+                Additionally, for steps with non-required information during sign-up such
+                as location settings and user profile, a skip button was placed at the top
+                of the screen when these pages appeared so that users could easily skip
+                them if they did not want to fill them out during the sign-up process.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppEntranceImg3} />
         </PortfolioSectionContainer>
@@ -72,11 +71,11 @@ export const EntranceContentData = [
         content: <EntranceJourneyContent />,
     },
     {
-        title: 'Intro page to increase user understanding of the app',
+        title: 'Intro page to introduce the app to first time users',
         content: <IntroPageContent />,
     },
     {
-        title: 'A progress bar to reduce user fatigue in app usage',
+        title: 'Progress bar to reduce user fatigue',
         content: <ProgressBarContent />,
     },
 ];
