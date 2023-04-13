@@ -27,6 +27,7 @@ export const PropertiMaxWeb = () => {
             <UserInterfaceMajorSection />
             <Divider />
             <TakeawaysMajorSection />
+            <Divider />
         </PortfolioContainer>
     );
 };

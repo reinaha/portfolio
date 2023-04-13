@@ -15,22 +15,21 @@ const JourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                This page is a page that manages real estate property post lists and
-                includes functions such as managing existing posts on the site or creating
-                new posts.
+                This page provides a comprehensive real estate property post list
+                management system that includes essential functions like creating and
+                editing posts. Depending on the status of each post, users can easily
+                navigate between tabs such as all pages, published, drafts, and
+                discontinued.
             </IconListItem>
             <IconListItem>
-                As this page is centered around posts, tabs such as all pages, published,
-                drafts, and discontinued are provided depending on the status of each
-                post.
+                Our design philosophy emphasises highlighting important features like the
+                &ldquo;Add New Post&rdquo; and &ldquo;Selection Form&rdquo; while keeping
+                everything else unobtrusive.
             </IconListItem>
             <IconListItem>
-                In a page where functions such as adding or editing posts are the center,
-                efforts were made to emphasize important parts of the design and not to
-                highlight the rest. Important functions such as &lsquo;Add New Post&rsquo;
-                and &lsquo;Selection Form&rsquo; were designed to stand out, and strong
-                colors were used for changes that occur when using the function to allow
-                users to focus on the function.
+                We have used strong, contrasting colours to make it easy for users to
+                focus on important functions and to draw attention to any changes that
+                occur while using them.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardListingImg1} />
         </PortfolioSectionContainer>
@@ -41,18 +40,14 @@ const ThumbnailContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To efficiently manage the real estate property post list, we included as
-                much information as possible about the property in the thumbnail so that
-                users can quickly understand the content of the updated post without
-                unnecessary clicks, and easily manage the information.
-            </IconListItem>
-            <IconListItem>
-                Additionally, we created options to manage the post list overall or
-                individually. A checkbox is placed on the left side of each post thumbnail
-                so that users can manage multiple posts at once. On the other hand, a
-                small menu button is added to the right side of each post so that users
-                can manage each post individually, such as editing, checking details, or
-                deleting.
+                We know that managing real estate property posts can be a hassle, which is
+                why we&apos;ve designed our platform to help you work more efficiently.
+                Our thumbnail and option design includes as much information as possible
+                about each property, so you can quickly understand each post without
+                unnecessary clicks. Plus, we&apos;ve made it easy to manage posts
+                individually or as a group. Simply use the checkboxes on the left of each
+                thumbnail to manage multiple posts at once, or the menu button on the
+                right to edit, check details, or delete each post individually.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardListingImg2} />
         </PortfolioSectionContainer>
@@ -63,18 +58,17 @@ const SidebarContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                The page for adding or editing a post is divided into two main sections.
-                On the left, there is an area where users can write or edit the
-                post&apos;s title, content, and photos, while on the right, there is a
-                form for entering information about the real estate property.
+                We&apos;ve divided the post creation and editing page into two sections.
+                The left area is where you can write or edit your post&apos;s title,
+                content, and photos, while the right section is where you can enter
+                information about the real estate property.
             </IconListItem>
             <IconListItem>
-                This design allows users to simultaneously view and edit real estate
-                property information on the right while writing a post about it on the
-                left, eliminating the need to constantly check the property information
-                during the post creation process. Additionally, it enables users to
-                double-check the information even while performing other tasks, in case
-                any errors were made during the initial entry.
+                This design makes it possible to simultaneously view and edit your
+                property information while writing your post, saving you time and
+                preventing errors. You can even double-check the information while
+                performing other tasks, in case any mistakes were made during the initial
+                entry.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardListingImg3} />
         </PortfolioSectionContainer>
@@ -85,12 +79,12 @@ const LoadSavedContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                When users write a real estate post, they can click the &ldquo;load saved
-                property&rdquo; button located at the top to retrieve real estate
-                information they have already uploaded to &ldquo;my properties.&rdquo;
-                This design feature allows users to easily and automatically fill in real
-                estate information when writing a post, reducing the time it takes to
-                create a real estate post.
+                Writing a real estate post is now even quicker with our &ldquo;load saved
+                property&rdquo; feature. Simply click the button located at the top of the
+                page to retrieve real estate information you&apos;ve previously uploaded
+                to &ldquo;my properties.&rdquo; This design feature allows you to easily
+                and automatically fill in your post with your saved information, reducing
+                the time it takes to create a real estate post.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardListingImg4} />
         </PortfolioSectionContainer>
@@ -103,15 +97,15 @@ export const ListingContentData = [
         content: <JourneyContent />,
     },
     {
-        title: 'Efficient Management of Real Estate Listings through Thumbnail and Option Design',
+        title: 'Streamlined real estate listings management with thumbnail and option design',
         content: <ThumbnailContent />,
     },
     {
-        title: 'Design to reduce post creation mistakes using the sidebar',
+        title: 'Design that reduces post creation mistakes with the sidebar',
         content: <SidebarContent />,
     },
     {
-        title: "Time-saving 'load' feature for real estate property post creation",
+        title: "Time-saving 'Load' feature for real estate property post creation",
         content: <LoadSavedContent />,
     },
 ];

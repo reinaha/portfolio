@@ -27,6 +27,7 @@ export const OsstemDentalEShop = () => {
             <UserInterfaceMajorSection />
             <Divider />
             <TakeawaysMajorSection />
+            <Divider />
         </PortfolioContainer>
     );
 };

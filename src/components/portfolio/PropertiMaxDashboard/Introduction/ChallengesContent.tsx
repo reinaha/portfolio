@@ -7,25 +7,24 @@ export const ChallengesContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem iconType="number" number={1} iconColor={iconColor}>
-                Given the complexity of information involved in the property agent
-                dashboard, designing a user-friendly interface was one of our main
-                challenges.
+                Designing a user-friendly interface for the complex property agent
+                dashboard was one of our primary challenges.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                To address this, we replaced intuitive elements with icons or graphics
-                where possible and used lighter colors to de-emphasize other basic
-                functionalities, thereby emphasizing the most important components.
+                To tackle this, we utilised icons and graphics in place of text where
+                possible, and opted for lighter colours to de-emphasise basic
+                functionalities, while highlighting the most important components.
             </IconListItem>
             <IconListItem iconType="number" number={2} iconColor={iconColor}>
-                As the main real estate management dashboard received a high volume of
-                notifications from both the site and potential clients, it was essential
-                that agents could react promptly. However, as the dashboard already
-                contained a significant amount of information, displaying notifications
-                within it risked overwhelming agents.
+                Managing a high volume of notifications from both the site and potential
+                clients was crucial, and agents needed to be able to respond promptly.
+                However, with the dashboard already containing a significant amount of
+                information, presenting notifications within it risked overwhelming
+                agents.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                To address this, we designed a sidebar on the left-hand side of the
-                dashboard, where agents could immediately view notifications from both
+                To overcome this challenge, we created a sidebar on the left-hand side of
+                the dashboard, where agents could quickly access notifications from both
                 posts and customer requests.
             </IconListItem>
         </PortfolioSectionContainer>

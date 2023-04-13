@@ -13,84 +13,88 @@ export const LearnedContent = () => {
         <PortfolioSectionContainer>
             <IconListItem iconType="number" number={1} iconColor={iconColor}>
                 <Typography fontWeight={700}>
-                    &lsquo;No matter how good the design is, it cannot be released to the
-                    market if time management fails.&rsquo; &lsquo;Designers need not only
-                    the ability to produce good design, but also the ability to persuade
-                    others.&rsquo;
+                    Importance of Effective Communication and Adaptability in Teamwork and
+                    Project Management
                 </Typography>
             </IconListItem>
             <IconListItem iconType="noIcon">
-                One thing that I was disappointed with while working on this project at
-                the company was the excessive authority that the CEO had due to the
-                company&apos;s small team size. Due to the frequent changes of mind by the
-                administrator, there were frequent cancellations and delays in completing
-                even one task for the project. Even though I worked on the project for
-                about a year, the app could not be released due to these reasons.
+                I learned the significance of effective communication among team members
+                when I realised that my thoughts may differ from others and that
+                misunderstandings can result in unexpected outcomes. This taught me to
+                define ambiguous areas clearly, which can be done through documentation.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                Through this process, I learned that while perfect design is certainly
-                important, time management is just as crucial. I realized that there is no
-                such thing as a perfect design, and that if you cannot complete your work
-                within a set time frame, even if you put in a lot of effort, the project
-                may never come out on the market.
+                During my participation in a project, I had to constantly adjust to new
+                team dynamics due to frequent changes in team members. Some developers
+                preferred to move quickly onto the next task after establishing a general
+                framework, while others meticulously created solutions that considered
+                various scenarios. This made me realise that the design process had to be
+                adapted to the developer&apos;s work style as each developer had their own
+                unique approach.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                If I were to encounter a similar situation in the future, I would first
-                manage time thoroughly with my team within our capabilities. To prepare
-                for the client&apos;s frequent changes of mind, I would create several
-                design options or prepare more detailed documents to persuade the team
-                using methods other than the design itself.
+                Working with multiple developers also taught me that what I had in my head
+                may not have been effectively communicated to others, leading to
+                misunderstandings and unexpected outcomes. This experience made me
+                understand the importance of clear communication and documentation to
+                clarify any ambiguous or unclear aspects of the project.
             </IconListItem>
             <IconListItem iconType="number" number={2} iconColor={iconColor}>
                 <Typography fontWeight={700}>
-                    The fact that what I think may differ from what others think, and that
-                    misunderstandings can lead to unexpected outcomes, taught me the
-                    importance of effective communication among team members. It is
-                    crucial to define ambiguous areas clearly, such as through
-                    documentation.
+                    Importance of Research and Direct User Interaction in Design
                 </Typography>
             </IconListItem>
             <IconListItem iconType="noIcon">
-                During my participation in this project, frequent team member changes
-                resulted in having to constantly adjust to new team dynamics. Some
-                developers preferred to quickly move onto the next task after establishing
-                a general framework, while others meticulously created solutions that
-                accounted for various scenarios. I learned that the design process had to
-                be adapted to the developer&apos;s work style, as each developer had their
-                own unique approach.
+                When I was first assigned to the project, I realised that my lack of
+                interest in and knowledge of the real estate industry posed a significant
+                challenge for me. Designing the application proved to be difficult because
+                I had little understanding of the needs and expectations of the target
+                audiences - property buyers and agents, as well as the features that would
+                set our application apart from those offered by competitors.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                Working with multiple developers, I realized that what I thought was clear
-                or understood could be completely different from someone else&apos;s
-                perspective. This can lead to misunderstandings and unexpected outcomes.
-                As a result, it&apos;s important to communicate clearly with each other
-                and define any ambiguous or unclear aspects of the project through
-                documentation.
+                To overcome this challenge, I had to invest time in researching the
+                industry and meeting with potential users to gather their feedback and
+                understand their needs and preferences better.
+            </IconListItem>
+            <IconListItem iconType="noIcon">
+                During these meetings, I discovered unexpected pain points and had to
+                adjust my assumptions and designs accordingly.
+            </IconListItem>
+            <IconListItem iconType="noIcon">
+                Through this experience, I learned the importance of gaining a deep
+                understanding of the industry and collecting data by directly interacting
+                with the target audience. Rushing into a project with hasty assumptions
+                can lead to incorrect design decisions and ultimately hinder the success
+                of the project.
             </IconListItem>
             <IconListItem iconType="number" number={3} iconColor={iconColor}>
                 <Typography fontWeight={700}>
                     Lessons Learned from Designing Functional Websites like Dashboard:
-                    Importance of Emphasizing Actions and Data Visualization
+                    Importance of Emphasising Actions and Data Visualization
                 </Typography>
             </IconListItem>
             <IconListItem iconType="noIcon">
-                Through this project, I designed a dashboard for the first time and
-                learned that the functional aspect is the most important part of a
-                website. Unlike most websites used by the general public, these websites
-                need to focus on the user&apos;s tasks, so they need to be designed
-                accordingly.
+                Reflecting on my experience designing functional websites such as a
+                dashboard, I learned that the most important aspect of such websites is
+                their functionality. These websites are designed for users to accomplish
+                specific tasks, so the design should focus on facilitating those tasks
+                effectively.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                When designing a website where functionality is important, it is important
-                to emphasize the &ldquo;action&rdquo; the user wants to perform through
-                the design. To do this, sometimes the color of the remaining features is
-                made lighter or simplified by removing them from the design.
+                To emphasise the desired actions, it is important to make them prominent
+                in the design. This can be achieved by using bold colours or highlighting
+                them in some other way, while making less important features lighter or
+                simpler by removing them from the design altogether.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                I also realized that visualized information such as data and graphs play
-                an important role. Therefore, understanding data visualization was
-                crucial, and I had to consider a design that was optimized for quick and
-                easy understanding of visualized information.
+                I also realised the significance of data visualisation in such websites.
+                Displaying data and graphs in an optimised manner that is quick and easy
+                to understand is critical. To achieve this, a good understanding of data
+                visualisation is essential, and the design should be tailored to allow
+                users to comprehend the information easily. Overall, designing a
+                functional website like a dashboard requires a balance between
+                functionality, usability, and aesthetics.
             </IconListItem>
         </PortfolioSectionContainer>
     );

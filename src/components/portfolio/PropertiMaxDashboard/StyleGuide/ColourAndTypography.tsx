@@ -7,19 +7,19 @@ export const ColourAndTypographyContent = () => {
     return (
         <PortfolioSectionContainer>
             <Typography>
-                The company has chosen a gradient color that mixes a light blue shade with
-                its primary green color, in order to maintain its brand identity while
-                increasing trust and reliability. The lightened version of this color has
-                also been used as a secondary color.
+                In order to maintain brand identity while giving a sense of trust and
+                reliability, the company has chosen a gradient colour that blends a light
+                blue shade with its primary green colour. The lightened version of this
+                colour has also been used as a secondary colour.
             </Typography>
             <Typography>
-                For text colors, black has been chosen as the main color for readability.
-                To ensure harmony with other colors, a small amount of blue has been added
-                to the basic black color. We used a light blue color, which is a mix of
-                gray and blue, as the sub-color. Since the dashboard has a large amount of
-                information, the main color, black, was mainly used for section headings.
-                For the rest of the content, we used the sub-color to create a design that
-                does not look too complex overall.
+                For text colours, black has been chosen as the main colour for
+                readability. To ensure harmony with other colours, a small amount of blue
+                has been added to the basic black colour. We used a light blue colour,
+                which is a mix of grey and blue, as the sub-colour. Since the dashboard
+                contains a large amount of information, the main colour, black, was mainly
+                used for section headings. For the rest of the content, we used the
+                sub-colour to create a design that does not look too complex overall.
             </Typography>
             <Typography>
                 As a real estate transaction application, it was important to have

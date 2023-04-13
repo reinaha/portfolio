@@ -6,22 +6,21 @@ export const IntroductionContent = () => {
     return (
         <PortfolioSectionContainer>
             <Typography>
-                I was tasked with designing a website that serves as a dashboard for
-                managing property listings and updates for the PropertiMax main site.
+                My mission was to design a dashboard website that would help manage
+                property listings and updates for PropertiMax&apos;s primary site. Since
+                the main target audience was agents who rely heavily on the website, my
+                focus was on providing an intuitive and user-friendly dashboard. While
+                there was no direct competition for this support tool, I wanted to ensure
+                that agents had access to an effective and efficient platform to manage
+                their properties.
             </Typography>
             <Typography>
-                As a support tool for the main website, there wasn&apos;t necessarily any
-                direct competition, but since one of PropertiMax&apos;s main targets is
-                agents who primarily use the website, I focused on providing an
-                easy-to-use and convenient dashboard for agents.
-            </Typography>
-            <Typography>
-                My role in the Propertimax dashboard project was to complete the
-                unfinished designs from the previous designer and to do simple publishing
-                using HTML and CSS. However, I decided that the completeness of the
-                previous designs was insufficient and the administrator requested
-                modifications, so we started by completely redesigning all of the previous
-                designs.
+                Initially, my role in the PropertiMax dashboard project was to finalise
+                the incomplete designs from the previous designer and to publish them
+                using HTML and CSS. However, upon reviewing the previous designs, I found
+                them incomplete in design, and the administrator requested modifications.
+                Thus, I spearheaded a complete redesign of all the previous designs to
+                ensure that the PropertiMax dashboard met the needs of agents.
             </Typography>
         </PortfolioSectionContainer>
     );

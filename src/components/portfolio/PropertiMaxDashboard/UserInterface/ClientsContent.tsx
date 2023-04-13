@@ -13,18 +13,18 @@ const JourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                The Clients page is a page where agents can view information about
-                customers who are involved in real estate transactions at a glance. On
-                this page, agents can manage customer information and communicate with
-                customers more efficiently.
+                The Clients page is designed for agents to manage information about
+                customers who are involved in real estate transactions. On this page,
+                agents can efficiently manage customer information and communicate with
+                them effectively.
             </IconListItem>
             <IconListItem>
-                When designing this page, the most important aspect we focused on was the
-                fact that agents may have difficulty remembering information about many
-                customers. Therefore, we designed the customer list to include a photo and
-                name so that agents can see customer characteristics at a glance. We also
-                added a section for agents to leave notes about customers and provide
-                brief descriptions about them to help them remember important details.
+                When designing this page, we focused on the fact that agents may have a
+                hard time remembering information about many customers. Hence, we included
+                a customer list with a photo and name, allowing agents to identify
+                customer characteristics quickly. We also added a section where agents can
+                leave notes about customers and provide brief descriptions to help them
+                recall essential details.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardClientsImg1} />
         </PortfolioSectionContainer>
@@ -35,16 +35,17 @@ const SearchFilteringContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Making it easy for agents to find the customers they want from among a
-                large customer list was a challenge. To solve this problem, a search bar
-                was placed at the top of the clients list, allowing agents to search for
-                customers based on their specific characteristics.
+                Our primary challenge was to help agents find customers easily from a
+                large list. To address this issue, we added a search bar at the top of the
+                client list, enabling agents to search for customers based on specific
+                characteristics.
             </IconListItem>
             <IconListItem>
-                In addition, the design was created to enable customers to be rearranged
-                in A-Z and Z-A order according to information such as name, email, phone
-                number, location, and date added, making it easier to search for
-                customers.
+                Moreover, we created a design where customers can be arranged in
+                alphabetical order based on information such as name, email, phone number,
+                location, and date added, making it easier to search for customers. With
+                these search and filtering functions, agents can manage their customer
+                list with ease and focus on building strong relationships with them.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardClientsImg2} />
         </PortfolioSectionContainer>
@@ -57,7 +58,7 @@ export const ClientsContentData = [
         content: <JourneyContent />,
     },
     {
-        title: 'Designing a Client Management Page for Agents: The Importance of Customer Search and Filtering Functions',
+        title: 'Designing a client management page for agents: customer search and filtering functions',
         content: <SearchFilteringContent />,
     },
 ];

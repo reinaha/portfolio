@@ -5,17 +5,19 @@ const NavigationJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                As the dashboard contains a large amount of complex information, I
-                believed that designing a simple and intuitive navigation was crucial to
-                creating an easy-to-use interface. However, simply listing the navigation
-                items could make the entire dashboard look cluttered, so I made an effort
-                to reduce their visual weight by using lighter colors for all navigation
-                items except for the currently activated page.
+                With the vast amount of information present on the dashboard, I recognised
+                the importance of creating an easily navigable interface. To achieve this,
+                I focused on simplifying the navigation while avoiding cluttering the
+                dashboard. One way I achieved this was by using lighter colours for all
+                navigation items except for the currently active page, to reduce their
+                visual weight and keep the focus on the content.
             </IconListItem>
             <IconListItem>
-                Additionally, I added a feature to minimize the side menu in consideration
-                of user convenience. When the user minimizes the side menu, only icons are
-                displayed, which helps to create a simpler appearance for the dashboard.
+                Another important feature that I added was the ability to minimise the
+                side menu. When minimised, only icons are displayed, allowing users to
+                quickly access the pages they need without distracting from the main
+                content. Overall, these design choices make the dashboard simpler and more
+                user-friendly.
             </IconListItem>
         </PortfolioSectionContainer>
     );

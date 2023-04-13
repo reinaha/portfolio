@@ -1,6 +1,6 @@
-import { Chip, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
-import { PortfolioSectionContainer, PortfolioSectionContainerProps } from '@/components';
+import { PortfolioChipSection, PortfolioSectionContainer } from '@/components';
 import { IconListItem } from '@/components/listText/IconListItem';
 
 export const GoalsContent = () => {
@@ -9,80 +9,51 @@ export const GoalsContent = () => {
 
     return (
         <PortfolioSectionContainer spacing={12.5}>
-            <GoalSection title="Main Goal" color={goalColor}>
+            <PortfolioChipSection title="Main Goal" color={goalColor}>
                 <Typography>
-                    Our main goal in designing the dashboard was to provide a
-                    user-friendly platform for agents to easily upload, update, and manage
-                    their property listings without any inconvenience.
-                </Typography>
-                <Typography>
-                    By offering a convenient dashboard experience to agents, we aimed to
-                    establish PropertiMax as a &ldquo;easy-to-use platform for managing
-                    real estate listings&rdquo; in the minds of users in the long run.
+                    Our primary objective in designing the PropertiMax dashboard was to
+                    create a user-friendly platform that allows agents to effortlessly
+                    manage, update, and upload their property listings without any hassle.
+                    Our goal was to establish PropertiMax as the go-to platform for easy
+                    property listing management in the minds of our users in the long run.
                 </Typography>
                 <IconListItem iconType="arrow" iconColor={goalColor}>
-                    To achieve this, we focused on designing a user-friendly interface
-                    that would allow agents to easily add and modify listings. We also
-                    added data analysis features to help agents effectively manage their
-                    listings. Ultimately, by providing a seamless experience for agents,
-                    we aimed to increase the number of property listings on the
-                    PropertiMax main website and attract more property buyers, which is
-                    our main target audience.
+                    To achieve this, we focused on crafting a user-friendly interface that
+                    would enable agents to seamlessly add and modify listings. We also
+                    integrated data analysis features to help agents effectively manage
+                    their listings. Ultimately, by delivering a hassle-free experience for
+                    agents, we aimed to increase the number of property listings on the
+                    PropertiMax main website, thereby attracting more property buyers -
+                    our primary target audience.
                 </IconListItem>
-            </GoalSection>
-            <GoalSection title="Sub Goal" color={subGoalColor}>
+            </PortfolioChipSection>
+            <PortfolioChipSection title="Sub Goal" color={subGoalColor}>
                 <Typography>
-                    We hoped that the PropertiMax Dashboard would go beyond just being a
-                    website for listing real estate properties and instead become a tool
-                    that could assist agents in their personal tasks. The more time agents
-                    spent on the PropertiMax Dashboard, the stronger their connection to
-                    PropertiMax would become, and this could also encourage them to upload
-                    more real estate listings.
+                    We aimed to make the PropertiMax Dashboard more than just a platform
+                    for listing properties. Our goal was to create a tool that would
+                    assist agents in their daily tasks and build a stronger connection
+                    between them and PropertiMax. By offering features that help agents
+                    save time and improve their productivity, we aimed to encourage them
+                    to spend more time on the dashboard and ultimately increase the number
+                    of real estate listings uploaded to the platform. Our objective was to
+                    establish PropertiMax as a reliable and helpful resource for agents in
+                    the real estate industry.
                 </Typography>
                 <Typography>
-                    Therefore, our goal was to design features that could help agents with
-                    their tasks and keep them engaged with the PropertiMax Dashboard for
-                    longer periods of time.
+                    Our aim was to create a dashboard that would be more than just a
+                    platform for listing real estate properties, but also a tool that
+                    would assist agents in their daily activities. In order to keep agents
+                    engaged with the PropertiMax Dashboard for longer periods of time, we
+                    set out to design features that would help them with their tasks.
                 </Typography>
                 <IconListItem iconType="arrow" iconColor={subGoalColor}>
-                    To achieve this, we added features such as schedule alerts, schedule
-                    management, and client list management, which would make the dashboard
-                    not only a place for uploading real estate properties but also a space
-                    for managing personal tasks.
+                    To accomplish this, we added features such as schedule alerts,
+                    schedule management, and client list management. By transforming the
+                    dashboard into a space for managing personal tasks, we aimed to
+                    establish stronger connections with agents and encourage them to
+                    upload more real estate listings.
                 </IconListItem>
-            </GoalSection>
-        </PortfolioSectionContainer>
-    );
-};
-
-interface GoalSectionProps extends PortfolioSectionContainerProps {
-    title: string;
-    color: {
-        primary: string;
-        secondary: string;
-    };
-}
-
-const GoalSection = ({
-    title,
-    color: { primary, secondary },
-    children,
-}: GoalSectionProps) => {
-    return (
-        <PortfolioSectionContainer spacing={7.5}>
-            <Chip
-                label={title}
-                sx={{
-                    bgcolor: secondary,
-                    color: primary,
-                    fontSize: '14px',
-                    fontWeight: 500,
-                    padding: '8px 4px',
-                    borderRadius: '32px',
-                    width: '100px',
-                }}
-            />
-            {children}
+            </PortfolioChipSection>
         </PortfolioSectionContainer>
     );
 };

@@ -14,12 +14,11 @@ const JourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                The Listing Analysis Page is a page where agents can check the view and
-                like counts of their posted real estate listings. Through this page,
-                agents can assess the level of interest from potential buyers and plan
-                their next steps accordingly. The popularity of the listings is ranked,
-                and the rankings are presented using graphs for users to easily
-                understand.
+                The Property Analysis Page allows agents to review the view and like
+                counts of their real estate listings. By utilising this page, agents can
+                evaluate the level of interest from potential buyers and devise their next
+                steps accordingly. The listings&apos; popularity is ranked, and the
+                rankings are depicted using graphs for users to easily comprehend.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardAnalysisImg1} />
         </PortfolioSectionContainer>
@@ -30,10 +29,10 @@ const ViewsLikesContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Designing &lsquo;Views&rsquo; and &lsquo;Likes&rsquo; sections to provide
-                options for both most and least popular real estate listings, Agent can
-                not only track the popularity of their posts but also identify less
-                popular ones to plan their next move accordingly.
+                &ldquo;Views&rdquo; and &ldquo;Likes&rdquo; sections, allow agents to
+                track the popularity of their posts and plan their next move. This helps
+                them to identify the most and least popular properties and adapt their
+                strategy accordingly.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardAnalysisImg2} />
         </PortfolioSectionContainer>
@@ -44,18 +43,17 @@ const CategoryContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                We believed that the list based on the views and popularity of real estate
-                property posts could be a great help for agents to understand the needs of
-                buyers. Therefore, we focused on making this page more efficient for
-                agents and ultimately increasing their time spent on the dashboard, which
-                is our target.
+                Our goal is to help real estate agents maximise the use of their
+                dashboard, so we&apos;ve added a new feature based on real estate property
+                views. By presenting a list of the most popular property posts, we hope to
+                help agents better understand their clients&apos; needs.
             </IconListItem>
             <IconListItem>
-                In addition to the &lsquo;Views&rsquo; and &lsquo;Likes&rsquo; sections,
-                we thought that providing other analysis filters would give agents more
-                useful information. For this reason, we designed the &lsquo;Category
-                Analysis&rsquo; section to show real estate property posts in order of
-                high views based on various criteria such as age, gender, and location.
+                Additionally, we&apos;ve designed the &lsquo;Category Analysis&rsquo;
+                section to give agents even more insight into their clients. This feature
+                allows agents to view high view counts based on different criteria such as
+                age, gender, and location. Our ultimate aim is to make the dashboard more
+                efficient for agents, leading to increased engagement and productivity.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxDashboardAnalysisImg3} />
         </PortfolioSectionContainer>
@@ -68,11 +66,11 @@ export const AnalysisContentData = [
         content: <JourneyContent />,
     },
     {
-        title: "Design of 'Views' and 'Likes' sections for checking real estate property views and popularity.",
+        title: 'Enhancing agent dashboard with real estate property analysis and optimised design',
         content: <ViewsLikesContent />,
     },
     {
-        title: 'Maximizing Agent Dashboard Utilization through Addition of Category Analysis Functionality based on Real Estate Property Views',
+        title: 'Maximising agent dashboard engagement',
         content: <CategoryContent />,
     },
 ];
