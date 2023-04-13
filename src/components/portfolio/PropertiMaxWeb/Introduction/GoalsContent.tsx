@@ -1,6 +1,6 @@
-import { Chip, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
-import { PortfolioSectionContainer, PortfolioSectionContainerProps } from '@/components';
+import { PortfolioChipSection, PortfolioSectionContainer } from '@/components';
 import { IconListItem } from '@/components/listText/IconListItem';
 
 export const GoalsContent = () => {
@@ -9,84 +9,50 @@ export const GoalsContent = () => {
 
     return (
         <PortfolioSectionContainer spacing={12.5}>
-            <GoalSection title="Main Goal" color={goalColor}>
+            <PortfolioChipSection title="Main Goal" color={goalColor}>
                 <Typography>
-                    As PropertiMax was a latecomer to the real estate market, we knew that
-                    we needed a clear and compelling benefit for users to come to our
-                    website in order to attract a large user base early on.
+                    To establish a strong user base early on, PropertiMax aimed to provide
+                    clear and compelling benefits for its users as a latecomer in the real
+                    estate market.
                 </Typography>
                 <Typography>
-                    Ultimately, what users wanted was the ability to see a large number of
-                    real estate listings on one website, so we needed to make sure that
-                    real estate agents who manage those listings would be interested in
-                    uploading their properties to our site.
-                </Typography>
-                <Typography>
-                    For this reason, our main goal at the outset was to create a website
-                    that would be attractive to real estate agents and make them want to
-                    upload their properties to our platform.
+                    We recognized that the key requirement for users was to have access to
+                    a wide range of real estate listings on a single platform. Thus, our
+                    primary goal was to design a website that would entice real estate
+                    agents to upload their properties to our platform and make it stand
+                    out in the competitive market.
                 </Typography>
                 <IconListItem iconType="arrow" iconColor={goalColor}>
-                    To achieve this, we made every effort to implement a real estate
-                    agent-friendly design. For example, we ensured that the home page
-                    displayed as many real estate listings as possible, and we made sure
-                    that each real estate listing included the real estate agent&aspo;s
-                    logo so that agents could indirectly advertise to users.
+                    To achieve this, we added features that were particularly useful for
+                    real estate agents, such as the ability to easily manage and update
+                    their listings, track their performance and statistics, and
+                    communicate with potential buyers through the platform. In addition,
+                    we made sure that the process of uploading a property was
+                    straightforward and efficient, so agents would not be deterred from
+                    using our platform.
                 </IconListItem>
-            </GoalSection>
-            <GoalSection title="Sub Goal" color={subGoalColor}>
+            </PortfolioChipSection>
+            <PortfolioChipSection title="Sub Goal" color={subGoalColor}>
                 <Typography>
                     The sub-goal is to make our website more convenient than our
                     competitors for property buyers who are our main target.
                 </Typography>
                 <IconListItem iconType="number" number={1} iconColor={subGoalColor}>
-                    The main competitor&apos;s UI was designed in a way that simply listed
-                    many items and listings, which made users feel easily fatigued while
-                    using the website. To address this issue, our PropertyMax real estate
-                    listings website aimed to create a user-friendly and simple design by
-                    hiding items under categories and minimizing clutter, making it easier
-                    and more convenient for users to view real estate listings.
+                    Create a user-friendly and simplified design. We noticed that the main
+                    competitor&apos;s UI was overwhelming for users as it simply listed
+                    many items and listings, causing users to easily feel fatigued while
+                    using the website. To address this issue, we decided to hide items
+                    under categories and minimise clutter to make it easier and more
+                    convenient for users to view real estate listings on our website.
                 </IconListItem>
                 <IconListItem iconType="number" number={2} iconColor={subGoalColor}>
-                    We aimed to keep the design as simple as possible by eliminating
-                    unnecessary elements, but since the target audience for the app is
-                    real estate buyers with significant purchasing power, who are
-                    typically older, we decided to include both icons and text for
-                    potentially confusing elements to ensure ease of use.
+                    Create a simple design for the app by removing any unnecessary
+                    elements. Considering that our target audience is real estate buyers
+                    with substantial purchasing power, who tend to be older, we decided to
+                    incorporate both icons and text for potentially unintuitive elements
+                    to ensure ease of use.
                 </IconListItem>
-            </GoalSection>
-        </PortfolioSectionContainer>
-    );
-};
-
-interface GoalSectionProps extends PortfolioSectionContainerProps {
-    title: string;
-    color: {
-        primary: string;
-        secondary: string;
-    };
-}
-
-const GoalSection = ({
-    title,
-    color: { primary, secondary },
-    children,
-}: GoalSectionProps) => {
-    return (
-        <PortfolioSectionContainer spacing={7.5}>
-            <Chip
-                label={title}
-                sx={{
-                    bgcolor: secondary,
-                    color: primary,
-                    fontSize: '14px',
-                    fontWeight: 500,
-                    padding: '8px 4px',
-                    borderRadius: '32px',
-                    width: '100px',
-                }}
-            />
-            {children}
+            </PortfolioChipSection>
         </PortfolioSectionContainer>
     );
 };

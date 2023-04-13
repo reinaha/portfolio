@@ -13,15 +13,16 @@ const MapJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                The page shows real estate listings in the form of a map, designed to make
-                it more convenient for people who consider the location of the property to
-                be the most important option among real estate options.
+                We created a map search results page that caters to users who prioritise
+                the location of a property. By presenting the properties on a map, users
+                can easily navigate to areas of interest and assess nearby facilities to
+                help them make an informed decision.
             </IconListItem>
             <IconListItem>
-                In the map search results page, as the location of the property is shown
-                intuitively on the map, users can easily find properties in their desired
-                areas and also check nearby facilities to help them choose a real estate
-                property.
+                This intuitive design allows users to quickly find properties in their
+                desired location with just a few clicks. With this added convenience,
+                users can now spend more time exploring the details of each property,
+                leading to a more satisfying and efficient search experience.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxWebMapsearchImg1} />
         </PortfolioSectionContainer>
@@ -32,17 +33,19 @@ const MapSortingContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                We designed the page to show brief information about a specific real
-                estate property on the left side when the user clicks on it on the map.
+                The map search results page is designed to provide users with a convenient
+                way to locate real estate properties in the area of interest. When a user
+                clicks on a property on the map, a brief summary of the property is
+                displayed on the left-hand side of the screen.
             </IconListItem>
             <IconListItem>
-                In addition to that property, we also designed it to show other real
-                estate properties nearby that location, allowing users to easily find real
-                estate properties in the desired location.
+                We have also included information on other real estate properties in the
+                vicinity of the selected property, enabling users to compare and find the
+                right real estate property for them.
             </IconListItem>
             <IconListItem>
-                By doing so, we aim to provide users with more help in selecting real
-                estate properties by allowing them to check other properties in the area.
+                Our goal was to make the process of selecting a real estate property as
+                easy as possible for our users.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxWebMapsearchImg2} />
         </PortfolioSectionContainer>
@@ -51,7 +54,7 @@ const MapSortingContent = () => {
 
 export const MapContentData = [
     {
-        title: 'Map view journey',
+        title: 'Map search journey',
         content: <MapJourneyContent />,
     },
     {
