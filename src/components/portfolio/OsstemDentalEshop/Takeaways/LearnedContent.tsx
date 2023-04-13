@@ -13,24 +13,25 @@ export const LearnedContent = () => {
         <PortfolioSectionContainer>
             <IconListItem iconType="number" number={1} iconColor={iconColor}>
                 <Typography fontWeight={700}>
-                    The importance of understanding target needs and behavior patterns
+                    The importance of understanding needs and behavioural patterns of the
+                    target audience
                 </Typography>
             </IconListItem>
             <IconListItem iconType="noIcon">
                 As this app was created to sell products for a specific industry, it was
                 essential to first understand the needs and pain points of the target
-                audience, specifically dentists, and what features would be most useful to
-                them.
+                audience, specifically dentists, and what features would provide most
+                value to them.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                This required listening to complaints from dentists, as well as dental
-                suppliers and competitors. Additionally, it was necessary to continuously
-                collect feedback from the target audience after the wireframe was
-                developed.
+                This required listening to complaints from dentists, as well as
+                investigating other dental suppliers and competitors. Additionally, it was
+                necessary to continuously collect feedback from the target audience after
+                the wireframe was developed.
             </IconListItem>
             <IconListItem iconType="noIcon">
                 Through this process, I learned the importance of understanding target
-                needs and behavior patterns, as well as the importance of user testing.
+                needs and behavioural patterns, as well as the importance of user testing.
             </IconListItem>
             <IconListItem iconType="number" number={2} iconColor={iconColor}>
                 <Typography fontWeight={700}>
@@ -39,38 +40,40 @@ export const LearnedContent = () => {
                 </Typography>
             </IconListItem>
             <IconListItem iconType="noIcon">
-                For this particular app, although an e-commerce platform did not already
-                exist, the company had already established relationships with customers
-                through face-to-face interactions and had been selling products for a long
-                time.
+                Although there wasn’t an existing e-commerce platform, the company had
+                already established relationships with customers through face-to-face
+                interactions and had been selling products for a long time.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                Therefore, it was important to consider how to bring existing customers
-                into the new e-commerce app rather than just targeting new customers. This
-                required thoughtful consideration of how to seamlessly integrate the
-                company&apos;s existing systems into the new app and how to design the app
-                to help customers adapt to the new purchasing method without difficulty.
+                Therefore, it was important to take into consideration the onboarding
+                process to bring existing customers into the new e-commerce app rather
+                than targeting new customers. This required careful consideration of
+                existing company systems and processes in addition to designing the app to
+                help clients adapt to the new purchasing process.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                Through this process, it was necessary to understand the company&apos;s
+                To design such a system, it was necessary to understand the company&apos;s
                 internal sales system and to understand the specific aspects and
-                purchasing patterns of how customers make orders when making purchases.
+                purchasing patterns of how certain clients make orders when making
+                purchases.
             </IconListItem>
             <IconListItem iconType="number" number={3} iconColor={iconColor}>
                 <Typography fontWeight={700}>
-                    Gaining Insight into Unique Requirements and Challenges of a Specific
-                    Industry
+                    Gaining Insight into unique requirements and challenges of a specific
+                    industry
                 </Typography>
             </IconListItem>
             <IconListItem iconType="noIcon">
                 While creating an e-commerce application for the dental industry, I gained
                 valuable insights into the unique requirements and challenges of this
-                particular sector.
+                particular industry. The products being sold were very specialised and had
+                a range of different options that was difficult to understand in the
+                beginning.
             </IconListItem>
             <IconListItem iconType="noIcon">
-                This allowed me to develop a tailored solution that better meets the needs
-                of dental professionals, as opposed to a more generalized e-commerce
-                platform.
+                Learning more about the industry and the products allowed me to design a
+                tailored solution that meets the needs of dental professionals, as opposed
+                to a more generalised e-commerce platform.
             </IconListItem>
         </PortfolioSectionContainer>
     );

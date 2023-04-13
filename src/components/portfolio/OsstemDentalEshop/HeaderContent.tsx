@@ -9,12 +9,13 @@ export const HeaderContent = () => {
         <PortfolioSectionContainer spacing={5}>
             <Typography variant="h1">Osstem Dental E-Shop</Typography>
             <Typography variant="body2">
-                Prior to our decision to develop an e-commerce shop, the company relied
-                exclusively on salespeople who would visit dental clinics to meet with
-                dentists and sell our products. While this selling strategy was
-                well-suited to the New Zealand market&apos;s preference for face-to-face
-                interactions and conservatism, it also resulted in unstable income for our
-                company.
+                The goal of the Osstem Dental E-shop project was to develop an application
+                for dentists who use dental materials and products supplied by Osstem to
+                purchase them. The project commenced during the COVID-19 pandemic, when an
+                online platform to sell the products became necessary. This project
+                involved collaborating with software developers working in Osstem&apos;s
+                head office, based in Korea. I participated in the project as the sole
+                UX/UI designer over the span of approximately three months.
             </Typography>
             <PortfolioDetailCards portfolioDetailCardInfos={OsstemDentalEShopCardInfo} />
         </PortfolioSectionContainer>

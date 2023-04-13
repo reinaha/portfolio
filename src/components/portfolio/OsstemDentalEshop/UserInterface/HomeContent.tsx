@@ -16,12 +16,12 @@ const HomeJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                When designing the home page, the most important consideration was to make
-                it easy for customers to search for products and quickly find categories.
-                Therefore, we placed the search bar at the top and the important
-                categories in the middle of the home page. In addition, we aimed to show
-                as many discounted items as possible, so we added a list of sale-related
-                items at the bottom.
+                When designing the home screen, the most important consideration was to
+                make it easy for users to search for products and quickly find categories.
+                Therefore, the search bar was placed at the top and the important
+                categories in the middle of the home screen. In addition, to show as many
+                discounted items as possible, a list of sale-related items were placed in
+                the bottom section of the screen.
             </IconListItem>
             <PortfolioImage imageSrc={HomeJourney} />
         </PortfolioSectionContainer>
@@ -32,15 +32,15 @@ const ClinicChangeContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To accommodate the fact that our target customers, dental professionals,
-                often manage multiple clinics rather than just one, we have placed the
-                &ldquo;Change Clinic&rdquo; tab at the top of our app so that they can
-                easily switch the purchasing location of our products.
+                To accommodate for the fact that the target users - dental professionals,
+                often manage multiple clinics rather than just a single clinic,
+                &ldquo;Change Clinic&rdquo; button was placed at the top of the app to
+                easily switch between the delivery location of the user session.
             </IconListItem>
             <IconListItem>
-                Users can easily change their preferred delivery clinic by clicking the
-                drop-down button on the top tab. In addition, they can also change, add,
-                or delete clinics through &ldquo;edit detail&rdquo; option.
+                Users can easily change their preferred delivery clinic by clicking on the
+                drop-down button on the top. In addition, they can also change, add, or
+                delete clinics through the &ldquo;edit detail&rdquo; option.
             </IconListItem>
             <PortfolioImage imageSrc={HomeClinicChange} />
         </PortfolioSectionContainer>
@@ -51,20 +51,20 @@ const CategoryMenuContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                The biggest challenge in designing this app was figuring out how to
-                showcase a large number of products in a simple and intuitive way. With
-                over 2,000 products to display, it was crucial to reorganize the
+                The biggest challenge when designing the app was figuring out how to
+                organise and display a large number of products in a simple and intuitive
+                way. With over 2,000 products to display, it was crucial to reorganise the
                 categories and present them in a streamlined manner.
             </IconListItem>
             <IconListItem>
-                In addition to displaying categories as tab buttons on the homepage, we
-                added a &ldquo;See all&rdquo; button that takes users to a separate menu
+                In addition to displaying categories as tab buttons on the home screen,
+                &ldquo;See all&rdquo; button was added to take users to a separate menu
                 page where they can view all categories at once.
             </IconListItem>
             <IconListItem>
-                To ensure that users can access the category menu from any page, we
-                designed the app&apos;s bottom menu bar to include a category (menu)
-                button that takes users to the category page when clicked.
+                To ensure that users can access the category menu from any page, the
+                app&apos;s bottom menu bar was designed to include a category (menu)
+                button that takes users to the category page.
             </IconListItem>
             <PortfolioImage imageSrc={HomeCategoryMenu} />
         </PortfolioSectionContainer>
@@ -75,10 +75,9 @@ const SubcategoriesContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Due to customer feedback that they wanted to see all product categories at
-                once, despite having a large number of products, we added subcategories
-                under parent categories and designed a drop-down button to display
-                subcategories when clicked.
+                From client feedback that suggested all product categories should be
+                visible at once, subcategories were added under parent categories and a
+                drop-down button was designed to display subcategories when pressed.
             </IconListItem>
             <PortfolioImage imageSrc={HomeSubcategories} />
         </PortfolioSectionContainer>
@@ -89,14 +88,14 @@ const ReducingPhoneEnquiriesContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To address one of the most frequently asked questions by existing
-                customers, we placed information about the product delivery period in the
-                center of our homepage. By doing so, we aimed to reduce the number of
-                customer phone inquiries.
+                To address one of the most frequently asked questions by existing clients,
+                we placed information about the latest order status in the centre of our
+                home screen. This aimed to reduce the number of customer phone inquiries
+                regarding delivery status.
             </IconListItem>
             <IconListItem>
-                Customers who have placed orders can check not only their purchase history
-                but also the delivery period of the products they ordered through our app.
+                Users who have placed orders can check their purchase history and the
+                estimated delivery date of the products they ordered through the app.
             </IconListItem>
             <PortfolioImage imageSrc={HomeDeliveryStatus} />
         </PortfolioSectionContainer>
@@ -109,11 +108,11 @@ export const HomeContentData = [
         content: <HomeJourneyContent />,
     },
     {
-        title: 'Target-oriented clinic change tab',
+        title: 'Interface to change delivery clinic',
         content: <ClinicChangeContent />,
     },
     {
-        title: 'Category menu for finding products at a glance',
+        title: 'Easily accessible category menu',
         content: <CategoryMenuContent />,
     },
     {
@@ -121,7 +120,7 @@ export const HomeContentData = [
         content: <SubcategoriesContent />,
     },
     {
-        title: 'Reducing phone inquiries through product delivery status',
+        title: 'Transparent product delivery information',
         content: <ReducingPhoneEnquiriesContent />,
     },
 ];

@@ -15,11 +15,12 @@ const ProductJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To make it easy for users to find products among a large number of
-                options, we made a significant effort to keep the overall design as simple
-                as possible. We maintained a clean and minimalistic design while using a
-                bold, orange color for the category section to make it stand out and
-                easier for users to navigate.
+                Significant effort was made to keep the overall design as simple as
+                possible to make it easy for users to find products among a large number
+                of options. Product screen maintains a clean and minimalistic design
+                applied throughout the app but also adds bold, orange colour in the
+                category section to make it stand out and make it easier for users to
+                navigate.
             </IconListItem>
             <PortfolioImage imageSrc={ProductJourney} />
         </PortfolioSectionContainer>
@@ -30,18 +31,18 @@ const ProductSubcategoryContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                As our product selection grew, it became difficult for users to easily
-                find the products they were looking for. To address this issue, we
-                recognized the importance of categorizing our products in a more granular
-                way. We achieved this by adding subcategories as tabs under each parent
-                category, making it easier for users to recognize and find products within
-                those subcategories.
+                As the selection of available products grew, it became difficult for users
+                to find the products they were looking for. A more granular way of
+                categorising the products was necessary to address this issue. This was
+                achieved by adding subcategories as tabs under each major category, making
+                it easier for users to recognise and find products within those
+                subcategories.
             </IconListItem>
             <IconListItem>
-                To further reduce user inconvenience, we included the number of products
-                in each subcategory tab on the left-hand side, enabling users to
-                anticipate the number of products within each subcategory without having
-                to navigate directly to it.
+                To further enhance user experience, the number of products available in
+                each subcategory tab was displayed on the left-hand side, giving users a
+                rough idea of the type of the products within each subcategory without
+                having to navigate directly into it.
             </IconListItem>
             <PortfolioImage imageSrc={ProductSubcategory} />
         </PortfolioSectionContainer>
@@ -52,20 +53,16 @@ const ProductOptionContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                The biggest challenge in designing this app was figuring out how to
-                showcase a large number of products in a simple and intuitive way. With
-                over 2,000 products to display, it was crucial to reorganize the
-                categories and present them in a streamlined manner.
+                For dental implant products, many products vary in length, size, and other
+                characteristics, even if they are the same product. Originally in
+                catalogues they were listed as separate products with different product
+                codes. For the users it would take a long time to find the product they
+                need if a similar approach was used for the app.
             </IconListItem>
             <IconListItem>
-                In addition to displaying categories as tab buttons on the homepage, we
-                added a &ldquo;See all&rdquo; button that takes users to a separate menu
-                page where they can view all categories at once.
-            </IconListItem>
-            <IconListItem>
-                To ensure that users can access the category menu from any page, we
-                designed the app&apos;s bottom menu bar to include a category (menu)
-                button that takes users to the category page when clicked.
+                To address this a system was designed to allow users to select a
+                representative product and configure the options to match the specific
+                product code they need.
             </IconListItem>
             <PortfolioImage imageSrc={ProductOptionTab} />
         </PortfolioSectionContainer>
@@ -76,10 +73,17 @@ const ProductDescriptionButtonContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Due to customer feedback that they wanted to see all product categories at
-                once, despite having a large number of products, we added subcategories
-                under parent categories and designed a drop-down button to display
-                subcategories when clicked.
+                As expensive products often require a large amount of information in the
+                product description, the product description was displayed in a collapsed
+                form with a &ldquo;read more&rdquo; button to allow users to expand and
+                check the full product details as required.
+            </IconListItem>
+            <IconListItem>
+                When the description expands, the photo section from the product
+                information is hidden and the core information, such as the product name,
+                price, quantity, and options, were placed at the top. Additionally,
+                &ldquo;add to cart&rdquo; button was fixed to the bottom of the screen to
+                be always visible.
             </IconListItem>
             <PortfolioImage imageSrc={ProductDescriptionButton} />
         </PortfolioSectionContainer>
@@ -92,15 +96,15 @@ export const ProductContentData = [
         content: <ProductJourneyContent />,
     },
     {
-        title: 'Categorizing products through subcategory tabs',
+        title: 'Subcategory tabs under categories',
         content: <ProductSubcategoryContent />,
     },
     {
-        title: 'Product option tabs that reduce the number of product listings',
+        title: 'Product option selection to reduce listed products',
         content: <ProductOptionContent />,
     },
     {
-        title: 'Concise product description button for extensive content',
+        title: 'Collapsed product description',
         content: <ProductDescriptionButtonContent />,
     },
 ];

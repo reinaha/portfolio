@@ -15,25 +15,26 @@ export const RetrospectiveContent = () => {
     return (
         <PortfolioSectionContainer spacing={20}>
             <PortfolioChevronSection
-                title="Sign-up progress bar with poor intuitiveness"
+                title="Unintuitive sign-up progress bar"
                 color={iconColor}
             >
                 <IconListItem iconType="noIcon" iconColor={iconColor}>
                     I regret not designing a progress bar with three dots instead of a
-                    line, since the sign-up process consisted of only three steps. This
-                    would have made it more intuitive for users to understand the progress
-                    of the sign-up process.
+                    line, since the sign-up process consisted of only three specific
+                    steps. This would have made it more intuitive for users to understand
+                    the actual progress of the sign-up process.
                 </IconListItem>
                 <PortfolioImage imageSrc={RetrospectiveProgressBar} />
             </PortfolioChevronSection>
             <PortfolioChevronSection
-                title="The Category menu design can be confusing with the filter"
+                title="The category menu design can be confusing with the filter"
                 color={iconColor}
             >
                 <IconListItem iconType="noIcon" iconColor={iconColor}>
-                    A user provided feedback that they were confused whether the Category
-                    page was a menu page or a filter page. It would have been better to
-                    clearly distinguish between menu and filter and design accordingly.
+                    A user provided feedback on the category menu that it was hard to tell
+                    whether the category page was a navigation menu or a filter. It would
+                    have been better to clearly distinguish between menu and filter and
+                    design.
                 </IconListItem>
                 <PortfolioImage imageSrc={RetrospectiveCategoryMenu} />
             </PortfolioChevronSection>
