@@ -27,8 +27,8 @@ const bottomButtons: ButtomButton[] = [
     },
     {
         key: 2,
-        text: 'Behance',
-        onClick: () => window.open('https://www.behance.net/reinaha/'),
+        text: 'Dribbble',
+        onClick: () => window.open('https://dribbble.com/reinaha/'),
     },
 ];
 

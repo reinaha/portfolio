@@ -1,19 +1,12 @@
 import { Box, BoxProps, Container } from '@mui/material';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface PortfolioImageProps extends BoxProps {
     imageSrc: string;
 }
 
-export const PortfolioImage = ({ imageSrc, ...props }: PortfolioImageProps) => {
-    return (
-        <Box
-            width="100%"
-            component="img"
-            alt="portfolio-image"
-            src={imageSrc}
-            {...props}
-        />
-    );
+export const PortfolioImage = ({ imageSrc }: PortfolioImageProps) => {
+    return <LazyLoadImage width="100%" alt="portfolio" src={imageSrc} />;
 };
 
 export const PortfolioImageExtraMargin = (props: PortfolioImageProps) => {
