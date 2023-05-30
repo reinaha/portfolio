@@ -52,6 +52,6 @@ export const PortfolioCardData: IPortfolioCard[] = [
         title: 'Graphic Design Works',
         //tags: ['Graphic Design', 'Application'],
         backgroundImg: GraphicDesignWork,
-        onClick: () => () => console.log('Design Download'),
+        onClick: () => () => window.open('https://bit.ly/suminGraphics', '_blank'),
     },
 ];

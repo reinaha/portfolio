@@ -48,7 +48,48 @@ export const NavBarIcons = ({ isDarkTheme, curPath }: NavBarComponent) => {
                         onClose={handleClose}
                     >
                         {NavBarButtons.map((icon) => {
-                            return <MenuItem key={icon.key}>{icon.text}</MenuItem>;
+                            return (
+                                <MenuItem key={icon.key} sx={{ padding: '0' }}>
+                                    <Button
+                                        component={Link}
+                                        to={icon.path || ''}
+                                        state={{ section: icon.section, from: curPath }}
+                                        replace
+                                        color="primary"
+                                        disableElevation
+                                        target={icon.target}
+                                        download={icon.download}
+                                        sx={{
+                                            width: '100%',
+                                            padding: '0.5em 2em',
+                                        }}
+                                    >
+                                        <Typography variant="button" textTransform="none">
+                                            {icon.text}
+                                        </Typography>
+                                    </Button>
+                                </MenuItem>
+                            );
+                        })}
+                        {NavBarDownloads.map((icon) => {
+                            return (
+                                <MenuItem key={icon.key} sx={{ padding: '0' }}>
+                                    <Button
+                                        key={icon.key}
+                                        color="primary"
+                                        disableElevation
+                                        onClick={icon.onClick}
+                                        sx={{
+                                            width: '100%',
+                                            padding: '0.5em 2em',
+                                        }}
+                                    >
+                                        <Typography variant="button" textTransform="none">
+                                            {icon.text}
+                                        </Typography>
+                                    </Button>
+                                </MenuItem>
+                            );
                         })}
                     </Menu>
                 </>

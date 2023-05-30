@@ -13,12 +13,14 @@ interface ButtomButton {
 const bottomButtons: ButtomButton[] = [
     {
         key: 0,
-        text: 'reina.smh@gmail.com',
+        text: 'works.sumin@gmail.com',
         bgColor: {
             dark: 'rgba(255, 255, 255, 0.1)',
             light: '#F1F1F1',
         },
-        onClick: () => console.log('No Email Yet'),
+        onClick: () => {
+            window.location.href = 'mailto:works.sumin@gmail.com';
+        },
     },
     {
         key: 1,
