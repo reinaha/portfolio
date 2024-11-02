@@ -53,7 +53,7 @@ export const NavBarDownloads: NavBarButton[] = [
         },
         onClick: () =>
             window.open(
-                'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F6miNISmElXeamZZJvuLCn7%2FSumin-Ha-Portfolio---PDF%3Fnode-id%3D215-338%26scaling%3Dcontain%26page-id%3D215%253A337%26starting-point-node-id%3D215%253A338%26show-proto-sidebar%3D1',
+                'https://www.figma.com/proto/TrZnUn80G7cYcBDdfirX8Z/%F0%9F%91%88-To-view-mores-check-the-side-bar-%F0%9F%91%88-2024-Design?node-id=6089-13412&node-type=canvas&t=biRVzw0sj7G5WLW4-1&scaling=min-zoom&content-scaling=fixed&page-id=6089%3A48&starting-point-node-id=6089%3A13412&show-proto-sidebar=1',
                 '_blank'
             ),
     },
