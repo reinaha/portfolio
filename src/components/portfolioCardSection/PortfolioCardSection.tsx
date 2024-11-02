@@ -26,6 +26,11 @@ export const PortfolioCardSection = ({
                                 subtitle={p.subtitle}
                                 tags={p.tags}
                                 backgroundImage={p.backgroundImg}
+                                textColor={p.textColor}
+                                titleProps={p.titleProps}
+                                subtitleProps={p.subtitleProps}
+                                titleSubtitleSpacing={p.titleSubtitleSpacing}
+                                titleIcon={p.titleIcon}
                                 buttonOnClick={p.onClick(navigate)}
                             />
                         </Grid>

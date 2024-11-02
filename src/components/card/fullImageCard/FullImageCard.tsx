@@ -8,7 +8,7 @@ export const FiCard = styled(Card)({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: '35px 35px 35px 35px',
+    padding: '35px 35px 35px 41px',
     height: '586px',
     '&:hover': {
         cursor: 'pointer',
