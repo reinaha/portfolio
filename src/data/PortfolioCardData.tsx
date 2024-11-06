@@ -121,14 +121,22 @@ export const PortfolioCardData: IPortfolioCard[] = [
         subtitle: 'Digital Advertisement',
         //tags: ['UI/UX Design', 'Mobile App'],
         backgroundImg: NZPostDigitalDesign,
-        onClick: () => () => console.debug('Not implemented'),
+        onClick: () => () =>
+            window.open(
+                'https://www.figma.com/proto/3IdT4AJN1Um1MqdAnQcfcB/NZPost-Digital-AD-Design?node-id=6001-1043&node-type=frame&t=ou3u6gluz58f6Ki5-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517&starting-point-node-id=6001%3A1043',
+                '_blank'
+            ),
     },
     {
         title: 'NZ Post Motion Design',
         subtitle: 'Video and Motion',
         //tags: ['UI/UX Design', 'Mobile App'],
         backgroundImg: NZPostMotionDesign,
-        onClick: () => () => console.debug('Not implemented'),
+        onClick: () => () =>
+            window.open(
+                'https://www.figma.com/proto/Jz3gFNsoff7tVa9NOHwVTm/NZPost-Motion-Design?node-id=6001-1043&node-type=canvas&t=XFu5olp9AcijDt0i-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517&starting-point-node-id=6001%3A1043',
+                '_blank'
+            ),
     },
     {
         title: 'PropertiMax Mobile App',
