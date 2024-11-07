@@ -7,7 +7,7 @@ export const HomeTopCover = () => {
                 Hello, I&apos;m Sumin
             </Typography>
             <Typography textAlign="center" variant="h1">
-                I&apos;m a UI/UX and Graphic Designer,
+                I&apos;m a Multimedia Designer,
             </Typography>
             <Typography textAlign="center" variant="h1">
                 with Web Development and Marketing Skills

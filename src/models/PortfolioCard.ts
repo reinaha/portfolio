@@ -7,6 +7,7 @@ export interface IPortfolioCard {
     title: string;
     subtitle?: string;
     tags?: string[];
+    filterCriteria?: string[];
     backgroundImg: string;
     textColor?: string;
     titleProps?: TypographyProps;
