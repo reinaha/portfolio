@@ -1,7 +1,5 @@
-import { TypographyProps } from '@mui/material';
 import { NavigateFunction } from 'react-router-dom';
 
-import { FernIcon } from '@/icons';
 import {
     AdditionalGraphicDesign,
     AdditionalMotionDesign,
@@ -20,35 +18,16 @@ import {
 } from '@/images';
 import { IPortfolioCard } from '@/models';
 
-const stampTitleStyle: TypographyProps = {
-    fontSize: '40px',
-    fontWeight: 700,
-    lineHeight: '45px',
-    letterSpacing: '-0.01em',
-    whiteSpace: 'pre-wrap',
-};
-
-const stampSubtitleStyle: TypographyProps = {
-    fontSize: '18px',
-    fontWeight: 700,
-    lineHeight: '20px',
-    letterSpacing: '-0.01em',
-};
-
 const stampTextColor1 = 'white';
 const stampTextColor2 = '#5C3C9C';
-const stampTextSpacing = 5;
 
 export const PortfolioCardData: IPortfolioCard[] = [
     {
-        title: '2024 \nPostcrossing \nStamps Design.',
-        subtitle: '／ New Zealand Official Stamp',
+        title: '2024 Postcrossing \nStamps Design.',
+        subtitle: 'New Zealand Official Stamp',
         backgroundImg: PostcrossingBackground,
         textColor: stampTextColor1,
-        titleProps: stampTitleStyle,
-        subtitleProps: stampSubtitleStyle,
-        titleSubtitleSpacing: stampTextSpacing,
-        titleIcon: <FernIcon color={stampTextColor1} />,
+        // titleIcon: <FernIcon color={stampTextColor1} />,
         filterCriteria: ['multimedia'],
         onClick: () => () =>
             window.open(
@@ -57,39 +36,14 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: '2024 \nChristmas \nStamps Design.',
-        subtitle: '／ New Zealand Official Stamp',
-        backgroundImg: ChristmasStampBackground,
-        textColor: stampTextColor1,
-        titleProps: stampTitleStyle,
-        subtitleProps: stampSubtitleStyle,
-        titleSubtitleSpacing: stampTextSpacing,
-        titleIcon: <FernIcon color={stampTextColor1} />,
-        filterCriteria: ['multimedia'],
-        onClick: () => () =>
-            window.open(
-                'https://www.figma.com/proto/pIvsbR7rLKovClAjhnNp9W/2024-Christmas-Stamp?node-id=14-48358&node-type=canvas&t=ZUPyjUPi12Y0YIzU-1&scaling=min-zoom&content-scaling=fixed&page-id=14%3A47359',
-                '_blank'
-            ),
+        title: 'PropertiMax \nMobile App',
+        subtitle: 'Real Estate Trading Application',
+        backgroundImg: RealEstateTradingApp,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-app'),
     },
     {
-        title: '2025 \nANZAC \nStamps Design.',
-        subtitle: '／ New Zealand Official Stamp',
-        backgroundImg: AnzacStampBackground,
-        textColor: stampTextColor2,
-        titleProps: stampTitleStyle,
-        subtitleProps: stampSubtitleStyle,
-        titleSubtitleSpacing: stampTextSpacing,
-        titleIcon: <FernIcon color={stampTextColor2} />,
-        filterCriteria: ['multimedia'],
-        onClick: () => () =>
-            window.open(
-                'https://www.figma.com/proto/1ShL40xopOSV4m14xDQ1VD/2025-ANZAC-Stamp?node-id=6001-1043&node-type=frame&t=URbt28XfPGuNbsWJ-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517',
-                '_blank'
-            ),
-    },
-    {
-        title: 'NZ Post Brand Design',
+        title: 'NZ Post \nBrand Design',
         subtitle: 'Implementing Brand Guideline',
         backgroundImg: NZPostBrandDesign,
         filterCriteria: ['multimedia'],
@@ -100,7 +54,27 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: 'NZ Post Digital Design',
+        title: '2024 Christmas \nStamps Design.',
+        subtitle: 'New Zealand Official Stamp',
+        backgroundImg: ChristmasStampBackground,
+        textColor: stampTextColor1,
+        // titleIcon: <FernIcon color={stampTextColor1} />,
+        filterCriteria: ['multimedia'],
+        onClick: () => () =>
+            window.open(
+                'https://www.figma.com/proto/pIvsbR7rLKovClAjhnNp9W/2024-Christmas-Stamp?node-id=14-48358&node-type=canvas&t=ZUPyjUPi12Y0YIzU-1&scaling=min-zoom&content-scaling=fixed&page-id=14%3A47359',
+                '_blank'
+            ),
+    },
+    {
+        title: 'PropertiMax \nWeb App',
+        subtitle: 'Real Estate Trading Website',
+        backgroundImg: RealEstateTradingWeb,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-web'),
+    },
+    {
+        title: 'NZ Post \nDigital Design',
         subtitle: 'Digital Advertisement',
         backgroundImg: NZPostDigitalDesign,
         filterCriteria: ['multimedia'],
@@ -111,7 +85,28 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: 'NZ Post Motion Design',
+        title: '2025 ANZAC \nStamps Design.',
+        subtitle: 'New Zealand Official Stamp',
+        backgroundImg: AnzacStampBackground,
+        textColor: stampTextColor2,
+        // titleIcon: <FernIcon color={stampTextColor2} />,
+        filterCriteria: ['multimedia'],
+        onClick: () => () =>
+            window.open(
+                'https://www.figma.com/proto/1ShL40xopOSV4m14xDQ1VD/2025-ANZAC-Stamp?node-id=6001-1043&node-type=frame&t=URbt28XfPGuNbsWJ-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517',
+                '_blank'
+            ),
+    },
+    {
+        title: 'Osstem \nMobile App',
+        subtitle: 'Dental Supply E-Commerce Application',
+        backgroundImg: DentalECommerceApp,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/work/osstem-dental-e-shop'),
+    },
+    {
+        title: 'NZ Post \nMotion Design',
         subtitle: 'Video and Motion',
         backgroundImg: NZPostMotionDesign,
         filterCriteria: ['multimedia'],
@@ -122,44 +117,7 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: 'PropertiMax Mobile App',
-        subtitle: 'Real Estate Trading Application',
-        backgroundImg: RealEstateTradingApp,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-app'),
-    },
-    {
-        title: 'Osstem Mobile App',
-        subtitle: 'Dental Supply E-Commerce Application',
-        backgroundImg: DentalECommerceApp,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/work/osstem-dental-e-shop'),
-    },
-    {
-        title: 'PropertiMax Web App',
-        subtitle: 'Real Estate Trading Website',
-        backgroundImg: RealEstateTradingWeb,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-web'),
-    },
-    {
-        title: 'PropertiMax Dashboard',
-        subtitle: 'Real Estate Agent Dashboard',
-        backgroundImg: RealEstateTradingDashboard,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/work/propertimax-dashboard'),
-    },
-    {
-        title: 'Osstem Web App',
-        subtitle: 'Dental Supply E-Commerce Website',
-        backgroundImg: DentalECommerceWeb,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () => navigate('/work/'),
-    },
-    {
-        title: 'Osstem Brand Design',
+        title: 'Osstem \nBrand Design',
         subtitle: 'Implementing Brand Guideline',
         backgroundImg: OsstemBrandDesign,
         filterCriteria: ['multimedia'],
@@ -168,6 +126,14 @@ export const PortfolioCardData: IPortfolioCard[] = [
                 'https://www.figma.com/proto/RKRRT0lHdJuRe1GZCJhJ32/Osstem-Brand-Design?node-id=6001-1043&node-type=frame&t=nk7AxkvyA0pyzWeu-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517',
                 '_blank'
             ),
+    },
+    {
+        title: 'PropertiMax \nDashboard',
+        subtitle: 'Real Estate Agent Dashboard',
+        backgroundImg: RealEstateTradingDashboard,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/work/propertimax-dashboard'),
     },
     {
         title: 'Additional Motion Designs',
@@ -190,5 +156,12 @@ export const PortfolioCardData: IPortfolioCard[] = [
                 'https://www.figma.com/proto/50t1U0U5ruunE048qskPFP/Additional-Graphic-Designs?node-id=6001-1043&node-type=frame&t=xeAlajkCutEMVOqf-0&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517&starting-point-node-id=6001%3A1043',
                 '_blank'
             ),
+    },
+    {
+        title: 'Osstem \nWeb App',
+        subtitle: 'Dental Supply E-Commerce Website',
+        backgroundImg: DentalECommerceWeb,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/'),
     },
 ];

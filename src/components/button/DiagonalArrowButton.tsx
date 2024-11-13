@@ -6,7 +6,7 @@ type DiagonalArrowButtonProps = {
 };
 
 export const DiagonalArrowButton = ({ onClick }: DiagonalArrowButtonProps) => {
-    const size = 70;
+    const size = 60;
     return (
         <IconButton
             className="GoToPortfolio"

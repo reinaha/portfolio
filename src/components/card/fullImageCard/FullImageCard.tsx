@@ -8,8 +8,8 @@ export const FiCard = styled(Card)({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: '35px 35px 35px 41px',
-    height: '586px',
+    padding: '30px 25px 35px 30px',
+    height: '386px',
     '&:hover': {
         cursor: 'pointer',
         '& .MuiCardMedia-root': { transform: 'scale3d(1.2, 1.2, 1)' },

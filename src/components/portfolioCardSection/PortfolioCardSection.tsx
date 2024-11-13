@@ -1,11 +1,4 @@
-import {
-    Box,
-    BoxProps,
-    Grid,
-    Stack,
-    ToggleButton,
-    ToggleButtonGroup,
-} from '@mui/material';
+import { Box, BoxProps, Grid, Stack, useMediaQuery, useTheme } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -23,6 +16,8 @@ export const PortfolioCardSection = ({
     ...props
 }: PortfolioCardSectionProps) => {
     const navigate = useNavigate();
+    const theme = useTheme();
+    const isLargerThanMediumScreen = useMediaQuery(theme.breakpoints.up('sm'));
     const [portfolioFilter, setPortfolioFilter] = useState<string>('');
 
     const onClickFilterButton = (filterValue: string) => () => {
@@ -31,23 +26,29 @@ export const PortfolioCardSection = ({
 
     return (
         <Box id="PortfolioSection" {...props}>
-            <Grid container alignItems="stretch" columnSpacing={5.5} rowSpacing={11}>
+            <Grid container alignItems="stretch" columnSpacing={5} rowSpacing={5}>
                 <Grid item xs={12} sm={12} md={12} lg={12}>
                     <Stack direction="row" spacing={5}>
                         <HomeFilterButton
-                            buttonText="All Projects"
+                            buttonText={
+                                'All' + (isLargerThanMediumScreen ? ' Projects' : '')
+                            }
                             value=""
                             selected={portfolioFilter === ''}
                             onClick={onClickFilterButton('')}
                         />
                         <HomeFilterButton
-                            buttonText="UX/UI Design Only"
+                            buttonText={
+                                'UX/UI' + (isLargerThanMediumScreen ? ' Design' : '')
+                            }
                             value="uxui"
                             selected={portfolioFilter === 'uxui'}
                             onClick={onClickFilterButton('uxui')}
                         />
                         <HomeFilterButton
-                            buttonText="Multimedia Design Only"
+                            buttonText={
+                                'Multimedia' + (isLargerThanMediumScreen ? ' Design' : '')
+                            }
                             value="multimedia"
                             selected={portfolioFilter === 'multimedia'}
                             onClick={onClickFilterButton('multimedia')}
@@ -75,7 +76,7 @@ export const PortfolioCardSection = ({
                     })
                     .map((p, index) => {
                         return (
-                            <Grid item key={index} xs={12} sm={12} md={12} lg={6}>
+                            <Grid item key={index} xs={12} sm={6} md={4} lg={4}>
                                 <PortfolioCard
                                     title={p.title}
                                     subtitle={p.subtitle}

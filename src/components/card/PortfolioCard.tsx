@@ -22,9 +22,20 @@ export const PortfolioCard = ({
     tags = [],
     backgroundImage,
     textColor = 'black',
-    titleProps = { fontSize: '24px', fontWeight: 600 },
-    subtitleProps = { fontSize: '16px', fontWeight: 500 },
-    titleSubtitleSpacing = 3,
+    titleProps = {
+        fontSize: '22px',
+        fontWeight: 600,
+        whiteSpace: 'pre-wrap',
+        lineHeight: '28px',
+        letterSpacing: '-0.01em',
+    },
+    subtitleProps = {
+        fontSize: '14px',
+        fontWeight: 500,
+        lineHeight: '30px',
+        letterSpacing: '-0.02em',
+    },
+    titleSubtitleSpacing = 1,
     titleIcon,
     buttonOnClick,
 }: PortfolioCardProps) => {
