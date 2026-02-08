@@ -7,13 +7,14 @@ export const HomeTopCover = () => {
                 Hello, I&apos;m Sumin
             </Typography>
             <Typography textAlign="center" variant="h1">
-                I&apos;m a Multimedia Designer,
+                I&apos;m a Product Designer,
             </Typography>
             <Typography textAlign="center" variant="h1">
-                with Web Development and Marketing Skills
+                with a Visual and Web Development background
             </Typography>
             <Typography textAlign="center" paddingTop={5} variant="subtitle2">
-                I specialise in UI/UX Design, Responsive Web Design and Visual Development
+                Focused on accessible, scalable product design grounded in real world
+                usage
             </Typography>
         </Stack>
     );

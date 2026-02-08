@@ -87,6 +87,7 @@ export const PortfolioCardSection = ({
                                     subtitleProps={p.subtitleProps}
                                     titleSubtitleSpacing={p.titleSubtitleSpacing}
                                     titleIcon={p.titleIcon}
+                                    hoverVideo={p.hoverVideo}
                                     buttonOnClick={p.onClick(navigate)}
                                 />
                             </Grid>

@@ -12,6 +12,7 @@ import PostcrossingBackground from '@resources/Home/PostcrossingBackground.png';
 import RealEstateTradingApp from '@resources/Home/RealEstateTradingApp.png';
 import RealEstateTradingDashboard from '@resources/Home/RealEstateTradingDashboard.png';
 import RealEstateTradingWeb from '@resources/Home/RealEstateTradingWeb.png';
+import PropertiMaxVideo from '@resources/Home/videos/PropertiMaxVideo.webm';
 
 export {
     AdditionalGraphicDesign,
@@ -25,6 +26,7 @@ export {
     NZPostMotionDesign,
     OsstemBrandDesign,
     PostcrossingBackground,
+    PropertiMaxVideo,
     RealEstateTradingApp,
     RealEstateTradingDashboard,
     RealEstateTradingWeb,

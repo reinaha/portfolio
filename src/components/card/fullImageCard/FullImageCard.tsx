@@ -1,5 +1,12 @@
 // --- Material Ui Imports --- //
-import { Card, CardActionArea, CardActions, CardContent, CardMedia } from '@mui/material';
+import {
+    Card,
+    CardActionArea,
+    CardActions,
+    CardContent,
+    CardMedia,
+    CardMediaProps,
+} from '@mui/material';
 import { styled } from '@mui/system';
 
 export const FiCard = styled(Card)({
@@ -35,7 +42,9 @@ export const FiCardContent = styled(CardContent)({
     },
 });
 
-export const FiCardMedia = styled(CardMedia)({
+export const FiCardMedia = styled(CardMedia)<
+    CardMediaProps & { component?: React.ElementType }
+>({
     position: 'absolute',
     top: 0,
     right: 0,

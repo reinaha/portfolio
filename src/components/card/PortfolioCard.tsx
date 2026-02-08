@@ -1,4 +1,5 @@
-import { Chip, Stack, Typography, TypographyProps } from '@mui/material';
+import { CardMedia, Chip, Stack, Typography, TypographyProps } from '@mui/material';
+import { useState } from 'react';
 
 import { DiagonalArrowButton } from '../button/DiagonalArrowButton';
 import { FiCard, FiCardContent, FiCardMedia } from './fullImageCard';
@@ -13,6 +14,7 @@ type PortfolioCardProps = {
     subtitleProps?: TypographyProps;
     titleSubtitleSpacing?: number;
     titleIcon?: React.ReactNode;
+    hoverVideo?: string;
     buttonOnClick?: React.MouseEventHandler<HTMLDivElement>;
 };
 
@@ -37,41 +39,69 @@ export const PortfolioCard = ({
     },
     titleSubtitleSpacing = 1,
     titleIcon,
+    hoverVideo,
     buttonOnClick,
 }: PortfolioCardProps) => {
+    const [hover, setHover] = useState(false);
+
     return (
-        <FiCard onClick={buttonOnClick}>
-            <FiCardMedia image={backgroundImage} />
-            <FiCardContent>
-                <Stack direction="row">
-                    <Stack
-                        spacing={titleSubtitleSpacing}
-                        sx={{ color: textColor, flexGrow: 1 }}
-                    >
-                        {titleIcon ? titleIcon : null}
-                        <Typography {...titleProps}>{title}</Typography>
-                        {subtitle ? (
-                            <Typography {...subtitleProps}>{subtitle}</Typography>
-                        ) : null}
-                        {tags ? (
-                            <Stack direction="row" spacing={2}>
-                                {tags.map((t, index) => (
-                                    <Chip
-                                        key={index}
-                                        label={t}
-                                        sx={{
-                                            color: '#FFFFFF',
-                                            backgroundColor: '#292D32',
-                                            opacity: 0.5,
-                                        }}
-                                    />
-                                ))}
+        <FiCard
+            onClick={buttonOnClick}
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+        >
+            {hover && hoverVideo ? (
+                <CardMedia
+                    component="video"
+                    image={hoverVideo}
+                    playsInline
+                    preload="auto"
+                    loop
+                    autoPlay
+                    sx={{
+                        position: 'absolute',
+                        top: 0,
+                        right: 0,
+                        height: '100%',
+                        width: '100%',
+                        transition: 'transform 0.6s ease-in-out',
+                    }}
+                />
+            ) : (
+                <>
+                    <FiCardMedia image={backgroundImage} />
+                    <FiCardContent>
+                        <Stack direction="row">
+                            <Stack
+                                spacing={titleSubtitleSpacing}
+                                sx={{ color: textColor, flexGrow: 1 }}
+                            >
+                                {titleIcon ? titleIcon : null}
+                                <Typography {...titleProps}>{title}</Typography>
+                                {subtitle ? (
+                                    <Typography {...subtitleProps}>{subtitle}</Typography>
+                                ) : null}
+                                {tags ? (
+                                    <Stack direction="row" spacing={2}>
+                                        {tags.map((t, index) => (
+                                            <Chip
+                                                key={index}
+                                                label={t}
+                                                sx={{
+                                                    color: '#FFFFFF',
+                                                    backgroundColor: '#292D32',
+                                                    opacity: 0.5,
+                                                }}
+                                            />
+                                        ))}
+                                    </Stack>
+                                ) : null}
                             </Stack>
-                        ) : null}
-                    </Stack>
-                    <DiagonalArrowButton />
-                </Stack>
-            </FiCardContent>
+                            <DiagonalArrowButton />
+                        </Stack>
+                    </FiCardContent>
+                </>
+            )}
         </FiCard>
     );
 };

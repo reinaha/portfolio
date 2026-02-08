@@ -14,5 +14,6 @@ export interface IPortfolioCard {
     subtitleProps?: TypographyProps;
     titleSubtitleSpacing?: number;
     titleIcon?: React.ReactNode;
+    hoverVideo?: string;
     onClick(navigate?: PortfolioCardOnClickProp): () => void;
 }

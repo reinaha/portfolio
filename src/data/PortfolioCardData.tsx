@@ -12,6 +12,7 @@ import {
     NZPostMotionDesign,
     OsstemBrandDesign,
     PostcrossingBackground,
+    PropertiMaxVideo,
     RealEstateTradingApp,
     RealEstateTradingDashboard,
     RealEstateTradingWeb,
@@ -40,6 +41,7 @@ export const PortfolioCardData: IPortfolioCard[] = [
         subtitle: 'Real Estate Trading Application',
         backgroundImg: RealEstateTradingApp,
         filterCriteria: ['uxui'],
+        hoverVideo: PropertiMaxVideo,
         onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-app'),
     },
     {

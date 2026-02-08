@@ -30,17 +30,17 @@ export const NavBarButtons: NavBarButton[] = [
         path: '/',
         section: 'ContactMe',
     },
-    {
-        key: 3,
-        text: 'Download CV',
-        path: '/SuminHaCV.pdf',
-        bgColor: {
-            dark: 'rgba(255, 255, 255, 0.1)',
-            light: '#F1F1F1',
-        },
-        download: true,
-        target: '_blank',
-    },
+    // {
+    //     key: 3,
+    //     text: 'Download CV',
+    //     path: '/SuminHaCV.pdf',
+    //     bgColor: {
+    //         dark: 'rgba(255, 255, 255, 0.1)',
+    //         light: '#F1F1F1',
+    //     },
+    //     download: true,
+    //     target: '_blank',
+    // },
 ];
 
 export const NavBarDownloads: NavBarButton[] = [
