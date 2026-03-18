@@ -69,14 +69,6 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: 'PropertiMax \nMobile App',
-        subtitle: 'Real Estate Trading Application',
-        backgroundImg: RealEstateTradingApp,
-        filterCriteria: ['uxui'],
-        hoverVideo: PropertiMaxVideo,
-        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-app'),
-    },
-    {
         title: 'NZ Post \nBrand Design',
         subtitle: 'Implementing Brand Guideline',
         backgroundImg: NZPostBrandDesign,
@@ -86,6 +78,14 @@ export const PortfolioCardData: IPortfolioCard[] = [
                 'https://www.figma.com/proto/7zTryw9FH0BwNXd76iiq9i/NZPost-Brand-Design?node-id=6001-1043&node-type=frame&t=7cMmig6Gv0pM8idh-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517',
                 '_blank'
             ),
+    },
+    {
+        title: 'PropertiMax \nMobile App',
+        subtitle: 'Real Estate Trading Application',
+        backgroundImg: RealEstateTradingApp,
+        filterCriteria: ['uxui'],
+        hoverVideo: PropertiMaxVideo,
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-app'),
     },
     {
         title: '2024 Christmas \nStamps Design.',
@@ -101,13 +101,6 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: 'PropertiMax \nWeb App',
-        subtitle: 'Real Estate Trading Website',
-        backgroundImg: RealEstateTradingWeb,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-web'),
-    },
-    {
         title: 'NZ Post \nDigital Design',
         subtitle: 'Digital Advertisement',
         backgroundImg: NZPostDigitalDesign,
@@ -117,6 +110,13 @@ export const PortfolioCardData: IPortfolioCard[] = [
                 'https://www.figma.com/proto/3IdT4AJN1Um1MqdAnQcfcB/NZPost-Digital-AD-Design?node-id=6001-1043&node-type=frame&t=ou3u6gluz58f6Ki5-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517&starting-point-node-id=6001%3A1043',
                 '_blank'
             ),
+    },
+    {
+        title: 'PropertiMax \nWeb App',
+        subtitle: 'Real Estate Trading Website',
+        backgroundImg: RealEstateTradingWeb,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/propertimax-web'),
     },
     {
         title: '2025 ANZAC \nStamps Design.',
@@ -132,14 +132,6 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: 'Osstem \nMobile App',
-        subtitle: 'Dental Supply E-Commerce Application',
-        backgroundImg: DentalECommerceApp,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/work/osstem-dental-e-shop'),
-    },
-    {
         title: 'NZ Post \nMotion Design',
         subtitle: 'Video and Motion',
         backgroundImg: NZPostMotionDesign,
@@ -149,6 +141,14 @@ export const PortfolioCardData: IPortfolioCard[] = [
                 'https://www.figma.com/proto/Jz3gFNsoff7tVa9NOHwVTm/NZPost-Motion-Design?node-id=6001-1043&node-type=canvas&t=XFu5olp9AcijDt0i-1&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517&starting-point-node-id=6001%3A1043',
                 '_blank'
             ),
+    },
+    {
+        title: 'Osstem \nMobile App',
+        subtitle: 'Dental Supply E-Commerce Application',
+        backgroundImg: DentalECommerceApp,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/work/osstem-dental-e-shop'),
     },
     {
         title: 'Osstem \nBrand Design',
@@ -162,14 +162,6 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
-        title: 'PropertiMax \nDashboard',
-        subtitle: 'Real Estate Agent Dashboard',
-        backgroundImg: RealEstateTradingDashboard,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () =>
-            navigate('/work/propertimax-dashboard'),
-    },
-    {
         title: 'Additional Motion Designs',
         subtitle: 'Video and Motion',
         backgroundImg: AdditionalMotionDesign,
@@ -181,6 +173,21 @@ export const PortfolioCardData: IPortfolioCard[] = [
             ),
     },
     {
+        title: 'PropertiMax \nDashboard',
+        subtitle: 'Real Estate Agent Dashboard',
+        backgroundImg: RealEstateTradingDashboard,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/work/propertimax-dashboard'),
+    },
+    {
+        title: 'Osstem \nWeb App',
+        subtitle: 'Dental Supply E-Commerce Website',
+        backgroundImg: DentalECommerceWeb,
+        filterCriteria: ['uxui'],
+        onClick: (navigate: NavigateFunction) => () => navigate('/work/'),
+    },
+    {
         title: 'Additional Graphic Designs',
         subtitle: 'Brand Design & Advertising Design',
         backgroundImg: AdditionalGraphicDesign,
@@ -190,12 +197,5 @@ export const PortfolioCardData: IPortfolioCard[] = [
                 'https://www.figma.com/proto/50t1U0U5ruunE048qskPFP/Additional-Graphic-Designs?node-id=6001-1043&node-type=frame&t=xeAlajkCutEMVOqf-0&scaling=min-zoom&content-scaling=fixed&page-id=4003%3A1517&starting-point-node-id=6001%3A1043',
                 '_blank'
             ),
-    },
-    {
-        title: 'Osstem \nWeb App',
-        subtitle: 'Dental Supply E-Commerce Website',
-        backgroundImg: DentalECommerceWeb,
-        filterCriteria: ['uxui'],
-        onClick: (navigate: NavigateFunction) => () => navigate('/work/'),
     },
 ];

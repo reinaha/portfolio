@@ -19,7 +19,7 @@ export const FiCard = styled(Card)({
     height: '386px',
     '&:hover': {
         cursor: 'pointer',
-        '& .MuiCardMedia-root': { transform: 'scale3d(1.2, 1.2, 1)' },
+        '& .MuiCardMedia-root:not(video)': { transform: 'scale3d(1.2, 1.2, 1)' },
         '& .GoToPortfolio': { backgroundColor: '#FFFFFF', color: 'black' },
     },
 });
