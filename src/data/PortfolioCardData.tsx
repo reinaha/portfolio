@@ -3,6 +3,9 @@ import { NavigateFunction } from 'react-router-dom';
 import {
     AdditionalGraphicDesign,
     AdditionalMotionDesign,
+    AirNZKiosk,
+    AirNZKioskVideo,
+    AirNZWebApp,
     AnzacStampBackground,
     ChristmasStampBackground,
     DentalECommerceApp,
@@ -24,7 +27,36 @@ const stampTextColor2 = '#5C3C9C';
 
 export const PortfolioCardData: IPortfolioCard[] = [
     {
-        title: '2024 Postcrossing \nStamps Design.',
+        title: 'Air New Zealand \nKiosk',
+        subtitle: 'Next Gen Check-in Kiosk',
+        backgroundImg: AirNZKiosk,
+        filterCriteria: ['uxui'],
+        hoverVideo: AirNZKioskVideo,
+        onClick:
+            (_, openMoreInfoModal: (title?: string, description?: string[]) => void) =>
+            () =>
+                openMoreInfoModal('🔒 Live Product (Confidential)', [
+                    'This is a high-traffic, production-ready product used by a large number of customers.',
+                    'Due to confidentiality, detailed case study is not publicly available.',
+                    'I’d be happy to walk you through the full process and outcomes in an interview.',
+                ]),
+    },
+    {
+        title: 'Air New Zealand \nWeb App',
+        subtitle: 'Next Gen Web Check-in',
+        backgroundImg: AirNZWebApp,
+        filterCriteria: ['uxui'],
+        onClick:
+            (_, openMoreInfoModal: (title?: string, description?: string[]) => void) =>
+            () =>
+                openMoreInfoModal('🔒 Live Product (Confidential)', [
+                    'This is a high-traffic, production-ready product used by a large number of customers.',
+                    'Due to confidentiality, detailed case study is not publicly available.',
+                    'I’d be happy to walk you through the full process and outcomes in an interview.',
+                ]),
+    },
+    {
+        title: '2024 Postcrossing \nStamps Design',
         subtitle: 'New Zealand Official Stamp',
         backgroundImg: PostcrossingBackground,
         textColor: stampTextColor1,

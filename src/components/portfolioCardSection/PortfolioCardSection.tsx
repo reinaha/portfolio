@@ -1,4 +1,18 @@
-import { Box, BoxProps, Grid, Stack, useMediaQuery, useTheme } from '@mui/material';
+import {
+    Box,
+    BoxProps,
+    Button,
+    Dialog,
+    DialogActions,
+    DialogContent,
+    DialogContentText,
+    DialogTitle,
+    Grid,
+    Stack,
+    Typography,
+    useMediaQuery,
+    useTheme,
+} from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,9 +33,17 @@ export const PortfolioCardSection = ({
     const theme = useTheme();
     const isLargerThanMediumScreen = useMediaQuery(theme.breakpoints.up('sm'));
     const [portfolioFilter, setPortfolioFilter] = useState<string>('');
-
+    const [modalOpen, setModalOpen] = useState(false);
+    const [modalTitle, setModalTitle] = useState<string | undefined>();
+    const [modalDescription, setModalDescription] = useState<string[]>([]);
     const onClickFilterButton = (filterValue: string) => () => {
         setPortfolioFilter(filterValue);
+    };
+
+    const openMoreInfoModal = (title?: string, description?: string[]) => {
+        setModalTitle(title);
+        setModalDescription(description || []);
+        setModalOpen(true);
     };
 
     return (
@@ -54,17 +76,6 @@ export const PortfolioCardSection = ({
                             onClick={onClickFilterButton('multimedia')}
                         />
                     </Stack>
-                    {/* <ToggleButtonGroup
-                        value={portfolioFilter}
-                        exclusive
-                        onChange={(_, newValue) => setPortfolioFilter(newValue)}
-                    >
-                        <ToggleButton value="">All Projects</ToggleButton>
-                        <ToggleButton value="uxui">UX/UI Design Only</ToggleButton>
-                        <ToggleButton value="multimedia">
-                            Multimedia Design Only
-                        </ToggleButton>
-                    </ToggleButtonGroup> */}
                 </Grid>
                 {portfolioCardData
                     .filter((d) => {
@@ -88,12 +99,36 @@ export const PortfolioCardSection = ({
                                     titleSubtitleSpacing={p.titleSubtitleSpacing}
                                     titleIcon={p.titleIcon}
                                     hoverVideo={p.hoverVideo}
-                                    buttonOnClick={p.onClick(navigate)}
+                                    buttonOnClick={p.onClick(navigate, openMoreInfoModal)}
                                 />
                             </Grid>
                         );
                     })}
             </Grid>
+            <Dialog
+                open={modalOpen}
+                onClose={() => setModalOpen(false)}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <DialogTitle id="modal-modal-title">{modalTitle}</DialogTitle>
+                <DialogContent>
+                    <DialogContentText id="modal-modal-description">
+                        {modalDescription.map((line, index) => (
+                            <Typography
+                                key={'dialogbody' + index}
+                                variant="body1"
+                                gutterBottom
+                            >
+                                {line}
+                            </Typography>
+                        ))}
+                    </DialogContentText>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={() => setModalOpen(false)}>Close</Button>
+                </DialogActions>
+            </Dialog>
         </Box>
     );
 };

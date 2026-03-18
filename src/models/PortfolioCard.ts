@@ -15,5 +15,8 @@ export interface IPortfolioCard {
     titleSubtitleSpacing?: number;
     titleIcon?: React.ReactNode;
     hoverVideo?: string;
-    onClick(navigate?: PortfolioCardOnClickProp): () => void;
+    onClick(
+        navigate?: PortfolioCardOnClickProp,
+        openMoreInfoModal?: (title?: string, description?: string[]) => void
+    ): () => void;
 }
