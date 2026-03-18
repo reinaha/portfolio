@@ -58,6 +58,7 @@ export const PortfolioCard = ({
                     preload="auto"
                     loop
                     autoPlay
+                    muted
                     sx={{
                         position: 'absolute',
                         top: 0,
