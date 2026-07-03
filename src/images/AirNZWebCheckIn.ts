@@ -1,4 +1,5 @@
 import AirNZWebCheckInChallengeOneStepOne from '@resources/AirNZWebCheckIn/ChallengeOneStepOne.png';
+import AirNZWebCheckInChallengesCover from '@resources/AirNZWebCheckIn/ChallengesCover.jpg';
 import AirNZWebCheckInChallengeOneStepThree from '@resources/AirNZWebCheckIn/ChallengeOneStepThree.jpg';
 import AirNZWebCheckInChallengeOneStepTwo from '@resources/AirNZWebCheckIn/ChallengeOneStepTwo.jpg';
 import AirNZWebCheckInChallengeThreeStepOne from '@resources/AirNZWebCheckIn/ChallengeThreeStepOne.jpg';
@@ -42,6 +43,8 @@ export {
     AirNZWebCheckInInternationalExpressCover,
     AirNZWebCheckInPassengerJourneyVariationsCover,
 };
+
+export { AirNZWebCheckInChallengesCover };
 
 export {
     AirNZWebCheckInChallengeOneStepOne,

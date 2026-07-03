@@ -1,5 +1,5 @@
 import { PortfolioMajorSection } from '@/components';
-import { AirNZWebCheckInProjectContextCover } from '@/images/AirNZWebCheckIn';
+import { AirNZWebCheckInChallengesCover } from '@/images/AirNZWebCheckIn';
 
 import {
     ChallengeOneContent,
@@ -23,7 +23,7 @@ export const ChallengesMajorSection = () => {
                 subTitles: challengesSections.map((s) => s.title),
             }}
             portfolioSections={challengesSections}
-            coverImage={AirNZWebCheckInProjectContextCover}
+            coverImage={AirNZWebCheckInChallengesCover}
         />
     );
 };
