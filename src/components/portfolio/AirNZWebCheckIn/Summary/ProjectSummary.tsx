@@ -1,9 +1,5 @@
 import { IconListItem } from '@/components';
-import {
-    PortfolioImage,
-    PortfolioSectionContainer,
-    PortfolioSubSection,
-} from '@/components/portfolio';
+import { PortfolioSectionContainer, PortfolioSubSection } from '@/components/portfolio';
 
 const LaunchImpactContent = () => {
     return (
