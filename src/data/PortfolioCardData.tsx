@@ -46,14 +46,8 @@ export const PortfolioCardData: IPortfolioCard[] = [
         subtitle: 'Next Gen Web Check-in',
         backgroundImg: AirNZWebApp,
         filterCriteria: ['uxui'],
-        onClick:
-            (_, openMoreInfoModal: (title?: string, description?: string[]) => void) =>
-            () =>
-                openMoreInfoModal('🔒 Live Product (Confidential)', [
-                    'This is a high-traffic, production-ready product used by a large number of customers.',
-                    'Due to confidentiality, detailed case study is not publicly available.',
-                    'I’d be happy to walk you through the full process and outcomes in an interview.',
-                ]),
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/work/air-nz-web-check-in'),
     },
     {
         title: '2024 Postcrossing \nStamps Design',

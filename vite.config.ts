@@ -13,7 +13,10 @@ export default defineConfig(({ command, mode }) => {
             publicDir: 'public',
             resolve: {
                 alias: [
-                    { find: '@resources', replacement: './resources/' },
+                    {
+                        find: '@resources',
+                        replacement: path.resolve(__dirname, './resources'),
+                    },
                     { find: '@', replacement: path.resolve(__dirname, './src') },
                 ],
             },
@@ -29,7 +32,10 @@ export default defineConfig(({ command, mode }) => {
         publicDir: 'public',
         resolve: {
             alias: [
-                { find: '@resources', replacement: './resources/' },
+                {
+                    find: '@resources',
+                    replacement: path.resolve(__dirname, './resources'),
+                },
                 { find: '@', replacement: path.resolve(__dirname, './src') },
             ],
         },

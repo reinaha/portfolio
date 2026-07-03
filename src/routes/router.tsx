@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { DefaultLayout } from '@/components';
 import {
+    AirNZWebCheckIn,
     Error,
     Home,
     OsstemDentalEShop,
@@ -27,6 +28,7 @@ export default function Router() {
                             path="propertimax-dashboard"
                             element={<PropertiMaxDashboard />}
                         />
+                        <Route path="air-nz-web-check-in" element={<AirNZWebCheckIn />} />
                         <Route index element={<UnderConstruction />} />
                     </Route>
                     <Route index element={<Home key={Math.random()} />} />
