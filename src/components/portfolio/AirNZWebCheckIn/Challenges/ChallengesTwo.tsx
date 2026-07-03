@@ -3,8 +3,15 @@ import { Stack, Typography } from '@mui/material';
 import {
     IconListItem,
     PortfolioChipSection,
+    PortfolioImage,
     PortfolioSectionContainer,
 } from '@/components';
+import {
+    AirNZWebCheckInChallengeTwoCaseOneA,
+    AirNZWebCheckInChallengeTwoCaseOneB,
+    AirNZWebCheckInChallengeTwoCaseThree,
+    AirNZWebCheckInChallengeTwoCaseTwo,
+} from '@/images/AirNZWebCheckIn';
 
 export const ChallengeTwoContent = () => {
     const stepOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
@@ -58,6 +65,8 @@ export const ChallengeTwoContent = () => {
                     modal, allowing the feature to remain easily accessible without adding
                     unnecessary weight or complexity to the core check-in flow.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeTwoCaseOneA} />
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeTwoCaseOneB} />
             </PortfolioChipSection>
             <PortfolioChipSection
                 title="Case 2"
@@ -91,6 +100,7 @@ export const ChallengeTwoContent = () => {
                     creating screens with a clear purpose, balanced information density,
                     and a single primary user task.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeTwoCaseTwo} />
             </PortfolioChipSection>
             <PortfolioChipSection
                 title="Case 3"
@@ -121,6 +131,7 @@ export const ChallengeTwoContent = () => {
                     actions created the clearest hierarchy, reduced cognitive effort, and
                     scaled more effectively across complex passenger combinations.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeTwoCaseThree} />
             </PortfolioChipSection>
         </PortfolioSectionContainer>
     );

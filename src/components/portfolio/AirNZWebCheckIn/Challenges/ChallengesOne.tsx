@@ -3,8 +3,14 @@ import { Stack, Typography } from '@mui/material';
 import {
     IconListItem,
     PortfolioChipSection,
+    PortfolioImage,
     PortfolioSectionContainer,
 } from '@/components';
+import {
+    AirNZWebCheckInChallengeOneStepOne,
+    AirNZWebCheckInChallengeOneStepThree,
+    AirNZWebCheckInChallengeOneStepTwo,
+} from '@/images/AirNZWebCheckIn';
 
 export const ChallengeOneContent = () => {
     const stepOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
@@ -36,6 +42,7 @@ export const ChallengeOneContent = () => {
                     grouped by what users were trying to accomplish rather than where the
                     information happened to live.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeOneStepOne} />
             </PortfolioChipSection>
             <PortfolioChipSection
                 title="Step 2"
@@ -47,6 +54,7 @@ export const ChallengeOneContent = () => {
                     defined by the user&apos;s purpose, not the screen container it
                     happened to live in.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeOneStepTwo} />
             </PortfolioChipSection>
             <PortfolioChipSection
                 title="Step 3"
@@ -58,6 +66,7 @@ export const ChallengeOneContent = () => {
                     context. Each context generates a unique, minimal sequence — no fixed
                     order required.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeOneStepThree} />
             </PortfolioChipSection>
         </PortfolioSectionContainer>
     );

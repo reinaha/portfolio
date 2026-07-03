@@ -7,6 +7,7 @@ import {
     IntroductionMajorSection,
     OutcomeMajorSection,
     ProjectContextMajorSection,
+    SummaryMajorSection,
 } from '@/components/portfolio/AirNZWebCheckIn';
 import { AirNZWebCheckInHeaderCover } from '@/images/AirNZWebCheckIn';
 
@@ -27,6 +28,8 @@ export const AirNZWebCheckIn = () => {
             <ChallengesMajorSection />
             <Divider />
             <OutcomeMajorSection />
+            <Divider />
+            <SummaryMajorSection />
             <Divider />
         </PortfolioContainer>
     );

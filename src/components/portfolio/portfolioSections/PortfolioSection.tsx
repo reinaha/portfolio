@@ -3,7 +3,7 @@ import { Variant } from '@mui/material/styles/createTypography';
 import { ResponsiveStyleValue } from '@mui/system';
 import { ReactNode } from 'react';
 
-import { PortfolioImageContainer } from '@/components';
+import { PortfolioFullWidthImage, PortfolioImageContainer } from '@/components';
 import HeaderMarkerIcon from '@/icons/HeaderMarkerIcon.svg';
 
 export interface PortfolioSectionProps extends StackProps {
@@ -13,6 +13,7 @@ export interface PortfolioSectionProps extends StackProps {
     reverseTitleIcon?: boolean;
     titlePadding?: number;
     coverImg?: string;
+    coverImgFullWidth?: boolean;
     sectionRef?:
         | ((instance: HTMLDivElement | null) => void)
         | React.RefObject<HTMLDivElement>
@@ -27,6 +28,7 @@ export const PortfolioSection = ({
     reverseTitleIcon = false,
     titlePadding,
     coverImg,
+    coverImgFullWidth = false,
     sectionRef,
     ...props
 }: PortfolioSectionProps) => {
@@ -54,7 +56,13 @@ export const PortfolioSection = ({
 
     return (
         <Stack spacing={25} {...props}>
-            {coverImg ? <PortfolioImageContainer imageSrc={coverImg} /> : null}
+            {coverImg ? (
+                coverImgFullWidth ? (
+                    <PortfolioFullWidthImage image={coverImg} />
+                ) : (
+                    <PortfolioImageContainer imageSrc={coverImg} />
+                )
+            ) : null}
             <Box>
                 <Container
                     disableGutters

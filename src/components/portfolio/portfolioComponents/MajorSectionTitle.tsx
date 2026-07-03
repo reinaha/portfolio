@@ -21,7 +21,7 @@ export const MajorSectionTitle = ({
                         variant="h2"
                         paddingBottom={1.5}
                         color="black"
-                        sx={{ flexGrow: 1 }}
+                        sx={{ flexGrow: 1, whiteSpace: 'pre-line' }}
                     >
                         {title}
                     </Typography>

@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material';
 
-import { PortfolioSectionContainer } from '@/components';
+import { PortfolioImage, PortfolioSectionContainer } from '@/components';
+import { AirNZWebCheckInIntroduction } from '@/images';
 
 export const IntroductionContent = () => {
     return (
@@ -30,6 +31,7 @@ export const IntroductionContent = () => {
                 UX architecture, user testing, visual design, developer handoff, and
                 launch.
             </Typography>
+            <PortfolioImage imageSrc={AirNZWebCheckInIntroduction} />
         </PortfolioSectionContainer>
     );
 };

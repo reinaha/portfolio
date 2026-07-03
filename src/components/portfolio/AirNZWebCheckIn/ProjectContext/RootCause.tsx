@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material';
 
-import { PortfolioSectionContainer } from '@/components';
+import { PortfolioImage, PortfolioSectionContainer } from '@/components';
+import { AirNZWebCheckInProjectContextRootCause } from '@/images/AirNZWebCheckIn';
 
 export const RootCauseContent = () => {
     return (
@@ -13,6 +14,7 @@ export const RootCauseContent = () => {
                 journeys, streamline simple check-ins, and introduce new capabilities
                 without adding complexity.
             </Typography>
+            <PortfolioImage imageSrc={AirNZWebCheckInProjectContextRootCause} />
         </PortfolioSectionContainer>
     );
 };

@@ -4,8 +4,9 @@ import {
     PortfolioSectionContainer,
     PortfolioSubSection,
 } from '@/components/portfolio';
+import { AirNZWebCheckInOutcomeDomesticExpress } from '@/images/AirNZWebCheckIn';
 
-const HomeJourneyContent = () => {
+const DomesticJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
@@ -36,6 +37,7 @@ const HomeJourneyContent = () => {
                 faster, while the experience remains flexible enough to support a wide
                 range of travel needs without increasing complexity.
             </IconListItem>
+            <PortfolioImage imageSrc={AirNZWebCheckInOutcomeDomesticExpress} />
         </PortfolioSectionContainer>
     );
 };
@@ -43,7 +45,7 @@ const HomeJourneyContent = () => {
 export const DomesticExpressContentData = [
     {
         title: 'Domestic Express Check-in journey',
-        content: <HomeJourneyContent />,
+        content: <DomesticJourneyContent />,
     },
 ];
 

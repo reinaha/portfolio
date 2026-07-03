@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material';
 
-import { IconListItem, PortfolioSectionContainer } from '@/components';
+import { IconListItem, PortfolioImage, PortfolioSectionContainer } from '@/components';
+import { AirNZWebCheckInProjectContextGoal } from '@/images/AirNZWebCheckIn';
 
 export const GoalContent = () => {
     const iconColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
@@ -49,6 +50,7 @@ export const GoalContent = () => {
                     services, business requirements, and emerging technologies.
                 </Typography>
             </IconListItem>
+            <PortfolioImage imageSrc={AirNZWebCheckInProjectContextGoal} />
         </PortfolioSectionContainer>
     );
 };

@@ -1,6 +1,7 @@
 import { Typography } from '@mui/material';
 
-import { IconListItem, PortfolioSectionContainer } from '@/components';
+import { IconListItem, PortfolioImage, PortfolioSectionContainer } from '@/components';
+import { AirNZWebCheckInProjectContextProblem } from '@/images/AirNZWebCheckIn';
 
 export const ProblemContent = () => {
     const iconColor = { primary: '#FF7A00', secondary: '#FFF9E6' };
@@ -51,6 +52,7 @@ export const ProblemContent = () => {
                     Digital Wallet integration, or new biometric check-in experiences.
                 </Typography>
             </IconListItem>
+            <PortfolioImage imageSrc={AirNZWebCheckInProjectContextProblem} />
         </PortfolioSectionContainer>
     );
 };

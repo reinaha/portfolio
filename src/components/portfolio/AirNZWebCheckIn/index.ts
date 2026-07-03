@@ -7,3 +7,5 @@ export * from './Outcome';
 export * from './OutcomeMajorSection';
 export * from './ProjectContext';
 export * from './ProjectContextMajorSection';
+export * from './Summary';
+export * from './SummaryMajorSection';

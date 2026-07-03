@@ -3,8 +3,14 @@ import { Stack, Typography } from '@mui/material';
 import {
     IconListItem,
     PortfolioChipSection,
+    PortfolioImage,
     PortfolioSectionContainer,
 } from '@/components';
+import {
+    AirNZWebCheckInChallengeThreeStepOne,
+    AirNZWebCheckInChallengeThreeStepThree,
+    AirNZWebCheckInChallengeThreeStepTwo,
+} from '@/images/AirNZWebCheckIn';
 
 export const ChallengeThreeContent = () => {
     const stepOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
@@ -51,6 +57,7 @@ export const ChallengeThreeContent = () => {
                     achieved above-average usability across all key scenarios, rather than
                     maximising the experience for only one.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeThreeStepOne} />
             </PortfolioChipSection>
             <PortfolioChipSection
                 title="Step 2"
@@ -62,6 +69,7 @@ export const ChallengeThreeContent = () => {
                     journey scenarios to identify usability issues, edge cases, and
                     trade-offs before progressing the design.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeThreeStepTwo} />
             </PortfolioChipSection>
             <PortfolioChipSection
                 title="Step 3"
@@ -74,6 +82,7 @@ export const ChallengeThreeContent = () => {
                     journey combinations, ensuring every iteration remained robust across
                     real-world scenarios.
                 </IconListItem>
+                <PortfolioImage imageSrc={AirNZWebCheckInChallengeThreeStepThree} />
             </PortfolioChipSection>
         </PortfolioSectionContainer>
     );
