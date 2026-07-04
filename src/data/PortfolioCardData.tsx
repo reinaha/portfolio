@@ -32,14 +32,8 @@ export const PortfolioCardData: IPortfolioCard[] = [
         backgroundImg: AirNZKiosk,
         filterCriteria: ['uxui'],
         hoverVideo: AirNZKioskVideo,
-        onClick:
-            (_, openMoreInfoModal: (title?: string, description?: string[]) => void) =>
-            () =>
-                openMoreInfoModal('🔒 Live Product (Confidential)', [
-                    'This is a high-traffic, production-ready product used by a large number of customers.',
-                    'Due to confidentiality, detailed case study is not publicly available.',
-                    'I’d be happy to walk you through the full process and outcomes in an interview.',
-                ]),
+        onClick: (navigate: NavigateFunction) => () =>
+            navigate('/work/air-nz-next-gen-kiosk'),
     },
     {
         title: 'Air New Zealand \nWeb App',

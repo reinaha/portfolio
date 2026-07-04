@@ -1,3 +1,4 @@
+export * from './AirNZNextGenKiosk';
 export * from './AirNZWebCheckIn';
 export * from './HomeImages';
 export * from './OsstemDentalEShop';
