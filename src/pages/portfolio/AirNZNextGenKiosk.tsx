@@ -7,9 +7,11 @@ import {
     HeaderContent,
     InternalValidationMajorSection,
     IntroductionMajorSection,
+    OutcomeMajorSection,
     ProjectContextMajorSection,
     SolutionMajorSection,
     StructureMajorSection,
+    SummaryMajorSection,
 } from '@/components/portfolio/AirNZNextGenKiosk';
 import { AirNZNextGenKioskHeaderCover } from '@/images/AirNZNextGenKiosk';
 
@@ -36,6 +38,10 @@ export const AirNZNextGenKiosk = () => {
             <AirportValidationMajorSection />
             <Divider />
             <SolutionMajorSection />
+            <Divider />
+            <OutcomeMajorSection />
+            <Divider />
+            <SummaryMajorSection />
             <Divider />
         </PortfolioContainer>
     );

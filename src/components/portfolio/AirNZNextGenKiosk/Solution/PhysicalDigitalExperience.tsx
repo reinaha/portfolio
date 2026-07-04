@@ -1,7 +1,8 @@
-import { Stack, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 import {
     IconListItem,
+    IconListItemGrid,
     PortfolioChipSection,
     PortfolioImage,
     PortfolioSectionContainer,
@@ -34,7 +35,7 @@ export const PhysicalDigitalExperienceContent = () => {
                 subtitle="Designing for divided attention"
                 color={stepOneColor}
             >
-                <Stack spacing={2.5}>
+                <IconListItemGrid>
                     <IconListItem iconType="number" number={1} iconColor={detailColor}>
                         <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
                             Challenge
@@ -57,7 +58,7 @@ export const PhysicalDigitalExperienceContent = () => {
                             the journey had progressed.
                         </Typography>
                     </IconListItem>
-                </Stack>
+                </IconListItemGrid>
                 <IconListItem iconType="arrow" iconColor={stepOneColor}>
                     Airport validation showed that passengers recognised screen
                     transitions more naturally and hesitation between steps was noticeably
@@ -72,7 +73,7 @@ export const PhysicalDigitalExperienceContent = () => {
                 subtitle="Supporting hardware limitations through UX"
                 color={stepTwoColor}
             >
-                <Stack spacing={2.5}>
+                <IconListItemGrid>
                     <IconListItem iconType="number" number={1} iconColor={stepTwoColor}>
                         <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
                             Challenge
@@ -95,7 +96,7 @@ export const PhysicalDigitalExperienceContent = () => {
                             position before passengers attempted the task.
                         </Typography>
                     </IconListItem>
-                </Stack>
+                </IconListItemGrid>
                 <IconListItem iconType="arrow" iconColor={stepTwoColor}>
                     Validation showed a clear improvement in first-attempt scan success
                     and fewer repeated scanning attempts.

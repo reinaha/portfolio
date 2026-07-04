@@ -2,6 +2,7 @@ import { Stack, Typography } from '@mui/material';
 
 import {
     IconListItem,
+    IconListItemGrid,
     PortfolioChipSection,
     PortfolioImage,
     PortfolioSectionContainer,
@@ -43,38 +44,41 @@ export const AdaptiveJourneyContent = () => {
                 </IconListItem>
                 <Stack spacing={2.5}>
                     <Typography sx={{ fontWeight: '500' }}>Design Focus</Typography>
-                    <IconListItem iconType="number" number={1} iconColor={focusColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Essential Journey Steps
-                        </Typography>
-                        <Typography>
-                            Define the minimum steps required for check-in.
-                        </Typography>
-                    </IconListItem>
-                    <IconListItem iconType="number" number={2} iconColor={focusColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Information Architecture
-                        </Typography>
-                        <Typography>
-                            Organise information into a clear, logical structure.
-                        </Typography>
-                    </IconListItem>
-                    <IconListItem iconType="number" number={3} iconColor={focusColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Screen Sequence
-                        </Typography>
-                        <Typography>
-                            Create an intuitive order for each interaction.
-                        </Typography>
-                    </IconListItem>
-                    <IconListItem iconType="number" number={4} iconColor={focusColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Adaptive Framework
-                        </Typography>
-                        <Typography>
-                            Support diverse passenger scenarios within a single journey.
-                        </Typography>
-                    </IconListItem>
+                    <IconListItemGrid>
+                        <IconListItem iconType="number" number={1} iconColor={focusColor}>
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Essential Journey Steps
+                            </Typography>
+                            <Typography>
+                                Define the minimum steps required for check-in.
+                            </Typography>
+                        </IconListItem>
+                        <IconListItem iconType="number" number={2} iconColor={focusColor}>
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Information Architecture
+                            </Typography>
+                            <Typography>
+                                Organise information into a clear, logical structure.
+                            </Typography>
+                        </IconListItem>
+                        <IconListItem iconType="number" number={3} iconColor={focusColor}>
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Screen Sequence
+                            </Typography>
+                            <Typography>
+                                Create an intuitive order for each interaction.
+                            </Typography>
+                        </IconListItem>
+                        <IconListItem iconType="number" number={4} iconColor={focusColor}>
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Adaptive Framework
+                            </Typography>
+                            <Typography>
+                                Support diverse passenger scenarios within a single
+                                journey.
+                            </Typography>
+                        </IconListItem>
+                    </IconListItemGrid>
                 </Stack>
                 <PortfolioImage
                     imageSrc={AirNZNextGenKioskSolutionAdaptiveJourneyStepOne}
@@ -94,38 +98,57 @@ export const AdaptiveJourneyContent = () => {
                 </IconListItem>
                 <Stack spacing={2.5}>
                     <Typography sx={{ fontWeight: '500' }}>Design Focus</Typography>
-                    <IconListItem iconType="number" number={1} iconColor={stepTwoColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Destination Requirements
-                        </Typography>
-                        <Typography>
-                            Support country-specific rules dynamically.
-                        </Typography>
-                    </IconListItem>
-                    <IconListItem iconType="number" number={2} iconColor={stepTwoColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Regulatory Compliance
-                        </Typography>
-                        <Typography>
-                            Integrate passport, visa, and travel requirements.
-                        </Typography>
-                    </IconListItem>
-                    <IconListItem iconType="number" number={3} iconColor={stepTwoColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Rule-based Conditions
-                        </Typography>
-                        <Typography>
-                            Trigger only relevant steps based on journey context.
-                        </Typography>
-                    </IconListItem>
-                    <IconListItem iconType="number" number={4} iconColor={stepTwoColor}>
-                        <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                            Scalable Framework
-                        </Typography>
-                        <Typography>
-                            Extend the existing journey without creating separate flows.
-                        </Typography>
-                    </IconListItem>
+                    <IconListItemGrid>
+                        <IconListItem
+                            iconType="number"
+                            number={1}
+                            iconColor={stepTwoColor}
+                        >
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Destination Requirements
+                            </Typography>
+                            <Typography>
+                                Support country-specific rules dynamically.
+                            </Typography>
+                        </IconListItem>
+                        <IconListItem
+                            iconType="number"
+                            number={2}
+                            iconColor={stepTwoColor}
+                        >
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Regulatory Compliance
+                            </Typography>
+                            <Typography>
+                                Integrate passport, visa, and travel requirements.
+                            </Typography>
+                        </IconListItem>
+                        <IconListItem
+                            iconType="number"
+                            number={3}
+                            iconColor={stepTwoColor}
+                        >
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Rule-based Conditions
+                            </Typography>
+                            <Typography>
+                                Trigger only relevant steps based on journey context.
+                            </Typography>
+                        </IconListItem>
+                        <IconListItem
+                            iconType="number"
+                            number={4}
+                            iconColor={stepTwoColor}
+                        >
+                            <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                                Scalable Framework
+                            </Typography>
+                            <Typography>
+                                Extend the existing journey without creating separate
+                                flows.
+                            </Typography>
+                        </IconListItem>
+                    </IconListItemGrid>
                 </Stack>
                 <PortfolioImage
                     imageSrc={AirNZNextGenKioskSolutionAdaptiveJourneyStepTwo}

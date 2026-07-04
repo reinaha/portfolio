@@ -1,6 +1,11 @@
 import { Typography } from '@mui/material';
 
-import { IconListItem, PortfolioImage, PortfolioSectionContainer } from '@/components';
+import {
+    IconListItem,
+    IconListItemGrid,
+    PortfolioImage,
+    PortfolioSectionContainer,
+} from '@/components';
 import { AirNZNextGenKioskAirportValidationInsightsFramework } from '@/images/AirNZNextGenKiosk';
 
 export const ObservationToInsightsContent = () => {
@@ -23,33 +28,35 @@ export const ObservationToInsightsContent = () => {
                 understand why it happened. To uncover the root cause, I categorised every
                 observation into four behavioural phases.
             </Typography>
-            <IconListItem iconType="number" number={1} iconColor={iconColor}>
-                <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                    Phase A — Instruction
-                </Typography>
-                <Typography>What should I do?</Typography>
-            </IconListItem>
-            <IconListItem iconType="number" number={2} iconColor={iconColor}>
-                <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                    Phase B — Identification
-                </Typography>
-                <Typography>Where and how do I do it?</Typography>
-            </IconListItem>
-            <IconListItem iconType="number" number={3} iconColor={iconColor}>
-                <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                    Phase C — Attempt
-                </Typography>
-                <Typography>I&apos;m doing it — what happens?</Typography>
-            </IconListItem>
-            <IconListItem iconType="number" number={4} iconColor={iconColor}>
-                <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
-                    System / UI Layer
-                </Typography>
-                <Typography>
-                    System behaviour, interface patterns, or product limitations that
-                    contribute to the issue.
-                </Typography>
-            </IconListItem>
+            <IconListItemGrid>
+                <IconListItem iconType="number" number={1} iconColor={iconColor}>
+                    <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                        Phase A — Instruction
+                    </Typography>
+                    <Typography>What should I do?</Typography>
+                </IconListItem>
+                <IconListItem iconType="number" number={2} iconColor={iconColor}>
+                    <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                        Phase B — Identification
+                    </Typography>
+                    <Typography>Where and how do I do it?</Typography>
+                </IconListItem>
+                <IconListItem iconType="number" number={3} iconColor={iconColor}>
+                    <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                        Phase C — Attempt
+                    </Typography>
+                    <Typography>I&apos;m doing it — what happens?</Typography>
+                </IconListItem>
+                <IconListItem iconType="number" number={4} iconColor={iconColor}>
+                    <Typography sx={{ fontWeight: '600', marginBottom: '8px' }}>
+                        System / UI Layer
+                    </Typography>
+                    <Typography>
+                        System behaviour, interface patterns, or product limitations that
+                        contribute to the issue.
+                    </Typography>
+                </IconListItem>
+            </IconListItemGrid>
             <IconListItem iconType="arrow" iconColor={iconColor}>
                 This framework allowed us to distinguish whether an issue was caused by
                 unclear instructions, poor discoverability, task execution, or the system
