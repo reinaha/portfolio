@@ -5,3 +5,4 @@ export * from './PortfolioFullWidthImage';
 export * from './PortfolioImage';
 export * from './PortfolioPrototype';
 export * from './PortfolioSectionContainer';
+export * from './PortfolioVideo';

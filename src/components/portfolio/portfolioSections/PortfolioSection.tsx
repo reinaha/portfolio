@@ -3,7 +3,11 @@ import { Variant } from '@mui/material/styles/createTypography';
 import { ResponsiveStyleValue } from '@mui/system';
 import { ReactNode } from 'react';
 
-import { PortfolioFullWidthImage, PortfolioImageContainer } from '@/components';
+import {
+    PortfolioFullWidthImage,
+    PortfolioImageContainer,
+    PortfolioVideoContainer,
+} from '@/components';
 import HeaderMarkerIcon from '@/icons/HeaderMarkerIcon.svg';
 
 export interface PortfolioSectionProps extends StackProps {
@@ -14,6 +18,7 @@ export interface PortfolioSectionProps extends StackProps {
     titlePadding?: number;
     coverImg?: string;
     coverImgFullWidth?: boolean;
+    coverVideo?: string;
     sectionRef?:
         | ((instance: HTMLDivElement | null) => void)
         | React.RefObject<HTMLDivElement>
@@ -29,6 +34,7 @@ export const PortfolioSection = ({
     titlePadding,
     coverImg,
     coverImgFullWidth = false,
+    coverVideo,
     sectionRef,
     ...props
 }: PortfolioSectionProps) => {
@@ -56,7 +62,19 @@ export const PortfolioSection = ({
 
     return (
         <Stack spacing={25} {...props}>
-            {coverImg ? (
+            {coverVideo ? (
+                <PortfolioVideoContainer
+                    videoSrc={coverVideo}
+                    poster={coverImg}
+                    width="591.2px"
+                    height="443px"
+                    sx={{
+                        display: 'block',
+                        marginX: 'auto',
+                        objectFit: 'cover',
+                    }}
+                />
+            ) : coverImg ? (
                 coverImgFullWidth ? (
                     <PortfolioFullWidthImage image={coverImg} />
                 ) : (

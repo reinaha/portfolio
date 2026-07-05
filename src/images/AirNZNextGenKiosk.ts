@@ -14,6 +14,7 @@ import AirNZNextGenKioskOutcomeCheckedBagsScreens from '@resources/AirNZNextGenK
 import AirNZNextGenKioskOutcomeDestinationRequirementsCover from '@resources/AirNZNextGenKiosk/OutcomeDestinationRequirementsCover.jpg';
 import AirNZNextGenKioskOutcomeEntryScreenCover from '@resources/AirNZNextGenKiosk/OutcomeEntryScreenCover.jpg';
 import AirNZNextGenKioskOutcomeEntryScreenScreens from '@resources/AirNZNextGenKiosk/OutcomeEntryScreenScreens.jpg';
+import AirNZNextGenKioskOutcomeEntryScreenVideo from '@resources/AirNZNextGenKiosk/OutcomeEntryScreenVideo.webm';
 import AirNZNextGenKioskOutcomeEstaCover from '@resources/AirNZNextGenKiosk/OutcomeEstaCover.jpg';
 import AirNZNextGenKioskOutcomeEstaScreens from '@resources/AirNZNextGenKiosk/OutcomeEstaScreens.jpg';
 import AirNZNextGenKioskOutcomeJourneyCompletionCover from '@resources/AirNZNextGenKiosk/OutcomeJourneyCompletionCover.jpg';
@@ -85,6 +86,7 @@ export {
     AirNZNextGenKioskOutcomeDestinationRequirementsCover,
     AirNZNextGenKioskOutcomeEntryScreenCover,
     AirNZNextGenKioskOutcomeEntryScreenScreens,
+    AirNZNextGenKioskOutcomeEntryScreenVideo,
     AirNZNextGenKioskOutcomeEstaCover,
     AirNZNextGenKioskOutcomeEstaScreens,
     AirNZNextGenKioskOutcomeJourneyCompletionCover,

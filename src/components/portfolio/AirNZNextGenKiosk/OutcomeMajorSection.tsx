@@ -3,6 +3,7 @@ import {
     AirNZNextGenKioskOutcomeCheckedBagsCover,
     AirNZNextGenKioskOutcomeDestinationRequirementsCover,
     AirNZNextGenKioskOutcomeEntryScreenCover,
+    AirNZNextGenKioskOutcomeEntryScreenVideo,
     AirNZNextGenKioskOutcomeEstaCover,
     AirNZNextGenKioskOutcomeJourneyCompletionCover,
     AirNZNextGenKioskOutcomePassportScanningCover,
@@ -30,6 +31,7 @@ const outcomeSections = [
         title: 'Entry Screen',
         content: <EntryScreenContent />,
         coverImg: AirNZNextGenKioskOutcomeEntryScreenCover,
+        coverVideo: AirNZNextGenKioskOutcomeEntryScreenVideo,
         coverImgFullWidth: true,
     },
     {
