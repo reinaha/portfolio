@@ -4,7 +4,7 @@ import { IconListItem, PortfolioImage, PortfolioSectionContainer } from '@/compo
 import { AirNZNextGenKioskAirportValidationOne } from '@/images/AirNZNextGenKiosk';
 
 export const InternationalKioskObservationContent = () => {
-    const iconColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const iconColor = { primary: '#0088FF', secondary: '#F2F7FF' };
 
     return (
         <PortfolioSectionContainer>

@@ -4,7 +4,7 @@ import { IconListItem, PortfolioImage, PortfolioSectionContainer } from '@/compo
 import { AirNZNextGenKioskDiscovery02 } from '@/images/AirNZNextGenKiosk';
 
 export const DiscoveryTwoContent = () => {
-    const outcomeColor = { primary: '#0A69FA' };
+    const outcomeColor = { primary: '#008557' };
 
     return (
         <PortfolioSectionContainer spacing={5}>

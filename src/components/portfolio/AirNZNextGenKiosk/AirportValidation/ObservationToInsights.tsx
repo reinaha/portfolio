@@ -9,7 +9,7 @@ import {
 import { AirNZNextGenKioskAirportValidationInsightsFramework } from '@/images/AirNZNextGenKiosk';
 
 export const ObservationToInsightsContent = () => {
-    const iconColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const iconColor = { primary: '#3A31B2', secondary: '#ECEAF8' };
 
     return (
         <PortfolioSectionContainer>

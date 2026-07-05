@@ -12,7 +12,8 @@ import {
 } from '@/images/AirNZNextGenKiosk';
 
 export const ObservationDrivenIterationContent = () => {
-    const exampleColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const exampleOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const exampleTwoColor = { primary: '#008557', secondary: '#E8FAF0' };
 
     return (
         <PortfolioSectionContainer>
@@ -31,7 +32,7 @@ export const ObservationDrivenIterationContent = () => {
             <PortfolioChipSection
                 title="Example 1"
                 subtitle="Boarding Pass Printing"
-                color={exampleColor}
+                color={exampleOneColor}
             >
                 <Typography>
                     One of the clearest behavioural patterns observed during airport
@@ -42,12 +43,12 @@ export const ObservationDrivenIterationContent = () => {
                     modal until it timed out. This often resulted in passengers asking
                     airport staff to print their boarding pass afterwards.
                 </Typography>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleOneColor}>
                     To address this, we reordered the flow so that the boarding pass
                     prompt appeared before bag tag printing. Once passengers responded,
                     bag tags printed immediately in the background.
                 </IconListItem>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleOneColor}>
                     Subsequent observations showed a noticeable reduction in missed
                     boarding pass prompts, confirming that a small change in interaction
                     timing significantly improved completion.
@@ -59,7 +60,7 @@ export const ObservationDrivenIterationContent = () => {
             <PortfolioChipSection
                 title="Example 2"
                 subtitle="Multi-passenger Passport Scanning"
-                color={exampleColor}
+                color={exampleTwoColor}
             >
                 <Typography>
                     Another recurring behaviour emerged during the multi-passenger
@@ -70,12 +71,12 @@ export const ObservationDrivenIterationContent = () => {
                     showed that many passengers hesitated, attempted incorrect scanning
                     methods, or asked staff for assistance before noticing the tooltip.
                 </Typography>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleTwoColor}>
                     To test a different approach, we moved the guidance to appear
                     proactively before passengers entered the multi-passenger scanning
                     flow, rather than relying on them to discover it.
                 </IconListItem>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleTwoColor}>
                     Follow-up observations showed a clear reduction in scanning failures
                     and staff intervention, demonstrating that proactive guidance was more
                     effective than optional, on-demand help.

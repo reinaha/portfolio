@@ -14,8 +14,9 @@ import {
 } from '@/images/AirNZNextGenKiosk';
 
 export const UniversalAccessibilityContent = () => {
-    const exampleColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
-    const insightColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const exampleOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const exampleTwoColor = { primary: '#008557', secondary: '#E8FAF0' };
+    const insightColor = { primary: '#008557', secondary: '#E8FAF0' };
 
     return (
         <PortfolioSectionContainer>
@@ -36,7 +37,7 @@ export const UniversalAccessibilityContent = () => {
             <PortfolioChipSection
                 title="Example 1"
                 subtitle="Physical accessibility"
-                color={exampleColor}
+                color={exampleOneColor}
             >
                 <Typography>
                     Physical accessibility focused on validating comfortable reach zones
@@ -54,7 +55,7 @@ export const UniversalAccessibilityContent = () => {
             <PortfolioChipSection
                 title="Example 2"
                 subtitle="Low Vision Accessibility"
-                color={exampleColor}
+                color={exampleTwoColor}
             >
                 <Typography>
                     To better understand how passengers with visual impairments interact

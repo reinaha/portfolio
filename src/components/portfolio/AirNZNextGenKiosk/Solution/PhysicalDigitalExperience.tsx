@@ -15,7 +15,7 @@ import {
 export const PhysicalDigitalExperienceContent = () => {
     const stepOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
     const stepTwoColor = { primary: '#008557', secondary: '#E8FAF0' };
-    const detailColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const detailColor = { primary: '#0088FF', secondary: '#F2F7FF' };
 
     return (
         <PortfolioSectionContainer>

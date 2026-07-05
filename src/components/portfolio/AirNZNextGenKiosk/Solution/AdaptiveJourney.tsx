@@ -15,7 +15,7 @@ import {
 export const AdaptiveJourneyContent = () => {
     const stepOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
     const stepTwoColor = { primary: '#008557', secondary: '#E8FAF0' };
-    const focusColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const focusColor = { primary: '#0088FF', secondary: '#F2F7FF' };
 
     return (
         <PortfolioSectionContainer>

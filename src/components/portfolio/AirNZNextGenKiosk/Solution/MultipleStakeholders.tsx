@@ -13,7 +13,9 @@ import {
 } from '@/images/AirNZNextGenKiosk';
 
 export const MultipleStakeholdersContent = () => {
-    const exampleColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const exampleOneColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const exampleTwoColor = { primary: '#008557', secondary: '#E8FAF0' };
+    const exampleThreeColor = { primary: '#3A31B2', secondary: '#ECEAF8' };
 
     return (
         <PortfolioSectionContainer>
@@ -29,7 +31,7 @@ export const MultipleStakeholdersContent = () => {
             <PortfolioChipSection
                 title="Example 1"
                 subtitle="Designing for Operational Visibility"
-                color={exampleColor}
+                color={exampleOneColor}
             >
                 <Typography>
                     Ground staff needed to identify kiosks requiring assistance from a
@@ -37,7 +39,7 @@ export const MultipleStakeholdersContent = () => {
                     difficult to distinguish between a passenger needing help, a kiosk
                     that was temporarily unavailable, or one operating normally.
                 </Typography>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleOneColor}>
                     We designed a visual state system with distinct colours and layouts
                     for each operational status. Normal operation retained the brand
                     purple experience, passenger errors used a high-contrast white
@@ -45,7 +47,7 @@ export const MultipleStakeholdersContent = () => {
                     to a full black screen. Each state could be recognised from across the
                     terminal without reading the content.
                 </IconListItem>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleOneColor}>
                     Ground staff could identify kiosk status immediately, respond to
                     passengers more quickly, and distinguish operational issues without
                     approaching every kiosk individually.
@@ -57,7 +59,7 @@ export const MultipleStakeholdersContent = () => {
             <PortfolioChipSection
                 title="Example 2"
                 subtitle="Staff Override Flow"
-                color={exampleColor}
+                color={exampleTwoColor}
             >
                 <Typography>
                     Not every passenger could complete self-service independently.
@@ -67,13 +69,13 @@ export const MultipleStakeholdersContent = () => {
                     passenger self-service and staff intervention without interrupting the
                     overall journey.
                 </Typography>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleTwoColor}>
                     I designed a dedicated Staff Override flow integrated directly into
                     the baggage journey. Staff could authenticate, select the appropriate
                     override reason, and immediately return passengers to the self-service
                     flow without restarting the check-in process.
                 </IconListItem>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleTwoColor}>
                     The design reduced unnecessary disruption during assisted check-in,
                     supported faster staff intervention, and maintained a continuous
                     self-service experience for passengers.
@@ -85,7 +87,7 @@ export const MultipleStakeholdersContent = () => {
             <PortfolioChipSection
                 title="Example 3"
                 subtitle="Restricted Items Awareness"
-                color={exampleColor}
+                color={exampleThreeColor}
             >
                 <Typography>
                     Many passengers overlooked the restricted items screen because it
@@ -93,13 +95,13 @@ export const MultipleStakeholdersContent = () => {
                     result, passengers frequently asked ground staff the same questions
                     again at Bag Drop, slowing down the process.
                 </Typography>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleThreeColor}>
                     Instead of generic illustrations, I introduced realistic product
                     imagery that more closely matched the items passengers carried in real
                     life. The content was redesigned to make restricted items easier to
                     recognise at a glance.
                 </IconListItem>
-                <IconListItem iconType="arrow" iconColor={exampleColor}>
+                <IconListItem iconType="arrow" iconColor={exampleThreeColor}>
                     Passengers spent more time engaging with the screen and required less
                     clarification from ground staff, improving both passenger
                     understanding and operational efficiency.

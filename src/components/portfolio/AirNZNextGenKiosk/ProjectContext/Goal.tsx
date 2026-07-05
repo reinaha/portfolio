@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import { IconListItem, PortfolioSectionContainer } from '@/components';
 
 export const GoalContent = () => {
-    const iconColor = { primary: '#0A69FA', secondary: '#F2F7FF' };
+    const iconColor = { primary: '#0088FF', secondary: '#F2F7FF' };
 
     return (
         <PortfolioSectionContainer>
