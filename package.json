@@ -10,7 +10,7 @@
         "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
         "lint": "yarn lint:format && yarn lint:fix ",
         "type-check": "tsc",
-        "predeploy": "yarn build && cp ./404.html ./build",
+        "predeploy": "yarn build && cp ./404.html ./build && rm -f ./build/SuminHaCV.pdf ./build/portfolio/SuminHaCV.pdf",
         "deploy": "gh-pages -d build"
     },
     "dependencies": {
