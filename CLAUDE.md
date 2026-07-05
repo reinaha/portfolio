@@ -8,22 +8,23 @@ Sumin Ha's product design portfolio — a Vite + React 17 + TypeScript SPA style
 
 ## Commands
 
-- `yarn dev` — start the Vite dev server.
-- `yarn build` — typecheck (`tsc`) then production build to `./build`.
-- `yarn serve` — preview the production build.
-- `yarn type-check` — `tsc` with no emit.
-- `yarn lint` — runs `lint:format` (Prettier, writes) then `lint:fix` (ESLint `--fix` over `src`). Run `yarn lint:fix` alone to just lint one pass.
-- `yarn deploy` — builds, copies `404.html` into `build/`, and publishes `build/` via `gh-pages`.
-- No test framework is configured (no Jest/Vitest) — there are no automated tests to run.
-- A git `pre-commit` hook (via the `pre-commit` npm package, see `"pre-commit": "lint"` in `package.json`) runs `yarn lint` automatically before every commit.
+-   `yarn dev` — start the Vite dev server.
+-   `yarn build` — typecheck (`tsc`) then production build to `./build`.
+-   `yarn serve` — preview the production build.
+-   `yarn type-check` — `tsc` with no emit.
+-   `yarn lint` — runs `lint:format` (Prettier, writes) then `lint:fix` (ESLint `--fix` over `src`). Run `yarn lint:fix` alone to just lint one pass.
+-   `yarn deploy` — builds, copies `404.html` into `build/`, and publishes `build/` via `gh-pages`.
+-   No test framework is configured (no Jest/Vitest) — there are no automated tests to run.
+-   A git `pre-commit` hook (via the `pre-commit` npm package, see `"pre-commit": "lint"` in `package.json`) runs `yarn lint` automatically before every commit.
 
 ## Architecture
 
 ### Routing & layout
 
 `src/routes/router.tsx` defines a single `BrowserRouter basename="/portfolio"` (must match Vite's `base: '/portfolio/'` in `vite.config.ts`, used only in the `build` command, not in `serve`/dev). Everything renders under `DefaultLayout` (`src/components/layout/DefaultLayout.tsx`), which:
-- Picks `defaultTheme` (dark) or `lightTheme` (light) from `src/themes/default.ts` based on `prefers-color-scheme`, with a dev-only manual override wired through `TopNavBar`'s toggle (`import.meta.env.DEV` only).
-- Skips the padded `Container` wrapper for `/work/*` routes, since portfolio case-study pages manage their own full-width layout via `PortfolioContainer`.
+
+-   Picks `defaultTheme` (dark) or `lightTheme` (light) from `src/themes/default.ts` based on `prefers-color-scheme`, with a dev-only manual override wired through `TopNavBar`'s toggle (`import.meta.env.DEV` only).
+-   Skips the padded `Container` wrapper for `/work/*` routes, since portfolio case-study pages manage their own full-width layout via `PortfolioContainer`.
 
 Case-study pages live under `/work/:slug` (e.g. `air-nz-web-check-in`, `propertimax-app`) and are registered individually in `router.tsx` — there's no dynamic/data-driven route, adding a case study means adding a `<Route>`.
 
@@ -53,7 +54,7 @@ Two MUI themes (`defaultTheme` = dark, `lightTheme` = light) in `src/themes/defa
 
 ### Import aliases
 
-- `@/*` → `src/*`
-- `@resources/*` → `resources/*`
+-   `@/*` → `src/*`
+-   `@resources/*` → `resources/*`
 
 Both are declared in `vite.config.ts` (`resolve.alias`) and `tsconfig.json` (`compilerOptions.paths`) — keep them in sync if either changes.

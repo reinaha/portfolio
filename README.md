@@ -6,10 +6,10 @@ Live at [reinaha.github.io/portfolio](https://reinaha.github.io/portfolio).
 
 ## Tech stack
 
-- [Vite](https://vitejs.dev/) + [React 17](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
-- [MUI](https://mui.com/) (`@mui/material`) + [Emotion](https://emotion.sh/) for styling/theming
-- [React Router](https://reactrouter.com/) for client-side routing
-- ESLint + Prettier for linting/formatting, enforced via a git pre-commit hook
+-   [Vite](https://vitejs.dev/) + [React 17](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+-   [MUI](https://mui.com/) (`@mui/material`) + [Emotion](https://emotion.sh/) for styling/theming
+-   [React Router](https://reactrouter.com/) for client-side routing
+-   ESLint + Prettier for linting/formatting, enforced via a git pre-commit hook
 
 ## Getting started
 
@@ -22,14 +22,14 @@ yarn dev
 
 ## Available scripts
 
-| Command | Description |
-| --- | --- |
-| `yarn dev` | Start the Vite dev server |
-| `yarn build` | Typecheck and build for production into `./build` |
-| `yarn serve` | Preview the production build locally |
-| `yarn type-check` | Run `tsc` with no emit |
-| `yarn lint` | Format with Prettier, then lint/fix with ESLint |
-| `yarn deploy` | Build and publish `./build` to GitHub Pages via `gh-pages` |
+| Command           | Description                                                |
+| ----------------- | ---------------------------------------------------------- |
+| `yarn dev`        | Start the Vite dev server                                  |
+| `yarn build`      | Typecheck and build for production into `./build`          |
+| `yarn serve`      | Preview the production build locally                       |
+| `yarn type-check` | Run `tsc` with no emit                                     |
+| `yarn lint`       | Format with Prettier, then lint/fix with ESLint            |
+| `yarn deploy`     | Build and publish `./build` to GitHub Pages via `gh-pages` |
 
 Linting also runs automatically before each commit via a git pre-commit hook.
 
