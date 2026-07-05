@@ -8,6 +8,7 @@ import {
 } from '@/components';
 import {
     AirNZNextGenKioskSolutionAccessibilityCustomerInterview,
+    AirNZNextGenKioskSolutionAccessibilityDesignSystem,
     AirNZNextGenKioskSolutionAccessibilityFinal,
     AirNZNextGenKioskSolutionAccessibilityPersonaSynthesis,
     AirNZNextGenKioskSolutionAccessibilityPhysical,
@@ -50,6 +51,9 @@ export const UniversalAccessibilityContent = () => {
                 </Typography>
                 <PortfolioImage
                     imageSrc={AirNZNextGenKioskSolutionAccessibilityPhysical}
+                />
+                <PortfolioImage
+                    imageSrc={AirNZNextGenKioskSolutionAccessibilityDesignSystem}
                 />
             </PortfolioChipSection>
             <PortfolioChipSection

@@ -29,6 +29,7 @@ import AirNZNextGenKioskOutcomeWelcomeCover from '@resources/AirNZNextGenKiosk/O
 import AirNZNextGenKioskOutcomeWelcomeScreens from '@resources/AirNZNextGenKiosk/OutcomeWelcomeScreens.jpg';
 import AirNZNextGenKioskProjectContextProblem from '@resources/AirNZNextGenKiosk/ProjectContextProblem.jpg';
 import AirNZNextGenKioskSolutionAccessibilityCustomerInterview from '@resources/AirNZNextGenKiosk/SolutionAccessibilityCustomerInterview.jpg';
+import AirNZNextGenKioskSolutionAccessibilityDesignSystem from '@resources/AirNZNextGenKiosk/SolutionAccessibilityDesignSystem.jpg';
 import AirNZNextGenKioskSolutionAccessibilityFinal from '@resources/AirNZNextGenKiosk/SolutionAccessibilityFinal.jpg';
 import AirNZNextGenKioskSolutionAccessibilityPersonaSynthesis from '@resources/AirNZNextGenKiosk/SolutionAccessibilityPersonaSynthesis.jpg';
 import AirNZNextGenKioskSolutionAccessibilityPhysical from '@resources/AirNZNextGenKiosk/SolutionAccessibilityPhysical.jpg';
@@ -68,6 +69,7 @@ export {
 
 export {
     AirNZNextGenKioskSolutionAccessibilityCustomerInterview,
+    AirNZNextGenKioskSolutionAccessibilityDesignSystem,
     AirNZNextGenKioskSolutionAccessibilityFinal,
     AirNZNextGenKioskSolutionAccessibilityPersonaSynthesis,
     AirNZNextGenKioskSolutionAccessibilityPhysical,
