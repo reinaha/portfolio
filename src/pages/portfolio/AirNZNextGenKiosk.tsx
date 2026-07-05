@@ -1,6 +1,6 @@
 import { Divider } from '@mui/material';
 
-import { PortfolioContainer } from '@/components';
+import { PasswordGate, PortfolioContainer } from '@/components';
 import {
     AirportValidationMajorSection,
     DiscoveryMajorSection,
@@ -27,18 +27,20 @@ export const AirNZNextGenKiosk = () => {
         >
             <IntroductionMajorSection />
             <Divider />
-            <ProjectContextMajorSection />
-            <Divider />
-            <DiscoveryMajorSection />
-            <Divider />
-            <StructureMajorSection />
-            <Divider />
-            <InternalValidationMajorSection />
-            <Divider />
-            <AirportValidationMajorSection />
-            <Divider />
-            <SolutionMajorSection />
-            <Divider />
+            <PasswordGate>
+                <ProjectContextMajorSection />
+                <Divider />
+                <DiscoveryMajorSection />
+                <Divider />
+                <StructureMajorSection />
+                <Divider />
+                <InternalValidationMajorSection />
+                <Divider />
+                <AirportValidationMajorSection />
+                <Divider />
+                <SolutionMajorSection />
+                <Divider />
+            </PasswordGate>
             <OutcomeMajorSection />
             <Divider />
             <SummaryMajorSection />

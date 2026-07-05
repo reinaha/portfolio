@@ -1,6 +1,6 @@
 import { Divider } from '@mui/material';
 
-import { PortfolioContainer } from '@/components';
+import { PasswordGate, PortfolioContainer } from '@/components';
 import {
     ChallengesMajorSection,
     HeaderContent,
@@ -23,10 +23,12 @@ export const AirNZWebCheckIn = () => {
         >
             <IntroductionMajorSection />
             <Divider />
-            <ProjectContextMajorSection />
-            <Divider />
-            <ChallengesMajorSection />
-            <Divider />
+            <PasswordGate>
+                <ProjectContextMajorSection />
+                <Divider />
+                <ChallengesMajorSection />
+                <Divider />
+            </PasswordGate>
             <OutcomeMajorSection />
             <Divider />
             <SummaryMajorSection />

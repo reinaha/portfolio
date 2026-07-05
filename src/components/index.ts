@@ -5,5 +5,6 @@ export * from './icon';
 export * from './layout';
 export * from './listText';
 export * from './navigation';
+export * from './passwordGate';
 export * from './portfolio';
 export * from './portfolioCardSection';
