@@ -11,7 +11,7 @@ const dmSans = "'DM Sans', sans-serif";
 // lead-in stays put.
 const HERO_PREFIX = 'who enjoys turning complex problems into products ';
 const HERO_SUFFIXES = [
-    "people don't have to think twice about",
+    "people don't have to think twice about.",
     'that generate business value.',
     'that are ready for what comes next.',
 ];

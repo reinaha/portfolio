@@ -1,41 +1,58 @@
-# suminPortfolio
+# Sumin Portfolio
 
-Portfolio Website
+Sumin Ha's product design portfolio site — a Vite + React + TypeScript single-page app styled with MUI, deployed to GitHub Pages.
 
-# Vite + React + Typescript + Eslint + Prettier
+Live at [reinaha.github.io/portfolio](https://reinaha.github.io/portfolio).
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
+## Tech stack
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
+- [Vite](https://vitejs.dev/) + [React 17](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- [MUI](https://mui.com/) (`@mui/material`) + [Emotion](https://emotion.sh/) for styling/theming
+- [React Router](https://reactrouter.com/) for client-side routing
+- ESLint + Prettier for linting/formatting, enforced via a git pre-commit hook
 
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
+## Getting started
 
-## Installation
-
-Clone the repo and run `yarn install`
-
-or Run command
+Install dependencies and start the dev server:
 
 ```
-npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
+yarn install
+yarn dev
 ```
 
-## Start
+## Available scripts
 
-After the successfull installation of the packages: `yarn dev`
+| Command | Description |
+| --- | --- |
+| `yarn dev` | Start the Vite dev server |
+| `yarn build` | Typecheck and build for production into `./build` |
+| `yarn serve` | Preview the production build locally |
+| `yarn type-check` | Run `tsc` with no emit |
+| `yarn lint` | Format with Prettier, then lint/fix with ESLint |
+| `yarn deploy` | Build and publish `./build` to GitHub Pages via `gh-pages` |
 
-## Steps in Vscode
+Linting also runs automatically before each commit via a git pre-commit hook.
 
-#### (works with better with this template)
+## Project structure
 
-1. Install Eslint and prettier extension for vs code.
-2. Make Sure Both are enabled
-3. Make sure all packages are Installed. (Mostly Eslint and prettier in node_modules)
-4. Enable formatOnSave of vs code
-5. Open a .tsx file and check if the bottom right corners of vs code have Eslint and Prettier with a double tick
+```
+src/
+  components/   Shared UI components, including the portfolio case-study
+                section framework (components/portfolio) and per-project
+                case-study content (components/portfolio/<ProjectName>)
+  pages/        Route-level pages (home, each portfolio case study, error page)
+  data/         Structured content for the home page (cards, press mentions, etc.)
+  images/       Generated barrel files re-exporting images from resources/<ProjectName>
+  routes/       React Router route definitions
+  themes/       MUI theme definitions (dark/light)
+  models/       Shared TypeScript types
+resources/      Source images for each case study, organized by project name
+```
 
-![Screenshot (253)_LI](https://user-images.githubusercontent.com/52120562/162486286-7383a737-d555-4f9b-a4dd-c4a81deb7b96.jpg)
+Adding a new case study means: dropping its images in `resources/<ProjectName>/`, running `python generateImageImport.py <ProjectName>` to generate `src/images/<ProjectName>.ts`, building the section content components under `src/components/portfolio/<ProjectName>/`, and registering the new page in `src/routes/router.tsx`.
 
-If Everything is Good Then It Should Work, but let me new if something else happens
+See [`CLAUDE.md`](./CLAUDE.md) for a deeper walkthrough of the case-study architecture, password-gating, theming, and import aliases.
 
-Made with ❤️ by theSwordBreaker(we Destory all types of sword ⚡)
+## License
+
+See [`LICENSE`](./LICENSE).
