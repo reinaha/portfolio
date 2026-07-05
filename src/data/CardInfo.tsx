@@ -183,3 +183,42 @@ export const AirNZWebCheckInCardInfo = [
         ),
     },
 ];
+
+export const TradifyCardInfo = [
+    {
+        title: 'Role',
+        content: (
+            <>
+                <Typography variant="body3">Lead Product Designer</Typography>
+                <Typography variant="body3">End-to-end product design</Typography>
+            </>
+        ),
+    },
+    {
+        title: 'Duration',
+        content: (
+            <>
+                <Typography variant="body3">May 2025 – Present</Typography>
+            </>
+        ),
+    },
+    {
+        title: 'Team',
+        content: (
+            <>
+                <Typography variant="body3">
+                    Cross-functional team (Product, Engineering, QA)
+                </Typography>
+            </>
+        ),
+    },
+    {
+        title: 'Progress',
+        content: (
+            <>
+                <Typography variant="body3">Phase 1 complete</Typography>
+                <Typography variant="body3">Expanding offline capabilities</Typography>
+            </>
+        ),
+    },
+];

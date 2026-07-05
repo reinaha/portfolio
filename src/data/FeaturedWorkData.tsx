@@ -4,6 +4,7 @@ import {
     FeaturedWorkPropertiMaxApp,
     FeaturedWorkPropertiMaxDashboard,
     FeaturedWorkPropertiMaxWeb,
+    FeaturedWorkTradify,
     FeaturedWorkWebCheckIn,
 } from '@/images';
 import { IFeaturedWorkCard } from '@/models';
@@ -15,6 +16,7 @@ import {
     propertiMaxAppCard,
     propertiMaxDashboardCard,
     propertiMaxWebCard,
+    tradifyCard,
 } from './PortfolioCardData';
 
 export const FeaturedWorkData: IFeaturedWorkCard[] = [
@@ -31,6 +33,13 @@ export const FeaturedWorkData: IFeaturedWorkCard[] = [
         title: 'Air New Zealand Web Check-In',
         subtitle: 'Web Application · Aviation',
         image: FeaturedWorkWebCheckIn,
+    },
+    {
+        card: tradifyCard,
+        tier: 'large',
+        title: 'Tradify Offline-First Mobile Experience',
+        subtitle: 'Field Service Mobile · SaaS',
+        image: FeaturedWorkTradify,
     },
     {
         card: propertiMaxWebCard,

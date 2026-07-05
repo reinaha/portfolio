@@ -19,6 +19,7 @@ import {
     RealEstateTradingApp,
     RealEstateTradingDashboard,
     RealEstateTradingWeb,
+    TradifyApp,
 } from '@/images';
 import { IPortfolioCard } from '@/models';
 
@@ -187,6 +188,14 @@ export const osstemWebCard: IPortfolioCard = {
     onClick: (navigate: NavigateFunction) => () => navigate('/work/'),
 };
 
+export const tradifyCard: IPortfolioCard = {
+    title: 'Tradify \nMobile App',
+    subtitle: 'Offline-First Field Service Application',
+    backgroundImg: TradifyApp,
+    filterCriteria: ['uxui'],
+    onClick: (navigate: NavigateFunction) => () => navigate('/work/tradify'),
+};
+
 export const additionalGraphicCard: IPortfolioCard = {
     title: 'Additional Graphic Designs',
     subtitle: 'Brand Design & Advertising Design',
@@ -216,4 +225,5 @@ export const PortfolioCardData: IPortfolioCard[] = [
     propertiMaxDashboardCard,
     osstemWebCard,
     additionalGraphicCard,
+    tradifyCard,
 ];

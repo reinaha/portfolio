@@ -10,6 +10,7 @@ import {
     PropertiMaxApp,
     PropertiMaxDashboard,
     PropertiMaxWeb,
+    Tradify,
     UnderConstruction,
 } from '@/pages';
 
@@ -34,6 +35,7 @@ export default function Router() {
                             path="air-nz-next-gen-kiosk"
                             element={<AirNZNextGenKiosk />}
                         />
+                        <Route path="tradify" element={<Tradify />} />
                         <Route index element={<UnderConstruction />} />
                     </Route>
                     <Route index element={<Home key={Math.random()} />} />

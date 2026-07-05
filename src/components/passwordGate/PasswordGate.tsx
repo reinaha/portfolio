@@ -17,17 +17,31 @@ export const PasswordGate = ({ children }: PasswordGateProps) => {
     const [input, setInput] = useState('');
     const [error, setError] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
+    const scrollAnchorRef = useRef<HTMLSpanElement>(null);
     const wasUnlocked = useRef(unlocked);
 
     useEffect(() => {
         if (unlocked && !wasUnlocked.current) {
-            containerRef.current?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+            (containerRef.current ?? scrollAnchorRef.current)?.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth',
+            });
         }
         wasUnlocked.current = unlocked;
     }, [unlocked]);
 
     if (unlocked) {
-        return <Box ref={containerRef}>{children}</Box>;
+        // No wrapping element here — these children are typically several
+        // sibling major sections (e.g. ProjectContext + Discovery + ...), and
+        // wrapping them would nest them one level deeper than their layout
+        // parent's Stack expects, silently swallowing its inter-section
+        // spacing. The anchor span is the scroll-to-top target instead.
+        return (
+            <>
+                <span ref={scrollAnchorRef} />
+                {children}
+            </>
+        );
     }
 
     const handleSubmit = (event: FormEvent) => {

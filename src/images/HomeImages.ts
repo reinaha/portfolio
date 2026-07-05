@@ -11,6 +11,7 @@ import FeaturedWorkOsstem from '@resources/Home/FeaturedWorkOsstem.jpg';
 import FeaturedWorkPropertiMaxApp from '@resources/Home/FeaturedWorkPropertiMaxApp.jpg';
 import FeaturedWorkPropertiMaxDashboard from '@resources/Home/FeaturedWorkPropertiMaxDashboard.jpg';
 import FeaturedWorkPropertiMaxWeb from '@resources/Home/FeaturedWorkPropertiMaxWeb.jpg';
+import FeaturedWorkTradify from '@resources/Home/FeaturedWorkTradify.jpg';
 import FeaturedWorkWebCheckIn from '@resources/Home/FeaturedWorkWebCheckIn.jpg';
 import NZPostBrandDesign from '@resources/Home/NZPostBrandDesign.png';
 import NZPostDigitalDesign from '@resources/Home/NZPostDigitalDesign.png';
@@ -20,6 +21,7 @@ import PostcrossingBackground from '@resources/Home/PostcrossingBackground.png';
 import RealEstateTradingApp from '@resources/Home/RealEstateTradingApp.png';
 import RealEstateTradingDashboard from '@resources/Home/RealEstateTradingDashboard.png';
 import RealEstateTradingWeb from '@resources/Home/RealEstateTradingWeb.png';
+import TradifyApp from '@resources/Home/TradifyApp.png';
 import AirNZKioskVideo from '@resources/Home/videos/KioskVideo.webm';
 import PropertiMaxVideo from '@resources/Home/videos/PropertiMaxVideo.webm';
 
@@ -38,6 +40,7 @@ export {
     FeaturedWorkPropertiMaxApp,
     FeaturedWorkPropertiMaxDashboard,
     FeaturedWorkPropertiMaxWeb,
+    FeaturedWorkTradify,
     FeaturedWorkWebCheckIn,
     NZPostBrandDesign,
     NZPostDigitalDesign,
@@ -48,4 +51,5 @@ export {
     RealEstateTradingApp,
     RealEstateTradingDashboard,
     RealEstateTradingWeb,
+    TradifyApp,
 };
