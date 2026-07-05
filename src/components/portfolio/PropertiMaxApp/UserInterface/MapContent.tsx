@@ -10,16 +10,15 @@ const MapJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Through target analysis, we found that location is the most important
-                factor for the target audience when it comes to real estate options.
-                Taking this into account, we designed a page where users can search for
-                real estate while viewing detailed locations in real-time using an open
-                map.
+                Through target analysis, location was found to be the most important
+                information for the target audience in the real estate market. Taking this
+                into account, a page was designed to allow users to search for properties
+                while viewing detailed locations in real-time using a map.
             </IconListItem>
             <IconListItem>
-                On the map, the location of the real estate is displayed along with the
-                price, which is the next most important factor for the target audience
-                after location.
+                On the map, the location of the property is displayed along with the
+                price, which was identified as the next most important information for the
+                target audience after location.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppMapImg1} />
         </PortfolioSectionContainer>
@@ -30,13 +29,13 @@ const MapHidingContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To help users focus more on the properties they are interested in, we
-                designed the map so that when a user clicks on a property, instead of
+                To help users focus more on the properties they are interested in, the map
+                was designed so that when a user clicks on a property, instead of
                 displaying a summary of the property, the rest of the list is hidden
                 below.
             </IconListItem>
             <IconListItem>
-                The hidden list is designed to reappear when the user scrolls up, making
+                The hidden list is designed to reappear when the user drags it up, making
                 it easy for users to find the list at any time.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppMapImg2} />
@@ -50,7 +49,7 @@ export const MapContentData = [
         content: <MapJourneyContent />,
     },
     {
-        title: 'Enabling hiding function to focus on clicked item',
+        title: 'Hiding the list to focus on clicked item',
         content: <MapHidingContent />,
     },
 ];

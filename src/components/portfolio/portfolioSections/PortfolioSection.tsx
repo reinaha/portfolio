@@ -3,7 +3,11 @@ import { Variant } from '@mui/material/styles/createTypography';
 import { ResponsiveStyleValue } from '@mui/system';
 import { ReactNode } from 'react';
 
-import { PortfolioImageContainer } from '@/components';
+import {
+    PortfolioFullWidthImage,
+    PortfolioImageContainer,
+    PortfolioVideoContainer,
+} from '@/components';
 import HeaderMarkerIcon from '@/icons/HeaderMarkerIcon.svg';
 
 export interface PortfolioSectionProps extends StackProps {
@@ -13,6 +17,8 @@ export interface PortfolioSectionProps extends StackProps {
     reverseTitleIcon?: boolean;
     titlePadding?: number;
     coverImg?: string;
+    coverImgFullWidth?: boolean;
+    coverVideo?: string;
     sectionRef?:
         | ((instance: HTMLDivElement | null) => void)
         | React.RefObject<HTMLDivElement>
@@ -27,6 +33,8 @@ export const PortfolioSection = ({
     reverseTitleIcon = false,
     titlePadding,
     coverImg,
+    coverImgFullWidth = false,
+    coverVideo,
     sectionRef,
     ...props
 }: PortfolioSectionProps) => {
@@ -54,7 +62,25 @@ export const PortfolioSection = ({
 
     return (
         <Stack spacing={25} {...props}>
-            {coverImg ? <PortfolioImageContainer imageSrc={coverImg} /> : null}
+            {coverVideo ? (
+                <PortfolioVideoContainer
+                    videoSrc={coverVideo}
+                    poster={coverImg}
+                    width="591.2px"
+                    height="443px"
+                    sx={{
+                        display: 'block',
+                        marginX: 'auto',
+                        objectFit: 'cover',
+                    }}
+                />
+            ) : coverImg ? (
+                coverImgFullWidth ? (
+                    <PortfolioFullWidthImage image={coverImg} />
+                ) : (
+                    <PortfolioImageContainer imageSrc={coverImg} />
+                )
+            ) : null}
             <Box>
                 <Container
                     disableGutters

@@ -1,5 +1,12 @@
 // --- Material Ui Imports --- //
-import { Card, CardActionArea, CardActions, CardContent, CardMedia } from '@mui/material';
+import {
+    Card,
+    CardActionArea,
+    CardActions,
+    CardContent,
+    CardMedia,
+    CardMediaProps,
+} from '@mui/material';
 import { styled } from '@mui/system';
 
 export const FiCard = styled(Card)({
@@ -8,12 +15,12 @@ export const FiCard = styled(Card)({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: '35px 35px 35px 35px',
-    height: '586px',
+    padding: '30px 25px 35px 30px',
+    height: '340px',
+    boxShadow: 'none',
     '&:hover': {
         cursor: 'pointer',
-        '& .MuiCardMedia-root': { transform: 'scale3d(1.2, 1.2, 1)' },
-        '& .GoToPortfolio': { backgroundColor: '#FFFFFF', color: 'black' },
+        '& .MuiCardMedia-root:not(video)': { transform: 'scale3d(1.2, 1.2, 1)' },
     },
 });
 
@@ -35,7 +42,9 @@ export const FiCardContent = styled(CardContent)({
     },
 });
 
-export const FiCardMedia = styled(CardMedia)({
+export const FiCardMedia = styled(CardMedia)<
+    CardMediaProps & { component?: React.ElementType }
+>({
     position: 'absolute',
     top: 0,
     right: 0,

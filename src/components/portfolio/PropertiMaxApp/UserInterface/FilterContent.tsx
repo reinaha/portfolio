@@ -15,11 +15,11 @@ const FilterJourneyContent = () => {
         <PortfolioSectionContainer>
             <IconListItem>
                 The most challenging aspect of designing this app was the search filter
-                page. Due to the nature of the real estate industry, each item comes with
-                various options by default. If we simply list them all on the filter page,
-                users may easily feel fatigued and find the app difficult to use.
-                Therefore, our goal was to design various search options in a way that is
-                easy and not boring.
+                page. Due to the nature of the real estate industry, each listing comes
+                with numerous options by default. By simply listing them all on the filter
+                page, users may easily feel fatigued and find the app difficult to use.
+                Therefore, various search options had to be designed in a way that was
+                simple and interesting.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppFilterImg1} />
         </PortfolioSectionContainer>
@@ -30,31 +30,25 @@ const FilterResearchContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Before designing the filter page, it was important to analyze our target
-                audience and determine how they prioritize real estate properties in their
-                minds.
+                Before designing the filter page, it was important to analyse our target
+                audience and determine how they prioritised real estate properties in
+                their minds.
             </IconListItem>
             <IconListItem>
-                We focused on analyzing which filters our target audience prioritizes when
-                searching for a single real estate property, which options within the
-                property listing are most important to users, and the priority of these
-                options.
+                Based on our analysis, the target audience prioritised the following real
+                estate options in order: &ldquo;Location → Price → Number of Bedrooms and
+                Bathrooms&rdquo;. Other options, such as property features and sales
+                methods, were deemed as &ldquo;nice to have&rdquo; by many users.
             </IconListItem>
             <IconListItem>
-                Based on our analysis, our target audience prioritized the following real
-                estate options in order: &quot;Location → Price → Number of Bedrooms and
-                Bathrooms&quot;. Other options, such as property features and sales
-                methods, were deemed as &quot;nice to have&quot; by many users.
+                Additionally, the most commonly used filters when searching for a property
+                were &ldquo;Location → Property Type → Price Range&rdquo;.
             </IconListItem>
             <IconListItem>
-                Additionally, the most commonly clicked filters when searching for a
-                property were &quot;Location → Property Type → Price Range&quot;.
-            </IconListItem>
-            <IconListItem>
-                Taking these findings into account, we designed the filter page with a
-                switch bar for the &quot;Rent or Buy&quot; parent category at the top,
-                followed by &quot;Location → Property Type → Price Range → Rooms and Beds
-                → Other Options&quot; below it.
+                Taking these findings into account, the filter page was designed with a
+                switch bar for the &ldquo;Rent or Buy&rdquo; parent category at the top,
+                followed by &ldquo;Location → Property Type → Price Range → Rooms and Beds
+                → Other Options&rdquo; below it.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppFilterImg2} />
         </PortfolioSectionContainer>
@@ -65,15 +59,15 @@ const FilterIntuitiveContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                In terms of design, we aimed to prevent users from feeling bored while
-                using the filter by incorporating various types of components to add an
-                element of fun.
+                The overall design of the interface aimed to prevent users from feeling
+                bored while using the filter by incorporating various types of components
+                to visually stimulate the user.
             </IconListItem>
             <IconListItem>
-                For the price range bar, we added a graph that displays the up and down of
-                the price to the basic slider bar design. In the rooms and beds section,
-                we designed a range slider to allow users to quickly and enjoyably set the
-                numbers they want.
+                A graph that indicates the number of properties in the price range was
+                added on top of the basic slider bar design of the price range bar. In the
+                rooms and beds section, a range slider was used to allow users to set the
+                maximum and minimum value desired quickly and intuitively.
             </IconListItem>
             <PortfolioImage imageSrc={PropertiMaxAppFilterImg3} />
         </PortfolioSectionContainer>
@@ -86,11 +80,11 @@ export const FilterContentData = [
         content: <FilterJourneyContent />,
     },
     {
-        title: 'User research on real estate option priority for effective search filters',
+        title: 'User research on search filter priority',
         content: <FilterResearchContent />,
     },
     {
-        title: 'Designing intuitive and fun filters using various design components',
+        title: 'Intuitive and interesting designs of various components',
         content: <FilterIntuitiveContent />,
     },
 ];

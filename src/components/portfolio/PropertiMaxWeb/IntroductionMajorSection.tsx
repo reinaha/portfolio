@@ -7,13 +7,14 @@ import {
     IntroductionContent,
     PrototypeContent,
     SitemapContent,
+    TargetContent,
     WireframesContent,
 } from './Introduction';
 
 const introductionSections = [
     { title: 'Introduction', content: <IntroductionContent /> },
-    { title: 'Target', content: <IntroductionContent /> },
-    { title: 'Goals', content: <GoalsContent /> },
+    { title: 'Target', content: <TargetContent /> },
+    { title: 'Goal', content: <GoalsContent /> },
     { title: 'Challenges', content: <ChallengesContent /> },
     { title: 'Design Process', content: <DesignProcessContent /> },
     {

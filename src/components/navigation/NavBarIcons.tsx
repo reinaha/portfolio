@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import { NavBarButtons } from '@/data/NavBarIcons';
 import { NavBarComponent } from '@/models';
 
-export const NavBarIcons = ({ isDarkTheme }: NavBarComponent) => {
+export const NavBarIcons = ({ curPath }: NavBarComponent) => {
     const theme = useTheme();
     const lessThanSmall = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -48,35 +48,58 @@ export const NavBarIcons = ({ isDarkTheme }: NavBarComponent) => {
                         onClose={handleClose}
                     >
                         {NavBarButtons.map((icon) => {
-                            return <MenuItem key={icon.key}>{icon.text}</MenuItem>;
+                            return (
+                                <MenuItem key={icon.key} sx={{ padding: '0' }}>
+                                    <Button
+                                        component={Link}
+                                        to={icon.path || ''}
+                                        state={{ section: icon.section, from: curPath }}
+                                        replace
+                                        color="primary"
+                                        disableElevation
+                                        target={icon.target}
+                                        download={icon.download}
+                                        sx={{
+                                            width: '100%',
+                                            padding: '0.5em 2em',
+                                        }}
+                                    >
+                                        <Typography variant="button" textTransform="none">
+                                            {icon.text}
+                                        </Typography>
+                                    </Button>
+                                </MenuItem>
+                            );
                         })}
                     </Menu>
                 </>
             ) : (
                 <Stack direction="row" spacing={4}>
                     {NavBarButtons.map((icon) => {
-                        const buttonColor = isDarkTheme
-                            ? icon.bgColor?.dark
-                            : icon.bgColor?.light;
-
                         return (
                             <Button
                                 key={icon.key}
                                 component={Link}
-                                to={icon.path || '.'}
-                                state={icon.section}
+                                to={icon.path || ''}
+                                state={{ section: icon.section, from: curPath }}
+                                replace
                                 color="primary"
                                 disableElevation
+                                target={icon.target}
+                                download={icon.download}
                                 sx={{
-                                    bgcolor: buttonColor,
-                                    borderRadius: 25,
-                                    paddingLeft: 4.5,
-                                    paddingRight: 4.5,
-                                    paddingTop: 2,
-                                    paddingBottom: 2,
+                                    '&:hover': {
+                                        '& .MuiTypography-root': {
+                                            transform: 'scale(1.1)',
+                                        },
+                                    },
                                 }}
                             >
-                                <Typography variant="button" textTransform="none">
+                                <Typography
+                                    variant="button"
+                                    textTransform="none"
+                                    sx={{ transition: 'transform 0.3s ease-in-out' }}
+                                >
                                     {icon.text}
                                 </Typography>
                             </Button>

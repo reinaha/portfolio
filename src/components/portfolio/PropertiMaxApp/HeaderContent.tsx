@@ -9,12 +9,11 @@ export const HeaderContent = () => {
         <PortfolioSectionContainer spacing={5}>
             <Typography variant="h1">PropertiMax App</Typography>
             <Typography variant="body2">
-                Prior to our decision to develop an e-commerce shop, the company relied
-                exclusively on salespeople who would visit dental clinics to meet with
-                dentists and sell our products. While this selling strategy was
-                well-suited to the New Zealand market&apos;s preference for face-to-face
-                interactions and conservatism, it also resulted in unstable income for our
-                company.
+                PropertiMax real estate trading mobile application was one of the key
+                projects of PropertiMax, a real estate trading startup. As a lead UX/UI
+                Designer, I was responsible for the overall design of the app as well as
+                planning all of the content within the app. I worked in a team with three
+                application developers for this project.
             </Typography>
             <PortfolioDetailCards portfolioDetailCardInfos={OsstemDentalEShopCardInfo} />
         </PortfolioSectionContainer>

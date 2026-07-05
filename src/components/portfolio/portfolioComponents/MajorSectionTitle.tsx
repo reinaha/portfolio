@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack, Typography } from '@mui/material';
+import { Box, Button, Container, Stack, Typography, useTheme } from '@mui/material';
 
 import HeaderMarkerIcon from '@/icons/HeaderMarkerIcon.svg';
 
@@ -13,6 +13,8 @@ export const MajorSectionTitle = ({
     subTitles = [],
     navigateTo,
 }: MajorSectionTitleProps) => {
+    const theme = useTheme();
+
     return (
         <Stack paddingTop={12.5} paddingBottom={12.5}>
             <Container>
@@ -20,8 +22,8 @@ export const MajorSectionTitle = ({
                     <Typography
                         variant="h2"
                         paddingBottom={1.5}
-                        color="black"
-                        sx={{ flexGrow: 1 }}
+                        color={theme.palette.primary.main}
+                        sx={{ flexGrow: 1, whiteSpace: 'pre-line' }}
                     >
                         {title}
                     </Typography>
@@ -48,7 +50,7 @@ export const MajorSectionTitle = ({
                                         textTransform="none"
                                         sx={{
                                             textDecoration: 'underline',
-                                            color: ' #131214',
+                                            color: theme.palette.primary.main,
                                             fontWeight: 550,
                                         }}
                                     >

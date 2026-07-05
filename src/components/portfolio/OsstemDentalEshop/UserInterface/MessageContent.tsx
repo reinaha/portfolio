@@ -11,12 +11,12 @@ const MessageJourneyContent = () => {
         <PortfolioSectionContainer>
             <IconListItem>
                 To encourage customers to inquire through the app rather than phone calls,
-                we adopted a conversational design that makes users feel like they are
-                chatting in real-time.
+                a conversational design that makes users feel like they are chatting in
+                real-time was adopted.
             </IconListItem>
             <IconListItem>
-                In order to prevent redundant questions, we placed the message history
-                list at the beginning of the message page.
+                The message history list was placed at the beginning of the message page
+                in order to reduce duplicate questions
             </IconListItem>
             <PortfolioImage imageSrc={MessageJourney} />
         </PortfolioSectionContainer>
@@ -28,8 +28,8 @@ const MessageSupportContent = () => {
         <PortfolioSectionContainer>
             <IconListItem>
                 To respond to user inquiries more quickly from the company&apos;s
-                perspective, it was important to categorize similar questions. To achieve
-                this, we designed a dropdown menu for selecting the category of the
+                perspective, it was important to categorise similar questions. To achieve
+                this, a dropdown menu was designed for selecting the category of the
                 inquiry when creating a new message.
             </IconListItem>
             <PortfolioImage imageSrc={MessageSupport} />
@@ -43,7 +43,7 @@ export const MessageContentData = [
         content: <MessageJourneyContent />,
     },
     {
-        title: "Categorizing inquiries to improve company's response time to customers",
+        title: 'Categorising inquiries to improve time taken to respond',
         content: <MessageSupportContent />,
     },
 ];

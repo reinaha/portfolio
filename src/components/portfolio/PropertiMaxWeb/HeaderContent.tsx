@@ -9,12 +9,12 @@ export const HeaderContent = () => {
         <PortfolioSectionContainer spacing={5}>
             <Typography variant="h1">PropertiMax Website</Typography>
             <Typography variant="body2">
-                Prior to our decision to develop an e-commerce shop, the company relied
-                exclusively on salespeople who would visit dental clinics to meet with
-                dentists and sell our products. While this selling strategy was
-                well-suited to the New Zealand market&apos;s preference for face-to-face
-                interactions and conservatism, it also resulted in unstable income for our
-                company.
+                As a Lead UX/UI Designer for PropertiMax, a real estate trading startup, I
+                played a crucial role in developing the PropertiMax Real Estate Trading
+                Website. Working alongside two web developers, I oversaw the overall
+                design of the website, including managing all of the content design.
+                Additionally, I provided support for front-end development using HTML,
+                CSS, and jQuery.
             </Typography>
             <PortfolioDetailCards portfolioDetailCardInfos={PropertiMaxWebCardInfo} />
         </PortfolioSectionContainer>

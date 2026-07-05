@@ -3,10 +3,13 @@ interface NavBarButton {
     text: string;
     path?: string;
     section?: string;
+    target?: string;
+    download?: boolean;
     bgColor?: {
         dark: string;
         light: string;
     };
+    onClick?(): void;
 }
 
 export const NavBarButtons: NavBarButton[] = [
@@ -19,30 +22,12 @@ export const NavBarButtons: NavBarButton[] = [
         key: 1,
         text: 'Work',
         path: '/',
-        section: 'mouse',
+        section: 'work',
     },
     {
         key: 2,
-        text: 'Hire Me',
+        text: 'Contact',
         path: '/',
         section: 'ContactMe',
-    },
-    {
-        key: 3,
-        text: 'Download CV',
-        path: '/contact',
-        bgColor: {
-            dark: 'rgba(255, 255, 255, 0.1)',
-            light: '#F1F1F1',
-        },
-    },
-    {
-        key: 4,
-        text: 'Download Portfolio',
-        path: '/contact',
-        bgColor: {
-            dark: 'rgba(255, 255, 255, 0.1)',
-            light: '#F1F1F1',
-        },
     },
 ];

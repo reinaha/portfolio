@@ -5,21 +5,20 @@ const NavigationJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Due to the wide range of options available in real estate listings, we
-                believed that dividing them solely with search filters would not be
-                sufficient.
+                Considering the wide range of options in real estate listings, we
+                recognised that relying solely on search filters would not suffice.
             </IconListItem>
             <IconListItem>
-                Therefore, we placed the most essential parent categories of real estate
-                options, including Residential, Rural, Commercial, Business, and Agent, in
-                the middle of the navigation bar.
+                In response, we prioritised the most crucial parent categories of real
+                estate options, such as Residential, Rural, Commercial, Business, and
+                Agent, and positioned them at the centre of the navigation bar.
             </IconListItem>
             <IconListItem>
-                The remaining basic functions such as &ldquo;List a Property,&rdquo;
-                &ldquo;Sign in,&rdquo; and &ldquo;Profile&rdquo; were designed and placed
-                on the right side of the navigation bar. &ldquo;List a Property&rdquo; is
-                connected to the PropertiMax Agent Dashboard, allowing users to move
-                directly to the Agent Dashboard by clicking on it.
+                To the right of the navigation bar, we added the remaining essential
+                functions, including &ldquo;List a Property,&rdquo; &ldquo;Sign in,&rdquo;
+                and &ldquo;Profile.&rdquo; The &ldquo;List a Property&rdquo; feature is
+                connected to the PropertiMax Agent Dashboard, enabling users to access the
+                dashboard directly with just a click.
             </IconListItem>
         </PortfolioSectionContainer>
     );

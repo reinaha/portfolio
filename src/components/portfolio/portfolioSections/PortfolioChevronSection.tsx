@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Typography, useTheme } from '@mui/material';
 
 import {
     IconListItem,
@@ -13,16 +13,21 @@ interface PortfolioChevronSectionProps extends PortfolioSubSection {
         secondary: string;
     };
 }
-const defaultIconColor = { primary: '#1C1B1F', secondary: '#1C1B1F' };
 
 export const PortfolioChevronSection = ({
     title,
-    iconColor = defaultIconColor,
+    iconColor,
     children,
 }: PortfolioChevronSectionProps) => {
+    const theme = useTheme();
+    const resolvedIconColor = iconColor ?? {
+        primary: theme.palette.primary.main,
+        secondary: theme.palette.primary.main,
+    };
+
     return (
         <PortfolioSectionContainer spacing={7.5}>
-            <IconListItem iconType="chevron" iconColor={iconColor}>
+            <IconListItem iconType="chevron" iconColor={resolvedIconColor}>
                 <Typography variant="h5">{title}</Typography>
             </IconListItem>
             {children}

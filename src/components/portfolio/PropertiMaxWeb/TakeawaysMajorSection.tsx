@@ -1,11 +1,8 @@
 import { PortfolioMajorSection } from '@/components';
 
-import { LearnedContent, RetrospectiveContent } from './Takeaways';
+import { LearnedContent } from './Takeaways';
 
-const takeawaysSections = [
-    { title: 'What I Learned', content: <LearnedContent /> },
-    { title: 'Retrospective', content: <RetrospectiveContent /> },
-];
+const takeawaysSections = [{ title: 'What I Learned', content: <LearnedContent /> }];
 
 export const TakeawaysMajorSection = () => {
     return (

@@ -1,9 +1,22 @@
-import { AppBar, Box, Container, Toolbar, useTheme } from '@mui/material';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { AppBar, Box, IconButton, Stack, Toolbar, useTheme } from '@mui/material';
+import { useLocation } from 'react-router-dom';
 
 import { NavBarIcons } from './NavBarIcons';
 import { NavBarLogo } from './NavBarLogo';
 
-export default function TopNavBar() {
+type DevThemeToggle = {
+    isDarkMode: boolean;
+    onToggle: () => void;
+};
+
+type TopNavBarProps = {
+    devThemeToggle?: DevThemeToggle;
+};
+
+export default function TopNavBar({ devThemeToggle }: TopNavBarProps) {
+    const location = useLocation();
     const theme = useTheme();
     const isDarkTheme = theme.palette.mode === 'dark';
 
@@ -15,14 +28,35 @@ export default function TopNavBar() {
             enableColorOnDark
             sx={{ marginTop: 9.5 }}
         >
-            <Container disableGutters sx={{ paddingLeft: 2, paddingRight: 2 }}>
+            <Box maxWidth="1024px" marginX="auto" width="100%">
                 <Toolbar disableGutters>
                     <Box sx={{ flexGrow: 1 }}>
-                        <NavBarLogo isDarkTheme={isDarkTheme} />
+                        <NavBarLogo
+                            isDarkTheme={isDarkTheme}
+                            curPath={location.pathname}
+                        />
                     </Box>
-                    <NavBarIcons isDarkTheme={isDarkTheme} />
+                    <Stack direction="row" alignItems="center" spacing={2}>
+                        {devThemeToggle && (
+                            <IconButton
+                                aria-label="Toggle dev theme"
+                                onClick={devThemeToggle.onToggle}
+                                color="inherit"
+                            >
+                                {devThemeToggle.isDarkMode ? (
+                                    <LightModeIcon fontSize="small" />
+                                ) : (
+                                    <DarkModeIcon fontSize="small" />
+                                )}
+                            </IconButton>
+                        )}
+                        <NavBarIcons
+                            isDarkTheme={isDarkTheme}
+                            curPath={location.pathname}
+                        />
+                    </Stack>
                 </Toolbar>
-            </Container>
+            </Box>
         </AppBar>
     );
 }

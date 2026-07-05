@@ -57,10 +57,10 @@ const PropertyDetailHighlightingContent = () => {
                 The most important aspect of the Property Detail page is to make it easy
                 for buyers to contact the agent managing the property if they are
                 interested. However, due to the abundance of information on the page, the
-                agent contact section was not always prominently displayed.
+                agent contact section was not always visible.
             </IconListItem>
             <IconListItem>
-                To solve this issue, we decided to fix the contact section at the bottom
+                To solve this issue, we decided to fix the contact section to the bottom
                 of the app, enabling users to easily access the information they need and
                 contact the agent immediately if they develop an interest.
             </IconListItem>

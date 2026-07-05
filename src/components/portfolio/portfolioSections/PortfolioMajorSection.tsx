@@ -61,6 +61,8 @@ export const PortfolioMajorSection = ({
                     title={ps.title}
                     content={ps.content}
                     coverImg={ps.coverImg}
+                    coverImgFullWidth={ps.coverImgFullWidth}
+                    coverVideo={ps.coverVideo}
                     sectionRef={(el) => (sectionRefs.current[index] = el)}
                 />
             ))}

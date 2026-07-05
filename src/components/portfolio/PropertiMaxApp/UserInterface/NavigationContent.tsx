@@ -5,10 +5,10 @@ const NavigationJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To make the current page navigation more effective, we designed all the
-                basic navigation icons as thin line icons, and the active page icon as a
-                color-filled icon. While having only icons looks clean, it can also be
-                confusing for users, so we placed the navigation names below the icons.
+                To indicate the page the user is on, we designed all the basic navigation
+                icons as thin line icons, while the active page icon shows as a
+                colour-filled icon. While having only icons looks clean, it can also be
+                confusing for users, so we placed the navigation labels below the icons.
             </IconListItem>
         </PortfolioSectionContainer>
     );

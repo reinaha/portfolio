@@ -7,7 +7,8 @@ export const DesignProcessContent = () => {
     return (
         <PortfolioSectionContainer>
             <Typography>
-                This project spanned over a period of 6 months from Aug 2019 - Jan 2020
+                This project spanned over a period of 6 months from April 2018 - October
+                2018
             </Typography>
             <PortfolioImageExtraMargin imageSrc={PropertiMaxWebProcess} />
         </PortfolioSectionContainer>

@@ -10,8 +10,8 @@ const SignUpJourneyContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                Each screen delivers one task so that users can only focus on one task at
-                once without any distractions.
+                Each screen focuses on a single task so that the intent is clear and users
+                are not distracted.
             </IconListItem>
             <PortfolioImage imageSrc={EntranceJourney} />
         </PortfolioSectionContainer>
@@ -22,16 +22,16 @@ const IntegrationContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                One of the most important things to consider on the registration page is
-                that the target of the Osstem e-shop app is not only new customers, but
-                also existing Osstem New Zealand account holders. Therefore, it was
-                crucial for existing customers to link their previous Osstem account to
-                the new app account during registration.
+                One of the most important considerations made on the registration page is
+                that the main target of the app is existing Osstem New Zealand account
+                holders. Therefore, it was crucial for existing customers to link their
+                existing Osstem account to the app account during the registration
+                process.
             </IconListItem>
             <IconListItem>
-                To facilitate this process, we created a separate field for users to enter
-                their Osstem account code, and added a question mark button for those who
-                may need additional clarification.
+                To facilitate this, we created a separate field for users to enter their
+                Osstem account code, and added a question mark button for those who may
+                need additional clarification.
             </IconListItem>
             <PortfolioImage imageSrc={EntranceIntegration} />
         </PortfolioSectionContainer>
@@ -42,10 +42,11 @@ const PositioningContent = () => {
     return (
         <PortfolioSectionContainer>
             <IconListItem>
-                To ensure readability and app size, we designed the registration form in
-                three steps. To prevent confusion for users, we placed a progress bar at
-                the top of the app to show users in real-time where they are in the
-                registration process until completion.
+                The registration form was broken down into three steps to ensure
+                sufficient font size of the form fields so that they were readable without
+                having to scroll down the form field. To prevent confusion for users, a
+                progress bar was placed at the top of the sign up screen to display
+                current progress of the user.
             </IconListItem>
             <PortfolioImage imageSrc={EntranceProgressBar} />
         </PortfolioSectionContainer>
@@ -58,11 +59,11 @@ export const EntranceContentData = [
         content: <SignUpJourneyContent />,
     },
     {
-        title: 'Integrating existing customer accounts with the app account',
+        title: 'Integration with existing client accounts',
         content: <IntegrationContent />,
     },
     {
-        title: 'Positioning sign-up progress bar at the top of the app',
+        title: 'Sign-up progress bar',
         content: <PositioningContent />,
     },
 ];

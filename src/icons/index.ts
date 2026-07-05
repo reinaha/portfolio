@@ -1,5 +1,6 @@
 export * from './ArrowIcon';
 export * from './ChevronRightIcon';
+export * from './FernIcon';
 export * from './Logo';
 export * from './MouseAnimatedScroll';
 export * from './MouseScrollIcon';
