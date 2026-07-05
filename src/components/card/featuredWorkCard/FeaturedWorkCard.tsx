@@ -35,11 +35,20 @@ export const FeaturedWorkCard = ({
                     height: 300,
                     borderRadius: '22px',
                     overflow: 'hidden',
-                    backgroundImage: `url(${image})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
                 }}
-            />
+            >
+                <Box
+                    sx={{
+                        width: '100%',
+                        height: '100%',
+                        backgroundImage: `url(${image})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        transition: 'transform 0.6s ease-in-out',
+                        transform: hovered ? 'scale(1.06)' : 'scale(1)',
+                    }}
+                />
+            </Box>
             <Stack direction="row" alignItems="center" spacing={4} paddingY={4}>
                 <CircularArrowButton
                     variant="outlined"

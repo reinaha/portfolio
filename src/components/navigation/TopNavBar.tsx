@@ -6,16 +6,16 @@ import { useLocation } from 'react-router-dom';
 import { NavBarIcons } from './NavBarIcons';
 import { NavBarLogo } from './NavBarLogo';
 
-type DevThemeToggle = {
+type ThemeToggle = {
     isDarkMode: boolean;
     onToggle: () => void;
 };
 
 type TopNavBarProps = {
-    devThemeToggle?: DevThemeToggle;
+    themeToggle?: ThemeToggle;
 };
 
-export default function TopNavBar({ devThemeToggle }: TopNavBarProps) {
+export default function TopNavBar({ themeToggle }: TopNavBarProps) {
     const location = useLocation();
     const theme = useTheme();
     const isDarkTheme = theme.palette.mode === 'dark';
@@ -37,13 +37,13 @@ export default function TopNavBar({ devThemeToggle }: TopNavBarProps) {
                         />
                     </Box>
                     <Stack direction="row" alignItems="center" spacing={2}>
-                        {devThemeToggle && (
+                        {themeToggle && (
                             <IconButton
-                                aria-label="Toggle dev theme"
-                                onClick={devThemeToggle.onToggle}
+                                aria-label="Toggle color theme"
+                                onClick={themeToggle.onToggle}
                                 color="inherit"
                             >
-                                {devThemeToggle.isDarkMode ? (
+                                {themeToggle.isDarkMode ? (
                                     <LightModeIcon fontSize="small" />
                                 ) : (
                                     <DarkModeIcon fontSize="small" />
