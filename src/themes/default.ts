@@ -30,23 +30,59 @@ export const defaultTheme = createTheme({
     spacing: 4,
     typography: {
         fontFamily: ['Raleway', 'Inter', 'Roboto', 'sans-serif'].join(','),
+        // h1-h6/body1-3/numberIcon mirror lightTheme's sizing exactly (the
+        // portfolio pages use that variant set exclusively), recolored for a
+        // dark background. subtitle1/subtitle2 below are unrelated leftovers
+        // from the old dark homepage design — kept as-is since nothing
+        // currently uses them via the `variant` prop.
         h1: {
             fontWeight: 500,
             fontStyle: 'normal',
-            fontSize: '40px',
+            fontSize: '70px',
             lineHeight: '150%',
             letterSpacing: '-0.02em',
+            wordBreak: 'break-word',
+            color: '#FFFFFF',
+        },
+        h2: {
+            fontWeight: 500,
+            fontStyle: 'normal',
+            fontSize: '70px',
+            lineHeight: '150%',
+            letterSpacing: '-0.02em',
+            color: '#FFFFFF',
+            wordBreak: 'break-word',
+        },
+        h3: {
+            fontWeight: 600,
+            fontStyle: 'normal',
+            fontSize: '15px',
+            lineHeight: '22.5px',
             wordBreak: 'break-word',
             color: '#FFFFFF',
         },
         h4: {
             fontWeight: 600,
             fontStyle: 'normal',
-            fontSize: '22px',
-            lineHeight: '30px',
-            letterSpacing: '-0.01em',
+            fontSize: '15px',
+            lineHeight: '22.5px',
             wordBreak: 'break-word',
-            color: '#1A1E25',
+            color: '#FFFFFF',
+        },
+        h5: {
+            fontWeight: 700,
+            fontStyle: 'normal',
+            fontSize: '15px',
+            lineHeight: '150%',
+            wordBreak: 'break-word',
+            color: '#FFFFFF',
+        },
+        h6: {
+            fontWeight: 700,
+            fontStyle: 'normal',
+            lineHeight: '16.8px',
+            fontSize: '15px',
+            wordBreak: 'break-word',
         },
         subtitle1: {
             fontWeight: 500,
@@ -64,13 +100,43 @@ export const defaultTheme = createTheme({
             wordBreak: 'break-word',
             color: '#848484',
         },
+        body1: {
+            fontWeight: 500,
+            fontStyle: 'normal',
+            lineHeight: '150%',
+            fontSize: '15px',
+            wordBreak: 'break-word',
+        },
+        body2: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            lineHeight: '200%',
+            fontSize: '14px',
+            wordBreak: 'break-word',
+            color: 'rgba(255, 255, 255, 0.6)',
+        },
+        body3: {
+            fontWeight: 400,
+            fontStyle: 'normal',
+            lineHeight: '150%',
+            fontSize: '14px',
+            wordBreak: 'break-word',
+            color: 'rgba(255, 255, 255, 0.6)',
+        },
+        numberIcon: {
+            fontWeight: 500,
+            fontStyle: 'normal',
+            lineHeight: '100%',
+            fontSize: '14px',
+            wordBreak: 'break-word',
+        },
         button: {
             fontWeight: 500,
             fontSize: '14px',
             lineHeight: '36px',
             letterSpacing: '-0.01em',
         },
-    },
+    } as ExtendedTypographyOptions,
 });
 
 export const lightTheme = createTheme({

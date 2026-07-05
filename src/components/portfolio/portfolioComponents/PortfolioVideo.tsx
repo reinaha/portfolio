@@ -1,4 +1,4 @@
-import { Box, BoxProps, Container } from '@mui/material';
+import { Box, BoxProps, Container, useTheme } from '@mui/material';
 
 interface PortfolioVideoProps extends BoxProps {
     videoSrc: string;
@@ -24,9 +24,12 @@ export const PortfolioVideo = ({ videoSrc, poster, ...props }: PortfolioVideoPro
 
 export const PortfolioVideoContainer = (props: PortfolioVideoProps) => {
     const containerPadding = 5;
+    const theme = useTheme();
+    const bgcolor =
+        theme.palette.mode === 'dark' ? 'rgba(255, 255, 255, 0.05)' : '#F5F5F5';
 
     return (
-        <Box bgcolor="#F5F5F5">
+        <Box bgcolor={bgcolor}>
             <Container
                 disableGutters
                 sx={{

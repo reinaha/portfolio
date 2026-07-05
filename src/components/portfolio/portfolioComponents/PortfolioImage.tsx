@@ -1,4 +1,4 @@
-import { Box, BoxProps, Container } from '@mui/material';
+import { Box, BoxProps, Container, useTheme } from '@mui/material';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface PortfolioImageProps extends BoxProps {
@@ -19,9 +19,12 @@ export const PortfolioImageExtraMargin = (props: PortfolioImageProps) => {
 
 export const PortfolioImageContainer = (props: PortfolioImageProps) => {
     const containerPadding = 5;
+    const theme = useTheme();
+    const bgcolor =
+        theme.palette.mode === 'dark' ? 'rgba(255, 255, 255, 0.05)' : '#F5F5F5';
 
     return (
-        <Box bgcolor="#F5F5F5">
+        <Box bgcolor={bgcolor}>
             <Container
                 disableGutters
                 sx={{

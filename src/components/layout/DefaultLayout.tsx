@@ -13,9 +13,8 @@ export const DefaultLayout = () => {
     // "no override" — fall back to the normal route/system-preference logic.
     const [devDarkMode, setDevDarkMode] = useState<boolean | null>(null);
 
-    const routeDefaultIsDark = !isPortfolioRoute && prefersDarkMode;
     const isDarkMode =
-        import.meta.env.DEV && devDarkMode !== null ? devDarkMode : routeDefaultIsDark;
+        import.meta.env.DEV && devDarkMode !== null ? devDarkMode : prefersDarkMode;
     const theme = isDarkMode ? defaultTheme : lightTheme;
 
     return (
