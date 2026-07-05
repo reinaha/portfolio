@@ -1,27 +1,36 @@
 import 'react-lazy-load-image-component/src/effects/opacity.css';
+// Side-effect import: registers every image's real aspect ratio (see
+// imageDimensions.ts) before any PortfolioImage below ever renders.
+import '@/images/generatedImageDimensions';
 
 import { Box, BoxProps, Container, Skeleton, useTheme } from '@mui/material';
 import { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+import { getImageAspectRatio } from '@/images/imageDimensions';
+
 interface PortfolioImageProps extends BoxProps {
     imageSrc: string;
 }
 
-// Most of these case-study images land somewhere around a 2:1 wide banner —
-// close enough to hold the layout steady while the real image is still
-// downloading, without needing per-image dimensions on hand.
-const PLACEHOLDER_ASPECT_RATIO = '2 / 1';
+// Fallback for any image not covered by the generated aspect-ratio registry
+// (e.g. one added without re-running generateImageDimensions.py) — a 2:1 wide
+// banner is close enough to hold the layout steady while it downloads.
+const FALLBACK_ASPECT_RATIO = 2;
 
 export const PortfolioImage = ({ imageSrc, sx, ...props }: PortfolioImageProps) => {
     const [loaded, setLoaded] = useState(false);
+    const aspectRatio = getImageAspectRatio(imageSrc) ?? FALLBACK_ASPECT_RATIO;
 
     return (
         <Box
             sx={{
                 position: 'relative',
                 width: '100%',
-                aspectRatio: loaded ? 'auto' : PLACEHOLDER_ASPECT_RATIO,
+                // MUI's sx system appends "px" to bare numbers for CSS
+                // properties it doesn't recognise as unitless, which silently
+                // breaks aspect-ratio — pass it as a string to avoid that.
+                aspectRatio: loaded ? 'auto' : String(aspectRatio),
                 ...sx,
             }}
             {...props}

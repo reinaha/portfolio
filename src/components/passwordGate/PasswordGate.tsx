@@ -1,16 +1,22 @@
 import { Box, Button, Stack, TextField, Typography } from '@mui/material';
 import { FormEvent, ReactNode, useEffect, useRef, useState } from 'react';
 
+import { usePortfolioSectionNav } from '@/components/portfolio/portfolioSections/PortfolioSectionNavContext';
 import { CASE_STUDY_PASSWORD } from '@/config/passwordGate';
+
+import { PasswordGateLockProvider } from './PasswordGateLockContext';
 
 const STORAGE_KEY = 'protected-case-studies-unlocked';
 const COLLAPSED_HEIGHT = 480;
+const GATE_NAV_LABEL = 'Work Process';
 
 type PasswordGateProps = {
     children: ReactNode;
 };
 
 const isUnlocked = () => sessionStorage.getItem(STORAGE_KEY) === 'true';
+
+let gateInstanceCounter = 0;
 
 export const PasswordGate = ({ children }: PasswordGateProps) => {
     const [unlocked, setUnlocked] = useState(isUnlocked);
@@ -19,6 +25,10 @@ export const PasswordGate = ({ children }: PasswordGateProps) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollAnchorRef = useRef<HTMLSpanElement>(null);
     const wasUnlocked = useRef(unlocked);
+    // Stable per-instance id — most pages only have one gate, but this stays
+    // safe if a page ever has more than one.
+    const gateIdRef = useRef<string>();
+    if (!gateIdRef.current) gateIdRef.current = `password-gate-${gateInstanceCounter++}`;
 
     useEffect(() => {
         if (unlocked && !wasUnlocked.current) {
@@ -29,6 +39,19 @@ export const PasswordGate = ({ children }: PasswordGateProps) => {
         }
         wasUnlocked.current = unlocked;
     }, [unlocked]);
+
+    // While locked, the gate itself is the one thing worth a nav dot — the
+    // major sections in its blurred preview aren't reachable yet, so they
+    // skip registering individually (see PortfolioMajorSection).
+    const { registerSection, unregisterSection } = usePortfolioSectionNav() ?? {};
+    useEffect(() => {
+        if (unlocked || !registerSection || !unregisterSection || !containerRef.current) {
+            return;
+        }
+        const gateId = gateIdRef.current as string;
+        registerSection(gateId, GATE_NAV_LABEL, containerRef.current);
+        return () => unregisterSection(gateId);
+    }, [unlocked, registerSection, unregisterSection]);
 
     if (unlocked) {
         // No wrapping element here — these children are typically several
@@ -64,7 +87,9 @@ export const PasswordGate = ({ children }: PasswordGateProps) => {
                 aria-hidden
                 sx={{ filter: 'blur(24px)', pointerEvents: 'none', userSelect: 'none' }}
             >
-                {children}
+                <PasswordGateLockProvider value={true}>
+                    {children}
+                </PasswordGateLockProvider>
             </Box>
             <Stack
                 component="form"

@@ -22,6 +22,7 @@ export default function TopNavBar({ themeToggle }: TopNavBarProps) {
 
     return (
         <AppBar
+            id="top-nav-bar"
             position="sticky"
             elevation={0}
             color="secondary"
@@ -30,7 +31,7 @@ export default function TopNavBar({ themeToggle }: TopNavBarProps) {
         >
             <Box maxWidth="1024px" marginX="auto" width="100%">
                 <Toolbar disableGutters>
-                    <Box sx={{ flexGrow: 1 }}>
+                    <Box sx={{ flexGrow: 1, marginLeft: 2 }}>
                         <NavBarLogo
                             isDarkTheme={isDarkTheme}
                             curPath={location.pathname}
