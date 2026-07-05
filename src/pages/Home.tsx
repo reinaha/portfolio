@@ -2,9 +2,15 @@ import { Stack } from '@mui/material';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { HomeBottomCover, HomeTopCover, PortfolioCardSection } from '@/components';
-import { PortfolioCardData } from '@/data';
-import { AnimatedMouseScrollIcon } from '@/icons';
+import {
+    BeyondPortfolioSection,
+    FeaturedWorkSection,
+    HomeBottomCover,
+    HomeFooter,
+    HomeTopCover,
+    IntroSection,
+    VisualWorksSection,
+} from '@/components';
 
 const toTop = () => {
     setTimeout(
@@ -52,11 +58,14 @@ export function Home() {
     }, [state]);
 
     return (
-        <Stack paddingTop={30} spacing={40} alignItems="center">
+        <Stack>
             <HomeTopCover />
-            <AnimatedMouseScrollIcon />
-            <PortfolioCardSection portfolioCardData={PortfolioCardData} />
+            <IntroSection />
+            <FeaturedWorkSection />
+            <VisualWorksSection />
+            <BeyondPortfolioSection />
             <HomeBottomCover />
+            <HomeFooter />
         </Stack>
     );
 }

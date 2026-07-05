@@ -1,4 +1,9 @@
+import { useTheme } from '@mui/material';
+
 export const AnimatedMouseScrollIcon = () => {
+    const theme = useTheme();
+    const strokeColor = theme.palette.primary.main;
+
     return (
         <svg
             width="40px"
@@ -16,14 +21,14 @@ export const AnimatedMouseScrollIcon = () => {
                 id="wheel"
                 d="M123.359,79.775l0,52.843"
                 fill="none"
-                stroke="#fff"
+                stroke={strokeColor}
                 strokeWidth="15px"
             />
             <path
                 id="mouse"
                 d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
                 fill="none"
-                stroke="#fff"
+                stroke={strokeColor}
                 strokeWidth="10px"
             />
         </svg>

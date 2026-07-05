@@ -1,4 +1,4 @@
-import LogoDark from '@/icons/LogoLight.svg';
-import LogoLight from '@/icons/LogoLight.svg';
+import LogoDark from '@resources/Logos/LogoDark.svg';
+import LogoLight from '@resources/Logos/LogoLight.svg';
 
 export { LogoDark, LogoLight };

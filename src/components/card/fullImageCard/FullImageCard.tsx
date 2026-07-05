@@ -16,11 +16,11 @@ export const FiCard = styled(Card)({
     flexDirection: 'column',
     justifyContent: 'space-between',
     padding: '30px 25px 35px 30px',
-    height: '386px',
+    height: '340px',
+    boxShadow: 'none',
     '&:hover': {
         cursor: 'pointer',
         '& .MuiCardMedia-root:not(video)': { transform: 'scale3d(1.2, 1.2, 1)' },
-        '& .GoToPortfolio': { backgroundColor: '#FFFFFF', color: 'black' },
     },
 });
 

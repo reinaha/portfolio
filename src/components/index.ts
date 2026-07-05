@@ -1,6 +1,7 @@
 export * from './button';
 export * from './card';
 export * from './homeCover';
+export * from './homeSections';
 export * from './icon';
 export * from './layout';
 export * from './listText';

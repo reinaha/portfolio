@@ -1,2 +1,2 @@
-export * from './DiagonalArrowButton';
+export * from './CircularArrowButton';
 export * from './LogoButton';

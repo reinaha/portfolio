@@ -1,7 +1,10 @@
 import { CardMedia, Chip, Stack, Typography, TypographyProps } from '@mui/material';
 import { useRef, useState } from 'react';
 
-import { DiagonalArrowButton } from '../button/DiagonalArrowButton';
+import {
+    CircularArrowButton,
+    CircularArrowButtonVariant,
+} from '../button/CircularArrowButton';
 import { FiCard, FiCardContent, FiCardMedia } from './fullImageCard';
 
 type PortfolioCardProps = {
@@ -16,6 +19,8 @@ type PortfolioCardProps = {
     titleIcon?: React.ReactNode;
     hoverVideo?: string;
     buttonOnClick?: React.MouseEventHandler<HTMLDivElement>;
+    arrowVariant?: CircularArrowButtonVariant;
+    arrowSize?: number;
 };
 
 export const PortfolioCard = ({
@@ -41,6 +46,8 @@ export const PortfolioCard = ({
     titleIcon,
     hoverVideo,
     buttonOnClick,
+    arrowVariant = 'solidDark',
+    arrowSize = 60,
 }: PortfolioCardProps) => {
     const [hover, setHover] = useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -119,7 +126,11 @@ export const PortfolioCard = ({
                             </Stack>
                         ) : null}
                     </Stack>
-                    <DiagonalArrowButton />
+                    <CircularArrowButton
+                        variant={arrowVariant}
+                        size={arrowSize}
+                        hovered={hover}
+                    />
                 </Stack>
             </FiCardContent>
         </FiCard>
