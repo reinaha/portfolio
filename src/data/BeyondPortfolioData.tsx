@@ -4,6 +4,7 @@ export const BeyondPortfolioData: IBeyondPortfolioItem[] = [
     {
         title: 'Best Design Awards 2026 — Gold',
         sourceLine: 'Value of Design · Established Impact · October 2026',
+        href: 'https://bestawards.co.nz/value-of-design/value-of-design-established-impact/Entrant:814309bd-6bff-4a75-8244-4f471cac18b9/next-generation-kiosks-air-new-zealand/',
     },
     {
         title: 'Air New Zealand launches Next Gen Kiosks',
