@@ -11,6 +11,13 @@ export interface IFeaturedWorkCard {
     title: string;
     subtitle: string;
     image: string;
+    // Optional award credential: `badge` is pinned to the cover's top-left as a
+    // sticker (it sits outside the hover zoom, so it stays put), and `label`
+    // renders as a gold eyebrow line above the title.
+    award?: {
+        badge: string;
+        label: string;
+    };
 }
 
 export interface IVisualWorkCard {

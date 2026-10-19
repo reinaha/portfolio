@@ -2,6 +2,10 @@ import { IBeyondPortfolioItem } from '@/models';
 
 export const BeyondPortfolioData: IBeyondPortfolioItem[] = [
     {
+        title: 'Best Design Awards 2026 — Gold',
+        sourceLine: 'Value of Design · Established Impact · October 2026',
+    },
+    {
         title: 'Air New Zealand launches Next Gen Kiosks',
         sourceLine: 'Official Newsroom · March 2026',
         href: 'https://www.airnewzealandnewsroom.com/press-release-2026-faster-check-in-coming-to-an-airport-near-you-air-new-zealand-rolling-out-next-gen-kiosks',

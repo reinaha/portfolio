@@ -54,7 +54,7 @@ export const IntroSection = () => {
                         },
                     }}
                 >
-                    visual design and interaction design
+                    visual design, and interaction design
                 </Box>
                 {' gives me more ways to solve product problems.'}
             </Typography>

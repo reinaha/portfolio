@@ -3,6 +3,7 @@ import AdditionalMotionDesign from '@resources/Home/AdditionalMotionDesign.png';
 import AirNZKiosk from '@resources/Home/AirNZKiosk.png';
 import AirNZWebApp from '@resources/Home/AirNZWebApp.png';
 import AnzacStampBackground from '@resources/Home/AnzacStampBackground.png';
+import BestDesignAwards2026Gold from '@resources/Home/BestDesignAwards2026Gold.jpg';
 import ChristmasStampBackground from '@resources/Home/ChristmasStampBackground.png';
 import DentalECommerceApp from '@resources/Home/DentalECommerceApp.png';
 import DentalECommerceWeb from '@resources/Home/DentalECommerceWeb.png';
@@ -32,6 +33,7 @@ export {
     AirNZKioskVideo,
     AirNZWebApp,
     AnzacStampBackground,
+    BestDesignAwards2026Gold,
     ChristmasStampBackground,
     DentalECommerceApp,
     DentalECommerceWeb,

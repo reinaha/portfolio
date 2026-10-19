@@ -13,6 +13,7 @@ export const FeaturedWorkCard = ({
     title,
     subtitle,
     image,
+    award,
 }: FeaturedWorkCardProps) => {
     const navigate = useNavigate();
     const theme = useTheme();
@@ -31,6 +32,7 @@ export const FeaturedWorkCard = ({
         >
             <Box
                 sx={{
+                    position: 'relative',
                     width: '100%',
                     height: 300,
                     borderRadius: '22px',
@@ -48,14 +50,57 @@ export const FeaturedWorkCard = ({
                         transform: hovered ? 'scale(1.06)' : 'scale(1)',
                     }}
                 />
+                {award && (
+                    <Box
+                        sx={{
+                            position: 'absolute',
+                            top: 0,
+                            left: { xs: '20px', md: '37.5px' },
+                            backgroundColor: '#ffffff',
+                            // Proportions of the Figma sticker (147 x 201 with
+                            // the badge inset 11/7/10/20), shrunk on narrow
+                            // cards so it doesn't swallow the cover.
+                            width: { xs: '110px', md: '147px' },
+                            padding: {
+                                xs: '5px 7px 15px 8px',
+                                md: '7px 10px 20px 11px',
+                            },
+                        }}
+                    >
+                        <Box
+                            component="img"
+                            src={award.badge}
+                            alt={award.label}
+                            sx={{ display: 'block', width: '100%', height: 'auto' }}
+                        />
+                    </Box>
+                )}
             </Box>
-            <Stack direction="row" alignItems="center" spacing={4} paddingY={4}>
+            <Stack
+                direction="row"
+                alignItems={award ? 'flex-start' : 'center'}
+                spacing={4}
+                paddingY={4}
+            >
                 <CircularArrowButton
                     variant="outlined"
                     size={arrowSize}
                     hovered={hovered}
                 />
                 <Stack>
+                    {award && (
+                        <Typography
+                            sx={{
+                                fontFamily: 'DM Sans',
+                                fontSize: '14px',
+                                lineHeight: '18px',
+                                fontWeight: 700,
+                                color: '#BF9855',
+                            }}
+                        >
+                            {award.label}
+                        </Typography>
+                    )}
                     <Typography
                         sx={{
                             fontFamily: 'DM Sans',

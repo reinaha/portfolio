@@ -1,4 +1,5 @@
 import {
+    BestDesignAwards2026Gold,
     FeaturedWorkKiosk,
     FeaturedWorkOsstem,
     FeaturedWorkPropertiMaxApp,
@@ -26,6 +27,10 @@ export const FeaturedWorkData: IFeaturedWorkCard[] = [
         title: 'Air New Zealand Next Generation Kiosk',
         subtitle: 'Self-service Kiosk · Aviation',
         image: FeaturedWorkKiosk,
+        award: {
+            badge: BestDesignAwards2026Gold,
+            label: 'Best Design Awards 2026 · Gold',
+        },
     },
     {
         card: airNZWebAppCard,
